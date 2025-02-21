@@ -1,0 +1,32 @@
+/* Общие стили */
+.container {
+    //max-width: 800px; /* Ограничение ширины контейнера */
+    margin: 0 auto;   /* Центрирование контейнера */
+}
+
+.biography p {
+    text-indent: 20px; /* Отступ первой строки абзаца */
+    line-height: 1.6;  /* Межстрочный интервал */
+    margin-bottom: 15px; /* Отступ между абзацами */
+}
+
+.biography h3 {
+    text-align: center; /* Центрирование заголовков */
+    margin-top: 20px;   /* Отступ сверху */
+    margin-bottom: 10px; /* Отступ снизу */
+}
+
+.biography strong {
+    color: #333; /* Цвет текста для выделенных частей */
+}
+
+.biography em {
+    font-style: italic;
+    color: #555; /* Цвет текста для подчеркивания */
+}
+
+.biography hr {
+    border: none; /* Убираем границу */
+    border-top: 1px solid #ccc; /* Добавляем горизонтальную линию */
+    margin: 20px 0; /* Отступ сверху и снизу */
+}
