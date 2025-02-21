@@ -207,24 +207,24 @@
 
         <!-- Блок сносок в конце текста -->
         <div class="citations mt-8 text-sm border-t pt-4">
-            <p id="citation-1"><sup>1</sup> Masters of Enchantment. The lives
+            <p id="citation-1"><sup> 1</sup> Masters of Enchantment. The lives
                 and legends of mahasiddhas. Translated by K. Dowman. Arkana,
                 1989, p.17.</p>
         </div>
         <div class="citations mt-8 text-sm border-t pt-4">
-            <p id="citation-2"><sup>2</sup> Там же, с. 17</p>
+            <p id="citation-2"><sup> 2</sup> Там же, с. 17</p>
         </div>
         <div class="citations mt-8 text-sm border-t pt-4">
-            <p id="citation-3"><sup>3</sup> А.И.Железнов, В.Н.Пупышев. Учение
+            <p id="citation-3"><sup> 3</sup> А.И.Железнов, В.Н.Пупышев. Учение
                 Ваджраяны о тождестве сансары и нирваны. См. ж. «Ступени», № 2,
                 1991, с. 150.</p>
         </div>
         <div class="citations mt-8 text-sm border-t pt-4">
-            <p id="citation-4"><sup>4</sup> «Хеваджратантра». Перевод с
+            <p id="citation-4"><sup> 4</sup> «Хеваджратантра». Перевод с
                 тибетского Д.Л.Снельгрофа.</p>
         </div>
         <div class="citations mt-8 text-sm border-t pt-4">
-            <p id="citation-5"><sup>5</sup> В.Васильев. Буддизм, его догматы,
+            <p id="citation-5"><sup> 5</sup> В.Васильев. Буддизм, его догматы,
                 история и литература. Часть третья. История буддизма в Индии,
                 со-чинение Даранаты. СПб., 1869, с. 189</p>
         </div>
