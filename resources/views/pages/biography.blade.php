@@ -5,8 +5,9 @@
 @section('content')
     <div class="container mx-auto px-4">
         <img src="{{ asset('images/VM.jpg') }}" alt="Vladimir_Mikhailovich_Iskra"
-             class="my-4 rounded-lg shadow-md">
-        <h1 class="text-3xl font-bold text-center mb-8">МОНТЛЕВИЧ В. М. (1940-2013)</h1>
+             class="article-image my-4 rounded-lg shadow-md">
+        <h1 class="text-2xl font-bold text-center mb-8">МОНТЛЕВИЧ В. М.
+            (1940-2013)</h1>
         <h2 class="text-xl font-semibold text-center mb-6"><strong>Коротко о себе (автобиография)</strong></h2>
 
         <div class="biography text-left">

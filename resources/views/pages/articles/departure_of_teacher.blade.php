@@ -5,7 +5,7 @@
 @section('content')
     <div class="container mx-auto px-4 biography">
         <img src="{{ asset('images/darma_dodi.jpg') }}" alt="Лама Дарма-Доди"
-             class="my-4 rounded-lg shadow-md">
+             class="article-image my-4 rounded-lg shadow-md">
         <!-- Заголовок -->
         <h1 class="text-2xl font-bold text-center mb-8">УХОД УЧИТЕЛЯ<br>ЛАМА
             ДАРМА-ДОДИ<br>(1900—1993)</h1>

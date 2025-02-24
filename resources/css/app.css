@@ -1,5 +1,12 @@
-@import 'ethics-buddhism.css';
+@import './ethics-buddhism.css';
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*.article-image {*/
+/*    display: block;*/
+/*    margin: 0 auto;*/
+/*    max-width: 600px;*/
+/*    height: auto;*/
+/*}*/

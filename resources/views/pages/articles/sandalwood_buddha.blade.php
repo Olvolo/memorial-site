@@ -5,7 +5,7 @@
 @section('content')
     <div class="container mx-auto px-4 biography">
         <img src="{{ asset('images/sandalwood_buddha.jpg') }}"
-             alt="Сандаловый Будда" class="my-4 rounded-lg shadow-md">
+             alt="Сандаловый Будда" class="article-image my-4 rounded-lg shadow-md">
         <!-- Заголовок -->
         <h1 class="text-2xl font-bold text-center mb-8">САНДАЛОВЫЙ БУДДА</h1>
 

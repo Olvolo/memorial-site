@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="container mx-auto px-4 biography">
-        <img src="{{ asset('images/garuda_journal.png') }}" alt="Журнал Гаруда" class="my-4 rounded-lg shadow-md">
+        <img src="{{ asset('images/garuda_journal.png') }}" alt="Журнал Гаруда" class="article-image my-4 rounded-lg shadow-md">
         <!-- Заголовок -->
         <h1 class="text-2xl font-bold text-center mb-8">НЕЗАВИСИМЫЙ ИСТОРИКО-ФИЛОСОФСКИЙ БУДДОЛОГИЧЕСКИЙ ЖУРНАЛ «ГАРУДА».<br>ОСНОВНЫЕ ТЕМЫ</h1>
 

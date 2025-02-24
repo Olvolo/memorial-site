@@ -5,7 +5,7 @@
 @section('content')
     <div class="container mx-auto px-4 biography">
         <img src="{{ asset('images/we.jpg') }}" alt="Описание фото"
-             class="my-4 rounded-lg shadow-md">
+             class="article-image my-4 rounded-lg shadow-md">
         <!-- Заголовок -->
         <h1 class="text-3xl font-bold text-center mb-8">МЫ</h1>
         <p>Мы – последователи Полноты Учения Дандарона – великого подвижника

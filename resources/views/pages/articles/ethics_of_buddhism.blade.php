@@ -5,6 +5,8 @@
         <!-- Заголовок -->
         <h1 class="text-3xl font-bold text-center mb-8">Этика
             Буддизма</h1>
+        <img src="{{ asset('images/ethics_of_buddhism.jpg') }}" alt="Открытый
+        горизонт" class="article-image my-4 rounded-lg shadow-md">
 
         <!-- Оглавление -->
         <div class="mb-8">

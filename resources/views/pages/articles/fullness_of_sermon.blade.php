@@ -5,7 +5,7 @@
 @section('content')
     <div class="container mx-auto px-4 biography">
         <img src="{{ asset('images/fullness_of_sermon.jpg') }}"
-             alt="Полнота Проповеди" class="my-4 rounded-lg shadow-md">
+             alt="Полнота Проповеди" class="article-image my-4 rounded-lg shadow-md">
         <!-- Заголовок -->
         <h1 class="text-2xl font-bold text-center mb-8">ПОЛНОТА ПРОПОВЕДИ</h1>
 

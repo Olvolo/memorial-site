@@ -5,7 +5,7 @@
 @section('content')
     <div class="container mx-auto px-4 biography">
         <img src="{{ asset('images/vajrabhairava_mandala.png') }}"
-             alt="Мандала Ваджрабхайравы" class="my-4 rounded-lg shadow-md">
+             alt="Мандала Ваджрабхайравы" class="article-image my-4 rounded-lg shadow-md">
         <!-- Заголовок -->
         <h1 class="text-2xl font-bold text-center mb-6">ОПИСАНИЕ МАНДАЛЫ
             ВАДЖРАБХАЙРАВЫ</h1>

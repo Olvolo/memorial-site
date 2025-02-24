@@ -4,7 +4,7 @@
     <div class="container mx-auto px-4 biography">
         <!-- Заголовок -->
         <img src="{{ asset('images/siddhi.jpg') }}" alt="Описание фото"
-             class="my-4 rounded-lg shadow-md">
+             class="article-image my-4 rounded-lg shadow-md">
         <h1 class="text-3xl font-bold text-center mb-8">СИДДХИ И ОБЩЕСТВО</h1>
         <p>Тантра полна презрения к концептуальной мысли. В её канонических
             текстах мало почтения к логике, зато часто присутствует парадокс. В

@@ -6,7 +6,7 @@
     <div class="container mx-auto px-4 biography">
         <img src="{{ asset('images/wheel_of_samsara.jpg') }}" alt="Символизм
         северного буддизма"
-             class="my-4 rounded-lg shadow-md">
+             class="article-image my-4 rounded-lg shadow-md">
         <!-- Заголовок -->
         <h1 class="text-2xl font-bold text-center mb-8 p-2">НЕКОТОРЫЕ ПРИНЦИПЫ
             СИМВОЛИЗМА СЕВЕРНОГО БУДДИЗМА</h1>

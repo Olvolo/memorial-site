@@ -30,3 +30,10 @@
     border-top: 1px solid #ccc; /* Добавляем горизонтальную линию */
     margin: 20px 0; /* Отступ сверху и снизу */
 }
+
+.article-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 600px; /* Ограничение максимальной ширины */
+    height: auto; /* Сохранение пропорций */
+}
