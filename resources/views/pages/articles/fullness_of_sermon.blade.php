@@ -7,7 +7,7 @@
         <img src="{{ asset('images/fullness_of_sermon.jpg') }}"
              alt="Полнота Проповеди" class="article-image my-4 rounded-lg shadow-md">
         <!-- Заголовок -->
-        <h1 class="text-2xl font-bold text-center mb-8">ПОЛНОТА ПРОПОВЕДИ</h1>
+        <h1 class="text-2xl font-bold text-center mb-8">ПОЛНОТА ПРОПОВЕДИ</h1><br>
 
         <p>Полнота, а не традиция, ибо стремится удержать всю Проповедь Учителя
             и представляет буддизм в целом, объединяя все направления и школы

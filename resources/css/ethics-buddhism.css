@@ -41,6 +41,14 @@
     object-fit: contain; /* Убедимся, что изображение не искажается */
 }
 
+.citation-mark {
+    @apply text-red-500 font-bold text-base sm:text-lg md:text-xl hover:underline;
+}
+
+.citation-mark sup {
+    @apply text-red-500 font-bold;
+}
+
 blockquote {
     border-left-width: 1px; /* Уменьшаем ширину линии цитаты */
     padding-left: 0.125rem; /* Уменьшаем отступ цитаты */
@@ -71,6 +79,14 @@ blockquote {
 
     .article-image {
         max-width: 90%; /* Уменьшаем изображение на очень узких экранах для читаемости */
+    }
+
+    .citation-mark {
+        @apply text-red-500 font-bold text-sm hover:underline;
+    }
+
+    .citation-mark sup {
+        @apply text-red-500 font-bold;
     }
 
     blockquote {
@@ -106,6 +122,14 @@ blockquote {
         max-width: 100%; /* Полная ширина на мобильных и планшетах */
     }
 
+    .citation-mark {
+        @apply text-red-500 font-bold text-base hover:underline;
+    }
+
+    .citation-mark sup {
+        @apply text-red-500 font-bold;
+    }
+
     blockquote {
         padding-left: 1rem; /* Восстанавливаем отступ цитаты */
         margin: 0.5rem 0; /* Восстанавливаем отступы цитаты */
@@ -136,6 +160,14 @@ blockquote {
 
     .article-image {
         max-width: 600px; /* Ограничение максимальной ширины на больших экранах */
+    }
+
+    .citation-mark {
+        @apply text-red-500 font-bold text-lg hover:underline;
+    }
+
+    .citation-mark sup {
+        @apply text-red-500 font-bold;
     }
 
     blockquote {

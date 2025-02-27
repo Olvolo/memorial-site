@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="container mx-auto px-4 biography">
-        <img src="{{ asset('images/sangha.jpg') }}" alt="Буддийская сангха" class="article-image my-4 rounded-lg shadow-md">
+{{--        <img src="{{ asset('images/sangha.jpg') }}" alt="Буддийская сангха" class="article-image my-4 rounded-lg shadow-md">--}}
         <!-- Заголовок -->
         <h1 class="text-2xl font-bold text-center mb-8">БУДДИЙСКАЯ
             ТРАДИЦИОННАЯ САНГХА И СОВРЕМЕННЫЕ ДХАРМА-ЦЕНТРЫ</h1>

@@ -4,8 +4,8 @@
 
 @section('content')
     <div class="container mx-auto px-4 biography">
-        <img src="{{ asset('images/shunya.jpg') }}" alt="Шуньята"
-             class="article-image my-4 rounded-lg shadow-md">
+{{--        <img src="{{ asset('images/shunya.jpg') }}" alt="Шуньята"--}}
+{{--             class="article-image my-4 rounded-lg shadow-md">--}}
         <!-- Заголовок -->
         <h1 class="text-2xl font-bold text-center mb-8">ОБЕТЫ И СТРАХ
             ШУНЬЕВОЙ БЕЗДНЫ</h1><i></i>

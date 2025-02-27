@@ -50,7 +50,7 @@
             Кто зовёт одиноким <i>тигле</i> – уникальной сферой.<br>
             Кто зовёт <i>Дхармадхату</i> – дхармовым пространством.<br>
             Кто зовёт <i>Алая</i> – основой всего.<br>
-            Кто зовется <i>обычным сознанием</i><a href="#citation-1" class="citation-mark"><sup>1</sup></a>.»
+            Кто зовется <i>обычным сознанием</i><a href="#citation-1" id="ref-1" class="citation-mark"><sup> 1</sup></a>.»
         </blockquote>
 
         <p class="text-center">х х х</p>
@@ -64,7 +64,7 @@
         <p class="text-right"><i>1996 г.</i><br><i>Ж. «Гаруда», № 1</i></p>
 
         <div class="citations mt-8 text-sm border-t pt-4">
-            <p id="citation-1"><sup>1</sup> Падмасамбхава. Самоосвобождение через обнажающее внимание - прямое введение в ригпа. Перевод с тибетского В. Ушакова.</p>
+            <p id="citation-1"><sup>1</sup> Падмасамбхава. Самоосвобождение через обнажающее внимание - прямое введение в ригпа. Перевод с тибетского В. Ушакова.<a href="#ref-1" class="text-blue-500 hover:underline">↩</a></p>
         </div>
     </div>
 @endsection

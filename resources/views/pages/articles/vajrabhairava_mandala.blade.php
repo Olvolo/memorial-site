@@ -34,7 +34,7 @@
         <p>Вариант с жёлтой накладкой и синими углами считался вариантом для
             внутреннего
             пользования. Тем не менее именно он был опубликован в «Красной
-            Книге»<a href="#citation-1" class="citation-mark"><sup>1</sup></a>.
+            Книге»<a href="#citation-1"id="ref-1" class="citation-mark"><sup>1</sup></a>.
         </p>
 
         <h2 class="text-2xl font-semibold mb-4">1. Описание «внешнего» варианта
@@ -212,9 +212,10 @@
             </li>
         </ul>
         <div class="citations mt-8 text-sm border-t pt-4">
-            <p id="citation-1"><sup>1</sup>Б. Д. Дандарон. Избранные статьи.
+            <p id="citation-1"><sup>1 </sup>Б. Д. Дандарон. Избранные статьи.
                 Черная Тетрадь. Материалы к биографии.«История Кукунора» Сумпы
-                Кенпо. Из-во «Евразия», СПб., 2006.</p>
+                Кенпо. Из-во «Евразия», СПб., 2006. <a href="#ref-1" class="text-blue-500 hover:underline">↩</a></p>
+
         </div>
     </div>
 @endsection
