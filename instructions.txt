@@ -29,6 +29,16 @@ php artisan serve
 Убедитесь, что стили Tailwind CSS применяются корректно.
 Когда необходимо добавить новую статью, нужно:
 
-Создать новый файл в resources/views/pages/articles/ с содержанием статьи
+Создать новый файл в resources/views/pages/articles/ с содержанием статьи.
 Добавить маршрут в web.php
 Добавить карточку статьи в список на странице articles.blade.php
+
+Организация сноски-ссылки с обратным переходом:
+1. Исходная ссылка например такая с id:
+<a href="#citation-1" id="ref-1" class="citation-mark"><sup>1</sup></a>
+2. Сноска с обратной ссылкой:
+<div class="citations mt-8 text-sm border-t pt-4">
+    <p id="citation-1"><sup>1</sup> Masters of Enchantment. The lives and legends of mahasiddhas. Translated by K. Dowman. Arkana, 1989, p.17. <a href="#ref-2" class="text-blue-500 hover:underline">↩</a></p>
+    <!-- Добавь аналогичные ссылки для других сносок, если они есть -->
+    <p id="citation-2"><sup>2</sup> [Текст сноски для ссылки 2]. <a href="#ref-2" class="text-blue-500 hover:underline">↩</a></p>
+</div>

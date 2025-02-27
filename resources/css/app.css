@@ -4,9 +4,43 @@
 @tailwind components;
 @tailwind utilities;
 
-/*.article-image {*/
-/*    display: block;*/
-/*    margin: 0 auto;*/
-/*    max-width: 600px;*/
-/*    height: auto;*/
-/*}*/
+.cell {
+    @apply border border-gray-300 px-2 py-1 text-center text-sm;
+}
+
+.cell-heading {
+    @apply border border-gray-300 px-2 py-1 bg-mint text-gray-900 text-sm font-bold text-center;
+}
+
+.cell-group {
+    @apply border border-gray-300 bg-pastel_blue px-2 py-1 text-gray-900 text-sm font-bold text-center;
+}
+
+.ethic-paragraph {
+    @apply text-base leading-relaxed md:text-lg;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .table-container table {
+        display: table;
+        overflow-x: auto;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .table-container table {
+        display: none;
+    }
+}
+
+@media (min-width: 1025px) {
+    .table-container table {
+        display: table;
+        overflow-x: visible;
+    }
+}

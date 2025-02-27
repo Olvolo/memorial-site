@@ -85,10 +85,6 @@ Route::get('/articles/neobuddhism_hermeneutics', function () {
     return view('pages.articles.neobuddhism_hermeneutics');
 })->name('articles.neobuddhism_hermeneutics');
 
-Route::get('/articles/dandaron_mandala', function () {
-    return view('pages.articles.dandaron_mandala');
-})->name('articles.dandaron_mandala');
-
 Route::get('/articles/vajrabhairava_mandala', function () {
     return view('pages.articles.vajrabhairava_mandala');
 })->name('articles.vajrabhairava_mandala');
@@ -116,10 +112,6 @@ Route::get('/articles/vajrasattva_method', function () {
 Route::get('/articles/vajrasattvayana', function () {
     return view('pages.articles.vajrasattvayana');
 })->name('articles.vajrasattvayana');
-
-Route::get('/articles/dandaron_stupa', function () {
-    return view('pages.articles.dandaron_stupa');
-})->name('articles.dandaron_stupa');
 
 Route::get('/articles/stupa_construction', function () {
     return view('pages.articles.stupa_construction');
@@ -184,3 +176,7 @@ Route::get('/articles/note_addendum', function () {
 Route::get('/articles/alphabet_desecration', function () {
     return view('pages.articles.alphabet_desecration');
 })->name('articles.alphabet_desecration');
+
+Route::get('/articles/vajrabhairava_mandala_table', function () {
+    return view('pages.articles.vajrabhairava_mandala_table');
+})->name('articles.vajrabhairava_mandala_table');

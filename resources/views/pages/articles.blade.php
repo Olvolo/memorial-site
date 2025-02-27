@@ -3,365 +3,88 @@
 @section('title', 'Статьи')
 
 @section('content')
-    <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl text-center font-bold mb-8">Статьи</h2>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+        <h2 class="text-2xl sm:text-3xl text-center font-bold mb-6 sm:mb-8 text-gray-900">Статьи</h2>
 
-        <div class="space-y-6">
+        <div class="space-y-8 sm:space-y-10">
             <!-- БУДДОЛОГИЯ (классика) -->
-            <article class="bg-beige-100 shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">
-                    <a href="{{ route('articles.ethics_of_buddhism') }}" class="text-blue-600 hover:text-blue-800">
-                        Этика буддизма
-                    </a>
-                </h3>
-                <p class="text-gray-600">
-                    Этические принципы в буддизме, их влияния на мировоззрение и практическое применение в жизни.
-                </p>
-            </article>
-
-            <article class="bg-beige-100 shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">
-                    <a href="{{ route('articles.siddhis_and_society') }}" class="text-blue-600 hover:text-blue-800">
-                        Сиддхи и общество
-                    </a>
-                </h3>
-                <p class="text-gray-600">Сиддхи и их роль в общественном контексте буддизма.</p>
-            </article>
-
-            <article class="bg-beige-100 shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">
-                    <a href="{{ route('articles.principles_of_symbolism') }}" class="text-blue-600 hover:text-blue-800">
-                        Некоторые принципы символизма северного буддизма
-                    </a>
-                </h3>
-                <p class="text-gray-600">Обзор символизма в традициях северного буддизма.</p>
-            </article>
-
-            <article class="bg-beige-100 shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">
-                    <a href="{{ route('articles.sandalwood_buddha') }}" class="text-blue-600 hover:text-blue-800">
-                        Сандаловый Будда
-                    </a>
-                </h3>
-                <p class="text-gray-600">История и значение Сандалового Будды в буддийской традиции.</p>
-            </article>
-
-            <article class="bg-beige-100 shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">
-                    <a href="{{ route('articles.mahabhutas') }}" class="text-blue-600 hover:text-blue-800">
-                        Махабхуты в Тантре и Абхидхарме
-                    </a>
-                </h3>
-                <p class="text-gray-600">Исследование махабхут (великих элементов) в тантрических и абхидхармических текстах.</p>
-            </article>
-
-            <article class="bg-beige-100 shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">
-                    <a href="{{ route('articles.sangha_and_dharma_centers') }}" class="text-blue-600 hover:text-blue-800">
-                        Буддийская традиционная сангха и современные дхарма-центры
-                    </a>
-                </h3>
-                <p class="text-gray-600">Сравнение традиционной сангхи и современных дхарма-центров.</p>
-            </article>
-
-            <article class="bg-beige-100 shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">
-                    <a href="{{ route('articles.vows_and_shunya') }}" class="text-blue-600 hover:text-blue-800">
-                        Обеты и страх шуньевой бездны
-                    </a>
-                </h3>
-                <p class="text-gray-600">Роль обетов и концепция шуньи (пустоты) в буддийской практике.</p>
-            </article>
-
-            <article class="bg-beige-100 shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">
-                    <a href="{{ route('articles.budon_preface') }}" class="text-blue-600 hover:text-blue-800">
-                        Предисловие к книге «Будон Ринчендуб. История буддизма» (Биография)
-                    </a>
-                </h3>
-                <p class="text-gray-600">Введение к биографии Будона Ринчендуба и его вкладу в историю буддизма.</p>
-            </article>
-
-            <article class="bg-beige-100 shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">
-                    <a href="{{ route('articles.departure_of_teacher') }}" class="text-blue-600 hover:text-blue-800">
-                        Уход Учителя. Лама Дарма-Доди
-                    </a>
-                </h3>
-                <p class="text-gray-600">Рассказ об уходе Ламы Дарма-Доди и его значении.</p>
-            </article>
-
-            <article class="bg-beige-100 shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">
-                    <a href="{{ route('articles.garuda_journal') }}" class="text-blue-600 hover:text-blue-800">
-                        Журнал «Гаруда». Основные темы
-                    </a>
-                </h3>
-                <p class="text-gray-600">Обзор основных тем журнала «Гаруда».</p>
-            </article>
+            <div class="bg-sky-100 p-4 sm:p-6 rounded-lg">
+                <h3 class="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 text-gray-800 text-center italic">Буддология (классика)</h3>
+                <ul class="list-none pl-5 sm:pl-6 space-y-2 text-base sm:text-lg custom-list">
+                    <li><a href="{{ route('articles.ethics_of_buddhism') }}" class="text-black hover:text-gray-700">Этика буддизма</a></li>
+                    <li><a href="{{ route('articles.siddhis_and_society') }}" class="text-black hover:text-gray-700">Сиддхи и общество</a></li>
+                    <li><a href="{{ route('articles.principles_of_symbolism') }}" class="text-black hover:text-gray-700">Некоторые принципы символизма северного буддизма</a></li>
+                    <li><a href="{{ route('articles.sandalwood_buddha') }}" class="text-black hover:text-gray-700">Сандаловый Будда</a></li>
+                    <li><a href="{{ route('articles.mahabhutas') }}" class="text-black hover:text-gray-700">Махабхути
+                            в Тантре и Абхидхарме</a></li>
+                    <li><a href="{{ route('articles.sangha_and_dharma_centers') }}" class="text-black hover:text-gray-700">Буддийская традиционная сангха и современные дхарма-центры</a></li>
+                    <li><a href="{{ route('articles.vows_and_shunya') }}" class="text-black hover:text-gray-700">Обеты и страх шуньевой бездны</a></li>
+                    <li><a href="{{ route('articles.budon_preface') }}" class="text-black hover:text-gray-700">Предисловие к книге «Будон Ринчендуб. История буддизма» (Биография)</a></li>
+                    <li><a href="{{ route('articles.departure_of_teacher') }}" class="text-black hover:text-gray-700">Уход Учителя. Лама Дарма-Доди</a></li>
+                    <li><a href="{{ route('articles.garuda_journal') }}" class="text-black hover:text-gray-700">Журнал «Гаруда». Основные темы</a></li>
+                </ul>
+            </div>
 
             <!-- НЕОБУДДИЗМ (Традиция Б.Д. Дандарона) -->
-            <article class="bg-beige-100 shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">
-                    <a href="{{ route('articles.golden_horse') }}" class="text-blue-600 hover:text-blue-800">
-                        Золотой Конь бодхичитты
-                    </a>
-                </h3>
-                <p class="text-gray-600">Исследование концепции бодхичитты в традиции Б.Д. Дандарона.</p>
-            </article>
-
-            <article class="bg-beige-100 shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">
-                    <a href="{{ route('articles.we') }}" class="text-blue-600 hover:text-blue-800">
-                        Мы
-                    </a>
-                </h3>
-                <p class="text-gray-600">Рефлексия о коллективной идентичности в необуддизме.</p>
-            </article>
-
-            <article class="bg-beige-100 shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">
-                    <a href="{{ route('articles.fullness_of_sermon') }}" class="text-blue-600 hover:text-blue-800">
-                        Полнота Проповеди
-                    </a>
-                </h3>
-                <p class="text-gray-600">Анализ полноты буддийской проповеди в традиции Дандарона.</p>
-            </article>
-
-            <article class="bg-beige-100 shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">
-                    <a href="{{ route('articles.neobuddhism_hermeneutics') }}" class="text-blue-600 hover:text-blue-800">
-                        Необуддизм, герменевтическая перспектива
-                    </a>
-                </h3>
-                <p class="text-gray-600">Герменевтический подход к изучению необуддизма.</p>
-            </article>
-
-            <article class="bg-beige-100 shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">
-                    <a href="{{ route('articles.dandaron_mandala') }}" class="text-blue-600 hover:text-blue-800">
-                        Мандала Традиции Б.Д. Дандарона
-                    </a>
-                </h3>
-                <p class="text-gray-600">Описание мандалы в традиции Б.Д. Дандарона.</p>
-            </article>
-
-            <article class="bg-beige-100 shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">
-                    <a href="{{ route('articles.vajrabhairava_mandala') }}" class="text-blue-600 hover:text-blue-800">
-                        Описание мандалы Ваджрабхайравы
-                    </a>
-                </h3>
-                <p class="text-gray-600">Подробное описание мандалы Ваджрабхайравы.</p>
-            </article>
-
-            <article class="bg-beige-100 shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">
-                    <a href="{{ route('articles.dandaron_tsogshin') }}" class="text-blue-600 hover:text-blue-800">
-                        Цогшин Традиции Б.Д. Дандарона
-                    </a>
-                </h3>
-                <p class="text-gray-600">Обзор ритуала Цогшин в традиции Дандарона.</p>
-            </article>
-
-            <article class="bg-beige-100 shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">
-                    <a href="{{ route('articles.tsogshin_description') }}" class="text-blue-600 hover:text-blue-800">
-                        Описание Цогшина Традиции Б.Д. Дандарона
-                    </a>
-                </h3>
-                <p class="text-gray-600">Детальное описание ритуала Цогшин.</p>
-            </article>
-
-            <article class="bg-beige-100 shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">
-                    <a href="{{ route('articles.mind_and_akasha') }}" class="text-blue-600 hover:text-blue-800">
-                        Вольные записи об уме и акаше
-                    </a>
-                </h3>
-                <p class="text-gray-600">Размышления об уме и концепции акаши в буддизме.</p>
-            </article>
-
-            <article class="bg-beige-100 shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">
-                    <a href="{{ route('articles.russia_vajrasattva') }}" class="text-blue-600 hover:text-blue-800">
-                        Россия — страна Ваджрасаттвы
-                    </a>
-                </h3>
-                <p class="text-gray-600">Связь России с традицией Ваджрасаттвы.</p>
-            </article>
-
-            <article class="bg-beige-100 shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">
-                    <a href="{{ route('articles.vajrasattva_method') }}" class="text-blue-600 hover:text-blue-800">
-                        Метод реализации Ваджрасаттвы
-                    </a>
-                </h3>
-                <p class="text-gray-600">Практические аспекты реализации Ваджрасаттвы.</p>
-            </article>
-
-            <article class="bg-beige-100 shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">
-                    <a href="{{ route('articles.vajrasattvayana') }}" class="text-blue-600 hover:text-blue-800">
-                        Есть ли смысл говорить о Ваджрасаттваяне?
-                    </a>
-                </h3>
-                <p class="text-gray-600">Размышления о концепции Ваджрасаттваяны.</p>
-            </article>
-
-            <article class="bg-beige-100 shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">
-                    <a href="{{ route('articles.dandaron_stupa') }}" class="text-blue-600 hover:text-blue-800">
-                        Ступа Традиции Б.Д. Дандарона
-                    </a>
-                </h3>
-                <p class="text-gray-600">Описание ступы в традиции Б.Д. Дандарона.</p>
-            </article>
-
-            <article class="bg-beige-100 shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">
-                    <a href="{{ route('articles.stupa_construction') }}" class="text-blue-600 hover:text-blue-800">
-                        Строительство Ступы Б.Д. Дандарона
-                    </a>
-                </h3>
-                <p class="text-gray-600">Процесс строительства ступы традиции Дандарона.</p>
-            </article>
-
-            <article class="bg-beige-100 shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">
-                    <a href="{{ route('articles.chakra_of_rays') }}" class="text-blue-600 hover:text-blue-800">
-                        Чакра лучей и радуг
-                    </a>
-                </h3>
-                <p class="text-gray-600">Символика чакр, лучей и радуг в буддийской практике.</p>
-            </article>
-
-            <article class="bg-beige-100 shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">
-                    <a href="{{ route('articles.on_paramitas') }}" class="text-blue-600 hover:text-blue-800">
-                        О парамитах
-                    </a>
-                </h3>
-                <p class="text-gray-600">Обзор парамит (совершенств) в буддийской традиции.</p>
-            </article>
-
-            <article class="bg-beige-100 shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">
-                    <a href="{{ route('articles.roots') }}" class="text-blue-600 hover:text-blue-800">
-                        Корни
-                    </a>
-                </h3>
-                <p class="text-gray-600">Исследование корней буддийской традиции.</p>
-            </article>
-
-            <article class="bg-beige-100 shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">
-                    <a href="{{ route('articles.karma_earth') }}" class="text-blue-600 hover:text-blue-800">
-                        Карма, элемент земля, закон сохранения
-                    </a>
-                </h3>
-                <p class="text-gray-600">Связь кармы, элемента земли и закона сохранения.</p>
-            </article>
-
-            <article class="bg-beige-100 shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">
-                    <a href="{{ route('articles.uncountability') }}" class="text-blue-600 hover:text-blue-800">
-                        Неисчислимость
-                    </a>
-                </h3>
-                <p class="text-gray-600">Философские размышления о неисчислимости в буддизме.</p>
-            </article>
-
-            <article class="bg-beige-100 shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">
-                    <a href="{{ route('articles.new_order') }}" class="text-blue-600 hover:text-blue-800">
-                        Новый порядок
-                    </a>
-                </h3>
-                <p class="text-gray-600">Концепция нового порядка в необуддизме.</p>
-            </article>
-
-            <article class="bg-beige-100 shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">
-                    <a href="{{ route('articles.open_horizon') }}" class="text-blue-600 hover:text-blue-800">
-                        Открытый горизонт
-                    </a>
-                </h3>
-                <p class="text-gray-600">Идея открытого горизонта в буддийской мысли.</p>
-            </article>
-
-            <article class="bg-beige-100 shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">
-                    <a href="{{ route('articles.secular_sangha') }}" class="text-blue-600 hover:text-blue-800">
-                        Мирская сангха
-                    </a>
-                </h3>
-                <p class="text-gray-600">Роль мирской сангхи в современном буддизме.</p>
-            </article>
-
-            <article class="bg-beige-100 shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">
-                    <a href="{{ route('articles.contemplation_of_stupa') }}" class="text-blue-600 hover:text-blue-800">
-                        Венец небес, земли корона, или Созерцание Белой Ступы Дандарона
-                    </a>
-                </h3>
-                <p class="text-gray-600">Созерцательные практики у Белой Ступы Дандарона.</p>
-            </article>
+            <div class="bg-orange-100 p-4 sm:p-6 rounded-lg">
+                <h3 class="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 text-gray-800 text-center italic">Необуддизм (Традиция Б.Д. Дандарона)</h3>
+                <ul class="list-none pl-5 sm:pl-6 space-y-2 text-base sm:text-lg custom-list">
+                    <li><a href="{{ route('articles.golden_horse') }}" class="text-black hover:text-gray-700">Золотой Конь бодхичитты</a></li>
+                    <li><a href="{{ route('articles.we') }}" class="text-black hover:text-gray-700">Мы</a></li>
+                    <li><a href="{{ route('articles.fullness_of_sermon') }}" class="text-black hover:text-gray-700">Полнота Проповеди</a></li>
+                    <li><a href="{{ route('articles.neobuddhism_hermeneutics') }}" class="text-black hover:text-gray-700">Необуддизм, герменевтическая перспектива</a></li>
+                    <li><a href="{{ route('articles.vajrabhairava_mandala') }}" class="text-black hover:text-gray-700">Описание мандалы Ваджрабхайравы</a></li>
+                    <li><a href="{{ route('articles.dandaron_tsogshin') }}" class="text-black hover:text-gray-700">Цогшин Традиции Б.Д. Дандарона</a></li>
+                    <li><a href="{{ route('articles.mind_and_akasha') }}" class="text-black hover:text-gray-700">Вольные записи об уме и акаше</a></li>
+                    <li><a href="{{ route('articles.russia_vajrasattva') }}" class="text-black hover:text-gray-700">Россия – страна Ваджрасаттвы</a></li>
+                    <li><a href="{{ route('articles.vajrasattva_method') }}" class="text-black hover:text-gray-700">Метод реализации Ваджрасаттвы</a></li>
+                    <li><a href="{{ route('articles.vajrasattvayana') }}" class="text-black hover:text-gray-700">Есть ли смысл говорить о Ваджрасаттваяне?</a></li>
+                    <li><a href="{{ route('articles.stupa_construction') }}" class="text-black hover:text-gray-700">Строительство Ступы Б.Д. Дандарона</a></li>
+                    <li><a href="{{ route('articles.chakra_of_rays') }}" class="text-black hover:text-gray-700">Чакра лучей и радуг</a></li>
+                    <li><a href="{{ route('articles.on_paramitas') }}" class="text-black hover:text-gray-700">О парамитах</a></li>
+                    <li><a href="{{ route('articles.roots') }}" class="text-black hover:text-gray-700">Корни</a></li>
+                    <li><a href="{{ route('articles.karma_earth') }}" class="text-black hover:text-gray-700">Карма, элемент земля, закон сохранения</a></li>
+                    <li><a href="{{ route('articles.uncountability') }}" class="text-black hover:text-gray-700">Неисчислимость</a></li>
+                    <li><a href="{{ route('articles.new_order') }}" class="text-black hover:text-gray-700">Новый порядок</a></li>
+                    <li><a href="{{ route('articles.open_horizon') }}" class="text-black hover:text-gray-700">Открытый горизонт</a></li>
+                    <li><a href="{{ route('articles.secular_sangha') }}" class="text-black hover:text-gray-700">Мирская сангха</a></li>
+                    <li><a href="{{ route('articles.contemplation_of_stupa') }}" class="text-black hover:text-gray-700">Венец небес, земли корона, или Созерцание Белой Ступы Дандарона</a></li>
+                </ul>
+            </div>
 
             <!-- ОБЩЕСТВЕННАЯ ДЕЯТЕЛЬНОСТЬ -->
-            <article class="bg-beige-100 shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">
-                    <a href="{{ route('articles.struggle_for_datsan') }}" class="text-blue-600 hover:text-blue-800">
-                        Борьба за Санкт-Петербургский Дацан
-                    </a>
-                </h3>
-                <p class="text-gray-600">История борьбы за сохранение Санкт-Петербургского Дацана.</p>
-            </article>
-
-            <article class="bg-beige-100 shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">
-                    <a href="{{ route('articles.datsan_appeal') }}" class="text-blue-600 hover:text-blue-800">
-                        Обращение Попечительского Совета Дацана
-                    </a>
-                </h3>
-                <p class="text-gray-600">Официальное обращение Попечительского Совета Дацана.</p>
-            </article>
-
-            <article class="bg-beige-100 shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">
-                    <a href="{{ route('articles.bon_teachers') }}" class="text-blue-600 hover:text-blue-800">
-                        Бонские учителя в Дацане
-                    </a>
-                </h3>
-                <p class="text-gray-600">Присутствие бонских учителей в Санкт-Петербургском Дацане.</p>
-            </article>
-
-            <article class="bg-beige-100 shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">
-                    <a href="{{ route('articles.analytical_note') }}" class="text-blue-600 hover:text-blue-800">
-                        Аналитическая записка
-                    </a>
-                </h3>
-                <p class="text-gray-600">Аналитический обзор ситуации вокруг Дацана.</p>
-            </article>
-
-            <article class="bg-beige-100 shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">
-                    <a href="{{ route('articles.note_addendum') }}" class="text-blue-600 hover:text-blue-800">
-                        Добавление к «Аналитической записке»
-                    </a>
-                </h3>
-                <p class="text-gray-600">Дополнение к аналитической записке о Дацане.</p>
-            </article>
-
-            <article class="bg-beige-100 shadow-md rounded-lg p-4">
-                <h3 class="text-xl font-bold mb-2">
-                    <a href="{{ route('articles.alphabet_desecration') }}" class="text-blue-600 hover:text-blue-800">
-                        Поругание русского алфавита
-                    </a>
-                </h3>
-                <p class="text-gray-600">Размышления о культурных и языковых аспектах.</p>
-            </article>
+            <div class="bg-lime-100 p-4 sm:p-6 rounded-lg">
+                <h3 class="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 text-gray-800 text-center italic">Общественная деятельность</h3>
+                <ul class="list-none pl-5 sm:pl-6 space-y-2 text-base sm:text-lg custom-list">
+                    <li><a href="{{ route('articles.struggle_for_datsan') }}" class="text-black hover:text-gray-700">Борьба за Санкт-Петербургский Дацан</a></li>
+                    <li><a href="{{ route('articles.datsan_appeal') }}" class="text-black hover:text-gray-700">Обращение Попечительского Совета Дацана</a></li>
+                    <li><a href="{{ route('articles.bon_teachers') }}" class="text-black hover:text-gray-700">Бонские учителя в Дацане</a></li>
+                    <li><a href="{{ route('articles.analytical_note') }}" class="text-black hover:text-gray-700">Аналитическая записка</a></li>
+                    <li><a href="{{ route('articles.note_addendum') }}" class="text-black hover:text-gray-700">Добавление к «Аналитической записке»</a></li>
+                    <li><a href="{{ route('articles.alphabet_desecration') }}" class="text-black hover:text-gray-700">Поругание русского алфавита</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 @endsection
+
+@push('styles')
+    <style>
+        .custom-list li {
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        .custom-list li:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 16px;
+            height: 16px;
+            background-image: url('{{ asset('images/rozetka_list.png') }}');
+            background-size: cover;
+            border-radius: 50%;
+        }
+    </style>
+@endpush
