@@ -93,10 +93,6 @@ Route::get('/articles/dandaron_tsogshin', function () {
     return view('pages.articles.dandaron_tsogshin');
 })->name('articles.dandaron_tsogshin');
 
-Route::get('/articles/tsogshin_description', function () {
-    return view('pages.articles.tsogshin_description');
-})->name('articles.tsogshin_description');
-
 Route::get('/articles/mind_and_akasha', function () {
     return view('pages.articles.mind_and_akasha');
 })->name('articles.mind_and_akasha');

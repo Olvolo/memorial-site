@@ -52,17 +52,5 @@
             line-height: 1.5;
             margin-bottom: 1rem;
         }
-        .citation-mark {
-            color: #3b82f6;
-            cursor: pointer;
-            font-size: 0.75em;
-            text-decoration: none;
-        }
-        .citation-mark:hover {
-            color: #2563eb;
-        }
-        .citation-mark:focus {
-            outline: none;
-        }
     </style>
 @endpush
