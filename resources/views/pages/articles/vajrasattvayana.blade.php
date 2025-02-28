@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="container mx-auto px-4 biography">
-        <img src="{{ asset('images/vajrasattvayana.jpg') }}"
+        <img src="{{ asset('images/vajrasattva_netroystveniy.png') }}"
              alt="Есть ли смысл говорить о Ваджрасаттваяне?"
              class="article-image my-4 rounded-lg shadow-md">
         <!-- Заголовок -->

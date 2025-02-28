@@ -4,9 +4,11 @@
 
 @section('content')
     <div class="container mx-auto px-4 biography">
-        <img src="{{ asset('images/crown_of_heaven.jpg') }}" alt="Венец небес, земли корона" class="article-image my-4 rounded-lg shadow-md">
+        <img src="{{ asset('images/stupa.png') }}" alt="Венец небес, земли корона"
+             class="article-image my-4 rounded-lg shadow-md">
         <!-- Заголовок -->
-        <h1 class="text-2xl font-bold text-center mb-8">ВЕНЕЦ НЕБЕС, ЗЕМЛИ КОРОНА,<br>или<br>СОЗЕРЦАНИЕ БЕЛОЙ СТУПЫ ВАДЖРАСАТТВЫ – СТУПЫ УЧИТЕЛЯ</h1>
+        <h1 class="text-2xl font-bold text-center mb-8">ВЕНЕЦ НЕБЕС, ЗЕМЛИ КОРОНА,<br>или<br>СОЗЕРЦАНИЕ БЕЛОЙ СТУПЫ
+            ВАДЖРАСАТТВЫ – СТУПЫ УЧИТЕЛЯ</h1><br>
 
         <div class="poetry text-center mb-4">
             <p>Ступа Учителя венчает Гору,</p>
@@ -78,32 +80,9 @@
 
 @push('styles')
     <style>
-        .quote {
-            position: relative;
-            padding-left: 1.5rem;
-            border-left: 4px solid #d1d5db;
-            margin: 1rem 0;
-        }
-        p.text-justify {
-            text-align: justify;
-            line-height: 1.5;
-            margin-bottom: 1rem;
-        }
         .poetry p {
             line-height: 1.5;
             margin-bottom: 0.5rem; /* Меньший отступ между строками стихов */
-        }
-        .citation-mark {
-            color: #3b82f6;
-            cursor: pointer;
-            font-size: 0.75em;
-            text-decoration: none;
-        }
-        .citation-mark:hover {
-            color: #2563eb;
-        }
-        .citation-mark:focus {
-            outline: none;
         }
     </style>
 @endpush

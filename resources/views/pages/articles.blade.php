@@ -57,7 +57,6 @@
                 <h3 class="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 text-gray-800 text-center italic">Общественная деятельность</h3>
                 <ul class="list-none pl-5 sm:pl-6 space-y-2 text-base sm:text-lg custom-list">
                     <li><a href="{{ route('articles.struggle_for_datsan') }}" class="text-black hover:text-gray-700">Борьба за Санкт-Петербургский Дацан</a></li>
-                    <li><a href="{{ route('articles.datsan_appeal') }}" class="text-black hover:text-gray-700">Обращение Попечительского Совета Дацана</a></li>
                     <li><a href="{{ route('articles.bon_teachers') }}" class="text-black hover:text-gray-700">Бонские учителя в Дацане</a></li>
                     <li><a href="{{ route('articles.analytical_note') }}" class="text-black hover:text-gray-700">Аналитическая записка</a></li>
                     <li><a href="{{ route('articles.note_addendum') }}" class="text-black hover:text-gray-700">Добавление к «Аналитической записке»</a></li>

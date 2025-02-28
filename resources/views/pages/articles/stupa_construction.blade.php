@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="container mx-auto px-4 biography">
-        <img src="{{ asset('images/stupa_construction.jpg') }}" alt="Строительство Ступы Б.Д. Дандарона" class="article-image my-4 rounded-lg shadow-md">
+        <img src="{{ asset('images/white_stupa.jpg') }}" alt="Строительство Ступы Б.Д. Дандарона" class="article-image my-4 rounded-lg shadow-md">
         <!-- Заголовок -->
         <h1 class="text-2xl font-bold text-center mb-8">СТРОИТЕЛЬСТВО СТУПЫ Б.Д. ДАНДАРОНА</h1>
 

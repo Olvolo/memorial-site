@@ -4,7 +4,8 @@
 
 @section('content')
     <div class="container mx-auto px-4 biography">
-        <img src="{{ asset('images/roots.jpg') }}" alt="Корни" class="article-image my-4 rounded-lg shadow-md">
+        <img src="{{ asset('images/temple_vajradhara.jpg') }}" alt="Корни" class="article-image my-4 rounded-lg
+        shadow-md">
         <!-- Заголовок -->
         <h1 class="text-2xl font-bold text-center mb-8">КОРНИ</h1>
 

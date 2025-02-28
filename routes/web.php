@@ -157,9 +157,6 @@ Route::get('/articles/struggle_for_datsan', function () {
     return view('pages.articles.struggle_for_datsan');
 })->name('articles.struggle_for_datsan');
 
-Route::get('/articles/datsan_appeal', function () {
-    return view('pages.articles.datsan_appeal');
-})->name('articles.datsan_appeal');
 
 Route::get('/articles/bon_teachers', function () {
     return view('pages.articles.bon_teachers');
