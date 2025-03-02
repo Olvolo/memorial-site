@@ -3,26 +3,31 @@
     max-width: 100%; /* Убираем ограничение ширины на узких экранах */
     margin: 0 auto; /* Центрирование контейнера */
     padding: 0 0.125rem; /* Минимальные отступы на очень узких экранах */
+    /* Убрали background-image из-за ошибки компиляции */
 }
 
 .biography p {
     text-indent: 10px; /* Уменьшенный отступ первой строки абзаца */
-    line-height: 1.3; /* Уменьшенный межстрочный интервал для мобильных */
-    margin-bottom: 0.25rem; /* Минимальный отступ между абзацами на мобильных */
-    font-size: 0.625rem; /* Минимальный размер текста для очень узких экранов */
+    line-height: 1.6; /* Уменьшенный межстрочный интервал для мобильных */
+    margin-bottom: 0.5rem; /* Минимальный отступ между абзацами на мобильных */
+    font-size: 0.75rem; /* Минимальный размер текста для очень узких экранов */
+    text-align: left; /* Выравнивание текста по левому краю */
+    color: #000; /* Чёрный цвет текста */
 }
 
 .biography h1, .biography h3 {
     text-align: center; /* Центрирование заголовков */
+    font-weight: bold; /* Сохраняем жирный шрифт */
     margin-top: 0.25rem; /* Минимальный отступ сверху на мобильных */
 }
 
 .biography h1 {
     font-size: 1.5rem; /* Уменьшаем размер до 24px (text-2xl) по умолчанию */
-    margin-bottom: 0.5rem; /* Минимальный отступ снизу на мобильных */
+    margin-bottom: 0.25rem; /* Минимальный отступ снизу на мобильных */
 }
 
 .biography h3 {
+    font-size: 1.25rem;
     margin-bottom: 0.125rem; /* Минимальный отступ снизу на мобильных */
 }
 .biography strong {
@@ -40,12 +45,29 @@
     margin: 0.25rem 0; /* Минимальный отступ сверху и снизу на мобильных */
 }
 
+.biography ol {
+    @apply list-decimal list-inside space-y-2;
+}
+
+.biography li {
+    @apply pl-6;
+}
+
+.biography li p {
+    @apply text-left;
+}
+
 .article-image {
     display: block;
     margin: 0 auto; /* Центрирование изображения */
     max-width: 100%; /* Полная ширина на мобильных */
     height: auto; /* Сохранение пропорций */
     object-fit: contain; /* Убедимся, что изображение не искажается */
+}
+.biography hr {
+    border: none; /* Убираем границу */
+    border-top: 1px solid #ccc; /* Добавляем горизонтальную линию */
+    margin: 0.25rem 0; /* Минимальный отступ сверху и снизу на мобильных */
 }
 
 .citation-mark {
@@ -67,12 +89,14 @@ blockquote {
 @media (max-width: 340px) {
     .container {
         padding: 0 0.0625rem; /* Ещё меньшие отступы на очень узких экранах */
+        background-size: contain; /* Адаптируем фон для очень узких экранах */
     }
 
     .biography p {
         font-size: 1rem; /* Уменьшаем размер текста для читаемости */
         text-indent: 5px; /* Минимальный отступ первой строки */
         margin-bottom: 0.25rem; /* Минимальный отступ между абзацами */
+        line-height: 1.3; /* Уменьшаем межстрочный интервал на мобильных */
     }
 
     .biography h1 {
@@ -81,7 +105,19 @@ blockquote {
     }
 
     .biography h3 {
-        font-size: 0.75rem; /* Уменьшаем заголовки h3 */
+        font-size: 0.85rem; /* Уменьшаем заголовки h3 */
+    }
+
+    .biography ol {
+        @apply space-y-1;
+    }
+
+    .biography li {
+        @apply pl-4;
+    }
+
+    .biography li p {
+        @apply text-left text-xs;
     }
 
     .article-image {
@@ -108,12 +144,14 @@ blockquote {
 @media (min-width: 341px) and (max-width: 680px) {
     .container {
         padding: 0 0.5rem; /* Стандартные отступы на узких экранах */
+        background-size: cover; /* Фон покрывает экран на планшетах */
     }
 
     .biography p {
         font-size: 0.875rem; /* Базовый размер текста для узких экранов */
         text-indent: 15px; /* Увеличенный отступ первой строки */
         margin-bottom: 0.75rem; /* Увеличенный отступ между абзацами */
+        line-height: 1.4; /* Увеличенный межстрочный интервал */
     }
 
     .biography h1 {
@@ -135,7 +173,7 @@ blockquote {
     }
 
     .biography li p {
-        @apply text-justify;
+        @apply text-justify text-sm;
     }
 
     .article-image {
@@ -194,7 +232,24 @@ blockquote {
         padding-left: 1.5rem; /* Восстанавливаем отступ цитаты */
         margin: 1rem 0; /* Восстанавливаем отступы цитаты */
         font-size: 1rem; /* Восстанавливаем размер текста цитаты */
+        border-left-width: 4px;
     }
+}
+
+/* Фиксация ширины на экранах от 1280px и выше */
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1200px; /* Сохраняем ширину 1200px на очень больших экранах */
+        padding: 0 1rem; /* Сохраняем стандартные отступы */
+    }
+}
+
+.citation-mark {
+    @apply text-red-500 font-bold text-base sm:text-lg md:text-xl hover:underline;
+}
+
+.citation-mark sup {
+    @apply text-red-500 font-bold;
 }
 /* В resources/css/app.css или ethics-buddhism.css */
 .flowchart-container {

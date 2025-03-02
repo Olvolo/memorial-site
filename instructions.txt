@@ -43,3 +43,8 @@ php artisan serve
     <p id="citation-2"><sup>2</sup> [Текст сноски для ссылки 2]. <a href="#ref-2" class="text-blue-500
     hover:underline">↩</a></p>
 </div>
+3. index.php в корнеи проекта для хоста:
+<?php
+// Путь к файлу public/index.php
+require_once __DIR__ . '/public/index.php';
+

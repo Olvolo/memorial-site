@@ -3,10 +3,11 @@
 @section('title', 'Биография')
 
 @section('content')
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+    <div class="container mx-auto px-4 biography bg-[url('/images/paper_texture.jpg')] bg-cover bg-no-repeat">
         <img src="{{ asset('images/VM-optimized.jpg') }}" alt="Владимир Михайлович Монтлевич"
              class="mx-auto my-4 sm:my-6 rounded-lg shadow-md w-full max-w-[320px] sm:max-w-[384px] md:max-w-[448px] lg:max-w-[512px] max-h-[480px] sm:max-h-[576px] md:max-h-[672px] lg:max-h-[770px] object-cover">
-        <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-6 sm:mb-8">МОНТЛЕВИЧ В. М. (1940-2013)</h1>
+        <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-6 sm:mb-8">МОНТЛЕВИЧ В. М.
+            (1940-2017)</h1>
         <h2 class="text-lg sm:text-xl md:text-2xl font-semibold text-center mb-4 sm:mb-6"><strong>Коротко о себе (автобиография)</strong></h2>
 
         <div class="biography text-left prose prose-sm sm:prose-base md:prose-lg lg:prose-xl mx-auto">

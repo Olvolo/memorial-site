@@ -3,7 +3,7 @@
 @section('title', 'Некоторые принципы символизма северного буддизма')
 
 @section('content')
-    <div class="container mx-auto px-4 biography">
+    <div class="container mx-auto px-4 biography bg-[url('/images/paper_texture.jpg')] bg-cover bg-no-repeat">
         <img src="{{ asset('images/wheel_of_samsara.jpg') }}" alt="Символизм
         северного буддизма" class="article-image my-4 rounded-lg shadow-md">
         <!-- Заголовок -->

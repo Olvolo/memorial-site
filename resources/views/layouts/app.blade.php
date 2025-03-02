@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.css', 'resources/css/ethics-buddhism.css', 'resources/js/app.js'])
     @stack('styles')
 </head>
 <body class="font-sans text-gray-800 min-h-screen flex flex-col">
@@ -45,7 +45,7 @@
 
 <!-- Основной контент -->
 <main class="flex-grow bg-antique-100 px-2 sm:px-4 md:px-6 lg:px-8 py-2 sm:py-4 md:py-6">
-    <div class="container mx-auto max-w-full">
+    <div class="container mx-auto max-w-[1200px] px-4">
         @yield('content')
     </div>
 </main>

@@ -1,10 +1,36 @@
+#<IfModule mod_rewrite.c>
+#    <IfModule mod_negotiation.c>
+#    #    Options -MultiViews -Indexes
+#    </IfModule>
+#
+#    RewriteEngine On
+#    RewriteCond %{HTTPS} off
+#    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+#
+#    RewriteCond %{HTTP:Authorization} .
+#    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+#
+#    RewriteCond %{HTTP:x-xsrf-token} .
+#    RewriteRule .* - [E=HTTP_X_XSRF_TOKEN:%{HTTP:X-XSRF-Token}]
+#
+#    RewriteCond %{REQUEST_FILENAME} !-d
+#    RewriteCond %{REQUEST_URI} (.+)/$
+#    RewriteRule ^ %1 [L,R=301]
+#
+#    RewriteCond %{REQUEST_URI} !^/public/ [NC]
+#    RewriteRule ^(.*)$ /public/$1 [L]
+#
+#    RewriteCond %{REQUEST_FILENAME} !-d
+#    RewriteCond %{REQUEST_FILENAME} !-f
+#    RewriteRule ^ /public/index.php [L]
+#</IfModule>
+
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
-#        Options -MultiViews -Indexes
+        Options -MultiViews -Indexes
     </IfModule>
 
     RewriteEngine On
-    RewriteBase
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .

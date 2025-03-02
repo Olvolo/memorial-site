@@ -3,7 +3,7 @@
 @section('title', 'МАХАБХУТИ В ТАНТРЕ И АБХИДХАРМЕ')
 
 @section('content')
-    <div class="container mx-auto px-0.5 max-w-full sm:px-2 md:px-4 lg:px-6 py-0.5 sm:py-2 md:py-4 lg:py-6">
+    <div class="container mx-auto max-w-[1200px] px-4 biography">
         <img src="{{ asset('images/mahabhutas_tantra_abhidharma.png') }}" alt="Великие элементы"
              class="article-image my-4 rounded-lg shadow-md">
         <!-- Main Heading -->
