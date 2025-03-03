@@ -28,6 +28,11 @@ Route::get('/contacts', function () {
     return view('pages.contacts');
 })->name('contacts');
 
+// Новая страница: История семьи
+Route::get('/family-history', function () {
+    return view('pages.family_history');
+})->name('family_history');
+
 // Статьи
 Route::get('/articles/ethics_of_buddhism', function () {
     return view('pages.articles.ethics_of_buddhism');
@@ -152,7 +157,6 @@ Route::get('/articles/contemplation_of_stupa', function () {
 Route::get('/articles/struggle_for_datsan', function () {
     return view('pages.articles.struggle_for_datsan');
 })->name('articles.struggle_for_datsan');
-
 
 Route::get('/articles/bon_teachers', function () {
     return view('pages.articles.bon_teachers');

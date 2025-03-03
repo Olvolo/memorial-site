@@ -5,7 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    @vite(['resources/css/app.css', 'resources/css/ethics-buddhism.css', 'resources/js/app.js'])
+    {{--    @vite(['resources/css/app.css', 'resources/css/ethics-buddhism.css', 'resources/js/app.js'])--}}
+    <link rel="stylesheet" href="{{ asset('build/assets/app-DELiZwC9.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/assets/ethics-buddhism-B6Eo0yRH.css') }}">
+    {{--  Основной favicon (будет работать в большинстве браузеров)--}}
+    <link rel="icon" href="{{ asset('favicon/favicon.ico') }}" sizes="any">
+    {{-- SVG favicon (для современных браузеров)--}}
+    <link rel="icon" type="image/svg+xml" href="{{ asset('favicon/favicon.svg') }}">
+    {{-- 96x96 PNG favicon для некоторых браузеров --}}
+    <link rel="icon" type="image/png" href="{{ asset('favicon/favicon-96x96.png') }}" sizes="96x96">
+    {{--  Apple Touch Icon (для iOS устройств)--}}
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicon/apple-touch-icon.png') }}">
+    {{--  Манифест для Android/PWA--}}
+    <link rel="manifest" href="{{ asset('favicon/site.webmanifest') }}">
     @stack('styles')
 </head>
 <body class="font-sans text-gray-800 min-h-screen flex flex-col">
@@ -112,5 +124,6 @@
         });
     });
 </script>
+<script src="{{ asset('build/assets/app-CqflisoM.js') }}"></script> <!-- Замени 345678 на актуальный хэш -->
 </body>
 </html>
