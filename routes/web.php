@@ -177,3 +177,19 @@ Route::get('/articles/alphabet_desecration', function () {
 Route::get('/articles/vajrabhairava_mandala_table', function () {
     return view('pages.articles.vajrabhairava_mandala_table');
 })->name('articles.vajrabhairava_mandala_table');
+
+Route::get('/articles/secret_the_same', function () {
+    return view('pages.articles.secret_the_same');
+})->name('articles.secret_the_same');
+
+Route::get('/articles/home', function () {
+    return view('pages.articles.home');
+})->name('articles.home');
+
+Route::get('/articles/five-dhyanibuddhas', function () {
+    return view('pages.articles.five_dhyanibuddhas');
+})->name('articles.five_dhyanibuddhas');
+
+Route::get('/articles/mahabhutas_table', function () {
+    return view('pages.articles.mahabhutas_table');
+})->name('articles.mahabhutas_table');

@@ -3,12 +3,11 @@
 @section('title', 'Россия – страна Ваджрасаттвы')
 
 @section('content')
-    <div class="container mx-auto px-4 biography">
-        <img src="{{ asset('images/russia_vajrasattva.jpg') }}"
-             alt="Россия – страна Ваджрасаттвы"
-             class="article-image my-4 rounded-lg shadow-md">
+
         <!-- Заголовок -->
-        <h1 class="text-2xl font-bold text-center mb-12">РОССИЯ – СТРАНА ВАДЖРАСАТТВЫ</h1>
+        <h1 class="text-2xl text-fuchsia-800 font-bold text-center mt-8 mb-8">РОССИЯ –
+            СТРАНА
+            ВАДЖРАСАТТВЫ</h1>
 
         <blockquote class="quote pl-6 border-l-4 border-gray-300 my-4 text-right italic text-gray-700">
             До чего же удивительный этот бог Ваджрасаттва!<br>
@@ -196,36 +195,5 @@
             <p id="cit25"><sup>25</sup> Cм. <i>А.И. Железнов</i>. К вопросу о буддийской методологии. В сборнике “<i>Методологические и теоретические аспекты изучения духовной культуры Востока</i>”. Улан-Удэ, 1996, с.12-35.<a href="#ref-25" class="text-blue-500 hover:underline">↩</a></p>
             <p id="cit26"><sup>26</sup> См. <i>Б.Д. Дандарон</i>. <i>99 писем</i>. СПб, 1995, с.73.<a href="#ref-26" class="text-blue-500 hover:underline">↩</a></p>
         </div>
-    </div>
+
 @endsection
-
-@push('styles')
-    <style>
-        .quote {
-            position: relative;
-            padding-left: 1.5rem;
-            border-left: 4px solid #d1d5db;
-            margin: 1rem 0;
-        }
-
-        .citations p {
-            margin-bottom: 0.5rem;
-        }
-
-        .citation-mark {
-            @apply text-red-500 font-bold text-base sm:text-lg md:text-xl hover:underline;
-        }
-
-        .citation-mark sup {
-            @apply text-red-500 font-bold;
-        }
-
-        .citation-mark:hover {
-            @apply text-red-600;
-        }
-
-        .citation-mark:focus {
-            outline: none;
-        }
-    </style>
-@endpush

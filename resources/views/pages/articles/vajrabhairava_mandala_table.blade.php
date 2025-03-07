@@ -1,19 +1,16 @@
-@extends('layouts.app')
+@extends('layouts.wide-table')
 
 @section('title', 'Тринадцать Божеств Шри Ваджрабхайравы')
 
 @section('content')
-    <div
-        class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 text-gray-900">
-        <h1 class="text-2xl font-bold text-center mb-8">Тринадцать Божеств Шри
-            Ваджрабхайравы</h1>
+
+        <h1 class="text-2xl font-bold text-center mt-8 mb-8">Тринадцать Божеств
+            Шри Ваджрабхайравы</h1>
         <!-- Адаптивный контейнер для таблицы -->
-        <div class="table-container">
-            <!-- Полная таблица для средних и больших экранов -->
-            <table
-                class="table-auto w-full border-collapse border
-                border-gray-300 text-center text-sm hidden md:table">
-                <thead>
+        <div class="table-container">          <!-- Полная таблица для средних и больших экранов -->
+            <table class="table-auto w-full border-collapse border border-gray-300 text-center text-sm hidden md:table">
+
+            <thead>
                 <tr>
                     <th class="cell-heading" rowspan="2">Имя</th>
                     <th class="cell-heading" colspan="2">Положение</th>
@@ -283,5 +280,5 @@
                 </a>
             </div>
         </div>
-    </div>
+
 @endsection

@@ -3,17 +3,18 @@
 @section('title', 'История семьи Монтлевичей и Шафрановских')
 
 @section('content')
-    <div
-        class="container mx-auto px-4 biography bg-[url('/images/paper_texture.jpg')] bg-cover bg-no-repeat">
-        <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-6 sm:mb-8">
+
+        <h1 class="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-bold
+        text-center mb-6 sm:mb-8">
             Краткое жизнеописание
             Монтлевичей и Шафрановских</h1>
         <h2 class="text-lg sm:text-xl md:text-2xl font-semibold text-center mb-4 sm:mb-6">
             Часть I: Монтлевичи</h2>
 
-        <div
-            class="biography text-left prose prose-sm sm:prose-base md:prose-lg lg:prose-xl mx-auto">
-            <p>
+        <div class="text-justify mx-auto p-3" style="font-size: 1rem">
+
+
+        <p>
                 Эти заметки написаны были мною Монтлевичем В.М. в апреле 1999
                 года в Санмедчасти № 122 перед операцией на сердце. Они требуют
                 расширения и уточнения. Но даже в таком виде ценны для потомков
@@ -1349,5 +1350,5 @@
             <p class="text-right text-sm sm:text-base"><em>Апрель 1999 года,
                     Санмедчасть № 122</em></p>
         </div>
-    </div>
+
 @endsection

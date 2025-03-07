@@ -47,4 +47,13 @@ php artisan serve
 <?php
 // Путь к файлу public/index.php
 require_once __DIR__ . '/public/index.php';
+4. Настройка .env:
+   Локально в .env указано:
 
+   APP_ENV=local
+   APP_DEBUG=true
+
+   На сервере ZZZ.com.ua обнови .env (или создай, если его нет):
+
+   APP_ENV=production
+   APP_DEBUG=false

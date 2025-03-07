@@ -3,11 +3,12 @@
 @section('title', 'Поругание русского алфавита')
 
 @section('content')
-    <div class="container mx-auto px-4 biography">
+
         <img src="{{ asset('images/alphabet_desecration.png') }}"
              alt="Поругание русского алфавита" class="article-image my-4 rounded-lg shadow-md">
         <!-- Заголовок -->
-        <h1 class="text-3xl font-bold text-center mb-8">17.02.2012: ПОРУГАНИЕ РУССКОГО АЛФАВИТА</h1>
+        <h1 class="text-2xl font-bold text-center mt-6 mb-8">17.02.2012:
+            ПОРУГАНИЕ РУССКОГО АЛФАВИТА</h1>
 
         <p class="text-justify">На входе в Александровский парк, если идти от Петропавловской крепости, установлена странная композиция. В центре надпись: «300 лет петербургской журналистике, типографскому и издательскому делу. 11 мая 1711 года. Союз полиграфистов Санкт-Петербурга. Компания “Берег”».</p>
 
@@ -19,7 +20,7 @@
 
         <p class="text-right">Владимир Михайлович МОНТЛЕВИЧ</p>
         <p class="text-right"><i>г. Санкт-Петербург</i></p>
-    </div>
+
 @endsection
 
 

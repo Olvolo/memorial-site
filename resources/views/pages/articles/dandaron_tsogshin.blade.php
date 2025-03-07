@@ -3,16 +3,15 @@
 @section('title', 'Цогшин Традиции Б.Д. Дандарона')
 
 @section('content')
-    <div class="container mx-auto px-2 sm:px-4 md:px-6 lg:px-8 py-6">
-        <!-- Изображение -->
+
         <img src="{{ asset('images/dandaron_tsogshin.png') }}" alt="Цогшин
         Традиции Б.Д. Дандарона"
              class="article-image my-4 rounded-lg shadow-md">
 
         <!-- Заголовок -->
-        <h1 class="text-2xl font-bold text-center mb-8">ЦОГШИН ТРАДИЦИИ Б.Д.
-            ДАНДАРОНА</h1>
-        <p class="text-right">
+        <h1 class="text-2xl text-indigo-700 font-bold text-center mt-8 mb-8">ЦОГШИН
+            ТРАДИЦИИ Б.Д. ДАНДАРОНА</h1>
+        <p class="text-left">
             Слова Учителя:
         </p><br>
         <!-- Эпиграф -->
@@ -26,10 +25,10 @@
             «Я объединяю все традиции – и гелуг, и ньингма и другие».
         </blockquote>
         <img src="{{ asset('images/dandaron_trikaya.png') }}"
-             alt="Дандарон_Шакьямуни_Ваджрасаттва" class="article-image my-4
-             rounded-lg shadow-md">
+             alt="Дандарон_Шакьямуни_Ваджрасаттва" class="article-image  my-4
+             rounded-full shadow-md">
         <!-- Композиция Цогшина -->
-        <h2 class="text-xl text-center font-semibold mb-4">Композиция
+        <h2 class="text-xl text-center font-semibold mt-4 mb-4">Композиция
             Цогшина</h2>
         <p class="text-justify">
             На старинных статуях Будды, известных как Сандаловый Будда,
@@ -51,9 +50,9 @@
             Ступы Дандарона, абрис которой повторяет очертанию сидящего в <i>ваджрасане</i>
             Будды. Ось Ступы – ствол Древа Цогшина. «Крона» Цогшина – поля
             Учителей, Будд, Бодхисаттв, божеств.
-        </p>
+        </p><br>
         <img src="{{ asset('images/stupa.png') }}" alt="Ступа Б.Д. Дандарона"
-             class="article-image my-4 rounded-lg shadow-md">
+             class="article-image my-4 rounded-lg shadow-md"><br>
         <p class="text-justify">
             Кроме того, композиция Цогшина напоминает строение цветка. Ступа –
             стебель, Ваджрасаттва с крыльями – утолщение перед цветоножкой,
@@ -64,7 +63,7 @@
         </p>
 
         <!-- Организация пространства -->
-        <h2 class="text-xl text-center font-semibold mb-4">Организация
+        <h2 class="text-xl text-center font-semibold mt-4 mb-4">Организация
             пространства</h2>
         <p class="text-justify">
             «Организация пространства при изображении божества всегда
@@ -88,7 +87,7 @@
         <p class="text-justify">
             Четырёхмерный мир реализуется на плоскости иконы четырьмя способами:
         </p>
-        <ol class="list-decimal pl-6 space-y-2">
+        <ol class="list-decimal list-inside pl-6 space-y-2">
             <li>Традиционный представляет объёмное пространство с помощью
                 разнопланового положения персонажей и деталей изображаемого,
                 иногда с применением перспективы.
@@ -141,7 +140,8 @@
         </p>
 
         <!-- Три "поляны" -->
-        <h2 class="text-xl text-center font-semibold mb-4">Три «поляны»</h2>
+        <h2 class="text-xl text-center font-semibold mt-4 mb-4">Три
+            «поляны»</h2>
         <p class="text-justify">
             «Пришёл на место – ум прекрасен, Встретились глаза – <i>авадхути</i>
             соединились». Место – там, где Ступа, Чёрный ворон и Чета (Пара). На
@@ -159,12 +159,12 @@
         </p>
 
         <!-- Трикая в композиции Цогшина -->
-        <h2 class="text-xl text-center font-semibold mb-4">Трикая в
+        <h2 class="text-xl text-center font-semibold mt-4 mb-4">Трикая в
             композиции Цогшина</h2>
         <p class="text-justify">
             Трикая в композиции Цогшина обнаружилась восемь раз:
         </p>
-        <ul class="list-disc pl-6 space-y-2">
+        <ul class="list-disc list-inside pl-6 space-y-2">
             <li>Вершина <i>нада</i> – Самантабхадра, Вайрочана, Ваджрасаттва;
             </li>
             <li>Центральное <i>бинду</i> – Дандарон, Шакьямуни, Ваджрасаттва;
@@ -187,7 +187,7 @@
                 образе круга (Солнце, А), Группа фигуры <i>нада</i> (сиддхи и
                 Трикая, ХУМ).
             </li>
-        </ul>
+        </ul><br>
         <p class="text-justify">
             Композиция Цогшина родилась мгновенно, без предварительного
             обдумывания, сразу во всех деталях, сгармонизированных в единое
@@ -223,10 +223,10 @@
             Ниже <i>бинду</i> <i>мадхьямики</i> и ближе к центру расположено <i>бинду</i>
             докальповой Ступы Вайрочаны (более известной как Жарун Хашор) с
             портретом Учителя Чёрный Ворон – действенная линия.
-        </p>
+        </p><br>
         <img src="{{ asset('images/stupa_vairocana.png') }}" alt="Ступа
         Вайрочаны и тогдашнее воплощение Б.Д. Дандарона - чёрный ворон"
-             class="article-image my-4 rounded-lg shadow-md">
+             class="article-image my-4 rounded-full shadow-md"><br>
         <p class="text-justify">
             Линия от Самантабхадры, Вайрочаны и Ваджрасаттвы прямо к Учителю,
             вертикальная часть композиции, известна в традиции как «подпитка
@@ -291,7 +291,8 @@
         </p>
 
         <!-- Состав Цогшина -->
-        <h2 class="text-xl text-center font-semibold mb-4">Состав Цогшина</h2>
+        <h2 class="text-xl text-center font-semibold mt-4 mb-4">Состав
+            Цогшина</h2>
         <p class="text-justify">
             Центр – Трикая как символ единства Трёх Тел в виде Б. Д. Дандарона,
             Будды Шакьямуни и Ваджрасаттвы.
@@ -361,9 +362,9 @@
             (царь Тибета, 755-788). По поляне перед ступой прогуливается
             Ваджрасаттва с подругой.
         </p>
-        <p class="text-justify">
-            * * *<br>
-            К истории этой Ступы. Четыре тысячи лет назад в районе Гималаев,
+        <p class="text-center"> * * * </p><br>
+
+          <p>К истории этой Ступы. Четыре тысячи лет назад в районе Гималаев,
             там, где сейчас Непал, была построена Ступа Вайрочаны. В честь этого
             события совершён был ритуал Соборного почитания Учителя.
             Самантабхадра по прозвищу Чёрный Ворон (Дандарон) поручил провести
@@ -516,38 +517,7 @@
             внизу – Вирудхака (юг), Вирупакша (запад), справа внизу – Вайшравана
             (север), Дхритараштра (восток).
         </p>
-        <p class="text-justify">
-            2009-2010 г.
-        </p>
-    </div>
+        <p class="text-right italic">2009-2010 г.</p>
+
 @endsection
 
-@push('styles')
-    <style>
-        .quote {
-            position: relative;
-            padding-left: 1.5rem;
-            border-left: 4px solid #d1d5db;
-            margin: 1rem 0;
-        }
-
-        p.text-justify {
-            text-align: justify;
-            line-height: 1.5;
-            margin-bottom: 1rem;
-        }
-
-        /* Адаптивность для маленьких экранов */
-        @media (max-width: 640px) {
-            .container {
-                padding-left: 0.5rem;
-                padding-right: 0.5rem;
-            }
-
-            img {
-                width: 100%;
-                max-width: 100%;
-            }
-        }
-    </style>
-@endpush

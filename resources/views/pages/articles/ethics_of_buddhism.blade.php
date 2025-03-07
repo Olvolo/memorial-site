@@ -1,9 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-2 biography">
+    <div class="p-3">
         <!-- Заголовок -->
-        <h1 class="text-3xl font-bold text-center mb-8 md:text-4xl">Этика Буддизма</h1>
+        <h1 class="text-2xl font-bold text-center mb-8 md:text-3xl">Этика
+            Буддизма</h1>
 
         <!-- Изображение -->
         <img src="{{ asset('images/ethics_of_buddhism.png') }}" alt="Этика буддизма - статуя будды"
@@ -12,7 +13,8 @@
 
         <!-- Оглавление -->
         <div class="mb-8">
-            <h3 class="text-2xl font-semibold text-center mb-4 md:text-3xl">Учение буддизма о нравственности и
+            <h3 class="text-2xl font-semibold text-center mt-8 mb-4
+            md:text-3xl">Учение буддизма о нравственности и
                 человеческой природе</h3>
             <ul class="list-disc pl-6 md:pl-8">
                 <li><a href="#introduction" class="text-blue-500 hover:underline">Введение</a></li>
@@ -129,8 +131,8 @@
         <section id="theoretical-basis" class="mb-8">
             <h3 class="text-2xl font-bold text-center mb-4">
                 Теоретические основы буддийской этики</h3>
-            <h3 class="text-2xl font-bold text-center mb-4">
-                Теория отсутствия индивидуального Я</h3>
+            <h4 class="text-xl font-bold text-center mb-4">
+                Теория отсутствия индивидуального Я</h4>
             <p class="ethic-paragraph">
                 Именно признание реальностью некоей личностной
                 константы, простонародно именуемой душой, личностью,
@@ -153,8 +155,8 @@
                 кто стремится, нет желания, нет субъекта страдания,
                 следовательно, нет и самого страдания.
             </p>
-            <h3 class="text-2xl font-bold text-center mb-4">
-                Теория перерождений</h3>
+            <h4 class="text-xl font-bold text-center mt-4 mb-4">
+                Теория перерождений</h4>
             <p class="ethic-paragraph">
                 Эта теория воспринята буддизмом из общепринятой
                 индийской культурой положения о продолжении нашей
@@ -167,8 +169,8 @@
                 прекращения страданий в успокоенности феноменального,
                 в нирване.
             </p>
-            <h3 class="text-2xl font-bold text-center mb-4">
-                Закон кармы</h3>
+            <h4 class="text-xl font-bold text-center mt-4 mb-4">
+                Закон кармы</h4>
             <p class="ethic-paragraph">
                 Теория перерождения смыкается с законом морального
                 воздаяния, именуемого кармой. Это – своеобразный закон
@@ -184,9 +186,9 @@
                 вплоть до проблемы так называемых "невинно убиенных
                 младенцев", о коих туманно рассуждает христианство.
             </p>
-            <h3 class="text-2xl font-bold text-center mb-4">
+            <h4 class="text-xl font-bold text-center mt-4 mb-4">
                 Отсутствие иерархии в этических действиях на уровне
-                тела, речи и мысли</h3>
+                тела, речи и мысли</h4>
             <p class="ethic-paragraph">
                 Поступки, совершаемые на уровне тела, и их последствия
                 легко дифференцируются. Их последствия очевидны. Более
@@ -203,8 +205,8 @@
                 методы психофизической подготовки личности на пути
                 самосовершенствования.
             </p>
-            <h3 class="text-2xl font-bold text-center mb-4">
-                Принцип не причинения вреда всему живому</h3>
+            <h4 class="text-xl font-bold text-center mt-4 mb-4">
+                Принцип не причинения вреда всему живому</h4>
             <p class="ethic-paragraph">
                 Этот принцип принят всеми религиозными направлениями
                 Индии. Буддизм впитал его вместе с идеями закона
@@ -222,8 +224,8 @@
                 Бандунской конференции 1956 года, так называемых
                 "Панча Шила".
             </p>
-            <h3 class="text-3xl font-bold text-center mb-4">
-                Теория непостоянства</h3>
+            <h4 class="text-xl font-bold text-center mt-4 mb-4">
+                Теория непостоянства</h4>
             <p class="ethic-paragraph">
                 Знаменитое утверждение античности – «Нельзя дважды
                 войти в одну и ту же реку» – буддизм ещё ранее
@@ -235,8 +237,8 @@
                 обыденности.
             </p>
             <section id="virtuous-qualities" class="mb-8">
-                <h3 class="text-2xl font-bold text-center mb-4">Благие
-                    качества</h3>
+                <h4 class="text-xl font-bold text-center mt-4 mb-4">Благие
+                    качества</h4>
                 <!-- Восьмеричный благородный путь -->
                 <p class="ethic-paragraph">
                     <strong>А.</strong>
@@ -364,10 +366,10 @@
                     </li>
                 </ol>
             </section>
-            <h3 class="text-2xl font-bold text-center mb-4">
+            <h4 class="text-xl font-bold text-center mt-4 mb-4">
                 Теория дхарм – психологическое основание
                 буддийской этики
-            </h3>
+            </h4>
             <p class="ethic-paragraph">
                 Анализируя личность, буддийские практики и философы выделили по
                 одним системам 100, по другим 75 не сводимых друг на друга
@@ -405,8 +407,8 @@
 
         <!-- Бодхисаттвы – этический идеал -->
         <section id="bodhisattva" class="mb-8">
-            <h3 class="text-2xl font-bold text-center mb-4">
-                Бодхисаттвы – этический идеал буддийской личности Махаяны</h3>
+            <h4 class="text-xl font-bold text-center mt-4 mb-4">
+                Бодхисаттвы – этический идеал буддийской личности Махаяны</h4>
             <p class="ethic-paragraph">
                 Буддисты Хинаяны занимаются личным спасением и не интересуются
                 другими личностями. Они опирались на слова Будды: «Будь сам себе
@@ -497,8 +499,8 @@
         </section>
         <!-- Тантра -->
         <section id="tantra" class="mb-8">
-            <h3 class="text-2xl font-bold text-center mb-4">
-                Тантра</h3>
+            <h4 class="text-xl font-bold text-center mt-4 mb-4">
+                Тантра</h4>
             <p class="ethic-paragraph">
                 Лучше понять методы Тантры помогает сравнение их с методами
                 других Колесниц (ян), например, с Хинаяной. Именно Хинаяна
@@ -537,8 +539,8 @@
 
         <!-- Дзогчен -->
         <section id="dzogchen" class="mb-8">
-            <h3 class="text-2xl font-bold text-center mb-4">
-                Дзогчен</h3>
+            <h4 class="text-xl font-bold text-center mt-4 mb-4">
+                Дзогчен</h4>
             <p class="ethic-paragraph"> Это оригинальное учение об изначальном совершенстве всего
                 сущего. Возникло оно в буддизме не ранее I в. н.э. Происходит из
                 северо-западной Индии, из района северного Пакистана, восходит к

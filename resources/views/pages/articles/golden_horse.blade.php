@@ -3,11 +3,11 @@
 @section('title', 'Золотой Конь бодхичитты')
 
 @section('content')
-    <div class="container mx-auto px-4 biography">
-        <img src="{{ asset('images/golden_horse.jpg') }}" alt="Золотой Конь
+
+        <img src="{{ asset('images/atri_Vajrasattva.jpg') }}" alt="Золотой Конь
         бодхичитты" class="article-image my-4 rounded-lg shadow-md">
         <!-- Заголовок -->
-        <h1 class="text-2xl font-bold text-center mb-8">ЗОЛОТОЙ КОНЬ
+        <h1 class="text-2xl font-bold text-center mt-8 mb-8">ЗОЛОТОЙ КОНЬ
             БОДХИЧИТТЫ</h1><br>
 
         <p>Приветствую в себе Саманта Ваджрасаттву Видьядхару.</p>
@@ -136,7 +136,9 @@
         <p>И пойте Песню Блаженства,</p>
         <p>Золотой Конь Бодхичитты мчится в безвременье и всепространстве!</p>
         <br>
+        <img src="{{ asset('images/golden_horse.jpg') }}" alt="Золотой Конь
+        бодхичитты" class="article-image my-4 rounded-lg shadow-md"><br>
         <p class="text-right"><i>Май 1991 г.</i></p>
-    </div>
+
 
 @endsection

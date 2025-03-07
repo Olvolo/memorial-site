@@ -3,12 +3,12 @@
 @section('title', 'Чакра лучей и радуг')
 
 @section('content')
-    <div class="container mx-auto px-4 biography">
+
         <img src="{{ asset('images/chakra_rays_rainbows.png') }}" alt="Чакра
         лучей и радуг" class="article-image my-4 rounded-lg shadow-md">
         <!-- Заголовок -->
-        <h1 class="text-2xl font-bold text-center mb-8 mt-8">ЧАКРА ЛУЧЕЙ И
-            РАДУГ</h1>
+        <h1 class="text-2xl font-bold text-center text-orange-600 mb-8
+        mt-8">ЧАКРА ЛУЧЕЙ И РАДУГ</h1>
 
         <p class="text-justify">Символ, по определению Платона, есть посредник между относительным и абсолютным.</p>
 
@@ -36,21 +36,5 @@
             <li><p class="text-justify">Радуга <i>вишаи</i>, мира Проявленности Чистой Земли – <i>самбхогакая</i>,</p></li>
             <li><p class="text-justify">“Встреча двух радуг”, “Белая зона” – <i>нирманакая</i> (не имеет <i>скандх</i>, здесь – прозрачная сфера).</p></li>
         </ul>
-    </div>
-@endsection
 
-@push('styles')
-    <style>
-        .quote {
-            position: relative;
-            padding-left: 1.5rem;
-            border-left: 4px solid #d1d5db;
-            margin: 1rem 0;
-        }
-        p.text-justify {
-            text-align: justify;
-            line-height: 1.5;
-            margin-bottom: 1rem;
-        }
-    </style>
-@endpush
+@endsection

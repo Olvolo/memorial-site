@@ -5,17 +5,27 @@ module.exports = {
     ],
     theme: {
         extend:{
-            maxWidth: {
-                '1200': '1200px', // Кастомная максимальная ширина
+            textIndent: {
+                '0.5': '0.5rem',
+                '1.5': '1.5rem',
             },
             padding: {
-                '0.0625': '0.0625rem', // 1px для очень узких экранов
+                '0.125': '0.125rem',
+                '0.0625': '0.0625rem',
+            },
+            maxWidth: {
+                '1200': '1200px',
+                '800': '800px',
+                '600': '600px',
             },
             fontSize: {
                 'xs': '0.625rem', // Дополнительный размер текста для очень узких экранов
             },
             fontFamily: {
                 sans: ['Roboto', 'sans-serif'],
+            },
+            backgroundImage: {
+                'paper-texture': "url('/images/paper_texture.jpg')",
             },
             colors: {
                 'mint': '#edffdb',

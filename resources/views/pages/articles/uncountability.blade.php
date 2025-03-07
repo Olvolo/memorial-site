@@ -3,11 +3,9 @@
 @section('title', 'Неисчислимость')
 
 @section('content')
-    <div class="container mx-auto px-4 biography">
-        <img src="{{ asset('images/innumerability.jpg') }}" alt="Неисчислимость"
-             class="article-image my-4 rounded-lg shadow-md">
         <!-- Заголовок -->
-        <h1 class="text-2xl font-bold text-center mb-8">НЕИСЧИСЛИМОСТЬ</h1>
+        <h1 class="text-2xl font-bold italic text-center mt-8
+        mb-8">НЕИСЧИСЛИМОСТЬ</h1>
 
         <p class="text-justify">Нет ничего восхитительней, чем совместная радость людей, объединённых одним духовным
             усилием. В основе этого замечательного чувства – единодушие с его буквальным подтекстом Единой Души. Это
@@ -135,35 +133,5 @@
 
         <p class="text-right"><i>1993 г.</i></p>
         <p class="text-right"><i>(ж. «Гаруда», № 3-5)</i></p>
-    </div>
+
 @endsection
-
-@push('styles')
-    <style>
-        p.text-justify {
-            text-align: justify;
-            line-height: 1.5;
-            margin-bottom: 1rem;
-        }
-
-        .citations p {
-            margin-bottom: 0.5rem;
-        }
-
-        .citation-mark {
-            color: #3b82f6;
-            cursor: pointer;
-            font-size: 0.75em;
-            text-decoration: none;
-            margin-left: 0.25rem;
-        }
-
-        .citation-mark:hover {
-            color: #2563eb;
-        }
-
-        .citation-mark:focus {
-            outline: none;
-        }
-    </style>
-@endpush

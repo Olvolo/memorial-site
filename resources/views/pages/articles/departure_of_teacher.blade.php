@@ -3,11 +3,11 @@
 @section('title', 'Уход Учителя. Лама Дарма-Доди')
 
 @section('content')
-    <div class="container mx-auto px-4 biography">
         <img src="{{ asset('images/darma_dodi.jpg') }}" alt="Лама Дарма-Доди"
              class="article-image my-4 rounded-lg shadow-md">
         <!-- Заголовок -->
-        <h1 class="text-3xl font-bold text-center mb-148">УХОД УЧИТЕЛЯ<br>ЛАМА
+        <h1 class="text-2xl font-bold text-center mt-8 mb-8">УХОД
+            УЧИТЕЛЯ<br>ЛАМА
             ДАРМА-ДОДИ<br>(1900—1993)</h1>
 
         <p>24 сентября 1993 года покинул этот мир на девяносто третьем году
@@ -62,5 +62,5 @@
             дали священных стран и веков.</p>
 
         <p class="text-right"><i>1994 г.</i><br><i>(ж. «Гаруда», № 6)</i></p>
-    </div>
+
 @endsection

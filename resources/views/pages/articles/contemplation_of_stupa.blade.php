@@ -3,12 +3,12 @@
 @section('title', 'Венец небес, земли корона')
 
 @section('content')
-    <div class="container mx-auto px-4 biography">
         <img src="{{ asset('images/stupa.png') }}" alt="Венец небес, земли корона"
              class="article-image my-4 rounded-lg shadow-md">
         <!-- Заголовок -->
-        <h1 class="text-2xl font-bold text-center mb-8">ВЕНЕЦ НЕБЕС, ЗЕМЛИ КОРОНА,<br>или<br>СОЗЕРЦАНИЕ БЕЛОЙ СТУПЫ
-            ВАДЖРАСАТТВЫ – СТУПЫ УЧИТЕЛЯ</h1><br>
+        <h1 class="text-xl font-bold text-center text-sky-800 mt-8
+        mb-8">ВЕНЕЦ НЕБЕС, ЗЕМЛИ КОРОНА,<br>или<br>СОЗЕРЦАНИЕ БЕЛОЙ СТУПЫ
+            ВАДЖРАСАТТВЫ – <br>СТУПЫ УЧИТЕЛЯ</h1><br>
 
         <div class="poetry text-center mb-4">
             <p>Ступа Учителя венчает Гору,</p>
@@ -75,14 +75,5 @@
         </div>
 
         <p class="text-right"><i>Август 2004 г.</i></p>
-    </div>
-@endsection
 
-@push('styles')
-    <style>
-        .poetry p {
-            line-height: 1.5;
-            margin-bottom: 0.5rem; /* Меньший отступ между строками стихов */
-        }
-    </style>
-@endpush
+@endsection

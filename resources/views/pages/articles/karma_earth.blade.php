@@ -3,25 +3,22 @@
 @section('title', 'Карма, элемент земля, закон сохранения')
 
 @section('content')
-    <div class="container mx-auto px-4 biography">
         <img src="{{ asset('images/karma_earth_conservation.png') }}" alt="Карма, элемент земля, закон сохранения"
              class="article-image my-4 rounded-lg shadow-md">
         <!-- Заголовок -->
-        <h1 class="text-2xl font-bold text-center mb-8">КАРМА, ЭЛЕМЕНТ ЗЕМЛЯ, ЗАКОН СОХРАНЕНИЯ</h1>
+        <h1 class="text-2xl font-bold text-center text-orange-500 mt-8
+        mb-8">КАРМА,
+            ЭЛЕМЕНТ
+            ЗЕМЛЯ, ЗАКОН СОХРАНЕНИЯ</h1>
 
         <p class="text-justify">В понятие <i>карма</i> входят следующие компоненты:</p>
 
-        <ol class="list-decimal">
-            <li><p class="text-justify pl-0">любое явление потока индивидуальной жизни – <i>сантана</i> – обусловлено
-                    прошлым этого потока и имеет следствие в его будущем – закон причинности;</p></li>
-            <li><p class="text-justify pl-0"><i>карма</i> меняется благодаря импульсам дхармы <i>четана</i> –
-                    активности сознания;</p></li>
-            <li><p class="text-justify pl-0"><i>карма</i> обладает свойством сохранения данной конфигурации
-                    индивидуального потока – инерционностью;</p></li>
-            <li><p class="text-justify pl-0">инерционность <i>кармы</i> наиболее интенсивна в теле, убывает при
-                    переходе к речи и ещё менее интенсивна в мысли;</p></li>
-            <li><p class="text-justify pl-0"><i>карма</i> бывает: благоприятной и неблагоприятной, проявленной и
-                    непроявленной, видимой и невидимой, швыряющей.</p></li>
+        <ol class="list-decimal list-inside">
+            <li class="text-justify pl-0">любое явление потока индивидуальной жизни – <i>сантана</i> – обусловлено прошлым этого потока и имеет следствие в его будущем – закон причинности;</li>
+            <li class="text-justify pl-0"><i>карма</i> меняется благодаря импульсам дхармы <i>четана</i> – активности сознания;</li>
+            <li class="text-justify pl-0"><i>карма</i> обладает свойством сохранения данной конфигурации индивидуального потока – инерционностью;</li>
+            <li class="text-justify pl-0">инерционность <i>кармы</i> наиболее интенсивна в теле, убывает при переходе к речи и ещё менее интенсивна в мысли;</li>
+            <li class="text-justify pl-0"><i>карма</i> бывает: благоприятной и неблагоприятной, проявленной и непроявленной, видимой и невидимой, швыряющей.</li>
         </ol>
 
         <p class="text-justify">Механизмы <i>кармы</i>: а) причинность – <i>пратитьясамутпада</i>; б) изменение – <i>четана</i>;
@@ -97,28 +94,6 @@
 
         <p class="text-right"><i>1994 г.</i></p>
         <p class="text-right"><i>(ж. «Гаруда», № 1)</i></p>
-    </div>
+
 @endsection
 
-@push('styles')
-    <style>
-        p.text-justify {
-            text-align: justify;
-            line-height: 1.5;
-            margin-bottom: 1rem;
-        }
-
-        ol.list-decimal {
-            margin-left: 1.5rem;
-        }
-
-        ol.list-decimal li {
-            margin-bottom: 1rem;
-            padding-left: 0.5rem;
-        }
-
-        ol.list-decimal p {
-            margin: 0;
-        }
-    </style>
-@endpush

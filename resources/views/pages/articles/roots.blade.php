@@ -3,11 +3,11 @@
 @section('title', 'Корни')
 
 @section('content')
-    <div class="container mx-auto px-4 biography">
+
         <img src="{{ asset('images/temple_vajradhara.jpg') }}" alt="Корни" class="article-image my-4 rounded-lg
         shadow-md">
         <!-- Заголовок -->
-        <h1 class="text-2xl font-bold text-center mb-8">КОРНИ</h1>
+        <h1 class="text-2xl font-bold text-center mt-8 mb-8">КОРНИ</h1>
 
         <p class="text-justify">Если собрать буддистов разных стран вместе, то подобное собрание представит весьма пёструю картину: разные одеяния, оригинальная манера поведения, непохожие ритуалы, а на родине их обитания – своеобразные для каждой страны архитектура, живопись, прикладное искусство. Всё это – убедительное свидетельство того, что буддизм всегда национален и нерасторжимо слит и с историей и культурой народов, его исповедующих.</p>
 
@@ -62,25 +62,5 @@
 
         <p class="text-right"><i>1994 г.</i></p>
         <p class="text-right"><i>(ж. «Гаруда», № 7)</i></p>
-    </div>
-@endsection
 
-@push('styles')
-    <style>
-        .quote {
-            position: relative;
-            padding-left: 1.5rem;
-            border-left: 4px solid #d1d5db;
-            margin: 1rem 0;
-        }
-        p.text-justify {
-            text-align: justify;
-            line-height: 1.5;
-            margin-bottom: 1rem;
-        }
-        .poetry p {
-            line-height: 1.5;
-            margin-bottom: 0.5rem; /* Меньший отступ между строками стихов */
-        }
-    </style>
-@endpush
+@endsection

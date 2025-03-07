@@ -3,10 +3,11 @@
 @section('title', 'Борьба за Дацан')
 
 @section('content')
-    <div class="container mx-auto px-4 biography">
+
         <img src="{{ asset('images/sp_datsan.jpg') }}" alt="Борьба за Дацан" class="article-image my-4 rounded-lg shadow-md">
         <!-- Заголовок -->
-        <h1 class="text-2xl font-bold text-center mb-8">БОРЬБА ЗА ДАЦАН</h1>
+        <h1 class="text-2xl font-bold text-center mt-8 mb-8">БОРЬБА ЗА
+            ДАЦАН</h1>
 
         <h2 class="text-xl font-semibold text-center mb-4">Обращение Попечительского совета буддийского Храма Санкт-Петербурга</h2>
 
@@ -58,21 +59,6 @@
         </ul>
 
         <p class="text-right"><i>24 августа 1998 г.</i></p>
-    </div>
+
 @endsection
 
-@push('styles')
-    <style>
-        .quote {
-            position: relative;
-            padding-left: 1.5rem;
-            border-left: 4px solid #d1d5db;
-            margin: 1rem 0;
-        }
-        p.text-justify {
-            text-align: justify;
-            line-height: 1.5;
-            margin-bottom: 1rem;
-        }
-    </style>
-@endpush

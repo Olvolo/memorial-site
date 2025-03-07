@@ -1,9 +1,30 @@
-@import './ethics-buddhism.css';
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/*
+ * 1. ОБЩИЕ КОНТЕЙНЕРЫ
+ */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.content-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+ * 2. СТИЛИ ТАБЛИЦ
+ */
+/* Ячейки таблицы */
 .cell {
     @apply border border-gray-300 px-2 py-1 text-center text-sm;
 }
@@ -16,31 +37,311 @@
     @apply border border-gray-300 bg-pastel_blue px-2 py-1 text-gray-900 text-sm font-bold text-center;
 }
 
-.ethic-paragraph {
-    @apply text-base leading-relaxed md:text-lg;
-}
-
-.table-container {
+/* Контейнер для таблицы на всю ширину экрана */
+.table-container, .w-full.overflow-x-auto {
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
     overflow-x: auto;
+    padding: 0 20px;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-    .table-container table {
-        display: table;
-        overflow-x: auto;
-        max-width: 100%;
-    }
+.table-container table {
+    margin: 0 auto;
+    min-width: 1000px;
 }
 
+/* Базовые настройки таблицы */
+table {
+    width: auto;
+    min-width: 800px;
+}
+
+/*
+ * 3. АДАПТИВНОСТЬ ТАБЛИЦ
+ */
 @media (max-width: 767px) {
-    .table-container table {
+    table.hidden {
         display: none;
     }
 }
 
-@media (min-width: 1025px) {
-    .table-container table {
+@media (min-width: 768px) {
+    table.md\:table {
         display: table;
-        overflow-x: visible;
+    }
+    table {
+        min-width: 1000px;
+    }
+}
+
+@media (min-width: 1025px) {
+    table {
+        min-width: 1200px;
+    }
+}
+
+.custom-table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 0.875rem;
+}
+
+.custom-table-header {
+    background-color: #f3f4f6; /* Цвет фона заголовков (gray-100) */
+}
+
+.custom-table-cell {
+    border: 1px solid #d1d5db; /* Цвет границы (gray-300) */
+    padding: 0.5rem; /* Отступы внутри ячеек */
+    text-align: left;
+}
+@media (max-width: 768px) {
+    .custom-table {
+        font-size: 0.75rem; /* Уменьшаем размер шрифта */
+    }
+
+    .custom-table-cell {
+        padding: 0.25rem; /* Уменьшаем отступы */
+        display: block;
+        text-align: right;
+    }
+
+    /* Горизонтальная прокрутка для таблицы */
+    .table-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        max-width: 100%;
+    }
+
+    .custom-table-cell::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    /* Скрываем заголовки на маленьких экранах (опционально) */
+    .custom-table-header {
+        display: none;
+    }
+
+    /* Добавляем подписи к ячейкам (опционально) */
+    .custom-table-cell {
+        display: block;
+        text-align: right;
+    }
+
+    .custom-table-cell::before {
+        content: attr(data-label); /* Добавляем подписи из data-label */
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+/*
+ * 4. СТИЛИ ДЛЯ ТЕКСТА И БИОГРАФИИ
+ */
+/*.ethic-paragraph {*/
+/*    @apply text-base leading-relaxed md:text-lg;*/
+/*}*/
+
+/*.biography p {*/
+/*    text-indent: 10px;*/
+/*    line-height: 1.6;*/
+/*    margin-bottom: 0.5rem;*/
+/*    font-size: 0.75rem;*/
+/*    text-align: left;*/
+/*    color: #000;*/
+/*}*/
+
+/*.biography h1 {*/
+/*    font-size: 1.5rem;*/
+/*    margin-bottom: 0.25rem;*/
+/*    text-align: center;*/
+/*    font-weight: bold;*/
+/*    margin-top: 0.25rem;*/
+/*}*/
+
+/*.biography h3 {*/
+/*    font-size: 1.25rem;*/
+/*    margin-bottom: 0.125rem;*/
+/*    text-align: center;*/
+/*    font-weight: bold;*/
+/*    margin-top: 0.25rem;*/
+/*}*/
+
+/*.biography strong { color: #333; }*/
+/*.biography em { font-style: italic; color: #555; }*/
+/*.biography hr { border: none; border-top: 1px solid #ccc; margin: 0.25rem 0; }*/
+/*.biography ol { @apply list-decimal list-inside space-y-2; }*/
+/*.biography li { @apply pl-6; }*/
+/*.biography li p { @apply text-left; }*/
+
+/*
+ * 5. СТИЛИ ДЛЯ ЦИТАТ
+ */
+.citation-mark {
+    @apply text-red-500 font-bold text-base sm:text-lg md:text-xl hover:underline;
+}
+
+.citation-mark sup {
+    @apply text-red-500 font-bold;
+}
+
+blockquote {
+    border-left-width: 4px;
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+    font-size: 1rem;
+}
+
+/*
+ * 6. СТИЛИ ДЛЯ ИЗОБРАЖЕНИЙ И ВИДЕО
+ */
+.article-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.content-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.content-container img.full-width {
+    max-width: 800px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*
+ * 7. СТИЛИ ДЛЯ БЛОК-СХЕМ
+ */
+.flowchart-container {
+    @apply bg-amber-100 p-6 sm:p-6 md:p-4 rounded-lg shadow-md border border-gray-300 my-6;
+}
+
+.flowchart {
+    @apply flex flex-col items-center gap-1 sm:gap-2 md:gap-3;
+}
+
+.flowchart-group {
+    @apply flex flex-col md:flex-row items-center gap-1 sm:gap-2 md:gap-3 w-full justify-center md:w-auto;
+}
+
+.flowchart-node {
+    @apply py-0.5 sm:py-1 md:py-1.5 px-1 sm:px-1.5 md:px-2 rounded-lg shadow-sm text-center w-32 sm:w-40 md:w-48 flex items-center justify-center;
+}
+
+.flowchart-node:hover {
+    @apply bg-opacity-75 shadow-md;
+    transition: all 0.2s ease-in-out;
+}
+
+.flowchart-arrow {
+    @apply flex items-center justify-center text-gray-500;
+}
+
+.flowchart-arrow svg {
+    @apply text-gray-500 w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8;
+}
+
+.toggle-button {
+    @apply bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600 transition-colors text-xs sm:text-sm md:text-base;
+}
+
+.flowchart-container.collapsed {
+    @apply max-h-20 overflow-hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.flowchart-container:not(.collapsed) {
+    max-height: none;
+    transition: max-height 0.3s ease-in-out;
+}
+
+/*
+ * 8. БАЗОВЫЕ СТИЛИ ДЛЯ LAYOUT
+ */
+header, main, footer {
+    width: 100%;
+}
+
+main {
+    flex-grow: 1;
+}
+
+/*
+ * 9. АДАПТИВНОСТЬ ДЛЯ РАЗЛИЧНЫХ ЭКРАНОВ
+ */
+/* Очень маленькие экраны */
+@media (max-width: 340px) {
+    .container { padding: 1rem 0.25rem; }
+    .flowchart-container { @apply p-2 rounded-md shadow-sm my-4; }
+    .flowchart { @apply gap-1; }
+    .flowchart-group { @apply flex-col gap-1 w-full; }
+    .flowchart-node { @apply p-1 min-w-[6rem] min-h-[2rem] text-xs; }
+    .flowchart-arrow { @apply w-3 h-3; }
+    .flowchart-arrow svg { @apply w-3 h-3; }
+    .toggle-button { @apply px-2 py-1 text-xs; }
+    .flowchart-container.collapsed { @apply max-h-16; }
+    .citation-mark { @apply text-sm; }
+    blockquote { padding-left: 0.0625rem; margin: 0.0625rem 0; font-size: 1rem; border-left-width: 1px; }
+}
+
+/* Маленькие экраны */
+@media (min-width: 341px) and (max-width: 680px) {
+    .container { padding: 1rem 0.5rem; }
+    .biography p { font-size: 0.875rem; text-indent: 15px; margin-bottom: 0.75rem; line-height: 1.4; }
+    .biography h1 { font-size: 1.25rem; line-height: 1.5; margin-bottom: 1rem; }
+    .biography h3 { font-size: 1.1rem; }
+    .biography li p { @apply text-justify text-sm; }
+    .flowchart-group { @apply flex-col sm:flex-row gap-2 sm:gap-3 w-full sm:w-auto; }
+    .flowchart-node { @apply min-w-[10rem] min-h-[3rem] text-sm; }
+    .flowchart-arrow { @apply w-6 h-6; }
+    .flowchart-arrow svg { @apply w-6 h-6; }
+    .toggle-button { @apply px-3 py-1.5 text-sm; }
+    blockquote { padding-left: 1rem; margin: 0.5rem 0; font-size: 0.875rem; border-left-width: 2px; }
+}
+
+/* Средние экраны */
+@media (min-width: 681px) {
+    .container { max-width: 800px; padding: 1rem 1rem; margin: 0 auto}
+    .biography p { font-size: 1rem; margin-bottom: 1.25rem; }
+    .biography h3 { font-size: 1.2rem; }
+    .article-image { max-width: 600px; }
+    .flowchart-node { @apply min-w-[13rem] min-h-[5rem] text-base;}
+    .flowchart-arrow { @apply w-10 h-10; }
+    .flowchart-arrow svg { @apply w-10 h-10; }
+}
+
+/* Большие экраны */
+@media (min-width: 1280px) {
+    .container {
+        padding: 0 1rem;
     }
 }
