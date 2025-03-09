@@ -273,7 +273,7 @@
             большинство ученых лам, был буддистом-практиком, в частности, практиком системы Калачакра. У него была небольшая группа последователей. Они составили собою традицию, которую в честь учителя назвали бупа, или шалупа, по имени монастыря, где долгие годы пребывал Будон<a href="#citation-20" id="ref-20" class="citation-mark"><sup>20</sup></a>.</p>
 
 
-        <h2 class="text-2xl text-center font-semibold mb-4">Примечания</h2>
+        <br><h2 class="text-2xl text-center font-semibold mb-4">Примечания</h2>
 
         <div class="citations mt-8 text-sm border-t pt-4">
             <p id="citation-1"><sup>1</sup> Crystal Mirror, vol. VI, 1984, p. 448.<a href="#ref-1" class="text-blue-500 hover:underline">↩</a></p>

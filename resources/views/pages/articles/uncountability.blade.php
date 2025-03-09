@@ -124,7 +124,7 @@
         <p class="text-justify">И опять как всегда – <strong>«В сердце солнца не задержится луч!»</strong>; странствие продолжается, и
             линия горизонта – в сердце у каждого.</p>
 
-        <h2 class="text-xl font-semibold mb-4">Литература</h2>
+        <br><h2 class="text-center text-xl font-semibold mb-4">Литература</h2>
 
             <div class="citations mt-8 text-sm border-t pt-4">
                 <p id="citation-1"><sup>1</sup>1. М. Мамардашвили. Как я понимаю философию. М., “Прогресс-Культура”, 1992, с. 75.<a href="#ref-1" class="text-blue-500 hover:underline">↩</a></p>

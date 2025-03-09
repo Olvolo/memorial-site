@@ -21,6 +21,28 @@
     flex-direction: column;
 }
 
+/* Базовый размер шрифта */
+html {
+    font-size: 16px;
+}
+
+/* Увеличение для мобильных */
+@media (max-width: 639px) {
+    html {
+        font-size: 18px; /* Базовый размер 18px */
+    }
+    p:not(.italic) {
+        text-indent: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+/* Отступ для абзацев, кроме стихов */
+p:not(.italic) {
+    text-indent: 2rem;
+}
+
 /*
  * 2. СТИЛИ ТАБЛИЦ
  */
@@ -144,50 +166,12 @@ table {
         text-transform: uppercase;
     }
 }
-/*
- * 4. СТИЛИ ДЛЯ ТЕКСТА И БИОГРАФИИ
- */
-/*.ethic-paragraph {*/
-/*    @apply text-base leading-relaxed md:text-lg;*/
-/*}*/
-
-/*.biography p {*/
-/*    text-indent: 10px;*/
-/*    line-height: 1.6;*/
-/*    margin-bottom: 0.5rem;*/
-/*    font-size: 0.75rem;*/
-/*    text-align: left;*/
-/*    color: #000;*/
-/*}*/
-
-/*.biography h1 {*/
-/*    font-size: 1.5rem;*/
-/*    margin-bottom: 0.25rem;*/
-/*    text-align: center;*/
-/*    font-weight: bold;*/
-/*    margin-top: 0.25rem;*/
-/*}*/
-
-/*.biography h3 {*/
-/*    font-size: 1.25rem;*/
-/*    margin-bottom: 0.125rem;*/
-/*    text-align: center;*/
-/*    font-weight: bold;*/
-/*    margin-top: 0.25rem;*/
-/*}*/
-
-/*.biography strong { color: #333; }*/
-/*.biography em { font-style: italic; color: #555; }*/
-/*.biography hr { border: none; border-top: 1px solid #ccc; margin: 0.25rem 0; }*/
-/*.biography ol { @apply list-decimal list-inside space-y-2; }*/
-/*.biography li { @apply pl-6; }*/
-/*.biography li p { @apply text-left; }*/
 
 /*
  * 5. СТИЛИ ДЛЯ ЦИТАТ
  */
 .citation-mark {
-    @apply text-red-500 font-bold text-base sm:text-lg md:text-xl hover:underline;
+    @apply text-red-500 font-bold text-base sm:text-lg md:text-xl;
 }
 
 .citation-mark sup {

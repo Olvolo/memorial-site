@@ -193,3 +193,7 @@ Route::get('/articles/five-dhyanibuddhas', function () {
 Route::get('/articles/mahabhutas_table', function () {
     return view('pages.articles.mahabhutas_table');
 })->name('articles.mahabhutas_table');
+
+Route::get('/articles/self-liberation', function () {
+    return view('pages.articles.self-liberation');
+})->name('articles.self-liberation');

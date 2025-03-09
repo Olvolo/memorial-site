@@ -129,7 +129,8 @@
                     Дхьянибудд.
                 </li>
             </ol>
-            <p style="text-align: right;" class="italic">1999 г. СПб, ВМ</p><br>
+            <br><p style="text-align: right;" class="italic">1999 г. СПб,
+                ВМ</p><br>
         </div>
     </div>
 @endsection

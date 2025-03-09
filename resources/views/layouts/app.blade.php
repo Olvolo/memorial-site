@@ -11,7 +11,7 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     @else
         <link rel="stylesheet"
-              href="{{ asset('build/assets/app-Cx6riHuh.css') }}">
+              href="{{ asset('build/assets/app-DZgtp_9R.css') }}">
         <script src="{{ asset('build/assets/app-CqflisoM.js') }}"></script>
     @endif
     {{-- Favicon и другие мета-теги --}}
@@ -38,10 +38,8 @@
                 <h1 class="text-lg sm:text-2xl font-bold">Памяти Учителя</h1>
             </div>
             <!-- Навигация -->
-            <nav
-                class="hidden md:flex space-x-2 sm:space-x-4 text-xs sm:text-sm md:text-base">
-                <a href="{{ route('home') }}"
-                   class="hover:text-gray-300 transition-colors">Главная</a>
+            <nav class="hidden md:flex space-x-2 sm:space-x-4 text-base sm:text-lg md:text-xl">
+                <a href="{{ route('home') }}" class="hover:text-gray-300 transition-colors">Главная</a>
                 <a href="{{ route('biography') }}"
                    class="hover:text-gray-300 transition-colors">Биография</a>
                 <a href="{{ route('articles') }}"
@@ -65,8 +63,7 @@
             </button>
         </div>
         <!-- Выпадающее мобильное меню -->
-        <div id="mobile-menu"
-             class="hidden md:hidden bg-blue-700 text-white px-2 py-2 sm:px-4 sm:py-3 space-y-1 sm:space-y-2 text-sm">
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-700 text-white px-2 py-2 sm:px-4 sm:py-3 space-y-1 sm:space-y-2 text-base">
             <a href="{{ route('home') }}" class="block hover:text-gray-300">Главная</a>
             <a href="{{ route('biography') }}"
                class="block hover:text-gray-300">Биография</a>
@@ -89,7 +86,7 @@
     <div class="mx-auto px-2 sm:px-4 md:px-6 lg:px-8 py-2 sm:py-4">
         <div class="text-center">
             <!-- Текст в футере -->
-            <p class="text-xs sm:text-sm md:text-base mb-1 sm:mb-2">Всё Всегда Здесь (Хорошо)</p>
+            <p class="text-base sm:text-lg md:text-xl mb-1 sm:mb-2">Всё Всегда Здесь (Хорошо)</p>
 
             <!-- Навигация в футере (для больших экранов) -->
             <nav id="footer-nav" class="hidden sm:flex justify-center space-x-1 sm:space-x-2 md:space-x-4 text-xs sm:text-sm">
@@ -109,8 +106,7 @@
             </button>
 
             <!-- Мобильное меню в футере (скрытое по умолчанию) -->
-            <div id="footer-mobile-menu" class="hidden sm:hidden bg-green-700
-             text-white px-2 py-2 sm:px-4 sm:py-3">
+            <div id="footer-mobile-menu" class="hidden sm:hidden bg-green-700 text-white px-2 py-2 sm:px-4 sm:py-3 text-base">
                 <nav>
                     <ul class="space-y-1 sm:space-y-2">
                         <li><a href="{{ route('home') }}" class="block hover:text-gray-300 py-1">Главная</a></li>

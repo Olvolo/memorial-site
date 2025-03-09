@@ -4,7 +4,8 @@
 
 @section('content')
 
-    <h1 class="text-3xl sm:text-3xl text-center font-bold mt-6 mb-6 sm:mb-8 text-orange-800">Статьи</h1>
+    <h1 class="text-3xl sm:text-3xl text-center font-bold mt-6 mb-6 sm:mb-8 text-orange-800">
+        Статьи</h1>
 
     <div class="space-y-8 sm:space-y-10">
         <!-- БУДДОЛОГИЯ (классика) -->
@@ -148,6 +149,10 @@
                 <li><a href="{{ route('articles.five_dhyanibuddhas') }}"
                        class="text-black hover:text-gray-700">Пять Дхьянибудд и
                         Этнический Хаос</a></li>
+                <li><a href="{{ route('articles.self-liberation') }}"
+                       class="text-black hover:text-gray-700">Самоосвобождение
+                        через обнажающее внимание — Прямое Введение в ригпа</a>
+                </li>
 
             </ul>
         </div>
