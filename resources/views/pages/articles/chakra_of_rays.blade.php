@@ -36,5 +36,7 @@
             <li><p class="text-justify">Радуга <i>вишаи</i>, мира Проявленности Чистой Земли – <i>самбхогакая</i>,</p></li>
             <li><p class="text-justify">“Встреча двух радуг”, “Белая зона” – <i>нирманакая</i> (не имеет <i>скандх</i>, здесь – прозрачная сфера).</p></li>
         </ul>
+        <img src="{{ asset('images/his_eye.jpg') }}" alt="Чакра
+        лучей и радуг" class="article-image my-4 rounded-lg shadow-md">
 
 @endsection

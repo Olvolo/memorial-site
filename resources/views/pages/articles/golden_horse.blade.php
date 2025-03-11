@@ -7,8 +7,10 @@
         <img src="{{ asset('images/atri_Vajrasattva.jpg') }}" alt="Золотой Конь
         бодхичитты" class="article-image my-4 rounded-lg shadow-md">
         <!-- Заголовок -->
-        <h1 class="text-2xl font-bold text-center mt-8 mb-8">ЗОЛОТОЙ КОНЬ
-            БОДХИЧИТТЫ</h1><br>
+        <h2 class="text-xl font-bold text-center mt-8 mb-8">Девиз: "Читтаваджра Акаша"</h2>
+        <h1 class="text-2xl font-bold text-center mt-8
+        mb-8 text-red-700 ">ЗОЛОТОЙ КОНЬ БОДХИЧИТТЫ</h1>
+        <h2 class="text-xl font-bold text-center mt-8 mb-8">Мула Правидья</h2>
 
         <p>Приветствую в себе Саманта Ваджрасаттву Видьядхару.</p>
         <p>В Саманте – полнота Дхармакаи,</p>

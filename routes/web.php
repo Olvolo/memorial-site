@@ -197,3 +197,55 @@ Route::get('/articles/mahabhutas_table', function () {
 Route::get('/articles/self-liberation', function () {
     return view('pages.articles.self-liberation');
 })->name('articles.self-liberation');
+
+Route::get('/articles/prayer-for-peace', function () {
+    return view('pages.articles.prayer-for-peace');
+})->name('articles.prayer-for-peace');
+
+Route::get('/articles/dharma-bodhichitta', function () {
+    return view('pages.articles.dharma-bodhichitta');
+})->name('articles.dharma-bodhichitta');
+
+Route::get('/articles/prejudice-of-earth', function () {
+    return view('pages.articles.prejudice-of-earth');
+})->name('articles.prejudice-of-earth');
+
+Route::get('/articles/sangha-and-internet', function () {
+    return view('pages.articles.sangha-and-internet');
+})->name('articles.sangha-and-internet');
+
+Route::get('/articles/swastika-in-temple', function () {
+    return view('pages.articles.swastika-in-temple');
+})->name('articles.swastika-in-temple');
+
+Route::get('/articles/akasha', function () {
+    return view('pages.articles.akasha');
+})->name('articles.akasha');
+
+Route::get('/articles/nondual-vajrasattva', function () {
+    return view('pages.articles.nondual-vajrasattva');
+})->name('articles.nondual-vajrasattva');
+
+Route::get('/articles/renormalization-i', function () {
+    return view('pages.articles.renormalization-i');
+})->name('articles.renormalization-i');
+
+Route::get('/articles/omniscience', function () {
+    return view('pages.articles.omniscience');
+})->name('articles.omniscience');
+
+Route::get('/articles/key-matrix', function () {
+    return view('pages.articles.key-matrix');
+})->name('articles.key-matrix');
+
+Route::get('/articles/netroystvennost', function () {
+    return view('pages.articles.netroystvennost');
+})->name('articles.netroystvennost');
+
+Route::get('/articles/ogon', function () {
+    return view('pages.articles.ogon');
+})->name('articles.ogon');
+
+Route::get('/articles/renormalization-ii', function () {
+    return view('pages.articles.renormalization-ii');
+})->name('articles.renormalization-ii');

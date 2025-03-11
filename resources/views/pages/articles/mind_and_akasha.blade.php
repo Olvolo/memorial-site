@@ -7,14 +7,14 @@
         <h1 class="text-2xl text-cyan-700 font-bold text-center mt-4
         mb-8">ВОЛЬНЫЕ ЗАПИСИ ОБ УМЕ И АКАШЕ</h1>
 
-        <blockquote class="quote pl-6 border-l-4 border-gray-300 my-4 text-center">
+        <blockquote class="quote pl-6 border-l-4 border-gray-300 my-4 text-right">
             Нет у чистого Видения<br>
             ни ограничивающей периферии,<br>
             ни установленного центра.<br>
             <i>Лончен Рабжам. “Естественная свобода ума” (Sems nyid rang grol)</i>
         </blockquote>
 
-        <blockquote class="quote pl-6 border-l-4 border-gray-300 my-4 text-center">
+        <blockquote class="quote pl-6 border-l-4 border-gray-300 my-4 text-right">
             Знайте, что состояние<br>
             Чистого и Полного Присутствия (<i>бодхичитта</i>)<br>
             есть распахнутое пространство без центра или границ.<br>

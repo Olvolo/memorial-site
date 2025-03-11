@@ -11,7 +11,7 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     @else
         <link rel="stylesheet"
-              href="{{ asset('build/assets/app-DZgtp_9R.css') }}">
+              href="{{ asset('build/assets/app-BBlzKgI5.css') }}">
         <script src="{{ asset('build/assets/app-CqflisoM.js') }}"></script>
     @endif
     {{-- Favicon и другие мета-теги --}}

@@ -196,6 +196,14 @@ blockquote {
     object-fit: contain;
 }
 
+@media (max-width: 639px) {
+    .article-image {
+        width: 200px;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
 .content-container img {
     max-width: 100%;
     height: auto;
