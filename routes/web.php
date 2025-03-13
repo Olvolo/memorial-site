@@ -249,3 +249,15 @@ Route::get('/articles/ogon', function () {
 Route::get('/articles/renormalization-ii', function () {
     return view('pages.articles.renormalization-ii');
 })->name('articles.renormalization-ii');
+
+Route::get('/articles/buddhism-north-russia', function () {
+    return view('pages.articles.buddhism-north-russia');
+})->name('articles.buddhism-north-russia');
+
+Route::get('/articles/tantra-west', function () {
+    return view('pages.articles.tantra-west');
+})->name('articles.tantra-west');
+
+Route::get('/articles/dharma-raja-dandar', function () {
+    return view('pages.articles.dharma-raja-dandar');
+})->name('articles.dharma-raja-dandar');

@@ -83,10 +83,11 @@
 </main>
 <!-- Футер -->
 <footer class="w-full @yield('footer-class', 'bg-green-600 text-green-50')">
-    <div class="mx-auto px-2 sm:px-4 md:px-6 lg:px-8 py-2 sm:py-4">
+    <div class="mx-auto px-2 sm:px-4 md:px-6 lg:px-8 py-2 sm:py-2">
         <div class="text-center">
             <!-- Текст в футере -->
-            <p class="text-base sm:text-lg md:text-xl mb-1 sm:mb-2">Всё Всегда Здесь (Хорошо)</p>
+            <p class="text-base sm:text-lg md:text-xl mb-1 sm:mb-2">Всё
+                Всегда Здесь (Хорошо)</p>
 
             <!-- Навигация в футере (для больших экранов) -->
             <nav id="footer-nav" class="hidden sm:flex justify-center space-x-1 sm:space-x-2 md:space-x-4 text-xs sm:text-sm">

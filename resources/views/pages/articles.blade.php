@@ -7,6 +7,21 @@
     <h1 class="text-3xl sm:text-3xl text-center font-bold mt-6 mb-6 sm:mb-8 text-orange-800">Статьи</h1>
 
     <div class="space-y-8 sm:space-y-10">
+
+        <!-- ВЕХИ И ЛИЦА -->
+        <div class="bg-yellow-200 p-4 sm:p-6 rounded-lg mt-6">
+            <h3 class="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 text-gray-800 text-center italic">ВЕХИ И ЛИЦА</h3>
+            <ul class="list-none pl-5 sm:pl-6 space-y-2 text-base sm:text-lg custom-list">
+                <li><a href="{{ route('articles.buddhism-north-russia') }}" class="text-black hover:text-gray-700">Буддизм на севере России</a></li>
+                <li><a href="{{ route('articles.tantra-west') }}" class="text-black hover:text-gray-700">Тантра – на Запад!</a></li>
+                <li><a href="{{ route('articles.dharma-raja-dandar') }}" class="text-black hover:text-gray-700">Дхармараджа Бидия Дандарон</a></li>
+            </ul>
+        </div>
+
+
+
+
+
         <!-- БУДДОЛОГИЯ (классика) -->
         <div class="bg-sky-200 p-4 sm:p-6 rounded-lg">
             <h3 class="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 text-gray-800 text-center italic">Буддология (классика)</h3>

@@ -334,6 +334,7 @@ main {
 /* Большие экраны */
 @media (min-width: 1280px) {
     .container {
-        padding: 0 1rem;
+        padding: 1rem 1rem;
+        margin: 0 auto
     }
 }
