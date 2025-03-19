@@ -261,3 +261,11 @@ Route::get('/articles/tantra-west', function () {
 Route::get('/articles/dharma-raja-dandar', function () {
     return view('pages.articles.dharma-raja-dandar');
 })->name('articles.dharma-raja-dandar');
+
+Route::get('/articles/lub-san-dan', function () {
+    return view('pages.articles.lub-san-dan');
+})->name('articles.lub-san-dan');
+
+Route::get('/articles/buddhist_clay_plastic', function () {
+    return view('pages.articles.buddhist_clay_plastic');
+})->name('articles.buddhist_clay_plastic');

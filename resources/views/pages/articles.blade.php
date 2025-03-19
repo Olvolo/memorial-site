@@ -15,6 +15,9 @@
                 <li><a href="{{ route('articles.buddhism-north-russia') }}" class="text-black hover:text-gray-700">Буддизм на севере России</a></li>
                 <li><a href="{{ route('articles.tantra-west') }}" class="text-black hover:text-gray-700">Тантра – на Запад!</a></li>
                 <li><a href="{{ route('articles.dharma-raja-dandar') }}" class="text-black hover:text-gray-700">Дхармараджа Бидия Дандарон</a></li>
+                <li><a href="{{ route('articles.lub-san-dan') }}"
+                       class="text-black hover:text-gray-700">Материалы к жизнеописанию Лубсана Сандана Цыденова</a></li>
+
             </ul>
         </div>
 
@@ -107,6 +110,7 @@
                 <li><a href="{{ route('articles.dharma-bodhichitta') }}" class="text-black hover:text-gray-700">Дхарма-бодхичитта, рупа, карма</a></li>
                 <li><a href="{{ route('articles.sangha-and-internet') }}" class="text-black hover:text-gray-700">Сангха и Интернет</a></li>
                 <li><a href="{{ route('articles.swastika-in-temple') }}" class="text-black hover:text-gray-700">Свастика в Храме</a></li>
+                <li><a href="{{ route('articles.buddhist_clay_plastic') }}" class="text-black hover:text-gray-700">Буддийская глиняная пластика</a></li>
 
             </ul>
         </div>
