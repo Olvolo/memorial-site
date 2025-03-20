@@ -171,7 +171,8 @@
                 келью, где и возобновляет созерцание в честь бога "Ямандага".
             </p>
             <div class="flex justify-center my-6">
-                <figure class="rounded-lg shadow-md overflow-hidden max-w-[400px] text-center">
+                <figure class="rounded-lg shadow-md overflow-hidden
+                max-w-[600px] text-center">
                     <img src="{{ asset('images/Vajrabhairava.jpg') }}"
                          alt="34-рукий Шри Ваджрабхайрава Яб-Юм"
                          class="w-full object-cover rounded-lg">
@@ -330,7 +331,8 @@
                 остался внутри дома.
             </p>
             <div class="flex justify-center my-6">
-                <figure class="rounded-lg shadow-md overflow-hidden max-w-[400px] text-center">
+                <figure class="rounded-lg shadow-md overflow-hidden
+                max-w-[600px] text-center">
                     <img src="{{ asset('images/Jayag_lama_400.jpg') }}"
                          alt="Джаягсы-гэгэн"
                          class="w-full object-cover">
@@ -378,7 +380,8 @@
                 принял сторону Джаягсы-гэгэна, а в дальнейшем — балагатов.
             </p>
             <div class="flex justify-center my-6">
-                <figure class="rounded-lg shadow-md overflow-hidden max-w-[400px] text-center">
+                <figure class="rounded-lg shadow-md overflow-hidden
+                max-w-[600px] text-center">
                     <img src="{{ asset('images/Akpa-gegen.jpg') }}"
                          alt="Акпа-гэгэн"
                          class="w-full object-cover">
@@ -420,7 +423,8 @@
                 Бурятской АССР)
             </p>
             <div class="flex justify-center my-6">
-                <figure class="rounded-lg shadow-md overflow-hidden max-w-[400px] text-center">
+                <figure class="rounded-lg shadow-md overflow-hidden
+                max-w-[600px] text-center">
                     <img src="{{ asset('images/Dorje_Badmaev.jpg') }}"
                          alt="Доржи Бадмаев"
                          class="w-full object-cover">
@@ -589,7 +593,8 @@
             text-gray-700">
                 Дашицыреновы</h3>
             <div class="flex justify-center my-6">
-                <figure class="rounded-lg shadow-md overflow-hidden max-w-[400px] text-center">
+                <figure class="rounded-lg shadow-md overflow-hidden
+                max-w-[600px] text-center">
                     <img src="{{ asset('images/Anchen.jpg') }}"
                          alt="Анчен Дашицыренов"
                          class="w-full object-cover">
@@ -719,7 +724,6 @@
     </div>
 @endsection
 
-<!-- Фон -->
 <style>
     .container {
         background-image: url('{{ asset('images/unsplash.jpg') }}');

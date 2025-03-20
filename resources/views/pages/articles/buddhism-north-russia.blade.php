@@ -4,8 +4,20 @@
 
 @section('content')
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <!-- Фото статьи из газеты -->
+        <div class="flex justify-center">
+            <figure class="rounded-lg shadow-md max-w-[800px] text-center">
+                <img src="{{ asset('images/Buddhism_on_Neva_bank_700.jpg') }}"
+                     alt="Буддизм на берегах Невы"
+                     class="rounded-lg w-full h-auto mx-auto">
+                <figcaption class="mt-2 mb-4 px-4 italic text-gray-600 text-sm">
+                    Статья "Буддизм на берегах Невы"
+                </figcaption>
+            </figure>
+        </div>
+
         <!-- Заголовок -->
-        <h1 class="text-center text-red-600 font-bold text-xl sm:text-2xl
+        <h1 class="text-center text-red-600 font-bold text-2xl sm:text-2xl
         md:text-3xl mb-6 mt-6">Буддизм на севере России</h1>
                <!-- Основной текст -->
         <div
@@ -130,15 +142,17 @@
                 гигантская икона-портрет Агван Доржиева.
             </p>
             <!-- Вторая карточка -->
-            <div class="flex justify-center my-6">
-                <div class="p-4 rounded-lg shadow-md max-w-sm text-center">
+            <div class="flex justify-center">
+                <figure class="rounded-lg shadow-md max-w-[800px]
+                      text-center mb-4">
                     <img src="{{ asset('images/Buddha_temple_Leningrad.jpg') }}"
                          alt="Ленинградский буддийский храм"
-                         class="w-[120px] h-[168px] object-cover mx-auto">
-                    <p class="mt-2 italic text-gray-800">
+                         class="rounded-lg w-full h-auto mx-auto">
+                    <figcaption
+                        class="mt-2 mb-4 px-4 italic text-gray-600 text-sm">
                         Ленинградский буддийский храм 1989 год.
-                    </p>
-                </div>
+                    </figcaption>
+                </figure>
             </div>
             <p>
                 Храм без паствы был с большим запозданием взят под охрану

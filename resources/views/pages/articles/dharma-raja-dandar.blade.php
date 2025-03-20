@@ -4,10 +4,15 @@
 
 @section('content')
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        <br><img src="{{ asset('images/BD_BatoDalai_600.jpg') }}"
-             alt="Дандарон_работа_Бато_Далая" class="article-image shadow-md">
+        <div class="flex justify-center">
+            <figure class="rounded-lg shadow-md max-w-[800px]
+                      text-center mb-4">
+                <img src="{{ asset('images/BD_BatoDalai_600.jpg') }}"
+                     alt="Дандарон_работа_Бато_Далая"
+                     class="rounded-lg w-full h-auto mx-auto">
+            </figure>
+        </div>
 
-        <!-- Заголовок -->
         <h1 class="text-center text-red-600 font-bold text-xl sm:text-2xl
         md:text-3xl mb-6 mt-6">
             ДХАРМАРАДЖА БИДИЯ ДАНДАРОН<br>14.XII.1914 – 26.X.1974
@@ -136,16 +141,19 @@
                 северо-востоке Тибета.
             </p>
             <!-- Карточка с фото -->
-            <div class="flex justify-center my-6">
-                <div class="rounded-lg shadow-md max-w-sm text-center">
+            <div class="flex justify-center">
+                <figure class="rounded-lg shadow-md max-w-[800px]
+                      text-center mb-4">
                     <img src="{{ asset('images/Lubsan_fase.jpg') }}"
                          alt="Лувсан Сандан Цыденов"
-                         class="w-full max-w-[300px] h-auto object-cover
-                         mx-auto my-4">
-                    <p class="mt-4 mb-4 px-4 italic text-gray-800">
-                       Лавсан Сандан Цыденов</p>
-                </div>
+                         class="rounded-lg w-full h-auto mx-auto">
+                    <figcaption
+                        class="mt-2 mb-4 px-4 italic text-gray-600 text-sm">
+                        Лавсан Сандан Цыденов
+                    </figcaption>
+                </figure>
             </div>
+
             <p id="ref-7">
                 Джаягсы Гэгэн неоднократно приезжал в Бурятию и, в свою очередь,
                 оказывал гостеприимство русским путешественникам – в 1908 г. по
@@ -172,14 +180,17 @@
                 году.
             </p>
             <!-- Карточка с фото -->
-            <div class="flex justify-center my-6">
-                <div class="rounded-lg shadow-md max-w-sm text-center">
+            <div class="flex justify-center">
+                <figure class="rounded-lg shadow-md max-w-[800px]
+                      text-center mb-4">
                     <img src="{{ asset('images/Jayak_face.jpg') }}"
                          alt="Джаяксы Геген"
-                         class="w-full max-w-[300px] h-auto object-cover
-                         mx-auto my-4">
-                    <p class="mt-4 mb-4 px-4 italic text-gray-800">Джаягсы Гэгэн</p>
-                </div>
+                         class="rounded-lg w-full h-auto mx-auto">
+                    <figcaption
+                        class="mt-2 mb-4 px-4 italic text-gray-600 text-sm">
+                        Джаягсы Гэгэн
+                    </figcaption>
+                </figure>
             </div>
             <p id="ref-8">
                 Реформа Лубсан-Сандана нашла отклик у лам Чесанского дацана –
@@ -476,16 +487,18 @@
                 один штрих к внешнему уровню его жизнеописания.
             </p>
             <!-- Карточка с фото -->
-            <div class="flex justify-center my-6">
-                <div class="rounded-lg shadow-md max-w-sm text-center">
+            <div class="flex justify-center">
+                <figure class="rounded-lg shadow-md max-w-[800px]
+                      text-center mb-4">
                     <img src="{{ asset('images/BD_vajra_col.jpg') }}"
                          alt="Бидия Дандарович Дандарон в одеянии Падмасамбхавы"
-                         class="max-w-[320px] h-auto object-cover
-                         mx-auto my-4">
-                    <p class="mt-4 mb-4 px-4 italic text-gray-800">
+                         class="rounded-lg w-full h-auto mx-auto">
+                    <figcaption
+                        class="mt-2 mb-4 px-4 italic text-gray-600 text-sm">
                         Б.Д. Дандарон с атрибутами ваджра и дильбы в головном
-                        уборе Падмасамбхавы</p>
-                </div>
+                        уборе Падмасамбхавы
+                    </figcaption>
+                </figure>
             </div>
             <p id="ref-29">
                 Есть два порядка проникновения учения в сансару – кармический и
@@ -599,13 +612,16 @@
                 решения.
             </p>
             <!-- Карточка с фото -->
-            <div class="flex justify-center my-6">
-                <div class="rounded-lg shadow-md max-w-sm text-center">
+            <div class="flex justify-center">
+                <figure class="rounded-lg shadow-md max-w-[800px]
+                      text-center mb-4">
                     <img src="{{ asset('images/BD_mudra_five_wisdoms_420.jpg') }}"
                          alt="Бидия Дандарович_мудра_кулака"
-                         class="max-w-[420px] h-auto object-cover">
-                </div>
+                         class="rounded-lg w-full h-auto mx-auto">
+
+                </figure>
             </div>
+
             <p id="ref-37">
                 Основатели балагатского движения с самого начала проявляли
                 интерес к старой тибетской школе ньингма и к дзогчену. Особый
@@ -626,13 +642,15 @@
                 Прокуратуры.
             </p>
             <!-- Карточка с фото -->
-            <div class="flex justify-center my-6">
-                <div class="rounded-lg shadow-md max-w-sm text-center">
+            <div class="flex justify-center">
+                <figure class="rounded-lg shadow-md max-w-[800px]
+                      text-center mb-4">
                     <img src="{{ asset('images/BD_Stekolka_300.jpg') }}"
                          alt="Бидия Дандарович_Стреколка"
-                         class="max-w-[320px] h-auto object-cover">
-                </div>
+                         class="rounded-lg w-full h-auto mx-auto">
+                </figure>
             </div>
+
             <p id="ref-38">
                 Постепенно расширялся круг учеников, росла известность Дандарона
                 не только как ученого-буддолога, но и как мастера проповеди, как

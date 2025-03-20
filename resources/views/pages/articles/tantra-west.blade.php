@@ -201,17 +201,23 @@
                 отечественной буддологии.
             </p>
             <!-- Карточка с фото -->
-            <div class="flex justify-center my-6">
-                <div class="rounded-lg shadow-md max-w-sm text-center">
-                    <img src="{{ asset('images/BD_Semichov_Rerih_Hadalov.jpg') }}"
+            <div class="flex justify-center">
+                <figure class="rounded-lg shadow-md max-w-[500px] text-center
+                 mb-4">
+                    <img src="{{ asset('images/BD_Semichov_Rerih_Hadalov_700.jpg') }}"
                          alt="Бидия Дандарович Дандарон, Семичов, Рерих, Хадалов"
-                         class="w-full max-w-[420px] h-auto object-cover mx-auto rounded-[50%/50%] my-4"
-                    >
-                    <p class="mt-4 mb-4 px-4 italic text-gray-800">
-                        Б.Д. Дандарон с Ю.Н. Рерихом и сотрудниками Бурятского Института общественных наук (1959 г.). Между Дандароном и Рерихом - Б.В. Семичев, который также, как и Дандарон, вернулся из лагерей. Хадалов. (Справа - П. И. Хадалов)
-                    </p>
-                </div>
+                         class="rounded-lg w-full h-auto mx-auto">
+                    <figcaption
+                        class="mt-2 mb-4 px-4 italic text-gray-600 text-sm">
+                        Б.Д. Дандарон с Ю.Н. Рерихом и сотрудниками
+                        Бурятского Института общественных наук (1959 г.)
+                        .<br>Между Дандароном и Рерихом -<br>Б.В. Семичев,
+                        который также, как и Дандарон, вернулся из лагерей.<br>
+                        (Справа - П. И. Хадалов)
+                    </figcaption>
+                </figure>
             </div>
+
             <p>
                 Ценнейшим вкладом в нее был подготовленный Дандароном «Краткий
                 тибетско-русский словарь» (издан в 1963 г. совместно с Б. В.

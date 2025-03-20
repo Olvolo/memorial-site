@@ -269,3 +269,19 @@ Route::get('/articles/lub-san-dan', function () {
 Route::get('/articles/buddhist_clay_plastic', function () {
     return view('pages.articles.buddhist_clay_plastic');
 })->name('articles.buddhist_clay_plastic');
+
+Route::get('/articles/memory-yuri-alekseev', function () {
+    return view('pages.articles.memory_yuri_alekseev');
+})->name('articles.memory_yuri_alekseev');
+
+Route::get('/articles/memory_alexandr_zheleznov', function () {
+    return view('pages.articles.memory_alexandr_zheleznov');
+})->name('articles.memory_alexandr_zheleznov');
+
+Route::get('/articles/jump_into_lion_mouth', function () {
+    return view('pages.articles.jump_into_lion_mouth');
+})->name('articles.jump_into_lion_mouth');
+
+Route::get('/articles/dharma_wave', function () {
+    return view('pages.articles.dharma_wave');
+})->name('articles.dharma_wave');

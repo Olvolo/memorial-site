@@ -3,10 +3,15 @@
 @section('title', 'Мы')
 
 @section('content')
+    <div class="flex justify-center">
+        <figure class="rounded-lg shadow-md max-w-[800px]
+                      text-center mb-4">
+            <img src="{{ asset('images/we.jpg') }}"
+                 alt="Строители ступы Дандарона"
+                 class="rounded-lg w-full h-auto mx-auto">
+        </figure>
+    </div>
 
-        <img src="{{ asset('images/we_stupa.jpg') }}" alt="Описание фото"
-             class="article-image my-4 rounded-lg shadow-md">
-        <!-- Заголовок -->
         <h1 class="text-2xl text-green-700 font-bold text-center mt-8
         mb-8">МЫ</h1>
         <p class="text-justify">Мы – последователи Полноты Учения Дандарона – великого подвижника

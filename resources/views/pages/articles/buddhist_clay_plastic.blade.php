@@ -10,8 +10,7 @@
             <div class="rounded-lg shadow-md max-w-sm text-center">
                 <img src="{{ asset('clay_plastic/suburgan.jpg') }}"
                      alt="Субурган с мантрой Шакьямуни 'ОМ МУНИ МУНИ
-                     МАХАМУНИ ЙЕ
-                     СВАХА'. &#8960 42mm"
+                     МАХАМУНИ ЙЕ СВАХА'. &#8960 42mm"
                      class="rounded-full w-full max-w-[300px] h-auto object-cover
                          mx-auto my-4">
                 <p class="mt-4 mb-4 px-4 italic text-gray-800">
@@ -254,3 +253,13 @@
     </div>
 
 @endsection
+
+<style>
+    .container {
+        background-image:
+            linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+            url('{{ asset('images/combination-makeup-textures_800.jpg') }}');
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>

@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Мемориальная статья, посвящённая Юрию Алексееву (1940–1983), его духовному пути, буддизму и творчеству.">
+    <meta name="keywords" content="Юрий Алексеев, буддизм, тантра, Вадим Танчик, Бидия Дандарович Дандарон, дзогчен, поэзия">
     <title>@yield('title')</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
@@ -11,7 +13,7 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     @else
         <link rel="stylesheet"
-              href="{{ asset('build/assets/app-D5a1H8kC.css') }}">
+              href="{{ asset('build/assets/app-DPcLBF5x.css') }}">
         <script src="{{ asset('build/assets/app-CqflisoM.js') }}"></script>
     @endif
     {{-- Favicon и другие мета-теги --}}

@@ -57,3 +57,16 @@ require_once __DIR__ . '/public/index.php';
 
    APP_ENV=production
    APP_DEBUG=false
+   5. <!-- Карточка с фото -->
+                  <div class="flex justify-center">
+                      <figure class="rounded-lg shadow-md max-w-[800px]
+                      text-center mb-4">
+                          <img src="{{ asset('images/***.jpg') }}"
+                               alt="***"
+                               class="rounded-lg w-full h-auto mx-auto">
+                          <figcaption
+                              class="mt-2 mb-4 px-4 italic text-gray-600 text-sm">
+                              ***
+                          </figcaption>
+                      </figure>
+                  </div>
