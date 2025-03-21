@@ -3,15 +3,13 @@
 @section('title', 'Предвзятость Земли')
 
 @section('content')
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        <!-- Заголовок -->
+    <div class="container mx-auto p-4 h-full">
         <h1 class="text-2xl sm:text-3xl font-bold text-center mt-6 mb-8 text-red-600">
             Предвзятость<sup><a href="#citation-1" id="ref-1" class="text-red-600">*</a></sup>
             Земли
         </h1>
 
-        <!-- Основной текст -->
-        <div class="mx-auto bg-yellow-50 p-4 rounded-lg">
+        <div>
             <p class="text-justify indent-4 text-lg sm:text-xl">
                 Земля диктует, напоминая, что мы от нее не отделимы, что мы – ее
                 естественное продолжение. И если появляется в жизни людей нечто
@@ -124,3 +122,11 @@
 
     </div>
 @endsection
+<style>
+    .container {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+        url('{{ asset('images/ice.jpg') }}');
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>

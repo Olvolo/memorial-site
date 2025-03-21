@@ -3,7 +3,7 @@
 @section('title', 'Всеведение')
 
 @section('content')
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    <div class="container mx-auto p-4 h-full">
         <!-- Заголовок -->
         <h1 class="text-3xl sm:text-4xl font-bold text-center mt-6 mb-8 text-red-600">
             Всеведение
@@ -11,7 +11,8 @@
 
         <!-- Основной текст -->
         <div class="mx-auto p-4 rounded-lg">
-            <p class="text-left text-lg sm:text-xl font-bold text-red-600">
+            <p class="text-lg sm:text-xl text-justify font-bold
+            text-red-600">
                 Всеведение Будды – это Его способность ответить на все вопросы, которые может Ему задать человек.
             </p>
 
@@ -50,3 +51,11 @@
         </div>
     </div>
 @endsection
+<style>
+    .container {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+        url('{{ asset('images/ice.jpg') }}');
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>

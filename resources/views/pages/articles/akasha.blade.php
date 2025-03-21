@@ -3,18 +3,11 @@
 @section('title', 'Акаша')
 
 @section('content')
-    <div class="mx-auto p-4 rounded-lg"
-         style="background-image: url('{{ asset('images/ice.jpg') }}');
-            background-attachment: fixed;
-            background-size: cover;
-            background-position: center;
-            min-height: 100vh;">
+    <div class="container mx-auto p-4">
 
-        <h1 class="text-3xl sm:text-4xl font-bold text-center mt-6 mb-8 text-red-600">
-            Акаша
-        </h1>
+        <h1 class="text-3xl font-bold text-center mb-8 text-red-600">Акаша</h1>
         <!-- Основной текст -->
-        <div class="mx-auto p-4 rounded-lg">
+        <div class="mx-auto">
             <p class="text-justify indent-4 text-lg sm:text-xl">
                 Акаша вечна и вещна. Вечна, ибо небытия нет. Вещна, ибо она –
                 объект ума и сам ум вместе.
@@ -180,3 +173,12 @@
     </div>
 
 @endsection
+<style>
+    .container {
+        background-image:
+            linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+            url('{{ asset('images/ice.jpg') }}');
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>

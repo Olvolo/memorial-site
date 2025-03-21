@@ -3,9 +3,8 @@
 @section('title', 'Перенормировка II')
 
 @section('content')
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        <!-- Заголовок -->
-        <p class="text-left italic text-gray-800 mt-6 mb-6">
+    <div class="container mx-auto p-4 h-full">
+        <p class="text-left italic text-gray-800 my-6">
             Перенормировка II
         </p>
 
@@ -17,24 +16,43 @@
             Посвящается Каудинье
         </p>
 
-        <!-- Структурированный текст -->
         <div class="flex justify-center">
-            <div class="text-center text-sm sm:text-base leading-relaxed">
-                <p class="text-left">Нетройственность &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; – &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ниродха</p>
-                <p class="text-left">Открытый горизонт &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; – &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; анитья</p>
-                <p class="text-left">Абсолютность Бытия &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; – &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; дукха</p>
-                <p class="text-left">Неединичность сознания &nbsp;&nbsp; –
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; анатма</p><br>
+            <div class="w-full max-w-md">
+                <div class="grid grid-cols-3 gap-2 text-sm sm:text-base">
+                    <div class="text-left">Нетройственность</div>
+                    <div class="text-center">–</div>
+                    <div class="text-right">ниродха</div>
 
-                <div class="flex w-full">
-                    <div style="margin-left: 40px;">ВМ</div>
-                    <div style="margin-right: 30px; margin-left: auto;">ОВ</div>
+                    <div class="text-left">Открытый горизонт</div>
+                    <div class="text-center">–</div>
+                    <div class="text-right">анитья</div>
+
+                    <div class="text-left">Абсолютность Бытия</div>
+                    <div class="text-center">–</div>
+                    <div class="text-right">дукха</div>
+
+                    <div class="text-left">Неединичность сознания</div>
+                    <div class="text-center">–</div>
+                    <div class="text-right">анатма</div>
                 </div>
 
-                <div class="text-right italic mt-2">
-                    <span>27.05.1998, СПб</span>
+                <div class="flex justify-between mt-8 mb-2 text-sm sm:text-base">
+                    <div>ВМ</div>
+                    <div>ОВ</div>
+                </div>
+
+                <div class="text-right italic text-sm sm:text-base">
+                    27.05.1998, СПб
                 </div>
             </div>
         </div>
     </div>
-   @endsection
+@endsection
+<style>
+    .container {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+        url('{{ asset('images/ice.jpg') }}');
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>

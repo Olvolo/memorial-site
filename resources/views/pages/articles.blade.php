@@ -34,7 +34,8 @@
 
         <!-- НЕТРОЙСТВЕННОСТЬ -->
         <div class="bg-fuchsia-300 p-4 sm:p-6 rounded-lg">
-            <h3 class="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 text-gray-800 text-center italic">
+            <h3 class="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4
+            text-green-700 text-center italic">
                 НЕТРОЙСТВЕННОСТЬ</h3>
             <ul class="list-none pl-5 sm:pl-6 space-y-2 text-base sm:text-lg custom-list">
                 <li><a href="{{ route('articles.netroystvennost') }}"

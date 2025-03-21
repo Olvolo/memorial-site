@@ -3,8 +3,8 @@
 @section('title', 'Открытый горизонт')
 
 @section('content')
-     <!-- Заголовок -->
-        <h1 class="text-2xl text-green-500 font-bold text-center mt-8
+    <div class="container mx-auto p-4 h-full">
+        <h1 class="text-2xl text-green-500 font-bold text-center
         mb-8">ОТКРЫТЫЙ
             ГОРИЗОНТ</h1>
 
@@ -24,15 +24,16 @@
 
         <p class="text-right"><i>1993 г.</i></p>
         <p class="text-right"><i>(ж. «Гаруда», № 3)</i></p>
-
+    </div>
 @endsection
 
 @push('styles')
     <style>
-        p.text-justify {
-            text-align: justify;
-            line-height: 1.5;
-            margin-bottom: 1rem;
+        .container {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+            url('{{ asset('images/ice.jpg') }}');
+            background-attachment: fixed;
+            background-size: cover;
         }
     </style>
 @endpush

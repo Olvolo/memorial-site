@@ -3,6 +3,7 @@
 @section('title', 'Новый порядок')
 
 @section('content')
+    <div class="container mx-auto p-4 h-full">
 
         <h1 class="text-2xl font-bold italic text-center mt-8 mb-8">НОВЫЙ
             ПОРЯДОК</h1>
@@ -105,4 +106,13 @@
         <p class="text-right"><i>1993 г.</i></p>
         <p class="text-right"><i>(ж. «Гаруда», № 4-5)</i></p>
 
+    </div>
 @endsection
+<style>
+    .container {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+        url('{{ asset('images/ice.jpg') }}');
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>

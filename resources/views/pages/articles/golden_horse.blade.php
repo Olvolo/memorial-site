@@ -3,10 +3,15 @@
 @section('title', 'Золотой Конь бодхичитты')
 
 @section('content')
+    <div class="container flex justify-center">
+        <figure class="rounded-lg shadow-md max-w-[600px]
+                      text-center mb-4">
+            <img src="{{ asset('images/vajrasattva_netroystveniy_collapsed.png') }}"
+                 alt="Золотой Конь бодхичитты"
+                 class="rounded-lg w-full h-auto mx-auto">
+        </figure>
+    </div>
 
-        <img src="{{ asset('images/atri_Vajrasattva.jpg') }}" alt="Золотой Конь
-        бодхичитты" class="article-image my-4 rounded-lg shadow-md">
-        <!-- Заголовок -->
         <h2 class="text-xl font-bold text-center mt-8 mb-8">Девиз: "Читтаваджра Акаша"</h2>
         <h1 class="text-2xl font-bold text-center mt-8
         mb-8 text-red-700 ">ЗОЛОТОЙ КОНЬ БОДХИЧИТТЫ</h1>
@@ -144,3 +149,11 @@
 
 
 @endsection
+<style>
+    .container {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+        url('{{ asset('images/ice.jpg') }}');
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>

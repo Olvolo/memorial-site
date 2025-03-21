@@ -3,7 +3,7 @@
 @section('title', 'ОГОНЬ')
 
 @section('content')
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    <div class="container mx-auto p-4 h-full">
         <img src="{{ asset('images/Fire.jpg') }}" alt="Дом"
              class="article-image my-4 rounded-lg shadow-md w-full
              max-w-[512px] max-h-[768px] object-cover mx-auto">
@@ -54,13 +54,12 @@
             </p>
         </div>
     </div>
-
-    <!-- Фон -->
-    <style>
-        body {
-            background-image: url('{{ asset('images/ice.jpg') }}');
-            background-attachment: fixed;
-            background-size: cover;
-        }
-    </style>
 @endsection
+<style>
+    .container {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+        url('{{ asset('images/ice.jpg') }}');
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>

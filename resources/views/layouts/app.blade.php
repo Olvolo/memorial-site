@@ -13,7 +13,8 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     @else
         <link rel="stylesheet"
-              href="{{ asset('build/assets/app-DPcLBF5x.css') }}">
+              href="{{ asset('build/assets/app-DIE5ze0F.css')
+              }}">
         <script src="{{ asset('build/assets/app-CqflisoM.js') }}"></script>
     @endif
     {{-- Favicon и другие мета-теги --}}
@@ -40,8 +41,9 @@
                 <h1 class="text-lg sm:text-2xl font-bold">Памяти Учителя</h1>
             </div>
             <!-- Навигация -->
-            <nav class="hidden md:flex space-x-2 sm:space-x-4 text-base sm:text-lg md:text-xl">
-                <a href="{{ route('home') }}" class="hover:text-gray-300 transition-colors">Главная</a>
+            <nav class="hidden lg:flex space-x-2 sm:space-x-4 text-base sm:text-lg md:text-xl">
+
+            <a href="{{ route('home') }}" class="hover:text-gray-300 transition-colors">Главная</a>
                 <a href="{{ route('biography') }}"
                    class="hover:text-gray-300 transition-colors">Биография</a>
                 <a href="{{ route('articles') }}"
@@ -54,9 +56,8 @@
                    class="hover:text-gray-300 transition-colors">Контакты</a>
             </nav>
             <!-- Мобильное меню (кнопка) -->
-            <button id="menu-toggle"
-                    class="md:hidden text-white focus:outline-none">
-                <svg xmlns="http://www.w3.org/2000/svg"
+            <button id="menu-toggle" class="lg:hidden text-white focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg"
                      class="w-5 h-5 sm:w-6 sm:h-6" fill="none"
                      viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -65,8 +66,9 @@
             </button>
         </div>
         <!-- Выпадающее мобильное меню -->
-        <div id="mobile-menu" class="hidden md:hidden bg-blue-700 text-white px-2 py-2 sm:px-4 sm:py-3 space-y-1 sm:space-y-2 text-base">
-            <a href="{{ route('home') }}" class="block hover:text-gray-300">Главная</a>
+        <div id="mobile-menu" class="hidden lg:hidden bg-blue-700 text-white px-2 py-2 sm:px-4 sm:py-3 space-y-1 sm:space-y-2 text-base">
+
+        <a href="{{ route('home') }}" class="block hover:text-gray-300">Главная</a>
             <a href="{{ route('biography') }}"
                class="block hover:text-gray-300">Биография</a>
             <a href="{{ route('articles') }}" class="block hover:text-gray-300">Статьи</a>

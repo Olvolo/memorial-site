@@ -13,12 +13,14 @@
         </div>
 
         <!-- Заголовки -->
-        <p class="text-center text-red-600 italic font-bold text-lg sm:text-xl md:text-2xl mb-4">
+        <h3 class="text-center text-red-600 italic font-bold text-lg
+        sm:text-xl md:text-xl mb-4">
             Всё Всегда Здесь
-        </p>
-        <p class="text-center text-red-600 font-bold text-2xl sm:text-3xl md:text-5xl mb-6">
+        </h3>
+        <h1 class="text-center text-red-600 font-bold text-xl sm:text-xl
+        md:text-xl mb-6">
             НЕТРОЙСТВЕННОСТЬ
-        </p>
+        </h1>
 
         <!-- Основной текст -->
         <div class="text-justify text-base sm:text-lg leading-relaxed space-y-4">
@@ -58,13 +60,12 @@
             <li><a href="{{ route('articles.prejudice-of-earth') }}" class="text-blue-600 hover:underline">Предвзятость Земли</a></li>
         </ul>
     </div>
-
-    <!-- Фон -->
-    <style>
-        body {
-            background-image: url('{{ asset('images/ice.jpg') }}');
-            background-attachment: fixed;
-            background-size: cover;
-        }
-    </style>
-@endsection
+   @endsection
+<style>
+    .container {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+        url('{{ asset('images/ice.jpg') }}');
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>
