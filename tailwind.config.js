@@ -25,7 +25,7 @@ module.exports = {
                 sans: ['Roboto', 'sans-serif'],
             },
             backgroundImage: {
-                'paper-texture': "url('/images/paper_texture.jpg')",
+                'paper-texture': "url('/backgrounds/paper_texture.jpg')",
             },
             colors: {
                 'mint': '#edffdb',

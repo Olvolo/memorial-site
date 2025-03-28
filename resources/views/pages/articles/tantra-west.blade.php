@@ -3,14 +3,17 @@
 @section('title', 'Тантра – на Запад!')
 
 @section('content')
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        <img src="{{ asset('images/Dand_koronaS.jpg') }}" alt="Бидия Дандарович Дандарон в короне"
-             class="article-image my-4 rounded-lg shadow-md">
-                <!-- Заголовок -->
+    <div class="container mx-auto h-full">
+        <div class="flex justify-center">
+            <figure class="rounded-lg shadow-md text-center mb-4">
+                <img src="{{ asset('images/Dand_koronaS.jpg') }}"
+                     alt="Бидия Дандарович Дандарон в короне"
+                     class="rounded-lg w-full h-auto mx-auto object-contain transition-all duration-300 ease-in-out">
+            </figure>
+        </div>
+
         <h1 class="text-center text-red-600 font-bold text-2xl sm:text-3xl
-        md:text-3xl mb-6 mt-6">
-            Тантра – на Запад!
-        </h1>
+        md:text-3xl my-6">Тантра – на Запад!</h1>
         <!-- Письмо читателя -->
         <blockquote class="italic text-gray-800">
             С большим вниманием прочитал статью В. Монтлевича «Буддизм на
@@ -29,7 +32,6 @@
         <p class="text-right italic text-gray-800">
             А. С. Цыванов, с. Соловьевск Борзянского р-на Читинской обл.
         </p>
-
 
         <!-- Подзаголовок -->
         <h2 class="text-center text-lg sm:text-xl font-semibold mt-8 mb-4">
@@ -378,12 +380,19 @@
                     Символ») — медитативная
                     практика, преображающая чувства и переживания человека в
                     мандалу — священный образ мира в буддизме. — Прим.ред. <a href="#ref-1" class="text-blue-500 hover:underline">↩</a></p>
-                <!-- Добавь аналогичные ссылки для других сносок, если они есть -->
                 <p id="citation-2"><sup>2 </sup>Имеется в виду, что он не будет перевоплощаться в тех
                     местах, где жил в своём последнем рождении. — Прим. ред.<a href="#ref-2" class="text-blue-500
     hover:underline">↩</a></p>
             </div>
-
         </div>
     </div>
 @endsection
+<style>
+    .container {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255,
+        255, 255, 0.8)),
+        url('{{ asset('backgrounds/watercolor.jpg') }}');
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>

@@ -9,7 +9,7 @@
             <figure class="rounded-lg shadow-md max-w-[800px] text-center">
                 <img src="{{ asset('images/Buddhism_on_Neva_bank_700.jpg') }}"
                      alt="Буддизм на берегах Невы"
-                     class="rounded-lg w-full h-auto mx-auto">
+                     class="rounded-lg w-full h-auto mx-auto" loading="eager">
                 <figcaption class="mt-2 mb-4 px-4 italic text-gray-600 text-sm">
                     Статья "Буддизм на берегах Невы"
                 </figcaption>
@@ -76,20 +76,14 @@
             </p>
             <!-- Карточка с фото -->
             <div class="flex justify-center">
-                <div class="rounded-lg shadow-md max-w-sm text-center px-2">
-                    <div class="mx-auto my-auto" style="width: 100%; max-width:
-                    420px;">
-                        <img src="{{ asset('images/Lubsan_Agvan_collapsed.jpg') }}"
-                             alt="Лубсан Сандан Цыденов и Доржи Бадмаев"
-                             class="w-full h-auto object-cover"
-                             style="border-radius: 50% / 50%;">
-                    </div>
-                    <p class="mt-4 mb-4 px-4 italic text-gray-800">
-                        Лубсан Сандан Цыденов (слева) и его духовный соратник и
-                        отец Дандарона Доржи Бадмаев (Агван Силнам Тузол Доржи).
-                        1918 год.
-                    </p>
-                </div>
+                <figure class="rounded-lg shadow-md max-w-[800px] text-center mb-4">
+                    <img src="{{ asset('images/Lubsan_Agvan_collapsed.jpg') }}"
+                         alt="Лубсан Сандан Цыденов и Доржи Бадмаев"
+                         class="rounded-lg w-full h-auto mx-auto" loading="eager">
+                    <figcaption class="mt-2 mb-4 px-4 italic text-gray-600 text-sm">
+                        Лубсан Сандан Цыденов (слева) и его духовный соратник и отец Дандарона Доржи Бадмаев (Агван Силнам Тузол Доржи). 1918 год.
+                    </figcaption>
+                </figure>
             </div>
             <p>
                 Именно Лубсан Сандан вместе с тибетским Хамбо-ламой
@@ -143,13 +137,11 @@
             </p>
             <!-- Вторая карточка -->
             <div class="flex justify-center">
-                <figure class="rounded-lg shadow-md max-w-[800px]
-                      text-center mb-4">
+                <figure class="rounded-lg shadow-md max-w-[800px] text-center mb-4">
                     <img src="{{ asset('images/Buddha_temple_Leningrad.jpg') }}"
                          alt="Ленинградский буддийский храм"
-                         class="rounded-lg w-full h-auto mx-auto">
-                    <figcaption
-                        class="mt-2 mb-4 px-4 italic text-gray-600 text-sm">
+                         class="rounded-lg w-full h-auto mx-auto" loading="eager">
+                    <figcaption class="mt-2 mb-4 px-4 italic text-gray-600 text-sm">
                         Ленинградский буддийский храм 1989 год.
                     </figcaption>
                 </figure>

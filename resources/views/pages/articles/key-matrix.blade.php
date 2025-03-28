@@ -3,9 +3,8 @@
 @section('table-content')
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Заголовок -->
-        <h2 class="text-xl sm:text-2xl font-bold text-center mt-6 mb-4 text-red-600">
-            Ключ-Матрица к методу "Ваджрасаттва, или Безначальная Ежемгновенная
-            Катастрофа Первоосознания Нетройственности"
+        <h2 class="text-base sm:text-xl md:text-2xl font-bold text-center mt-6 mb-4 text-red-600">
+            Ключ-Матрица к методу<br class="block sm:hidden">"Ваджрасаттва, или Безначальная<br class="block sm:hidden"> Ежемгновенная Катастрофа<br class="block sm:hidden"> Первоосознания Нетройственности"
         </h2>
         <h3 class="text-lg sm:text-xl text-center mb-8 text-red-600">
             (Из текста "Комментарий к Нетройственности – Сокровищнице
@@ -19,10 +18,8 @@
             </p>
         </div>
         <!-- Контейнер для центрирования таблицы -->
-        <div class="flex justify-center overflow-x-auto w-full">
-            <!-- Таблица -->
-            <table class="border-collapse border border-gray-400 my-6 w-full">
-                <thead>
+        <div class="overflow-x-auto w-full px-2 sm:px-4 md:px-6">            <!-- Таблица -->
+            <table class="key-matrix-table border-collapse border border-gray-400 my-6 w-full min-w-[800px]">                <thead>
                 <tr class="bg-amber-100">
                     <th class="border border-gray-400 p-2 text-center">
                         <img src="{{ asset('favicon/favicon-96x96.png') }}"

@@ -3,7 +3,7 @@
 @section('title', 'Обеты и страх шуньевой бездны')
 
 @section('content')
-
+    <div class="container mx-auto h-full">
         <h1 class="text-2xl font-bold text-center mt-4 mb-8">ОБЕТЫ И СТРАХ
             ШУНЬЕВОЙ БЕЗДНЫ</h1><i></i>
 
@@ -203,5 +203,5 @@
             буддизм и станет русским по достаточному условию.</p>
 
         <p class="text-right"><i>18.04.2012 г.</i></p>
-
+    </div>
 @endsection

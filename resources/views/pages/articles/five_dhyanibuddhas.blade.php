@@ -1,12 +1,12 @@
 @extends('layouts.app')
 @section('title', 'Пять Дхьянибудд и Этнический Хаос')
 @section('content')
-    <div class="p-3 bg-[url('/images/paper_texture.jpg')] bg-cover
-    bg-no-repeat">
-             <img src="{{ asset('images/five_dhyanibuddhas.jpg') }}"
-             alt="Пять Дхьянибудд и Этнический Хаос"
-             class="article-image my-16 rounded-lg shadow-md w-full
-             max-w-[512px] max-h-[768px] object-cover mx-auto">
+    <div class="container h-full mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-center mb-6">
+            <img src="{{ asset('images/five_dhyanibuddhas.jpg') }}"
+                 alt="Пять Дхьянибудд и Этнический Хаос"
+                 class="rounded-lg shadow-md w-full h-auto">
+        </div>
 
         <h1 class="text-2xl sm:text-2xl md:text-3xl font-bold text-center
         mb-8 mt-6 text-teal-700">ПЯТЬ ДХЬЯНИБУДД И ЭТНИЧЕСКИЙ ХАОС</h1>
@@ -129,8 +129,15 @@
                     Дхьянибудд.
                 </li>
             </ol>
-            <br><p style="text-align: right;" class="italic">1999 г. СПб,
-                ВМ</p><br>
+            <p style="text-align: right;" class="my-8 italic">1999 г. СПб,
+                ВМ</p>
         </div>
     </div>
 @endsection
+<style>
+    .container {
+        background-image: url('{{ asset('backgrounds/paper_texture.jpg') }}');
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>

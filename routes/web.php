@@ -16,6 +16,10 @@ Route::get('/articles', function () {
     return view('pages.articles');
 })->name('articles');
 
+Route::get('/sangha', function () {
+    return view('pages.sangha');
+})->name('sangha');
+
 Route::get('/memories', function () {
     return view('pages.memories');
 })->name('memories');
@@ -285,3 +289,23 @@ Route::get('/articles/jump_into_lion_mouth', function () {
 Route::get('/articles/dharma_wave', function () {
     return view('pages.articles.dharma_wave');
 })->name('articles.dharma_wave');
+
+Route::get('/articles/dzogchen', function () {
+    return view('pages.articles.dzogchen');
+})->name('articles.dzogchen');
+
+Route::get('/articles/memory_vasiliy_repka', function () {
+    return view('pages.articles.memory_vasiliy_repka');
+})->name('articles.memory_vasiliy_repka');
+
+Route::get('/articles/memory_yuriy_parfionovich', function () {
+    return view('pages.articles.memory_yuriy_parfionovich');
+})->name('articles.memory_yuriy_parfionovich');
+
+Route::get('/articles/ivolga_datsan', function () {
+    return view('pages.articles.ivolga_datsan');
+})->name('articles.ivolga_datsan');
+
+Route::get('/articles/dzogchen_on_east', function () {
+    return view('pages.articles.dzogchen_on_east');
+})->name('articles.dzogchen_on_east');

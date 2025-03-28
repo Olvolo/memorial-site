@@ -37,7 +37,7 @@
 <style>
     .container {
         background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
-        url('{{ asset('images/ice.jpg') }}');
+        url('{{ asset('backgrounds/ice.jpg') }}');
         background-attachment: fixed;
         background-size: cover;
     }

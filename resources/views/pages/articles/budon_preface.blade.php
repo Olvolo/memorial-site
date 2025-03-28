@@ -3,12 +3,24 @@
 @section('title', 'Предисловие к книге «Будон Ринчендуб. История буддизма»')
 
 @section('content')
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div class="flex justify-center">
+            <figure class="rounded-lg shadow-md max-w-[800px]
+                      text-center mb-4">
+                <img src="{{ asset('images/budon_rinchengrub.jpg') }}"
+                     alt="Budon Rinchengrub"
+                     class="rounded-lg w-full h-auto mx-auto object-contain transition-all duration-300 ease-in-out"
+                     style="max-width: 800px;"
+                >
+            </figure>
+        </div>
 
-        <img src="{{ asset('images/budon_rinchengrub.jpg') }}" alt="Будон Ринчендуб" class="article-image my-4 rounded-lg shadow-md">
-        <!-- Заголовок -->
-        <h1 class="text-xl font-bold text-center mt-8 mb-8">ПРЕДИСЛОВИЕ К
-            КНИГЕ<br>«БУДОН РИНЧЕНДУБ. ИСТОРИЯ БУДДИЗМА»<br>БИОГРАФИЯ БУДОНА РИНЧЕНДУБА<br>(1290 – 1364)</h1>
+        <h2 class="text-xl font-bold text-center my-8">ПРЕДИСЛОВИЕ К
+            КНИГЕ<br>«БУДОН РИНЧЕНДУБ. ИСТОРИЯ БУДДИЗМА»<br>БИОГРАФИЯ БУДОНА РИНЧЕНДУБА<br>(1290 – 1364)</h2>
 
+
+        <!-- Основной текст -->
+        <div class="max-w-none text-justify">
         <p class="text-justify">Знаменитый ученый Будон Ринчендуб (Kun-mkhyen Bu-ston Rin-chen-grub),
             историк, переводчик, кодификатор и редактор канона буддийских
             текстов – Ганжура и Данжура – почитается всеми школами и традициями
@@ -319,4 +331,17 @@
 
         <p class="text-right italic mt-8">2010 г.</p>
 
+        </div>
+    </div>
+
 @endsection
+
+
+<style>
+    .container {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+        url('{{ asset('backgrounds/paper-146904.png') }}');
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>

@@ -3,6 +3,8 @@
 @section('title', 'О парамитах')
 
 @section('content')
+    <div class="container mx-auto h-full">
+
     <!-- Заголовок -->
     <h1 class="text-2xl font-bold text-center mb-8">О ПАРАМИТАХ</h1>
 
@@ -113,6 +115,6 @@
         </li>
         </ol>
 
-        <p class="text-right"><i>2008 г.</i></p>
-
+        <p class="text-right italic">2008 г.</p>
+    </div>
 @endsection

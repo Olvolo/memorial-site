@@ -3,10 +3,15 @@
 @section('title', 'Дом')
 
 @section('content')
-
-                <img src="{{ asset('images/home.jpg') }}" alt="Дом"
-             class="article-image my-4 rounded-lg shadow-md w-full
-             max-w-[512px] max-h-[768px] object-cover mx-auto">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Оптимизированная версия с дополнениями -->
+        <div class="flex justify-center">
+            <figure class="rounded-lg shadow-md max-w-[420px] text-center">
+                <img src="{{ asset('images/home.jpg') }}"
+                     alt="Дом"
+                     class="rounded-lg w-full h-auto mx-auto">
+            </figure>
+        </div>
         <h1 class=" mt-8 text-2xl sm:text-3xl md:text-4xl font-bold text-center
          text-red-600">Дом</h1>
 
@@ -108,5 +113,5 @@
             <p style="text-align: right;" class="italic">В.М., 1999 г.</p><br>
 
         </div>
-
+    </div>
 @endsection

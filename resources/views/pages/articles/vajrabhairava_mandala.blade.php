@@ -3,6 +3,7 @@
 @section('title', 'Описание мандалы Ваджрабхайравы')
 
 @section('content')
+    <div class="container mx-auto h-full">
         <img src="{{ asset('images/vajrabhairava_mandala.png') }}"
              alt="Мандала Ваджрабхайравы" class="article-image my-4 rounded-lg shadow-md">
         <!-- Заголовок -->
@@ -217,4 +218,13 @@
                 Черная Тетрадь. Материалы к биографии.«История Кукунора» Сумпы
                 Кенпо. Из-во «Евразия», СПб., 2006. <a href="#ref-1" class="text-blue-500 hover:underline">↩</a></p>
         </div>
+    </div>
 @endsection
+<style>
+    .container {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+        url('{{ asset('backgrounds/painting-2407262.jpg') }}');
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>

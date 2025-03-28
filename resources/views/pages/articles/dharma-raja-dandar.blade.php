@@ -4,12 +4,16 @@
 
 @section('content')
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        <div class="flex justify-center">
-            <figure class="rounded-lg shadow-md max-w-[800px]
-                      text-center mb-4">
+        <!-- Основное изображение -->
+        <div class="flex justify-center mb-8">
+            <figure class="rounded-lg shadow-xl overflow-hidden max-w-3xl">
                 <img src="{{ asset('images/BD_BatoDalai_600.jpg') }}"
-                     alt="Дандарон_работа_Бато_Далая"
-                     class="rounded-lg w-full h-auto mx-auto">
+                     alt="Портрет Бидии Дандарона работы Бато-Далая"
+                     class="w-full h-auto">
+                <figcaption class="text-center text-sm italic text-gray-600
+                my-2">
+                    Портрет Бидии Дандарона работы художника Бато-Далая
+                </figcaption>
             </figure>
         </div>
 
@@ -141,15 +145,15 @@
                 северо-востоке Тибета.
             </p>
             <!-- Карточка с фото -->
-            <div class="flex justify-center">
-                <figure class="rounded-lg shadow-md max-w-[800px]
-                      text-center mb-4">
+            <div class="flex justify-center my-4">
+                <figure class="rounded-lg shadow-md overflow-hidden max-w-3xl mx-auto">
                     <img src="{{ asset('images/Lubsan_fase.jpg') }}"
                          alt="Лувсан Сандан Цыденов"
                          class="rounded-lg w-full h-auto mx-auto">
                     <figcaption
-                        class="mt-2 mb-4 px-4 italic text-gray-600 text-sm">
-                        Лавсан Сандан Цыденов
+                        class="mt-2 mb-4 px-4 italic text-gray-600 text-lg
+                        text-center">
+                        Лавсан Сандан Цыденов - учитель Бидии Дандарона
                     </figcaption>
                 </figure>
             </div>
@@ -180,14 +184,15 @@
                 году.
             </p>
             <!-- Карточка с фото -->
-            <div class="flex justify-center">
+            <div class="flex justify-center my-4">
                 <figure class="rounded-lg shadow-md max-w-[800px]
                       text-center mb-4">
                     <img src="{{ asset('images/Jayak_face.jpg') }}"
                          alt="Джаяксы Геген"
                          class="rounded-lg w-full h-auto mx-auto">
                     <figcaption
-                        class="mt-2 mb-4 px-4 italic text-gray-600 text-sm">
+                        class="mt-2 mb-4 px-4 italic text-gray-600 text-lg
+                        text-center">
                         Джаягсы Гэгэн
                     </figcaption>
                 </figure>
@@ -250,8 +255,7 @@
             <p id="ref-11">
                 По сложившейся традиции юный Бидия учился основам буддизма,
                 тибетскому и монгольскому языкам у лам. Его первым учителем был
-                Цыден-унзад<sup><a href="#citation-17"
-                                   class="text-blue-500 hover:underline">17</a></sup>.
+                Цыден-унзад<sup><a href="#citation-17" class="text-blue-500 hover:underline">17</a></sup>.
                 В 1926 году начал учиться в Кижингинской школе. Одним из его
                 учителей был известный в будущем бурятский писатель Хоца
                 Намсараев. Затем продолжил светское образование (после 1929
@@ -301,8 +305,7 @@
                 явилось пробой собственных сил, в которой можно видеть
                 истинность практического буддизма... Вспоминая лагерь, Дандарон
                 как-то однажды сказал: “Буддисту полезно родиться в России”. И
-                добавил: “Буддисту, но не буддистам”<sup><a href="#citation-18"
-                                                            class="text-blue-500 hover:underline"> 18</a></sup>.
+                добавил: “Буддисту, но не буддистам”<sup><a href="#citation-18" class="text-blue-500 hover:underline"> 18</a></sup>.
             </p>
             <p id="ref-15">
                 По словам Бидии Дандаровича, в условиях лагерной жизни процесс
@@ -363,9 +366,7 @@
                 отступничестве от прежней культуры и о невозможности реального
                 принятия ими никакой другой, хотя он сам, будучи человеком
                 глубоко позитивного склада, никогда не имел в виду упрекать их
-                за это<sup><a href="#citation-19"
-                              class="text-blue-500 hover:underline">
-                        19</a></sup>.
+                за это<sup><a href="#citation-19" class="text-blue-500 hover:underline">19</a></sup>.
             </p>
             <p id="ref-21">
                 Через год после освобождения Дандарона, в 1957 году,
@@ -373,9 +374,7 @@
                 Азии, Китаю, Европе и Америке Юрий Николаевич Рерих, сын
                 художника и ученый-филолог и буддолог с мировым именем. А.М.
                 Пятигорский вспоминает:<br>
-                <span class="italic">Одним из первых вопросов, обращенных ко мне, в то время его подчиненному по службе и ученику, был: “Вы знаете Дандарона?” Я сказал, что не знаю. Юрий Николаевич улыбнулся и сказал: “А я знаю”. И вдруг снова началась буддология... Стали переводиться и издаваться буддийские тексты, появились серьезные новые статьи, трактующие самые сложные вопросы религии, метафизики и психологии буддизма</span><sup><a
-                        href="#citation-20"
-                        class="text-blue-500 hover:underline"> 20</a></sup>.
+                <span class="italic">Одним из первых вопросов, обращенных ко мне, в то время его подчиненному по службе и ученику, был: “Вы знаете Дандарона?” Я сказал, что не знаю. Юрий Николаевич улыбнулся и сказал: “А я знаю”. И вдруг снова началась буддология... Стали переводиться и издаваться буддийские тексты, появились серьезные новые статьи, трактующие самые сложные вопросы религии, метафизики и психологии буддизма</span><sup><a href="#citation-20" class="text-blue-500 hover:underline"> 20</a></sup>.
             </p>
             <p id="ref-22">
                 В 1959 году Бидия Дандарович Дандарон и Юрий Николаевич Рерих
@@ -456,21 +455,17 @@
             </p>
             <p id="ref-27">
                 Проповедь Дандарона в России и странах Балтии сопamieтся с
-                деятельностью Падмасамбхавы<sup><a href="#citation-21"
-                                                   class="text-blue-500
-                                                   hover:underline"> 21</a></sup>
+                деятельностью Падмасамбхавы<sup><a href="#citation-21" class="text-blue-500
+                hover:underline"> 21</a></sup>
                 в Тибете, чьи способности сиддха помогли преодолеть
-                сопротивление светских и религиозных противников Дхармы<sup><a
-                        href="#citation-22"
-                        class="text-blue-500 hover:underline"> 22</a></sup>.
+                сопротивление светских и религиозных противников Дхармы<sup><a href="#citation-22" class="text-blue-500 hover:underline"> 22</a></sup>.
             </p>
             <p id="ref-28">
                 Дандарон и Падмасамбхава, эти имена связывает уже новейшее
                 предание. Еще во времена постройки знаменитой ступы Бодхнатх,
                 что в Непале, согласно легенде, рассказанной Падмасамбхавой
-                тибетскому царю Тисрон Децану<sup><a href="#citation-23"
-                                                     class="text-blue-500
-                                                     hover:underline"> 23</a></sup>,
+                тибетскому царю Тисрон Децану<sup><a href="#citation-23" class="text-blue-500
+                hover:underline"> 23</a></sup>,
                 оба они в те далекие времена были участниками этого
                 строительства. По окончании строительства во время ритуала
                 Ганапуджи – жертвоприношения Древу Собрания всех Будд и святых –
@@ -480,9 +475,7 @@
                 йогином, дабы охранять Учение, – это был Падмасамбхава.
                 Взмолился и Ворон, также помогавший в строительстве; он пожелал
                 всегда рождаться устранителем препятствий при распространении
-                буддизма. Этим Вороном, согласно кругу кудунских<sup><a
-                        href="#citation-24"
-                        class="text-blue-500 hover:underline"> 24</a></sup>
+                буддизма. Этим Вороном, согласно кругу кудунских<sup><a href="#citation-24" class="text-blue-500 hover:underline"> 24</a></sup>
                 религиозных преданий, и был в прошлом Бидия Дандарон. Таков еще
                 один штрих к внешнему уровню его жизнеописания.
             </p>
@@ -494,7 +487,8 @@
                          alt="Бидия Дандарович Дандарон в одеянии Падмасамбхавы"
                          class="rounded-lg w-full h-auto mx-auto">
                     <figcaption
-                        class="mt-2 mb-4 px-4 italic text-gray-600 text-sm">
+                        class="mt-2 mb-4 px-4 italic text-gray-600 text-lg
+                        text-center">
                         Б.Д. Дандарон с атрибутами ваджра и дильбы в головном
                         уборе Падмасамбхавы
                     </figcaption>
@@ -720,12 +714,10 @@
         <div class="citations mt-8 border-t pt-4">
             <p id="citation-1"><sup>1</sup> Махамудра – буквально “Великий
                 Знак”. На уровне Ануттарайогатантры – это включенность в
-                ситуацию при реализации недвойственной мудрости. <a
-                    href="#ref-1" class="text-blue-500 hover:underline">↩</a>
+                ситуацию при реализации недвойственной мудрости. <a href="#ref-1" class="text-blue-500 hover:underline">↩</a>
             </p>
             <p id="citation-2"><sup>2</sup> Ваджрная – то есть неразрушимая,
-                неколебимая. <a href="#ref-1"
-                                class="text-blue-500 hover:underline">↩</a></p>
+                неколебимая. <a href="#ref-1" class="text-blue-500 hover:underline">↩</a></p>
             <p id="citation-3"><sup>3</sup> Дхармакая – абсолютное тело
                 реальности, чья природа пуста, что на санскрите называется
                 шуньей, но в то же время сущность дхармакаи – в непрерывной
@@ -733,8 +725,7 @@
                 Вместерожденность этих двух, шуньи и Ясного Света, – содержание
                 мудрости дхармакаи, которой достигают на завершающей
                 сверхличностной стадии реализации как в тантре, так и в
-                дзогчене. <a href="#ref-1"
-                             class="text-blue-500 hover:underline">↩</a></p>
+                дзогчене. <a href="#ref-1" class="text-blue-500 hover:underline">↩</a></p>
             <p id="citation-4"><sup>4</sup> Пять запредельных мудростей –
                 Зерцалоподобная, Аналитическая, мудрость Дхармового
                 Пространства, Равностная, Творческая. Они проявляются у йогина
@@ -758,46 +749,38 @@
             </p>
             <p id="citation-7"><sup>7</sup> Мандала – пространственная развертка
                 реальности на любом уровне, без разделения на субъект и объект.
-                В обыденном употреблении – космопсихологическая модель мира. <a
-                    href="#ref-1" class="text-blue-500 hover:underline">↩</a>
+                В обыденном употреблении – космопсихологическая модель мира. <a href="#ref-1" class="text-blue-500 hover:underline">↩</a>
             </p>
             <p id="citation-8"><sup>8</sup> Нирманакая – дальнейшая развертка
                 дхармакаи навстречу страдающему миру. Это – “Тело Явленное”, то
                 есть помощь Абсолюта в лице конкретного учителя. Санскритское
                 слово нирманакая по-тибетски звучит как “тулку”, по-монгольски –
-                как “хубилган”. <a href="#ref-1"
-                                   class="text-blue-500 hover:underline">↩</a>
+                как “хубилган”. <a href="#ref-1" class="text-blue-500 hover:underline">↩</a>
             </p>
             <p id="citation-9"><sup>9</sup> Садхана – метод реализации, терма –
-                скрытое сокровище. <a href="#ref-1"
-                                      class="text-blue-500 hover:underline">↩</a>
+                скрытое сокровище. <a href="#ref-1" class="text-blue-500 hover:underline">↩</a>
             </p>
             <p id="citation-10"><sup>10</sup> Ваджрасаттва – самбхогакая
                 Адибудды Самантабхадры в старой тибетской школе ньингма.
                 Ваджрасаттва – персонификация основного метода очищения на
-                уровне специальных подготовительных практик во всех тантрах. <a
-                    href="#ref-1" class="text-blue-500 hover:underline">↩</a>
+                уровне специальных подготовительных практик во всех тантрах. <a href="#ref-1" class="text-blue-500 hover:underline">↩</a>
             </p>
             <p id="citation-11"><sup>11</sup> Идам – персонификация метода.
                 Идамы изображаются в виде конкретных образов, знаменуя присущий
-                исключительно тантрам упор на Тело форм – рупакаю. <a
-                    href="#ref-1" class="text-blue-500 hover:underline">↩</a>
+                исключительно тантрам упор на Тело форм – рупакаю. <a href="#ref-1" class="text-blue-500 hover:underline">↩</a>
             </p>
             <p id="citation-12"><sup>12</sup> Среди учеников Дандарона,
                 непосредственно общавшихся с ним, были представители Литвы и
                 Эстонии. В Латвии еще раньше буддийскую проповедь начал Карлис
-                Теннисон. <a href="#ref-3"
-                             class="text-blue-500 hover:underline">↩</a></p>
+                Теннисон. <a href="#ref-3" class="text-blue-500 hover:underline">↩</a></p>
             <p id="citation-13"><sup>13</sup> Лхарамба – титул, который дается
                 ламе, победившему в философском диспуте в монастыре с
-                авторитетным факультетом философии. <a href="#ref-4"
-                                                       class="text-blue-500 hover:underline">↩</a>
+                авторитетным факультетом философии. <a href="#ref-4" class="text-blue-500 hover:underline">↩</a>
             </p>
             <p id="citation-14"><sup>14</sup> Калачакра – пятая из высших тантр,
                 называемая адваятантрой, то есть недвойственной: утверждает
                 равность интуиции и метода. Содержит учение о Шамбале, что не
-                есть географическое понятие. <a href="#ref-4"
-                                                class="text-blue-500 hover:underline">↩</a>
+                есть географическое понятие. <a href="#ref-4" class="text-blue-500 hover:underline">↩</a>
             </p>
             <p id="citation-15"><sup>15</sup> Козлов Петр Кузьмич (1863–1935) –
                 русский путешественник, ученик Пржевальского, исследователь
@@ -807,12 +790,10 @@
             <p id="citation-16"><sup>16</sup> Махасиддха – обладатель высших
                 сил, реализовавший мудрость недвойственности блаженства и шуньи.
                 В ранге махасиддхов канонизировано 84 йогических подвижника
-                Индии I – XII вв. н.э. <a href="#ref-8"
-                                          class="text-blue-500 hover:underline">↩</a>
+                Индии I – XII вв. н.э. <a href="#ref-8" class="text-blue-500 hover:underline">↩</a>
             </p>
             <p id="citation-17"><sup>17</sup> Унзад – лама-запевала в буддийском
-                храме во время ритуалов. <a href="#ref-11"
-                                            class="text-blue-500 hover:underline">↩</a>
+                храме во время ритуалов. <a href="#ref-11" class="text-blue-500 hover:underline">↩</a>
             </p>
             <p id="citation-18"><sup>18</sup> Из эссе А.М. Пятигорского “Уход
                 Дандарона”. А.М. Пятигорский – известный советский буддолог и
@@ -820,11 +801,9 @@
                 буддийской философии, теории познания и психологии в Англии. <a
                     href="#ref-14" class="text-blue-500 hover:underline">↩</a>
             </p>
-            <p id="citation-19"><sup>19</sup> Там же. <a href="#ref-20"
-                                                         class="text-blue-500 hover:underline">↩</a>
+            <p id="citation-19"><sup>19</sup> Там же. <a href="#ref-20" class="text-blue-500 hover:underline">↩</a>
             </p>
-            <p id="citation-20"><sup>20</sup> Там же. <a href="#ref-21"
-                                                         class="text-blue-500 hover:underline">↩</a>
+            <p id="citation-20"><sup>20</sup> Там же. <a href="#ref-21" class="text-blue-500 hover:underline">↩</a>
             </p>
             <p id="citation-21"><sup>21</sup> Падмасамбхава – индийский тантрист
                 VIII века. Основатель школы ньингма, почитается также в
@@ -832,23 +811,20 @@
                     href="#ref-27" class="text-blue-500 hover:underline">↩</a>
             </p>
             <p id="citation-22"><sup>22</sup> Дхарма – в данном контексте
-                синоним учения. <a href="#ref-27"
-                                   class="text-blue-500 hover:underline">↩</a>
+                синоним учения. <a href="#ref-27" class="text-blue-500 hover:underline">↩</a>
             </p>
             <p id="citation-23"><sup>23</sup> Тисрон Децан – тибетский царь VIII
                 века, покровитель буддизма. При нем на диспуте в монастыре Самье
                 победили сторонники классической махаяны – постепенного, по
                 сравнению с чань, пути совершенствования. Распространение
                 чань-буддизма в дальнейшем в Тибете не имело поддержки царского
-                двора. <a href="#ref-28"
-                          class="text-blue-500 hover:underline">↩</a></p>
+                двора. <a href="#ref-28" class="text-blue-500 hover:underline">↩</a></p>
             <p id="citation-24"><sup>24</sup> Река Кудун соединяет долину реки
                 Кижинги с рекой Удой в Хоринском районе Бурятии. <a
                     href="#ref-28" class="text-blue-500 hover:underline">↩</a>
             </p>
             <p id="citation-25"><sup>25</sup> Из упомянутого эссе А.М.
-                Пятигорского. <a href="#ref-34"
-                                 class="text-blue-500 hover:underline">↩</a></p>
+                Пятигорского. <a href="#ref-34" class="text-blue-500 hover:underline">↩</a></p>
             <p id="citation-26"><sup>26</sup> О.Ф. Волкова (1926–1988) –
                 санскритолог и буддолог. Бессменная хозяйка знаменитого среди
                 востоковедов Союза дома Волковых в Москве; индологом была и
@@ -860,12 +836,16 @@
         </div>
     </div>
 
-    <!-- Фон -->
-    <style>
-        .container {
-            background-image: url('{{ asset('images/unsplash.jpg') }}');
-            background-attachment: fixed;
-            background-size: cover;
-        }
-    </style>
 @endsection
+<style>
+    .container {
+        background-image: url('{{ asset('backgrounds/unsplash.jpg') }}');
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    @media (min-width: 650px) {
+        #ref-1 {
+            padding-left: 50px;
+        }
+    }
+</style>

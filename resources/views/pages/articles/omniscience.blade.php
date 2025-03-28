@@ -5,14 +5,15 @@
 @section('content')
     <div class="container mx-auto p-4 h-full">
         <!-- Заголовок -->
-        <h1 class="text-3xl sm:text-4xl font-bold text-center mt-6 mb-8 text-red-600">
+        <h1 class="text-2xl sm:text-4xl font-bold text-center my-4
+        text-sky-900">
             Всеведение
         </h1>
 
         <!-- Основной текст -->
         <div class="mx-auto p-4 rounded-lg">
             <p class="text-lg sm:text-xl text-justify font-bold
-            text-red-600">
+            text-sky-900">
                 Всеведение Будды – это Его способность ответить на все вопросы, которые может Ему задать человек.
             </p>
 
@@ -25,7 +26,9 @@
             </p>
 
             <p class="text-justify indent-4 text-lg sm:text-xl">
-                Описанное так Всеведение Будды не противоречит Принципу <a href="#" class="text-blue-600 hover:underline">Открытого Горизонта</a>.
+                Описанное так Всеведение Будды не противоречит Принципу <a
+                    href="{{ asset('articles/open_horizon') }}"
+                    class="text-blue-600 hover:underline">Открытого Горизонта</a>
             </p>
 
             <hr class="w-11/12 mx-auto my-6 border-gray-400">
@@ -45,8 +48,8 @@
                 Изложено по О.О. Розенбергу. – См. "Труды по буддизму", М., 1991 г., с. 85.
             </p>
 
-            <p class="text-right text-sm sm:text-base font-bold mt-6">
-                ВМ, 6.08.99
+            <p class="text-right italic text-gray-600 my-4">
+                В.М.
             </p>
         </div>
     </div>
@@ -54,7 +57,7 @@
 <style>
     .container {
         background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
-        url('{{ asset('images/ice.jpg') }}');
+        url('{{ asset('backgrounds/ice.jpg') }}');
         background-attachment: fixed;
         background-size: cover;
     }

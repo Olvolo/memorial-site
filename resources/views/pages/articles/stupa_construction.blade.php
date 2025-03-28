@@ -3,6 +3,7 @@
 @section('title', 'Строительство Ступы Б.Д. Дандарона')
 
 @section('content')
+    <div class="container mx-auto h-full">
         <img src="{{ asset('images/white_stupa.jpg') }}" alt="Строительство Ступы Б.Д. Дандарона" class="article-image my-4 rounded-lg shadow-md">
         <!-- Заголовок -->
         <h1 class="text-2xl text-orange-800 font-bold text-center mt-8
@@ -45,5 +46,14 @@
         <p class="text-justify">Строительство было начато в 2002 г. в Кижингинской долине Бурятии на горе Соорхэ, закончена Белая Ступа Дандарона – Ступа <i>Ваджрабхайравы</i> и освящена в 2005 г. Координаты Ступы по Google-Earth: C: 51° 58' 59,02" (59,41°), B: 109° 51' 23,28" (26,98"), H=769 м над уровнем моря.</p>
 
         <p class="text-right"><i>2006 г.</i></p>
+    </div>
 
 @endsection
+<style>
+    .container {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+        url('{{ asset('backgrounds/texture-1668079_1280.jpg') }}');
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>

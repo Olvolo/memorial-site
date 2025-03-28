@@ -1,12 +1,15 @@
 @extends('layouts.app')
 @section('title', 'Тайна всегда одна')
 @section('content')
-    <div class="p-3 bg-[url('/images/paper_texture.jpg')] bg-cover
-    bg-no-repeat">
-
-        <img src="{{ asset('images/secret_the_same.jpg') }}"
-             alt="Тайна всегда одна"
-             class="article-image my-4 rounded-lg">
+    <div class="container mx-auto h-full">
+        <div class="flex justify-center">
+            <figure class="rounded-lg shadow-md max-w-[800px]
+                      text-center mb-4">
+                <img src="{{ asset('images/secret_the_same.png') }}"
+                     alt="Тайна всегда одна"
+                     class="rounded-lg w-full h-auto mx-auto object-contain transition-all duration-300 ease-in-out">
+            </figure>
+        </div>
         <!-- Заголовок -->
         <h1 class="text-3xl font-bold text-center mt-6 mb-6">ТАЙНА ВСЕГДА
             ОДНА</h1>
@@ -23,16 +26,16 @@
             их благословение и эффективность со всеми вытекающими последствиями и
             наказаниями со стороны Защитников.
         </blockquote>
-        <p style="text-align: right;" class="italic">Лончен Рабжам. Драгоценная Сокровищница
+        <p class="italic text-right">Лончен Рабжам. Драгоценная Сокровищница
             Дхармадхату</p>
-        <p style="text-align: right;" class="italic">Перевод О.Познякова</p>
+        <p class="italic text-right">Перевод О.Познякова</p>
 
         <p class="text-justify">
             Так семь веков назад говорил Великий Лонченпа. Но при этом добавил: "все
             зависит от коллективной кармы". И у него же есть блистательное: "В
             сердце солнца не задержится луч!"
         </p>
-        <p style="text-align: center;">***</p>
+        <p class="text-center my-6">***</p>
         <p class="text-justify">
             Человек не изменился за прошедшие века, изменилось человечество и его
             коллективная карма.
@@ -80,7 +83,7 @@
             совершенного бытия – нашего естественного состояния – пребывать в
             естестве, то есть так, как есть – вот Мудрость.
         </p>
-        <p style="text-align: center;">***</p>
+        <p class="text-center my-6">***</p>
         <p class="text-justify">
             А теперь, братия, оглянувшись, придите в обыденность
             чувств и поймите, что Тайна бытия все равно осталась Тайной, а жизнь –
@@ -91,6 +94,15 @@
             для узкого круга посвященных, но для всех живых – бодхисаттв сансарных.
             А ХО МАХА СВАХА.
         </p>
-        <p style="text-align: right;" class="italic">МВМ, 2002</p><br>
+        <p class=" text-right my-6 italic">МВМ, 2002</p>
     </div>
 @endsection
+
+        <style>
+            .container {
+                background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+                url('{{ asset('backgrounds/watercolor.jpg') }}');
+                background-attachment: fixed;
+                background-size: cover;
+            }
+        </style>

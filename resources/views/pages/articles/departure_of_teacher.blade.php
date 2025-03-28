@@ -1,14 +1,20 @@
 @extends('layouts.app')
 
-@section('title', 'Уход Учителя. Лама Дарма-Доди')
+@section('title', 'Уход Учителя. Лама Дарма-Доди (1900-1993)')
 
 @section('content')
-        <img src="{{ asset('images/darma_dodi.jpg') }}" alt="Лама Дарма-Доди"
-             class="article-image my-4 rounded-lg shadow-md">
-        <!-- Заголовок -->
-        <h1 class="text-2xl font-bold text-center mt-8 mb-8">УХОД
-            УЧИТЕЛЯ<br>ЛАМА
-            ДАРМА-ДОДИ<br>(1900—1993)</h1>
+    <div class="container mx-auto px-4 py-8">
+        <div class="flex justify-center my-6">
+            <img src="{{ asset('images/darma_dodi.jpg') }}"
+                 alt="Портрет Ламы Дарма-Доди - старейшего ламы Бурятии"
+                 class="w-full max-w-md object-contain rounded-lg shadow-md">
+        </div>
+        <h1 class="text-2xl font-bold text-center text-amber-800 mb-6
+        leading-tight">
+            УХОД УЧИТЕЛЯ<br>
+            <span class="text-xl">ЛАМА ДАРМА-ДОДИ</span><br>
+            <span class="text-xl font-medium">(1900—1993)</span>
+        </h1>
 
         <p class="text-justify">24 сентября 1993 года покинул этот мир на девяносто третьем году
             жизни старейший лама Бурятии Дарма-Доди (в миру Жалсараев).
@@ -62,5 +68,5 @@
             дали священных стран и веков.</p>
 
         <p class="text-right"><i>1994 г.</i><br><i>(ж. «Гаруда», № 6)</i></p>
-
+    </div>
 @endsection

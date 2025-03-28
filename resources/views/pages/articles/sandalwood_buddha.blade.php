@@ -3,9 +3,16 @@
 @section('title', 'Сандаловый Будда')
 
 @section('content')
-          <img src="{{ asset('images/sandalwood_buddha.jpg') }}"
-             alt="Сандаловый Будда" class="article-image my-4 rounded-lg shadow-md">
-        <!-- Заголовок -->
+    <div class="container mx-auto h-full">
+        <div class="flex justify-center">
+            <figure class="rounded-lg shadow-md max-w-xl
+                      text-center mb-4">
+                <img src="{{ asset('images/sandalwood_buddha.jpg') }}"
+                     alt="Сандаловый Будда"
+                     class="rounded-lg w-full h-auto mx-auto object-contain transition-all duration-300 ease-in-out">
+            </figure>
+        </div>
+
         <h1 class="text-2xl text-amber-700 font-bold text-center mt-8 mb-8">САНДАЛОВЫЙ
             БУДДА</h1>
 
@@ -308,5 +315,13 @@
             воистину ведет себя как Тело Будды, как живой Будда; следом за ней
             появляются тексты и затем происходит расцвет буддийской мысли. Так
             было в Китае, Тибете и Бурятии. Возможно, так будет и в России.</p>
-
+    </div>
 @endsection
+<style>
+    .container {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+        url('{{ asset('backgrounds/combination-makeup-textures_800.jpg') }}');
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>

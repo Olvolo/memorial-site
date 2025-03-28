@@ -125,6 +125,10 @@ table {
 }
 @media (max-width: 768px) {
     .custom-table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+        margin: 0.5rem 0;
         font-size: 0.75rem; /* Уменьшаем размер шрифта */
     }
 
@@ -132,6 +136,9 @@ table {
         padding: 0.25rem; /* Уменьшаем отступы */
         display: block;
         text-align: right;
+        width: 100%;
+        border: 1px solid #d1d5db;
+        position: relative;
     }
 
     /* Горизонтальная прокрутка для таблицы */
@@ -139,6 +146,8 @@ table {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         max-width: 100%;
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
     }
 
     .custom-table-cell::before {
@@ -146,6 +155,10 @@ table {
         float: left;
         font-weight: bold;
         text-transform: uppercase;
+        position: absolute;
+        left: 0.5rem;
+        top: 0.5rem;
+        opacity: 0.7;
     }
 
     /* Скрываем заголовки на маленьких экранах (опционально) */
@@ -164,6 +177,64 @@ table {
         float: left;
         font-weight: bold;
         text-transform: uppercase;
+    }
+}
+
+@media (max-width: 768px) {
+    .key-matrix-table {
+        font-size: 0.75rem; /* Уменьшение шрифта */
+    }
+
+    .key-matrix-table td,
+    .key-matrix-table th {
+        padding: 0.25rem; /* Уменьшение внутренних отступов */
+    }
+}
+
+@media (max-width: 480px) {
+    .key-matrix-table {
+        font-size: 0.625rem; /* Еще меньше для очень маленьких экранов */
+    }
+
+    .key-matrix-table td,
+    .key-matrix-table th {
+        padding: 0.125rem; /* Минимальные отступы */
+    }
+}
+
+.key-matrix-table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Плавная прокрутка на iOS */
+    width: 100%;
+}
+
+/* Responsive table layout */
+@media (max-width: 768px) {
+    .table-layout-mobile {
+        display: block;
+        width: 100%;
+    }
+
+    .table-layout-mobile > div {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        border: 1px solid #e2e8f0;
+        border-radius: 0.5rem;
+        overflow: hidden;
+    }
+
+    .table-layout-mobile .row-header {
+        background-color: #f7fafc;
+        padding: 0.75rem;
+        font-weight: bold;
+    }
+
+    .table-layout-mobile .row-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+        padding: 0.75rem;
     }
 }
 
@@ -191,17 +262,10 @@ blockquote {
 .article-image {
     display: block;
     margin: 0 auto;
-    max-width: 100%;
+    width: 100%;
+    max-width: 600px; /* или любое другое значение */
     height: auto;
     object-fit: contain;
-}
-
-@media (max-width: 639px) {
-    .article-image {
-        width: 200px;
-        max-width: 100%;
-        height: auto;
-    }
 }
 
 .content-container img {
@@ -322,7 +386,7 @@ main {
 
 /* Средние экраны */
 @media (min-width: 681px) {
-    .container { max-width: 800px; padding: 1rem 1rem; margin: 0 auto}
+    .container { max-width: 1200px; padding: 1rem 1rem; margin: 0 auto}
     .biography p { font-size: 1rem; margin-bottom: 1.25rem; }
     .biography h3 { font-size: 1.2rem; }
     .article-image { max-width: 600px; }
@@ -334,6 +398,7 @@ main {
 /* Большие экраны */
 @media (min-width: 1280px) {
     .container {
+        max-width: 1200px;
         padding: 1rem 1rem;
         margin: 0 auto
     }

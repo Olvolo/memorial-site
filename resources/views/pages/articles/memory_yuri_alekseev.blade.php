@@ -100,14 +100,17 @@
         <p class="text-right italic text-gray-600 mt-4">
             В.М.
         </p>
+        <p class="text-right italic text-gray-600 mt-4">
+            Журнал Гаруда", №1, 1992г.
+        </p>
 
     </div>
 </div>
 @endsection
-<!-- Фон -->
+
 <style>
     .container {
-        background-image: url('{{ asset('images/unsplash.jpg') }}');
+        background-image: url('{{ asset('backgrounds/unsplash.jpg') }}');
         background-attachment: fixed;
         background-size: cover;
     }

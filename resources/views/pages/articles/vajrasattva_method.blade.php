@@ -3,7 +3,7 @@
 @section('title', 'Метод реализации Ваджрасаттвы')
 
 @section('content')
-        <!-- Изображение (если есть) -->
+    <div class="container mx-auto h-full">
         <img src="{{ asset('images/vajrasattva_method.jpg') }}" alt="Метод реализации Ваджрасаттвы" class="article-image my-4 rounded-lg shadow-md">
 
         <!-- Заголовок -->
@@ -73,4 +73,5 @@
         <p class="text-right italic mt-4">
             Рис. С.Носкова Перевел с тиб. В.М.Монтлевич, 1983
         </p>
+    </div>
 @endsection

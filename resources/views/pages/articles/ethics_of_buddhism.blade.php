@@ -603,7 +603,7 @@
                 кармическим видением.</p>
 
         </section>
-        <p class="text-center my-4">* * *</p>
+        <p class="text-center my-6">* * *</p>
         <p class="text-justify">
             В заключение отметим поразительный и общий для буддизма факт,
             особенно заметный для европейцев, воспитанных на идеях античного
@@ -621,7 +621,7 @@
             Азии; и эта религия, тем не менее, не знает ни Бога, ни
             бессмертия души, ни свободы воли».
         </p>
-        <p class="text-center my-4 text-base md:text-lg">* * *</p>
+        <p class="text-center my-6 text-base md:text-lg">* * *</p>
         <p class="text-right text-base md:text-lg"><i>СПб., 1998 г.</i></p>
     </div>
 @endsection

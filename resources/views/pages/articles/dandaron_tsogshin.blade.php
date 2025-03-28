@@ -3,30 +3,35 @@
 @section('title', 'Цогшин Традиции Б.Д. Дандарона')
 
 @section('content')
-
-        <img src="{{ asset('images/dandaron_tsogshin.png') }}" alt="Цогшин
-        Традиции Б.Д. Дандарона"
-             class="article-image my-4 rounded-lg shadow-md">
-
+    <div class="container mx-auto px-4 py-8 max-w-4xl">
+        <!-- Основное изображение -->
+        <div class="flex justify-center mb-8">
+            <img src="{{ asset('images/dandaron_tsogshin.png') }}"
+                 alt="Иконографическое изображение Цогшина традиции Б.Д. Дандарона"
+                 class="rounded-lg shadow-xl w-full max-w-xl md:max-w-2xl h-auto">
+        </div>
         <!-- Заголовок -->
-        <h1 class="text-2xl text-indigo-700 font-bold text-center mt-8 mb-8">ЦОГШИН
-            ТРАДИЦИИ Б.Д. ДАНДАРОНА</h1>
-        <p class="text-left">
-            Слова Учителя:
-        </p><br>
+        <h1 class="text-3xl font-bold text-center text-indigo-800 mb-8">ЦОГШИН ТРАДИЦИИ Б.Д. ДАНДАРОНА</h1>
+
         <!-- Эпиграф -->
-        <blockquote
-            class="quote pl-6 border-l-4 border-gray-300 my-4 text-right">
-            Из «Краткого Согшода»: «Учитель восседает над расположенными по
-            четырём сторонам<br>
-            Ямантакой, Сандуем, Жедорже и Демчогом. В сердце Учителя –
-            Шакьямуни,<br>
-            в сердце Шакьямуни – Ваджрасаттва».<br>
-            «Я объединяю все традиции – и гелуг, и ньингма и другие».
-        </blockquote>
-        <img src="{{ asset('images/dandaron_trikaya.png') }}"
-             alt="Дандарон_Шакьямуни_Ваджрасаттва" class="article-image  my-4
-             rounded-full shadow-md">
+        <div class="my-6">
+            <p class="text-lg font-medium mb-2">Слова Учителя:</p>
+            <blockquote class="border-l-4 border-amber-500 text-right italic
+            text-gray-700 py-2 rounded-r">
+                <p>Из «Краткого Согшода»:<br>«Учитель восседает над
+                    расположенными по четырём сторонам<br>Ямантакой, Сандуем,
+                    Жедорже и Демчогом.<br>В сердце Учителя – Шакьямуни, в
+                                          сердце Шакьямуни – Ваджрасаттва».</p>
+                <p class="mt-2">«Я объединяю все традиции – и гелуг, и ньингма и другие».</p>
+            </blockquote>
+        </div>
+        <!-- Трикая -->
+        <div class="flex justify-center my-8">
+            <img src="{{ asset('images/dandaron_trikaya.png') }}"
+                 alt="Трикая: Дандарон, Шакьямуни, Ваджрасаттва"
+                 class="article-image  my-4
+             rounded-full shadow-md object-cover">
+        </div>
         <!-- Композиция Цогшина -->
         <h2 class="text-xl text-center font-semibold mt-4 mb-4">Композиция
             Цогшина</h2>
@@ -50,9 +55,14 @@
             Ступы Дандарона, абрис которой повторяет очертанию сидящего в <i>ваджрасане</i>
             Будды. Ось Ступы – ствол Древа Цогшина. «Крона» Цогшина – поля
             Учителей, Будд, Бодхисаттв, божеств.
-        </p><br>
-        <img src="{{ asset('images/stupa.png') }}" alt="Ступа Б.Д. Дандарона"
-             class="article-image my-4 rounded-lg shadow-md"><br>
+        </p>
+        <div class="flex justify-center my-6">
+            <img src="{{ asset('images/stupa.png') }}"
+                 alt="Символическое изображение Ступы Б.Д. Дандарона"
+                 class="article-image my-4 rounded-lg shadow-md w-full
+                 max-w-md h-auto">
+        </div>
+
         <p class="text-justify">
             Кроме того, композиция Цогшина напоминает строение цветка. Ступа –
             стебель, Ваджрасаттва с крыльями – утолщение перед цветоножкой,
@@ -63,7 +73,7 @@
         </p>
 
         <!-- Организация пространства -->
-        <h2 class="text-xl text-center font-semibold mt-4 mb-4">Организация
+        <h2 class="text-xl text-center font-semibold my-4">Организация
             пространства</h2>
         <p class="text-justify">
             «Организация пространства при изображении божества всегда
@@ -87,7 +97,7 @@
         <p class="text-justify">
             Четырёхмерный мир реализуется на плоскости иконы четырьмя способами:
         </p>
-        <ol class="list-decimal list-inside pl-6 space-y-2">
+        <ol class="list-decimal list-inside pl-6 space-y-3">
             <li>Традиционный представляет объёмное пространство с помощью
                 разнопланового положения персонажей и деталей изображаемого,
                 иногда с применением перспективы.
@@ -140,7 +150,7 @@
         </p>
 
         <!-- Три "поляны" -->
-        <h2 class="text-xl text-center font-semibold mt-4 mb-4">Три
+        <h2 class="text-xl text-center font-semibold my-4">Три
             «поляны»</h2>
         <p class="text-justify">
             «Пришёл на место – ум прекрасен, Встретились глаза – <i>авадхути</i>
@@ -187,7 +197,8 @@
                 образе круга (Солнце, А), Группа фигуры <i>нада</i> (сиддхи и
                 Трикая, ХУМ).
             </li>
-        </ul><br>
+        </ul>
+        <br>
         <p class="text-justify">
             Композиция Цогшина родилась мгновенно, без предварительного
             обдумывания, сразу во всех деталях, сгармонизированных в единое
@@ -223,10 +234,13 @@
             Ниже <i>бинду</i> <i>мадхьямики</i> и ближе к центру расположено <i>бинду</i>
             докальповой Ступы Вайрочаны (более известной как Жарун Хашор) с
             портретом Учителя Чёрный Ворон – действенная линия.
-        </p><br>
-        <img src="{{ asset('images/stupa_vairocana.png') }}" alt="Ступа
-        Вайрочаны и тогдашнее воплощение Б.Д. Дандарона - чёрный ворон"
-             class="article-image my-4 rounded-full shadow-md"><br>
+        </p>
+        <div class="flex justify-center my-6">
+            <img src="{{ asset('images/stupa_vairocana.png') }}"
+                 alt="Ступа Вайрочаны и воплощение Б.Д. Дандарона - чёрный ворон"
+                 class="article-image my-4 rounded-full shadow-md object-cover">
+        </div>
+
         <p class="text-justify">
             Линия от Самантабхадры, Вайрочаны и Ваджрасаттвы прямо к Учителю,
             вертикальная часть композиции, известна в традиции как «подпитка
@@ -364,7 +378,7 @@
         </p>
         <p class="text-center"> * * * </p><br>
 
-          <p>К истории этой Ступы. Четыре тысячи лет назад в районе Гималаев,
+        <p>К истории этой Ступы. Четыре тысячи лет назад в районе Гималаев,
             там, где сейчас Непал, была построена Ступа Вайрочаны. В честь этого
             события совершён был ритуал Соборного почитания Учителя.
             Самантабхадра по прозвищу Чёрный Ворон (Дандарон) поручил провести
@@ -518,6 +532,14 @@
             (север), Дхритараштра (восток).
         </p>
         <p class="text-right italic">2009-2010 г.</p>
-
+    </div>
 @endsection
+<style>
+    .container {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+        url('{{ asset('backgrounds/texture-1668079_1280.jpg') }}');
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>
 

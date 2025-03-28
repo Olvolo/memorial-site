@@ -3,10 +3,21 @@
 @section('title', 'Некоторые принципы символизма северного буддизма')
 
 @section('content')
+    <div class="container mx-auto p-4 h-full">
+        <div class="flex justify-center">
+            <figure class="rounded-lg shadow-md max-w-[800px]
+                      text-center mb-4">
+                <img src="{{ asset('images/wheel_of_samsara.jpg') }}"
+                     alt="Символизм северного буддизма"
+                     class="rounded-lg w-full h-auto mx-auto object-contain transition-all duration-300 ease-in-out"
+                     style="max-width: 800px">
+                <figcaption
+                    class="mt-2 mb-4 px-4 italic text-gray-600 text-sm">
+                    Колесо сансары
+                </figcaption>
+            </figure>
+        </div>
 
-        <img src="{{ asset('images/wheel_of_samsara.jpg') }}" alt="Символизм
-        северного буддизма" class="article-image my-4 rounded-lg shadow-md">
-        <!-- Заголовок -->
         <h2 class="text-xl font-bold text-center mt-8 mb-8 md:text-2xl">
             НЕКОТОРЫЕ ПРИНЦИПЫ СИМВОЛИЗМА СЕВЕРНОГО БУДДИЗМА</h2>
 
@@ -190,18 +201,20 @@
             Ступа — модель тела йогина, а также объемная модель иерархии
             состояний сознания вплоть до состояния Адибудды.</p>
 
-        <p class="italic">Прохладой купола – хранилищем всех Тайн,</p>
-        <p class="italic">Мой торс, вода живая;</p>
-        <p class="italic">Её ступени – в асане ноги – сосуд земли;</p>
-        <p class="italic">Куб хармики – моя глава, вместилище сокровищ;</p>
-        <p class="italic">Взлёт шпиля надо мной – огонь нежгучий;</p>
-        <p class="italic">Все вверх устремлено, как воздуха движение.</p>
-        <p class="italic">Венчает голову сваямбху – мира тайна,</p>
-        <p class="italic">Как Три над грудой пяти скандх,</p>
-        <p class="italic">В голубизну пространства Дхармадхату</p>
-        <p class="italic">Уходит вверх сияньем золотым.</p>
-        <br>
-
+        <div class="flex justify-center my-6">
+            <ul class="text-left list-none italic">
+                <li>Прохладой купола – хранилищем всех Тайн,</li>
+                <li>Мой торс, вода живая;</li>
+                <li>Её ступени – в асане ноги – сосуд земли;</li>
+                <li>Куб хармики – моя глава, вместилище сокровищ;</li>
+                <li>Взлёт шпиля надо мной – огонь нежгучий;</li>
+                <li>Все вверх устремлено, как воздуха движение.</li>
+                <li>Венчает голову сваямбху – мира тайна,</li>
+                <li>Как Три над грудой пяти скандх,</li>
+                <li>В голубизну пространства Дхармадхату</li>
+                <li>Уходит вверх сияньем золотым.</li>
+            </ul>
+        </div>
         <p class="text-justify">Мандала как наиболее абстрактный образ стала заменителем и
             эквивалентом всего ряда буддийской символики.</p>
 
@@ -239,5 +252,15 @@
             универсальный метаязык, удобно поддающийся семиотическому и
             психологическому анализу и позволяющий её последователям общаться,
             минуя обычный уровень словесных описаний.</p>
-
+    </div>
 @endsection
+
+<style>
+    .container {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255,
+        255, 255, 0.9)),
+        url('{{ asset('backgrounds/wall_stone.jpg') }}');
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>

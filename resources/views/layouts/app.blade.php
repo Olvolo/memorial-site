@@ -6,14 +6,12 @@
     <meta name="description" content="Мемориальная статья, посвящённая Юрию Алексееву (1940–1983), его духовному пути, буддизму и творчеству.">
     <meta name="keywords" content="Юрий Алексеев, буддизм, тантра, Вадим Танчик, Бидия Дандарович Дандарон, дзогчен, поэзия">
     <title>@yield('title')</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     @if (App::environment('local'))
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     @else
         <link rel="stylesheet"
-              href="{{ asset('build/assets/app-DIE5ze0F.css')
+              href="{{ asset('build/assets/app-VR8BRUp_.css')
               }}">
         <script src="{{ asset('build/assets/app-CqflisoM.js') }}"></script>
     @endif
@@ -48,6 +46,8 @@
                    class="hover:text-gray-300 transition-colors">Биография</a>
                 <a href="{{ route('articles') }}"
                    class="hover:text-gray-300 transition-colors">Статьи</a>
+                <a href="{{ route('sangha') }}"
+                   class="hover:text-gray-300 transition-colors">Сангха</a>
                 <a href="{{ route('memories') }}"
                    class="hover:text-gray-300 transition-colors">Воспоминания</a>
                 <a href="{{ route('media') }}"
@@ -72,6 +72,7 @@
             <a href="{{ route('biography') }}"
                class="block hover:text-gray-300">Биография</a>
             <a href="{{ route('articles') }}" class="block hover:text-gray-300">Статьи</a>
+            <a href="{{ route('sangha') }}" class="block hover:text-gray-300">Сангха</a>
             <a href="{{ route('memories') }}" class="block hover:text-gray-300">Воспоминания</a>
             <a href="{{ route('media') }}" class="block hover:text-gray-300">Медиа</a>
             <a href="{{ route('contacts') }}" class="block hover:text-gray-300">Контакты</a>
@@ -81,7 +82,7 @@
 
 <!-- Основной контент -->
 <main class="flex-grow w-full @yield('main-class', 'bg-amber-50')">
-    <div class="container mx-auto @yield('container-fluid p-3')">
+    <div class="container mx-auto max-w-screen-xl @yield('container-fluid p-3')">
         @yield('content')
     </div>
 </main>
@@ -98,6 +99,7 @@
                 <a href="{{ route('home') }}" class="hover:text-gray-300 transition-colors">Главная</a>
                 <a href="{{ route('biography') }}" class="hover:text-gray-300 transition-colors">Биография</a>
                 <a href="{{ route('articles') }}" class="hover:text-gray-300 transition-colors">Статьи</a>
+                <a href="{{ route('sangha') }}" class="hover:text-gray-300 transition-colors">Сангха</a>
                 <a href="{{ route('memories') }}" class="hover:text-gray-300 transition-colors">Воспоминания</a>
                 <a href="{{ route('media') }}" class="hover:text-gray-300 transition-colors">Медиа</a>
                 <a href="{{ route('contacts') }}" class="hover:text-gray-300 transition-colors">Контакты</a>
@@ -117,6 +119,7 @@
                         <li><a href="{{ route('home') }}" class="block hover:text-gray-300 py-1">Главная</a></li>
                         <li><a href="{{ route('biography') }}" class="block hover:text-gray-300 py-1">Биография</a></li>
                         <li><a href="{{ route('articles') }}" class="block hover:text-gray-300 py-1">Статьи</a></li>
+                        <li><a href="{{ route('sangha') }}" class="block hover:text-gray-300 py-1">Сангха</a></li>
                         <li><a href="{{ route('memories') }}" class="block hover:text-gray-300 py-1">Воспоминания</a></li>
                         <li><a href="{{ route('media') }}" class="block hover:text-gray-300 py-1">Медиа</a></li>
                         <li><a href="{{ route('contacts') }}" class="block hover:text-gray-300 py-1">Контакты</a></li>
