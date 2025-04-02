@@ -4,12 +4,13 @@
 
 @section('content')
 
-    <h1 class="text-3xl sm:text-3xl text-center font-bold mt-6 mb-6 sm:mb-8 text-orange-800">
+    <h1 class="text-3xl sm:text-3xl text-center font-bold my-6 sm:mb-8
+    text-orange-800">
         Статьи</h1>
 
-    <div class="space-y-8 sm:space-y-10">
+    <div class="space-y-4 sm:space-y-4">
         <!-- НЕОБУДДИЗМ (Традиция Б.Д. Дандарона) -->
-        <div class="bg-sky-200 p-4 sm:p-6 rounded-lg">
+        <div class="bg-emerald-200 p-4 sm:p-4 rounded-lg">
             <h3 class="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 text-gray-800 text-center italic">
                 Традиция Б.Д. Дандарона</h3>
             <ul class="list-none pl-5 sm:pl-6 space-y-2 text-base sm:text-lg custom-list">
@@ -28,7 +29,7 @@
             </ul>
         </div>
         <!-- Ваджрасаттва -->
-        <div class="bg-white p-4 sm:p-6 rounded-lg">
+        <div class="bg-white p-4 sm:p-4 rounded-lg">
             <h3 class="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4
             text-gray-800 text-center italic">Ваджрасаттва</h3>
             <ul class="list-none pl-5 sm:pl-6 space-y-2 text-base sm:text-lg custom-list">
@@ -42,7 +43,7 @@
             </ul>
         </div>
         <!-- НЕТРОЙСТВЕННОСТЬ -->
-        <div class="bg-fuchsia-300 p-4 sm:p-6 rounded-lg">
+        <div class="bg-fuchsia-300 p-4 sm:p-4 rounded-lg">
             <h3 class="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4
             text-green-700 text-center italic">
                 НЕТРОЙСТВЕННОСТЬ</h3>
@@ -78,7 +79,7 @@
             </ul>
         </div>
         <!-- БУДДОЛОГИЯ (классика) -->
-        <div class="bg-sky-200 p-4 sm:p-6 rounded-lg">
+        <div class="bg-sky-200 p-4 sm:p-4 rounded-lg">
             <h3 class="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 text-gray-800 text-center italic">
                 Буддология (классика)</h3>
             <ul class="list-none pl-5 sm:pl-6 space-y-2 text-base sm:text-lg custom-list">
@@ -104,19 +105,21 @@
             </ul>
         </div>
         <!-- Ступа -->
-        <div class="bg-teal-200 p-4 sm:p-6 rounded-lg">
+        <div class="bg-teal-200 p-4 sm:p-4 rounded-lg">
             <h3 class="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4
             text-gray-800 text-center italic">Ступа Б.Д. Дандарона</h3>
             <ul class="list-none pl-5 sm:pl-6 space-y-2 text-base sm:text-lg custom-list">
                 <li><a href="{{ route('articles.stupa_construction') }}"
                        class="text-black hover:text-gray-700">Строительство Ступы Б.Д. Дандарона</a></li>
+                <li><a href="{{ route('articles.stupa_dandaron') }}"
+                       class="text-black hover:text-gray-700">Ступа Дандарона</a></li>
                 <li><a href="{{ route('articles.contemplation_of_stupa') }}"
                        class="text-black hover:text-gray-700">Венец небес, земли корона, или Созерцание Белой Ступы Дандарона</a></li>
 
             </ul>
         </div>
         <!-- Несортированное -->
-        <div class="bg-amber-300 p-4 sm:p-6 rounded-lg">
+        <div class="bg-amber-300 p-4 sm:p-4 rounded-lg">
             <h3 class="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 text-gray-800 text-center italic">
                 Добавляемые статьи</h3>
             <ul class="list-none pl-5 sm:pl-6 space-y-2 text-base sm:text-lg custom-list">
@@ -128,7 +131,6 @@
                        class="text-black hover:text-gray-700">Чакра лучей и радуг</a></li>
                 <li><a href="{{ route('articles.vajrabhairava_mandala') }}"
                        class="text-black hover:text-gray-700">Описание мандалы Ваджрабхайравы</a></li>
-
 
                 <li><a href="{{ route('articles.secret_the_same') }}"
                        class="text-black hover:text-gray-700">Тайна всегда одна</a></li>
@@ -162,11 +164,12 @@
                        class="text-black hover:text-gray-700">Иволгинский дацан. Начало и продолжение.</a></li>
                 <li><a href="{{ route('articles.dzogchen_on_east') }}"
                        class="text-black hover:text-gray-700">Дзогчен на Востоке Европы</a></li>
-
+                <li><a href="{{ route('articles.two_stupas') }}"
+                       class="text-black hover:text-gray-700">Две ступы</a></li>
             </ul>
         </div>
         <!-- ВЕХИ И ЛИЦА -->
-        <div class="bg-yellow-200 p-4 sm:p-6 rounded-lg mt-6">
+        <div class="bg-slate-200 p-4 sm:p-4 rounded-lg mt-6">
             <h3 class="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 text-gray-800 text-center italic">
                 ВЕХИ И ЛИЦА</h3>
             <ul class="list-none pl-5 sm:pl-6 space-y-2 text-base sm:text-lg custom-list">
@@ -188,7 +191,7 @@
             </ul>
         </div>
         <!-- ОБЩЕСТВЕННАЯ ДЕЯТЕЛЬНОСТЬ -->
-        <div class="bg-lime-200 p-4 sm:p-6 rounded-lg">
+        <div class="bg-lime-200 p-4 sm:p-4 rounded-lg">
             <h3 class="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 text-gray-800 text-center italic">
                 Общественная деятельность</h3>
             <ul class="list-none pl-5 sm:pl-6 space-y-2 text-base sm:text-lg custom-list">

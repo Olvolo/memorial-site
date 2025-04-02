@@ -309,3 +309,36 @@ Route::get('/articles/ivolga_datsan', function () {
 Route::get('/articles/dzogchen_on_east', function () {
     return view('pages.articles.dzogchen_on_east');
 })->name('articles.dzogchen_on_east');
+
+Route::get('/articles/two_stupas', function () {
+    return view('pages.articles.two_stupas');
+})->name('articles.two_stupas');
+
+Route::get('/articles/stupa_dandaron', function () {
+    return view('pages.articles.stupa_dandaron');
+})->name('articles.stupa_dandaron');
+
+Route::get('/zheleznov_articles/about_tibetan_tradition_buryat_buddhism', function () {
+    return view('pages.zheleznov_articles.about_tibetan_tradition_buryat_buddhism');
+})->name('zheleznov_articles.about_tibetan_tradition_buryat_buddhism');
+
+Route::get('/zheleznov_articles/marys-image-popular-interpretation-and-tantric-literature', function () {
+    return view('pages.zheleznov_articles.marys-image-popular-interpretation-and-tantric-literature');
+})->name('zheleznov_articles.marys-image-popular-interpretation-and-tantric-literature');
+
+Route::get('/zheleznov_articles/vajrayana-teaching-on-the-identity-of-samsara-and-nirvana', function () {
+    return view('pages.zheleznov_articles.vajrayana-teaching-on-the-identity-of-samsara-and-nirvana');
+})->name('zheleznov_articles.vajrayana-teaching-on-the-identity-of-samsara-and-nirvana');
+
+
+Route::get('/zheleznov_articles/skandhas_according_to_Abhidharma_and_Vajrayana_interpretation', function () {
+    return view('pages.zheleznov_articles.skandhas_according_to_Abhidharma_and_Vajrayana_interpretation');
+})->name('zheleznov_articles.skandhas_according_to_Abhidharma_and_Vajrayana_interpretation');
+
+Route::get('/zheleznov_articles/philosophical_psychological_foundations_for_solving_environmental_problems_in_mahayana_buddhism', function () {
+    return view('pages.zheleznov_articles.philosophical_psychological_foundations_for_solving_environmental_problems_in_mahayana_buddhism');
+})->name('zheleznov_articles.philosophical_psychological_foundations_for_solving_environmental_problems_in_mahayana_buddhism');
+
+Route::get('/zheleznov_articles/question_buddhist_methodology', function () {
+    return view('pages.zheleznov_articles.question_buddhist_methodology');
+})->name('zheleznov_articles.question_buddhist_methodology');

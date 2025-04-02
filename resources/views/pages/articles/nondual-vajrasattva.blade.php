@@ -19,7 +19,7 @@
             <figure class="rounded-lg shadow-md max-w-[600px]
                       text-center mb-4">
                 <img src="{{ asset
-                ('images/vajrasattva_netroystveniy_collapsed.png') }}"
+                ('images/vajrasattva_netroystveniy.png') }}"
                      alt="Нетройственный Ваджрасаттва"
                      class="rounded-lg w-full h-auto mx-auto">
             </figure>

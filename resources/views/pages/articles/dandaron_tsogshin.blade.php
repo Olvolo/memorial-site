@@ -57,7 +57,7 @@
             Учителей, Будд, Бодхисаттв, божеств.
         </p>
         <div class="flex justify-center my-6">
-            <img src="{{ asset('images/stupa.png') }}"
+            <img src="{{ asset('stupa/stupa.png') }}"
                  alt="Символическое изображение Ступы Б.Д. Дандарона"
                  class="article-image my-4 rounded-lg shadow-md w-full
                  max-w-md h-auto">

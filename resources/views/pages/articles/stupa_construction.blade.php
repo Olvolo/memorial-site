@@ -4,7 +4,8 @@
 
 @section('content')
     <div class="container mx-auto h-full">
-        <img src="{{ asset('images/white_stupa.jpg') }}" alt="Строительство Ступы Б.Д. Дандарона" class="article-image my-4 rounded-lg shadow-md">
+        <img src="{{ asset('stupa/white_stupa.jpg') }}" alt="Строительство
+        Ступы Б.Д. Дандарона" class="article-image my-4 rounded-lg shadow-md">
         <!-- Заголовок -->
         <h1 class="text-2xl text-orange-800 font-bold text-center mt-8
         mb-8">СТРОИТЕЛЬСТВО
@@ -24,7 +25,7 @@
 
         <p class="text-justify">Ступа – не для ушедших, таких просто не бывает, они живы. Ступа – для тех, кто живёт. Канон считает ступу символом Телом Мысли – <i>дхармакаи</i>. Можно проще: ступа – это идея Учителя, это то сокровенное, что в словах невыразимо (в словах – его книги и то, что помним из его устных наставлений), и такое определение Ступы – это не искажение глубины её смысла. Учитель совершенен, совершенно в нём всё – и Тело, и Речь, и Мысль. Ступа должна быть красивой, прекрасной. Она должна радовать взор, должна восхищать. И ступа будет построена, когда будет взаимопонимание всех: учеников Учителя, новых учеников-последователей, родных.</p>
         <br>
-        <img src="{{ asset('images/stupa_rassvet.jpg') }}"
+        <img src="{{ asset('stupa/stupa_rassvet.jpg') }}"
              alt="Ступа_закат_рассвет"
              class="article-image my-4 rounded-lg shadow-md"><br>
 
@@ -37,7 +38,7 @@
             (центр и круг), абсолют, Будда, вечное, и 2) обрамления в виде
             век, бровей, их формы и выражения – индивидуальное Я,
             относительное, смертное.</p><br>
-        <img src="{{ asset('images/harmika.jpg') }}" alt="Хармика"
+        <img src="{{ asset('stupa/harmika.jpg') }}" alt="Хармика"
              class="article-image my-4 rounded-lg shadow-md"><br>
 
 

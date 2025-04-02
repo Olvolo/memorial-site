@@ -19,6 +19,12 @@ npx tailwindcss init
 # Сборка фронтенда
 npm run build
 
+# Очистка кэша
+php artisan view:clear
+php artisan cache:clear
+php artisan config:clear
+php artisan route:clear
+
 # Запуск сервера разработки
 npm run dev
 Проверка работы
@@ -36,6 +42,7 @@ php artisan serve
 Организация сноски-ссылки с обратным переходом:
 1. Исходная ссылка например такая с id:
 <a href="#citation-1" id="ref-1" class="citation-mark"><sup>1</sup></a>
+
 2. Сноска с обратной ссылкой:
 <div class="citations mt-8 text-sm border-t pt-4">
     <p id="citation-1"><sup>1</sup> Text note #1 <a href="#ref-1" class="text-blue-500 hover:underline">↩</a></p>
@@ -43,10 +50,12 @@ php artisan serve
     <p id="citation-2"><sup>2</sup> [Текст сноски для ссылки 2]. <a href="#ref-2" class="text-blue-500
     hover:underline">↩</a></p>
 </div>
-3. index.php в корнеи проекта для хоста:
+
+3. index.php в корне проекта для хоста:
 <?php
 // Путь к файлу public/index.php
 require_once __DIR__ . '/public/index.php';
+
 4. Настройка .env:
    Локально в .env указано:
 
@@ -57,6 +66,7 @@ require_once __DIR__ . '/public/index.php';
 
    APP_ENV=production
    APP_DEBUG=false
+
    5. <!-- Карточка с фото -->
                   <div class="flex justify-center">
                       <figure class="rounded-lg shadow-md max-w-[800px]
@@ -71,3 +81,34 @@ require_once __DIR__ . '/public/index.php';
                           </figcaption>
                       </figure>
                   </div>
+   6. <a href="{{ route('articles.адрес статьи') }}" class="text-blue-600 hover:underline">...</a>
+
+   7. Для списка
+   <ol class="list-decimal list-outside ml-8 pl-2">
+       <li>...</li>
+   <ol class="list-decimal list-outside pl-6 text-left w-full">
+       <li>...</li>
+       <li>...</li>
+   </ol>
+
+   8. Для цитат
+    <blockquote class="border-l-4 border-gray-500 pl-6 my-6 text-gray-800 text-lg">
+    </blockquote>
+
+        <ul class="list-disc pl-5 space-y-1 ml-8">
+            <li class="my-2">***</li>
+        </ul>
+
+        <ul class="list-none pl-5 space-y-1 ml-8">
+            <li class="my-2">***</li>
+        </ul>
+
+        <ol class="list-decimal list-outside ml-8 space-y-1 pl-5">
+            <li class="my-2">***</li>
+        </ol>
+
+    9. Для гита:
+   git add .
+   git commit -m "***"
+   git push
+

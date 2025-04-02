@@ -3,7 +3,7 @@
 @section('content')
     <div class="container h-full mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-center my-8">
-            <img src="{{ asset('images/stupa_BD.jpg') }}"
+            <img src="{{ asset('stupa/stupa_BD.jpg') }}"
                  alt="Священная ступа - символ просветленного ума"
                  class="rounded-lg shadow-lg w-full h-auto object-cover">
         </div>

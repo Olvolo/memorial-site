@@ -242,11 +242,10 @@ table {
  * 5. СТИЛИ ДЛЯ ЦИТАТ
  */
 .citation-mark {
-    @apply text-red-500 font-bold text-base sm:text-lg md:text-xl;
+    @apply text-red-500 font-bold text-base sm:text-lg md:text-xl relative;
 }
-
 .citation-mark sup {
-    @apply text-red-500 font-bold;
+    @apply text-red-500 font-bold absolute top-0 -right-3 text-xs;
 }
 
 blockquote {
