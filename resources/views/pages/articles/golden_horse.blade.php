@@ -7,7 +7,7 @@
 
         <div class="flex justify-center">
             <figure class="rounded-lg shadow-md max-w-[800px] text-center">
-                <img src="{{ asset('images/vajrasattva_netroystveniy_collapsed.png') }}"
+                <img src="{{ asset('images/vajrasattva_netroystveniy.png') }}"
                      alt="Золотой Конь бодхичитты"
                      class="rounded-lg w-full h-auto">
             </figure>
