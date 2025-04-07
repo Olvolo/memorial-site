@@ -105,7 +105,7 @@
             <!-- Разделительная черта -->
             <hr class="my-8 border-t-4 border-gray-500">
 
-            <div class="citations mt-4 border-t-2 pt-4">
+            <div class="citations mt-4">
                 <h4 class="text-center text-gray-800 font-bold text-xl
                 sm:text-xl md:text-xl my-4">ПРИМЕЧАНИЯ</h4>
 

@@ -845,8 +845,7 @@
                 Страха Божьего.
             </p>
             <p>
-                Само рождение и развитие цепочки этого явления: (мифический)
-                <a href="#citation-21" id="ref-21"
+                Само рождение и развитие цепочки этого явления: (мифический)<a href="#citation-21" id="ref-21"
                    class="citation-mark"><sup>21</sup></a>
                 первородный грех, осознание этого греха, а также своей вины
                 перед богом и как следствие осознавания греховности в
@@ -967,7 +966,7 @@
             <!-- Разделительная черта -->
             <hr class="my-8 border-t-4 border-gray-500">
 
-            <div class="mt-4 text-lg border-t-2 pt-4">
+            <div class="mt-4 text-lg">
                 <h4 class="text-center text-gray-800 font-bold text-xl
                 sm:text-xl md:text-xl my-4">ПРИМЕЧАНИЯ</h4>
 

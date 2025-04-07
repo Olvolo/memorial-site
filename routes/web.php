@@ -342,3 +342,27 @@ Route::get('/zheleznov_articles/philosophical_psychological_foundations_for_solv
 Route::get('/zheleznov_articles/question_buddhist_methodology', function () {
     return view('pages.zheleznov_articles.question_buddhist_methodology');
 })->name('zheleznov_articles.question_buddhist_methodology');
+
+Route::get('/pupishev_articles/not_i_in_buddhist_theory_and_practice', function () {
+    return view('pages.pupishev_articles.not_i_in_buddhist_theory_and_practice');
+})->name('pupishev_articles.not_i_in_buddhist_theory_and_practice');
+
+Route::get('/pupishev_articles/about_term_pratiyaksha', function () {
+    return view('pages.pupishev_articles.about_term_pratiyaksha');
+})->name('pupishev_articles.about_term_pratiyaksha');
+
+Route::get('/pupishev_articles/worldview_fundamentals', function () {
+    return view('pages.pupishev_articles.worldview_fundamentals');
+})->name('pupishev_articles.worldview_fundamentals');
+
+Route::get('/pupishev_articles/about_samsara_nature', function () {
+    return view('pages.pupishev_articles.about_samsara_nature');
+})->name('pupishev_articles.about_samsara_nature');
+
+Route::get('/pupishev_articles/general_scheme', function () {
+    return view('pages.pupishev_articles.general_scheme');
+})->name('pupishev_articles.general_scheme');
+
+Route::get('/pupishev_articles/prayer_for_birth_in_sukhavati', function () {
+    return view('pages.pupishev_articles.prayer_for_birth_in_sukhavati');
+})->name('pupishev_articles.prayer_for_birth_in_sukhavati');
