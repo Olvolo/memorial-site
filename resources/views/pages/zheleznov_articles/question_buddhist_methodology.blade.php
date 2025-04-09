@@ -2,6 +2,16 @@
 
 @section('title', 'К ВОПРОСУ О БУДДИЙСКОЙ МЕТОДОЛОГИИ')
 
+@push('styles')
+    <style>
+        .container {
+            background-image: url('{{ asset('backgrounds/paper-146904.png') }}');
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+@endpush
+
 @section('content')
     <div class="container mx-auto">
         <h1 class="text-center text-blue-900 font-bold text-2xl my-6">К ВОПРОСУ
@@ -1228,10 +1238,4 @@
     </div>
 
 @endsection
-<style>
-    .container {
-        background-image: url('{{ asset('backgrounds/paper-146904.png') }}');
-        background-attachment: fixed;
-        background-size: cover;
-    }
-</style>
+

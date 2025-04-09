@@ -10,9 +10,7 @@
     @if (App::environment('local'))
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     @else
-        <link rel="stylesheet"
-              href="{{ asset('build/assets/app-D9lNS4hB.css')
-              }}">
+        <link rel="stylesheet" href="{{ asset('build/assets/app-D9lNS4hB.css') }}">
         <script src="{{ asset('build/assets/app-CqflisoM.js') }}"></script>
     @endif
     {{-- Favicon и другие мета-теги --}}

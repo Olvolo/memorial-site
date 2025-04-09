@@ -33,6 +33,10 @@
             <h3 class="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 text-gray-800 text-center italic">
                 Виктор Николаевич Пупышев</h3>
             <ul class="list-none pl-5 sm:pl-6 space-y-2 text-base sm:text-lg custom-list">
+                <li><a href="{{ route('pupishev_articles.victor_nikolaevich_pupychev') }}"
+                       class="text-black hover:text-gray-700">Пупышев Виктор Николаевич </a></li>
+                <li><a href="{{ route('pupishev_articles.memories_of_bd_dandaron') }}"
+                       class="text-black hover:text-gray-700">Воспоминания о Б.Д. Дандароне</a></li>
                 <li><a href="{{ route('pupishev_articles.not_i_in_buddhist_theory_and_practice') }}"
                        class="text-black hover:text-gray-700">«Не-Я» в буддийской теории и практике</a></li>
                 <li><a href="{{ route('zheleznov_articles.vajrayana-teaching-on-the-identity-of-samsara-and-nirvana') }}"
@@ -47,6 +51,10 @@
                        class="text-black hover:text-gray-700">Общая схема совершенствования по пути мантраяны</a></li>
                 <li><a href="{{ route('pupishev_articles.prayer_for_birth_in_sukhavati') }}"
                        class="text-black hover:text-gray-700">Молитва о рождении в Сукхавати</a></li>
+                <li><a href="{{ route('pupishev_articles.honoring_the_teacher_ritual') }}"
+                       class="text-black hover:text-gray-700">Ритуал почитания учителя. Часть первая</a></li>
+                <li><a href="{{ route('pupishev_articles.honoring_the_teacher_ritual_part_two') }}"
+                       class="text-black hover:text-gray-700">Ритуал почитания учителя. Часть вторая</a></li>
 
             </ul>
         </div>

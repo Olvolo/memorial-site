@@ -2,6 +2,17 @@
 
 @section('title', 'Общая схема совершенствования по пути мантраяны')
 
+@push('styles')
+    <style>
+        .container {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+            url('{{ asset("backgrounds/wall_stone.jpg") }}');
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+@endpush
+
 @section('content')
 
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -353,12 +364,3 @@
         </div>
     </div>
 @endsection
-
-<style>
-    .container {
-        background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
-        url('{{ asset("backgrounds/wall_stone.jpg") }}');
-        background-attachment: fixed;
-        background-size: cover;
-    }
-</style>

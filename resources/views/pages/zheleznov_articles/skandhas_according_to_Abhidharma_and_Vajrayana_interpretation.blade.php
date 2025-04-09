@@ -1,7 +1,16 @@
 @extends('layouts.app')
 
-@section('title', 'Скандхи по Абхидхарме и в интерпретации
-ваджраяны')
+@section('title', 'Скандхи по Абхидхарме и в интерпретации ваджраяны')
+
+@push('styles')
+    <style>
+        .container {
+            background-image: url('{{ asset('backgrounds/paper-146904.png') }}');
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+@endpush
 
 @section('content')
 
@@ -480,10 +489,3 @@
         </div>
     </div>
 @endsection
-<style>
-    .container {
-        background-image: url('{{ asset('backgrounds/paper-146904.png') }}');
-        background-attachment: fixed;
-        background-size: cover;
-    }
-</style>

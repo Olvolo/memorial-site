@@ -2,6 +2,17 @@
 
 @section('title', 'Основы мировоззрения и мироощущения буддийских народов Центральной Азии')
 
+@push('styles')
+    <style>
+        .container {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+            url('{{ asset("backgrounds/wall_stone.jpg") }}');
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+@endpush
+
 @section('content')
 
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -394,11 +405,3 @@
 
 @endsection
 
-<style>
-    .container {
-        background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
-        url('{{ asset("backgrounds/wall_stone.jpg") }}');
-        background-attachment: fixed;
-        background-size: cover;
-    }
-</style>

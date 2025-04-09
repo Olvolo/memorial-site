@@ -155,13 +155,16 @@ require_once __DIR__ . '/public/index.php';
        </div>
      </div>
    @endsection
-
-   <style>
+11. Для стилей:
+@push('styles')
+    <style>
         .container {
-           background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
-           url('{{ asset("backgrounds/wall_stone.jpg") }}');
-           background-attachment: fixed;
-           background-size: cover;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+            url('{{ asset("backgrounds/wall_stone.jpg") }}');
+            background-attachment: fixed;
+            background-size: cover;
         }
-   </style>
+    </style>
+@endpush
+
 

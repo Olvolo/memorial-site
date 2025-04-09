@@ -366,3 +366,21 @@ Route::get('/pupishev_articles/general_scheme', function () {
 Route::get('/pupishev_articles/prayer_for_birth_in_sukhavati', function () {
     return view('pages.pupishev_articles.prayer_for_birth_in_sukhavati');
 })->name('pupishev_articles.prayer_for_birth_in_sukhavati');
+
+Route::get('/pupishev_articles/honoring_the_teacher_ritual', function () {
+    return view('pages.pupishev_articles.honoring_the_teacher_ritual');
+})->name('pupishev_articles.honoring_the_teacher_ritual');
+
+Route::get('/pupishev_articles/honoring_the_teacher_ritual_part_two', function () {
+    return view('pages.pupishev_articles.honoring_the_teacher_ritual_part_two');
+})->name('pupishev_articles.honoring_the_teacher_ritual_part_two');
+
+Route::get('/pupishev_articles/memories_of_bd_dandaron', function () {
+    return view('pages.pupishev_articles.memories_of_bd_dandaron');
+})->name('pupishev_articles.memories_of_bd_dandaron');
+
+
+Route::get('/pupishev_articles/victor_nikolaevich_pupychev', function () {
+    return view('pages.pupishev_articles.victor_nikolaevich_pupychev');
+})->name('pupishev_articles.victor_nikolaevich_pupychev');
+
