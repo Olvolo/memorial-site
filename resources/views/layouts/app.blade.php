@@ -10,7 +10,7 @@
     @if (App::environment('local'))
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     @else
-        <link rel="stylesheet" href="{{ asset('build/assets/app-D9lNS4hB.css') }}">
+        <link rel="stylesheet" href="{{ asset('build/assets/app-DAqWKr-5.css') }}">
         <script src="{{ asset('build/assets/app-CqflisoM.js') }}"></script>
     @endif
     {{-- Favicon и другие мета-теги --}}
@@ -47,7 +47,7 @@
                 <a href="{{ route('sangha') }}"
                    class="hover:text-gray-300 transition-colors">Сангха</a>
                 <a href="{{ route('memories') }}"
-                   class="hover:text-gray-300 transition-colors">Воспоминания</a>
+                   class="hover:text-gray-300 transition-colors">Дополнения</a>
                 <a href="{{ route('media') }}"
                    class="hover:text-gray-300 transition-colors">Медиа</a>
                 <a href="{{ route('contacts') }}"
@@ -71,7 +71,7 @@
                class="block hover:text-gray-300">Биография</a>
             <a href="{{ route('articles') }}" class="block hover:text-gray-300">Статьи</a>
             <a href="{{ route('sangha') }}" class="block hover:text-gray-300">Сангха</a>
-            <a href="{{ route('memories') }}" class="block hover:text-gray-300">Воспоминания</a>
+            <a href="{{ route('memories') }}" class="block hover:text-gray-300">Дополнения</a>
             <a href="{{ route('media') }}" class="block hover:text-gray-300">Медиа</a>
             <a href="{{ route('contacts') }}" class="block hover:text-gray-300">Контакты</a>
         </div>
@@ -98,7 +98,7 @@
                 <a href="{{ route('biography') }}" class="hover:text-gray-300 transition-colors">Биография</a>
                 <a href="{{ route('articles') }}" class="hover:text-gray-300 transition-colors">Статьи</a>
                 <a href="{{ route('sangha') }}" class="hover:text-gray-300 transition-colors">Сангха</a>
-                <a href="{{ route('memories') }}" class="hover:text-gray-300 transition-colors">Воспоминания</a>
+                <a href="{{ route('memories') }}" class="hover:text-gray-300 transition-colors">Дополнения</a>
                 <a href="{{ route('media') }}" class="hover:text-gray-300 transition-colors">Медиа</a>
                 <a href="{{ route('contacts') }}" class="hover:text-gray-300 transition-colors">Контакты</a>
             </nav>
@@ -118,7 +118,7 @@
                         <li><a href="{{ route('biography') }}" class="block hover:text-gray-300 py-1">Биография</a></li>
                         <li><a href="{{ route('articles') }}" class="block hover:text-gray-300 py-1">Статьи</a></li>
                         <li><a href="{{ route('sangha') }}" class="block hover:text-gray-300 py-1">Сангха</a></li>
-                        <li><a href="{{ route('memories') }}" class="block hover:text-gray-300 py-1">Воспоминания</a></li>
+                        <li><a href="{{ route('memories') }}" class="block hover:text-gray-300 py-1">Дополнения</a></li>
                         <li><a href="{{ route('media') }}" class="block hover:text-gray-300 py-1">Медиа</a></li>
                         <li><a href="{{ route('contacts') }}" class="block hover:text-gray-300 py-1">Контакты</a></li>
                     </ul>

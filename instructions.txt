@@ -147,9 +147,9 @@ require_once __DIR__ . '/public/index.php';
 
                        <h4 class="text-center text-gray-800 font-bold text-xl sm:text-xl md:text-xl my-4">ЛИТЕРАТУРА</h4>
 
-                       <ul class="text-left list-none w-full">
+                       <ol class="list-decimal list-outside ml-8 pl-2">
                            <li class="my-2">***</li>
-                       </ul>
+                       </ol>
 
                        <p class="text-right italic text-gray-600 mt-4">Author</p>
        </div>
@@ -166,5 +166,6 @@ require_once __DIR__ . '/public/index.php';
         }
     </style>
 @endpush
-
+ 12. Пример для ссылки на другую статью:
+  <p class="text-center"><a href="{{ route('family_history') }}" class="text-blue-600 hover:text-blue-800 underline">Подробнее об истории семьи</a></p>
 

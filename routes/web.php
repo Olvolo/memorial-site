@@ -384,3 +384,19 @@ Route::get('/pupishev_articles/victor_nikolaevich_pupychev', function () {
     return view('pages.pupishev_articles.victor_nikolaevich_pupychev');
 })->name('pupishev_articles.victor_nikolaevich_pupychev');
 
+Route::get('/additional_articles/lubsan-samdan-tsydenov', function () {
+    return view('pages.additional_articles.lubsan_samdan_tsydenov');
+})->name('additional_articles.lubsan_samdan_tsydenov');
+
+Route::get('/additional_articles/family_history', function () {
+    return view('pages.additional_articles.family_history');
+})->name('additional_articles.family_history');
+
+Route::get('/additional_articles/kudun_theocracy', function () {
+    return view('pages.additional_articles.kudun_theocracy');
+})->name('additional_articles.kudun_theocracy');
+
+Route::get('/additional_articles/khori_buryats', function () {
+    return view('pages.additional_articles.khori_buryats');
+})->name('additional_articles.khori_buryats');
+

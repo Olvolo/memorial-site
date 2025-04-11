@@ -17,6 +17,10 @@
 
         <!-- Основной текст -->
         <div class="text-justify text-base sm:text-lg leading-relaxed space-y-4">
+            <p class="italic my-4">
+                Записано со слов Б. Д.Дандарона, Ю. Алексеева и во время поездок в Бурятию в 1970–1987
+                гг. Использованы фрагменты официальных источников.
+            </p>
             <p>
                 В истории каждого народа периодически появляются фигуры, чья
                 жизнь, как в фокусе, собирает его самые дорогие и специфические
@@ -602,7 +606,8 @@
                          alt="Анчен Дашицыренов"
                          class="w-full object-cover">
                     <figcaption class="p-4 italic
-                    text-gray-600">Анчен Дашицыренов</figcaption>
+                    text-gray-600">Анчен Дашицыренов
+                    </figcaption>
                 </figure>
             </div>
             <p>
@@ -671,9 +676,9 @@
             </p>
 
             <!-- Преемственность -->
-            <h2 class="text-xl sm:text-2xl font-semibold mt-6 mb-4 text-gray-800">
-                ПРЕЕМСТВЕННОСТЬ
-            </h2>
+            <h3 class="text-xl sm:text-2xl font-semibold mt-6 mb-4 text-gray-800">
+                Преемственность
+            </h3>
             <p>
                 Среди тех, кто давал Лубсану Сандану посвящения, известны:
             </p>
@@ -721,8 +726,19 @@
                 Итоги этой деятельности налицо — возрождение всего спектра
                 буддийских школ не только в Забайкалье, но и на территории всей
                 России, и национальное, духовное возрождение самой Бурятии.
-                <span class="text-right block italic">В.М.</span>
+                <span class="text-right block italic">В. Монтлевич</span>
             </p>
+        </div>
+        <div class="text-justify text-base sm:text-lg leading-relaxed space-y-4">
+            <h4 class="text-xl sm:text-2xl font-semibold my-4 text-center text-gray-600">
+                Дополнительные материалы
+            </h4>
+            <ol class="list-decimal list-outside ml-8 pl-2">
+                <li class="my-2"><a href="{{ route('additional_articles.lubsan_samdan_tsydenov') }}" class="text-blue-600 hover:text-blue-800 underline">Буддийское учение как философская основа духовной деятельности Лубсан-Самдана Цыденова</a></li>
+                <li class="my-2"><a href="{{ route('additional_articles.kudun_theocracy') }}" class="text-blue-600 hover:text-blue-800 underline">Кудунская теократия Лубсан-Самдан Цыденова: истоки, содержание и хронология событий</a></li>
+                <li class="my-2"><a href="{{ route('additional_articles.khori_buryats') }}" class="text-blue-600 hover:text-blue-800 underline">О хоринских бурятах</a></li>
+
+            </ol>
         </div>
     </div>
 @endsection

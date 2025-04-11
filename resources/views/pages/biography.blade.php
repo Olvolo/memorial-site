@@ -42,7 +42,7 @@
                 фронте правую руку.
             </p>
             <p class="text-center">
-                <a href="{{ route('family_history') }}" class="text-blue-600 hover:text-blue-800
+                <a href="{{ route('additional_articles.family_history') }}" class="text-blue-600 hover:text-blue-800
                 underline">Подробнее об истории семьи</a>
             </p>
 
