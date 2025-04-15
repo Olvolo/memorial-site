@@ -26,6 +26,7 @@ html {
     font-size: 16px;
 }
 
+
 /* Увеличение для мобильных */
 @media (max-width: 639px) {
     html {

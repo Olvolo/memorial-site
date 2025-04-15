@@ -37,7 +37,7 @@ Route::get('/family-history', function () {
     return view('pages.family_history');
 })->name('family_history');
 
-// Статьи
+// Статьи Владимира Михайловича
 Route::get('/articles/ethics_of_buddhism', function () {
     return view('pages.articles.ethics_of_buddhism');
 })->name('articles.ethics_of_buddhism');
@@ -318,6 +318,23 @@ Route::get('/articles/stupa_dandaron', function () {
     return view('pages.articles.stupa_dandaron');
 })->name('articles.stupa_dandaron');
 
+Route::get('/articles/did_not_find', function () {
+    return view('pages.articles.did_not_find');
+})->name('articles.did_not_find');
+
+Route::get('/articles/teacher_workship', function () {
+    return view('pages.articles.teacher_workship');
+})->name('articles.teacher_workship');
+
+Route::get('/articles/trikaya_mantras', function () {
+    return view('pages.articles.trikaya_mantras');
+})->name('articles.trikaya_mantras');
+
+
+
+
+
+// Статьи Железнова
 Route::get('/zheleznov_articles/about_tibetan_tradition_buryat_buddhism', function () {
     return view('pages.zheleznov_articles.about_tibetan_tradition_buryat_buddhism');
 })->name('zheleznov_articles.about_tibetan_tradition_buryat_buddhism');
@@ -342,6 +359,8 @@ Route::get('/zheleznov_articles/philosophical_psychological_foundations_for_solv
 Route::get('/zheleznov_articles/question_buddhist_methodology', function () {
     return view('pages.zheleznov_articles.question_buddhist_methodology');
 })->name('zheleznov_articles.question_buddhist_methodology');
+
+// Статьи Пупышева
 
 Route::get('/pupishev_articles/not_i_in_buddhist_theory_and_practice', function () {
     return view('pages.pupishev_articles.not_i_in_buddhist_theory_and_practice');
@@ -384,6 +403,8 @@ Route::get('/pupishev_articles/victor_nikolaevich_pupychev', function () {
     return view('pages.pupishev_articles.victor_nikolaevich_pupychev');
 })->name('pupishev_articles.victor_nikolaevich_pupychev');
 
+// Дополнительные статьи
+
 Route::get('/additional_articles/lubsan-samdan-tsydenov', function () {
     return view('pages.additional_articles.lubsan_samdan_tsydenov');
 })->name('additional_articles.lubsan_samdan_tsydenov');
@@ -399,4 +420,123 @@ Route::get('/additional_articles/kudun_theocracy', function () {
 Route::get('/additional_articles/khori_buryats', function () {
     return view('pages.additional_articles.khori_buryats');
 })->name('additional_articles.khori_buryats');
+
+// Статьи А. М. Пятигорского
+Route::get('/pyatigorsky_articles/dandaron_departure', function () {
+    return view('pages.pyatigorsky_articles.dandaron_departure');
+})->name('pyatigorsky_articles.dandaron_departure');
+
+Route::get('/pyatigorsky-articles/metatheory-conversation-1', function () {
+    return view('pages.pyatigorsky_articles.pyatigorsky_metatheory_conversation_1');
+})->name('pyatigorsky_articles.metatheory_conversation_1');
+
+Route::get('/pyatigorsky-articles/metatheory-conversation-2', function () {
+    return view('pages.pyatigorsky_articles.pyatigorsky_metatheory_conversation_2');
+})->name('pyatigorsky_articles.metatheory_conversation_2');
+
+Route::get('/pyatigorsky-articles/metatheory-conversation-3', function () {
+    return view('pages.pyatigorsky_articles.pyatigorsky_metatheory_conversation_3');
+})->name('pyatigorsky_articles.metatheory_conversation_3');
+
+Route::get('/pyatigorsky_articles/buddhist_philosophia_lectures_1', function () {
+    return view('pages.pyatigorsky_articles.buddhist_philosophia_lectures_1');
+})->name('pyatigorsky_articles.buddhist_philosophia_lectures_1');
+
+Route::get('/pyatigorsky_articles/buddhist_philosophia_lectures_2', function () {
+    return view('pages.pyatigorsky_articles.buddhist_philosophia_lectures_2');
+})->name('pyatigorsky_articles.buddhist_philosophia_lectures_2');
+
+Route::get('/pyatigorsky_articles/buddhist_philosophia_lectures_3', function () {
+    return view('pages.pyatigorsky_articles.buddhist_philosophia_lectures_3');
+})->name('pyatigorsky_articles.buddhist_philosophia_lectures_3');
+
+Route::get('/pyatigorsky_articles/buddhist_philosophia_lectures_4', function () {
+    return view('pages.pyatigorsky_articles.buddhist_philosophia_lectures_4');
+})->name('pyatigorsky_articles.buddhist_philosophia_lectures_4');
+
+Route::get('/pyatigorsky_articles/buddhist_philosophia_lectures_5', function () {
+    return view('pages.pyatigorsky_articles.buddhist_philosophia_lectures_5');
+})->name('pyatigorsky_articles.buddhist_philosophia_lectures_5');
+
+Route::get('/pyatigorsky_articles/introduction_to_buddhist_philosophy_study_01', function () {
+    return view('pages.pyatigorsky_articles.introduction_to_buddhist_philosophy_study_01');
+})->name('pyatigorsky_articles.introduction_to_buddhist_philosophy_study_01');
+
+Route::get('/pyatigorsky_articles/introduction_to_buddhist_philosophy_study_02', function () {
+    return view('pages.pyatigorsky_articles.introduction_to_buddhist_philosophy_study_02');
+})->name('pyatigorsky_articles.introduction_to_buddhist_philosophy_study_02');
+
+Route::get('/pyatigorsky_articles/introduction_to_buddhist_philosophy_study_03', function () {
+    return view('pages.pyatigorsky_articles.introduction_to_buddhist_philosophy_study_03');
+})->name('pyatigorsky_articles.introduction_to_buddhist_philosophy_study_03');
+
+Route::get('/pyatigorsky_articles/introduction_to_buddhist_philosophy_study_04', function () {
+    return view('pages.pyatigorsky_articles.introduction_to_buddhist_philosophy_study_04');
+})->name('pyatigorsky_articles.introduction_to_buddhist_philosophy_study_04');
+
+Route::get('/pyatigorsky_articles/introduction_to_buddhist_philosophy_study_05', function () {
+    return view('pages.pyatigorsky_articles.introduction_to_buddhist_philosophy_study_05');
+})->name('pyatigorsky_articles.introduction_to_buddhist_philosophy_study_05');
+
+Route::get('/pyatigorsky_articles/introduction_to_buddhist_philosophy_study_06', function () {
+    return view('pages.pyatigorsky_articles.introduction_to_buddhist_philosophy_study_06');
+})->name('pyatigorsky_articles.introduction_to_buddhist_philosophy_study_06');
+
+Route::get('/pyatigorsky_articles/introduction_to_buddhist_philosophy_study_07', function () {
+    return view('pages.pyatigorsky_articles.introduction_to_buddhist_philosophy_study_07');
+})->name('pyatigorsky_articles.introduction_to_buddhist_philosophy_study_07');
+
+Route::get('/pyatigorsky_articles/introduction_to_buddhist_philosophy_study_08', function () {
+    return view('pages.pyatigorsky_articles.introduction_to_buddhist_philosophy_study_08');
+})->name('pyatigorsky_articles.introduction_to_buddhist_philosophy_study_08');
+
+Route::get('/pyatigorsky_articles/introduction_to_buddhist_philosophy_study_09', function () {
+    return view('pages.pyatigorsky_articles.introduction_to_buddhist_philosophy_study_09');
+})->name('pyatigorsky_articles.introduction_to_buddhist_philosophy_study_09');
+
+Route::get('/pyatigorsky_articles/introduction_to_buddhist_philosophy_study_10', function () {
+    return view('pages.pyatigorsky_articles.introduction_to_buddhist_philosophy_study_10');
+})->name('pyatigorsky_articles.introduction_to_buddhist_philosophy_study_10');
+
+Route::get('/pyatigorsky_articles/introduction_to_buddhist_philosophy_study_11', function () {
+    return view('pages.pyatigorsky_articles.introduction_to_buddhist_philosophy_study_11');
+})->name('pyatigorsky_articles.introduction_to_buddhist_philosophy_study_11');
+
+Route::get('/pyatigorsky_articles/introduction_to_buddhist_philosophy_study_12', function () {
+    return view('pages.pyatigorsky_articles.introduction_to_buddhist_philosophy_study_12');
+})->name('pyatigorsky_articles.introduction_to_buddhist_philosophy_study_12');
+
+Route::get('/pyatigorsky_articles/introduction_to_buddhist_philosophy_study_13', function () {
+    return view('pages.pyatigorsky_articles.introduction_to_buddhist_philosophy_study_13');
+})->name('pyatigorsky_articles.introduction_to_buddhist_philosophy_study_13');
+
+Route::get('/pyatigorsky_articles/introduction_to_buddhist_philosophy_study_14', function () {
+    return view('pages.pyatigorsky_articles.introduction_to_buddhist_philosophy_study_14');
+})->name('pyatigorsky_articles.introduction_to_buddhist_philosophy_study_14');
+
+Route::get('/pyatigorsky_articles/introduction_to_buddhist_philosophy_study_15', function () {
+    return view('pages.pyatigorsky_articles.introduction_to_buddhist_philosophy_study_15');
+})->name('pyatigorsky_articles.introduction_to_buddhist_philosophy_study_15');
+
+Route::get('/pyatigorsky_articles/introduction_to_buddhist_philosophy_study_16', function () {
+    return view('pages.pyatigorsky_articles.introduction_to_buddhist_philosophy_study_16');
+})->name('pyatigorsky_articles.introduction_to_buddhist_philosophy_study_16');
+
+Route::get('/pyatigorsky_articles/introduction_to_buddhist_philosophy_study_17', function () {
+    return view('pages.pyatigorsky_articles.introduction_to_buddhist_philosophy_study_17');
+})->name('pyatigorsky_articles.introduction_to_buddhist_philosophy_study_17');
+
+Route::get('/pyatigorsky_articles/introduction_to_buddhist_philosophy_study_18', function () {
+    return view('pages.pyatigorsky_articles.introduction_to_buddhist_philosophy_study_18');
+})->name('pyatigorsky_articles.introduction_to_buddhist_philosophy_study_18');
+
+Route::get('/pyatigorsky_articles/introduction_to_buddhist_philosophy_study_19', function () {
+    return view('pages.pyatigorsky_articles.introduction_to_buddhist_philosophy_study_19');
+})->name('pyatigorsky_articles.introduction_to_buddhist_philosophy_study_19');
+
+
+
+
+
+
 

@@ -2,14 +2,21 @@
 
 @section('title', 'Contacts')
 
-@section('container-bg', 'bg-emerald-50') {{-- Цвет фона для container --}}
-@section('content-container-bg', 'bg-emerald-200') {{-- Цвет фона для
-content-container --}}
+@push('styles')
+    <style>
+        .container {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+            url({{ asset('backgrounds/watercolor.jpg') }});
+            background-attachment: fixed;
+            background-size: cover;
+            height: 100vh;
+        }
+    </style>
+@endpush
 
 @section('content')
     <div class="container">
-        <h2 class="text-center text-2xl font-bold text-gray-800 mb-6">Связаться
-            с нами</h2>
+        <h2 class="text-center text-2xl font-bold text-blue-900 mb-6 italic">СВЯЗАТЬСЯ С НАМИ</h2>
         <div class="bg-emerald-100 p-6 rounded-lg shadow-md max-w-[800px]
         mx-auto">
 

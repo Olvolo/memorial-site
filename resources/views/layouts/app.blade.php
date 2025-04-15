@@ -10,7 +10,7 @@
     @if (App::environment('local'))
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     @else
-        <link rel="stylesheet" href="{{ asset('build/assets/app-DAqWKr-5.css') }}">
+        <link rel="stylesheet" href="{{ asset('build/assets/app-mIkfbprf.css') }}">
         <script src="{{ asset('build/assets/app-CqflisoM.js') }}"></script>
     @endif
     {{-- Favicon и другие мета-теги --}}
@@ -22,7 +22,22 @@
     <link rel="apple-touch-icon" sizes="180x180"
           href="{{ asset('favicon/apple-touch-icon.png') }}">
     <link rel="manifest" href="{{ asset('favicon/site.webmanifest') }}">
+    @push('styles')
+        <style>
+            .custom-bg {
+                background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.95)),
+                url('{{ asset("backgrounds/vajra-vishva.jpg") }}');
+                background-attachment: fixed;
+                background-size: cover;
+                background-position: center;
+                background-repeat: repeat;
+            }
+        </style>
+    @endpush
+
     @stack('styles')
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.0/dist/cdn.min.js" defer></script>
+
 </head>
 <body class="font-sans text-gray-800 min-h-screen flex flex-col">
 <!-- Header -->
@@ -79,7 +94,7 @@
 </header>
 
 <!-- Основной контент -->
-<main class="flex-grow w-full @yield('main-class', 'bg-amber-50')">
+<main class="flex-grow w-full @yield('main-class', 'custom-bg')">
     <div class="container mx-auto max-w-screen-xl @yield('container-fluid p-3')">
         @yield('content')
     </div>

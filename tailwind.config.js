@@ -1,5 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+    variants: {
+        extend: {
+            rotate: ['group-hover'],
+        }
+    },
     content: [
         "./resources/**/*.{blade.php,js,vue,jsx,ts}",
     ],

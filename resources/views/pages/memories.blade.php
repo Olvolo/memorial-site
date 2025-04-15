@@ -2,20 +2,22 @@
 
 @section('title', 'Дополнения')
 
-@section('main-class', 'bg-amber-50 bg-fixed bg-cover')
-
 @push('styles')
     <style>
-        main {
-            background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
-            url('{{ asset("backgrounds/unsplash.jpg") }}');
+        .container {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+            url({{ asset('backgrounds/watercolor.jpg') }});
+            background-attachment: fixed;
+            background-size: cover;
+            height: 100vh;
         }
     </style>
 @endpush
 
 @section('content')
-        <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-center text-orange-800 mb-6 sm:mb-8">
-            Дополнения</h2>
+    <div class="container">
+        <h2 class="text-2xl font-bold text-center text-blue-900 mb-6 sm:mb-8 italic">
+            ДОПОЛНИТЕЛЬНЫЕ МАТЕРИАЛЫ</h2>
         <div class="flex justify-center">
             <div class="text-left">
                 <p class="mt-0">
@@ -39,5 +41,6 @@
                 </p>
             </div>
         </div>
+    </div>
 
 @endsection

@@ -1,7 +1,19 @@
 @extends('layouts.app')
 @section('title', 'Биография')
-@section('content')
 
+@push('styles')
+    <style>
+        .container {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+            url({{ asset('backgrounds/watercolor.jpg') }});
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+@endpush
+
+@section('content')
+    <div class="container mx-auto">
         <img src="{{ asset('images/VM-optimized.jpg') }}"
              alt="Владимир Михайлович Монтлевич"
              class="mx-auto my-4 sm:my-6 rounded-lg shadow-md w-full max-w-[320px] sm:max-w-[384px] md:max-w-[448px] lg:max-w-[512px] max-h-[480px] sm:max-h-[576px] md:max-h-[672px] lg:max-h-[770px] object-cover">
@@ -122,5 +134,5 @@
             <p class="text-right text-sm sm:text-base"><em>20 февраля 2007
                     г.</em></p>
         </div>
-{{--    </div>--}}
+  </div>
 @endsection

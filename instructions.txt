@@ -118,6 +118,18 @@ require_once __DIR__ . '/public/index.php';
 
    @section('title', '***')
 
+   @push('styles')
+       <style>
+           .container {
+               background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+               url('{{ asset("backgrounds/wall_stone.jpg") }}');
+               background-attachment: fixed;
+               background-size: cover;
+           }
+       </style>
+
+   @endpush
+
    @section('content')
 
        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -169,3 +181,74 @@ require_once __DIR__ . '/public/index.php';
  12. Пример для ссылки на другую статью:
   <p class="text-center"><a href="{{ route('family_history') }}" class="text-blue-600 hover:text-blue-800 underline">Подробнее об истории семьи</a></p>
 
+13. Шаблон для автора и цикла статей:
+ <!-- Новый автор добавляется так же -->
+    <div x-data="{ open: false }" class="bg-blue-200 p-4 rounded-lg cursor-pointer"
+         @click="open = !open">
+        <h3 class="text-xl font-semibold text-gray-800 text-center italic flex justify-between items-center">
+            Имя нового автора
+            <span x-text="open ? '−' : '+'"></span>
+        </h3>
+
+        <ul x-show="open" class="list-none pl-5 space-y-2 text-base mt-3">
+            <li><a href="#" class="text-black hover:text-gray-700">Работа 1</a></li>
+            <li><a href="#" class="text-black hover:text-gray-700">Работа 2</a></li>
+        </ul>
+    </div>
+    14. Шаблон для автора:
+
+    <!-- Блок автора N -->
+            <div x-data="{ open: false }" class="bg-emerald-200 rounded-lg">
+                <div class="p-4 cursor-pointer" @click="open = !open">
+                    <h3 class="text-xl font-semibold flex justify-between items-center">
+                        **
+                        <span class="toggle-icon text-xs font-normal text-gray-600 px-2 py-1 bg-green-200 rounded" x-text="open ? 'Свернуть' : 'Статьи'"></span>                </h3>
+                </div>
+
+                <ul x-show="open" x-transition.duration.200ms
+                    class="list-none pl-5 space-y-2 text-base mt-3 bg-emerald-100 p-4 rounded-b-lg">
+                    <li><a href="{{ route('***') }}"
+                           class="text-black hover:text-gray-700">***</a></li>
+
+                </ul>
+            </div>
+ 15. Сделай полностью без пропусков n-й семинар, до этого мы сделали n-1, вот образец кода для вставляемого текста со сносками и примечаниями:
+     @extends('layouts.app')
+     @section('title', 'Введение в изучение буддийской философии. Семинар n')
+     @push('styles')
+         <style>
+             .container {
+                 background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+                 url('{{ asset('backgrounds/watercolor.jpg') }}');
+                 background-attachment: fixed;
+                 background-size: cover;
+             }
+             .citation-mark:hover {
+                 text-decoration: underline;
+             }
+         </style>
+     @endpush
+     @section('content')
+         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+             <div class="text-justify text-gray-800 text-base sm:text-lg leading-relaxed space-y-6">
+                 <!-- Основной текст семинара -->
+                 <h2 class="text-2xl font-bold text-center text-zinc-700 mb-8">Семинар n</h2>
+                 <h3 class="text-xl text-center font-semibold text-zinc-700 mb-4">***<a href="#citation-1" id="ref-1" class="citation-mark"><sup>1</sup></a>
+                    ***</h3><blockquote class="my-6 pl-4 border-l-4 border-gray-300">
+                     <p>***</p>
+     <-- Далее для краткости опускаю, но ты вставляешь полный текст -->
+     <p>некий текст<a href="#citation-9" id="ref-9" class="citation-mark"><sup>9</sup></a>.</p>
+      </blockquote>
+     <h3 class="text-xl text-center font-semibold text-zinc-700 my-4">некий подзаголовок</h3>
+                 <p>***</p>
+                 <!-- Разделительная черта -->
+                 <hr class="my-8 border-t-4 border-gray-500">
+                 <!-- Блок примечаний -->
+                 <div class="citations mt-4 text-lg">
+                     <h4 class="text-center text-gray-800 font-bold text-xl sm:text-xl md:text-xl my-4">ПРИМЕЧАНИЯ</h4>
+               <p class="mb-3" id="citation-1"><sup>1</sup> ***<a
+                             href="#ref-1" class="text-blue-500 hover:underline">↩</a></p>
+                 </div>
+             </div>
+         </div>
+     @endsection
