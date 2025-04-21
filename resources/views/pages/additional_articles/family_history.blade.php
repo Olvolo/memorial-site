@@ -1,8 +1,17 @@
 @extends('layouts.app')
-
 @section('title', 'История семьи Монтлевичей и Шафрановских')
-
+@push('styles')
+    <style>
+        .container {
+            background-image: url('{{ asset('backgrounds/paper-146904.png') }}');
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+@endpush
 @section('content')
+    <div class="container h-full mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-justify text-base sm:text-lg leading-relaxed space-y-4">
 
         <h1 class="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-bold
         text-center mb-6 sm:mb-8">
@@ -1350,5 +1359,6 @@
             <p class="text-right text-sm sm:text-base"><em>Апрель 1999 года,
                     Санмедчасть № 122</em></p>
         </div>
-
+        </div>
+    </div>
 @endsection

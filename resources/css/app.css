@@ -25,7 +25,11 @@
 html {
     font-size: 16px;
 }
-
+@layer components {
+    .poem-line {
+        @apply font-semibold block text-sm sm:text-base md:text-lg;
+    }
+}
 
 /* Увеличение для мобильных */
 @media (max-width: 639px) {

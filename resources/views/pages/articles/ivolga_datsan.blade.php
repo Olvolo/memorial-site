@@ -1,7 +1,14 @@
 @extends('layouts.app')
-
 @section('title', 'Иволгинский дацан. Начало и продолжение.')
-
+@push('styles')
+    <style>
+        .container {
+            background-image: url('{{ asset('backgrounds/paper-146904.png') }}');
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+@endpush
 @section('content')
 
     <div class="container h-full mx-auto px-4 sm:px-6 lg:px-8">
@@ -252,10 +259,3 @@
     </div>
 
 @endsection
-<style>
-    .container {
-        background-image: url('{{ asset('backgrounds/paper-146904.png') }}');
-        background-attachment: fixed;
-        background-size: cover;
-    }
-</style>

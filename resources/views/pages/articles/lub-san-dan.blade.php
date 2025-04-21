@@ -1,7 +1,15 @@
 @extends('layouts.app')
-
 @section('title', 'Лубсан Сандан Цыденов')
-
+@push('styles')
+    <style>
+        .container {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+            url('{{ asset("backgrounds/bluerish.webp") }}');
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+@endpush
 @section('content')
     <div class="container mx-auto">
         <div class="flex justify-center mb-8">
@@ -742,11 +750,3 @@
         </div>
     </div>
 @endsection
-
-<style>
-    .container {
-        background-image: url('{{ asset('images/unsplash.jpg') }}');
-        background-attachment: fixed;
-        background-size: cover;
-    }
-</style>

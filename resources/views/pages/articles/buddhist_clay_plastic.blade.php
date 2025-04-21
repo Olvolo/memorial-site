@@ -2,7 +2,16 @@
 
 @section('title', 'Буддийская глиняная пластика')
 @section('meta_description', 'Коллекция буддийской глиняной пластики из Тибета, Монголии и Бурятии. Исследование традиционных образцов сакрального искусства.')
-
+@push('styles')
+    <style>
+        .container {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+            url('{{ asset('backgrounds/combination-makeup-textures.webp') }}');
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+@endpush
 @section('content')
 
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
@@ -20,14 +29,12 @@
             </div>
         </div>
         <!-- Основной текст -->
-        <div
-            class="text-justify text-base sm:text-lg leading-relaxed space-y-4">
+        <div class="text-justify text-base sm:text-lg leading-relaxed space-y-4">
 
             <h1 class="text-2xl font-bold text-center mt-6 mb-8
     text-amber-800">
                 Буддийская глиняная пластика
             </h1>
-
             <p>
                 Именно буддийским искусством, а не бурятским, монгольским или
                 тибетским стоит называть искусство глиняной пластики названных
@@ -766,12 +773,3 @@
         </div>
     </div>
 @endsection
-
-<style>
-    .container {
-        background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
-        url('{{ asset('backgrounds/combination-makeup-textures_800.jpg') }}');
-        background-attachment: fixed;
-        background-size: cover;
-    }
-</style>

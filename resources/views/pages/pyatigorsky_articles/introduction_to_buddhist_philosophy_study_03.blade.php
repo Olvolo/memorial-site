@@ -10,7 +10,6 @@
             background-attachment: fixed;
             background-size: cover;
         }
-
         .citation-mark:hover {
             text-decoration: underline;
         }

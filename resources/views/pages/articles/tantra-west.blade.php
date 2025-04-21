@@ -1,7 +1,17 @@
 @extends('layouts.app')
 
 @section('title', 'Тантра – на Запад!')
-
+@push('styles')
+    <style>
+        .container {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255,
+            255, 255, 0.8)),
+            url('{{ asset('backgrounds/watercolor.jpg') }}');
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+@endpush
 @section('content')
     <div class="container mx-auto h-full">
         <div class="flex justify-center">
@@ -39,8 +49,7 @@
         </h2>
 
         <!-- Основной текст -->
-        <div
-            class="text-justify text-base sm:text-lg leading-relaxed space-y-4">
+        <div class="text-justify text-base sm:text-lg leading-relaxed space-y-4">
             <p>
                 На публикацию в нашем журнале статьи В. М. Монтлевича «Буддизм
                 на севере России» (№2, 1990) откликнулось не менее ста
@@ -370,9 +379,9 @@
             <p class="text-right italic mt-4">
                 В. Монтлевич
             </p>
-            <p class="text-right"><i>(журнал «Наука и Религия», 1991г., № 2,
+            <p class="text-right"><em>(журнал «Наука и Религия», 1991г., № 2,
                     стр. 31-33
-                </i></p>
+                </em></p>
 
             <!-- Примечания -->
             <div class="citations mt-8 text-sm border-t pt-4">
@@ -387,12 +396,3 @@
         </div>
     </div>
 @endsection
-<style>
-    .container {
-        background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255,
-        255, 255, 0.8)),
-        url('{{ asset('backgrounds/watercolor.jpg') }}');
-        background-attachment: fixed;
-        background-size: cover;
-    }
-</style>

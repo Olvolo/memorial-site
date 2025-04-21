@@ -190,6 +190,10 @@ Route::get('/articles/home', function () {
     return view('pages.articles.home');
 })->name('articles.home');
 
+Route::get('/articles/preface_letters', function () {
+    return view('pages.articles.preface_letters');
+})->name('articles.preface_letters');
+
 Route::get('/articles/five-dhyanibuddhas', function () {
     return view('pages.articles.five_dhyanibuddhas');
 })->name('articles.five_dhyanibuddhas');
@@ -422,6 +426,10 @@ Route::get('/additional_articles/khori_buryats', function () {
 })->name('additional_articles.khori_buryats');
 
 // Статьи А. М. Пятигорского
+Route::get('/pyatigorsky_articles/mainly_interesting', function () {
+    return view('pages.pyatigorsky_articles.mainly_interesting');
+})->name('pyatigorsky_articles.mainly_interesting');
+
 Route::get('/pyatigorsky_articles/dandaron_departure', function () {
     return view('pages.pyatigorsky_articles.dandaron_departure');
 })->name('pyatigorsky_articles.dandaron_departure');
@@ -534,9 +542,14 @@ Route::get('/pyatigorsky_articles/introduction_to_buddhist_philosophy_study_19',
     return view('pages.pyatigorsky_articles.introduction_to_buddhist_philosophy_study_19');
 })->name('pyatigorsky_articles.introduction_to_buddhist_philosophy_study_19');
 
+// Статьи Данелюса
+Route::get('/danelus_articles/about_antanas', function () {
+    return view('pages.danelus_articles.about_antanas');
+})->name('danelus_articles.about_antanas');
 
-
-
+Route::get('/danelus_articles/beyond_space_time', function () {
+    return view('pages.danelus_articles.beyond_space_time');
+})->name('danelus_articles.beyond_space_time');
 
 
 

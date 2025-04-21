@@ -1,7 +1,5 @@
 @extends('layouts.app')
-
 @section('title', 'Уход Дандарона')
-
 @push('styles')
     <style>
         .container {
@@ -13,15 +11,12 @@
     </style>
 @endpush
 @section('content')
-
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-
         <!-- Заголовок -->
         <h1 class="text-center text-zinc-600 font-bold text-2xl sm:text-2xl md:text-2xl mt-6 mb-6">
             Уход Дандарона</h1>
         <!-- Основной текст -->
         <div class="text-justify text-base sm:text-lg leading-relaxed space-y-4">
-
             <p>
                 Блестящий наследник монгольской йогической традиции Северного (тибетского)
                 буддизма и одновременно талантливый продолжатель русской традиции классической

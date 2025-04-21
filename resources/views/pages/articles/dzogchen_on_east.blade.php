@@ -1,7 +1,14 @@
 @extends('layouts.app')
-
 @section('title', 'Дзогчен на Востоке Европы')
-
+@push('styles')
+    <style>
+        .container {
+            background-image: url('{{ asset('backgrounds/paper-146904.png') }}');
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+@endpush
 @section('content')
 
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -56,7 +63,6 @@
                 западе бывшего Союза следующим образом:
             </p>
 
-
             <p>
                 "Санжейлинг" - санкт-петербургская сфера дзогчена ("Санжей",
                 тиб. - означает Будда).
@@ -66,7 +72,6 @@
                 санскритского "ваджра" - неразрушимый, алмазный).
             </p>
             <p>
-
             </p>
             <p>
                 "Ринченлинг" - московская сфера дзогчена ("Ринчен", тиб. - драгоценность).
@@ -77,23 +82,12 @@
             <p>
                 "Кармалинг" - Харьков.
             </p>
-
             <p class="text-right italic text-gray-600 mt-4">
                 В.М.
             </p>
             <p class="text-right italic text-gray-600 mt-4">
                 Журнал Гаруда", №1, 1992г.
             </p>
-
         </div>
     </div>
-
 @endsection
-<style>
-    .container {
-        background-image: url('{{ asset('backgrounds/paper-146904.png')
-        }}');
-        background-attachment: fixed;
-        background-size: cover;
-    }
-</style>

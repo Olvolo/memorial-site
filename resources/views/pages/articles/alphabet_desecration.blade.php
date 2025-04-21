@@ -1,8 +1,17 @@
 @extends('layouts.app')
-
 @section('title', 'Поругание русского алфавита')
-
+@push('styles')
+    <style>
+        .container {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9)),
+            url('{{ asset("backgrounds/pink_green.webp") }}');
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+@endpush
 @section('content')
+    <div class="container mx-auto px-4 py-8">
 
     <img src="{{ asset('images/alphabet_desecration.png') }}"
          alt="Поругание русского алфавита"
@@ -10,6 +19,7 @@
     <!-- Заголовок -->
     <h1 class="text-2xl font-bold text-center mt-6 mb-8">17.02.2012:
         ПОРУГАНИЕ РУССКОГО АЛФАВИТА</h1>
+    <div class="text-justify text-base sm:text-lg leading-relaxed space-y-4">
 
     <p class="text-justify">На входе в Александровский парк, если идти от
         Петропавловской крепости, установлена странная композиция. В центре
@@ -37,8 +47,9 @@
     <p class="text-justify">Предлагаю демонтировать это позорное сооружение.</p>
 
     <p class="text-right">Владимир Михайлович МОНТЛЕВИЧ</p>
-    <p class="text-right"><i>г. Санкт-Петербург</i></p>
-
+    <p class="text-right"><em>г. Санкт-Петербург</em></p>
+    </div>
+    </div>
 @endsection
 
 

@@ -1,7 +1,5 @@
 @extends('layouts.app')
-
 @section('title', 'Не ищу специально несказанного')
-
 @push('styles')
     <style>
         .container {
@@ -12,11 +10,8 @@
         }
     </style>
 @endpush
-
 @section('content')
-
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-
         <!-- Заголовок -->
         <h1 class="text-center text-red-700 font-bold text-3xl sm:text-3xl md:text-3xl my-6">Не ищу специально несказанного</h1>
         <!-- Основной текст -->
@@ -56,9 +51,6 @@
                     <li class="my-2 ml-4">прорастает бытие.</li>
                 </ul>
             </div>
-
-
-
             <p class="text-right italic text-gray-600 mt-4">ВМ 1992</p>
         </div>
     </div>

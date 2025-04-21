@@ -1,7 +1,15 @@
 @extends('layouts.app')
-
 @section('title', 'Буддизм на севере России')
-
+@push('styles')
+    <style>
+        .container {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+            url('{{ asset("backgrounds/bluerish.webp") }}');
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+@endpush
 @section('content')
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <!-- Фото статьи из газеты -->
@@ -226,8 +234,8 @@
             <p class="text-right italic mt-4">
                 В. Монтлевич
             </p>
-            <p class="text-right"><i>(журнал «Наука и Религия», 1990г., № 2, стр. 8-9)
-                </i></p>
+            <p class="text-right"><em>(журнал «Наука и Религия», 1990г., № 2, стр. 8-9)
+                </em></p>
         </div>
     </div>
 @endsection

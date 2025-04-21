@@ -1,19 +1,30 @@
 @extends('layouts.app')
 @section('title', 'Перенормировка I')
+@push('styles')
+    <style>
+        .container {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.85)),
+            url({{ asset('backgrounds/bluerish.webp') }});
+            background-attachment: fixed;
+            background-size: cover;
+            min-height: 100vh;
+        }
+    </style>
+@endpush
 @section('content')
-    <div class="container h-full text-center mx-auto px-4 py-6">
+    <div class="container text-center mx-auto px-4 py-6">
 
-        <div class=" mb-8">
-            <h1 class="text-2xl sm:text-3xl font-bold text-red-600">
+        <div class=" my-8">
+            <h1 class="text-2xl sm:text-3xl font-bold text-blue-900">
                 Перенормировка I,
             </h1>
-            <p class="text-xl sm:text-2xl mt-4 font-semibold">или</p>
-            <p class="text-2xl sm:text-3xl font-bold text-red-600 mt-4">
+            <p class="text-xl sm:text-2xl mt-4 font-medium">или</p>
+            <p class="text-2xl sm:text-3xl font-bold text-blue-900 mt-4">
                 Кальпа-Акаша Катастрофа
             </p>
         </div>
         <div class="flex justify-center">
-            <ul class="text-lg sm:text-xl text-left font-semibold list-none">
+            <ul class="text-lg sm:text-xl text-left font-medium list-none">
                 <li>Не Кальпа</li>
                 <li>Не Спасение</li>
                 <li>Не Свобода</li>
@@ -34,11 +45,4 @@
         </p>
     </div>
 @endsection
-<style>
-    .container {
-        background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
-        url('{{ asset('backgrounds/ice.jpg') }}');
-        background-attachment: fixed;
-        background-size: cover;
-    }
-</style>
+

@@ -1,18 +1,15 @@
 @extends('layouts.app')
-
 @section('title', 'Золотой Конь бодхичитты')
-
 @push('styles')
     <style>
         .container {
-            background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
-            url({{ asset('backgrounds/ice.jpg') }});
+            background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.85)),
+            url({{ asset('backgrounds/bluerish.webp') }});
             background-attachment: fixed;
             background-size: cover;
         }
     </style>
 @endpush
-
 @section('content')
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
 
@@ -32,7 +29,7 @@
                     <h2 class="text-xl font-bold">Мула Правидья</h2>
                 </div>
 
-                <div class="poem space-y-6">
+                <div class="poem space-y-6 font-medium">
                     <div class="stanza mb-8">
                         <span class="line block">Приветствую в себе Саманта Ваджрасаттву Видьядхару.</span>
                         <span class="line block">В Саманте – полнота Дхармакаи,</span>

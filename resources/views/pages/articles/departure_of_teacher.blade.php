@@ -1,7 +1,15 @@
 @extends('layouts.app')
-
 @section('title', 'Уход Учителя. Лама Дарма-Доди (1900-1993)')
-
+@push('styles')
+    <style>
+        .container {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9)),
+            url('{{ asset("backgrounds/salad_blue.webp") }}');
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+@endpush
 @section('content')
     <div class="container mx-auto px-4 py-8">
         <div class="flex justify-center my-6">
@@ -67,6 +75,6 @@
             которых драгоценная линия Традиции не прерываясь дошла до нас из
             дали священных стран и веков.</p>
 
-        <p class="text-right"><i>1994 г.</i><br><i>(ж. «Гаруда», № 6)</i></p>
+        <p class="text-right"><em>1994 г.</em><br><em>(ж. «Гаруда», № 6)</em></p>
     </div>
 @endsection

@@ -1,7 +1,15 @@
 @extends('layouts.app')
-
 @section('title', 'ОГОНЬ')
-
+@push('styles')
+    <style>
+        .container {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.85)),
+            url({{ asset('backgrounds/bluerish.webp') }});
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+@endpush
 @section('content')
     <div class="container mx-auto h-full">
         <img src="{{ asset('images/Fire.jpg') }}" alt="Дом"
@@ -12,7 +20,6 @@
         md:text-4xl mt-6 mb-6">
             ОГОНЬ
         </h1>
-
         <!-- Эпиграф -->
         <div class="text-right mb-6">
             <p class="italic text-base sm:text-lg">
@@ -22,7 +29,6 @@
                 <span class="text-sm">В. Ковалев</span>
             </p>
         </div>
-
         <!-- Основной текст -->
         <div
             class="text-justify text-base sm:text-lg leading-relaxed space-y-4">
@@ -87,11 +93,3 @@
         </div>
     </div>
 @endsection
-<style>
-    .container {
-        background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
-        url('{{ asset('backgrounds/ice.jpg') }}');
-        background-attachment: fixed;
-        background-size: cover;
-    }
-</style>

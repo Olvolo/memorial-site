@@ -1,7 +1,14 @@
 @extends('layouts.app')
-
 @section('title', 'Дзогчен')
-
+@push('styles')
+    <style>
+        .container {
+            background-image: url('{{ asset('backgrounds/paper-146904.png') }}');
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+@endpush
 @section('content')
 
     <div class="container h-full mx-auto px-4 sm:px-6 lg:px-8">
@@ -17,8 +24,7 @@
         <h1 class="text-center text-blue-900 font-bold text-2xl sm:text-2xl
         md:text-2xl mt-6 mb-6">Дзогчен</h1>
         <!-- Основной текст -->
-        <div
-            class="text-justify text-base sm:text-lg leading-relaxed space-y-4">
+        <div class="text-justify text-base sm:text-lg leading-relaxed space-y-4">
             <p>
                 Дзогчен - древнейшее учение о Великом Совершенстве целостного
                 бытия. Дзогчен восходит к предыстории цивилизаций и не ограничен
@@ -307,10 +313,3 @@
     </div>
 
 @endsection
-<style>
-    .container {
-        background-image: url('{{ asset('backgrounds/paper-146904.png') }}');
-        background-attachment: fixed;
-        background-size: cover;
-    }
-</style>

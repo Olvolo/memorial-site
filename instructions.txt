@@ -252,3 +252,11 @@ require_once __DIR__ . '/public/index.php';
              </div>
          </div>
      @endsection
+16. Блок стихов по центру:
+ <div class="flex justify-center">
+            <ul class="text-left list-none w-64">
+                <li>***</li>
+                <li>***</li>
+
+            </ul>
+        </div>

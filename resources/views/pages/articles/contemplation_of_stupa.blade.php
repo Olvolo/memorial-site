@@ -1,5 +1,39 @@
 @extends('layouts.app')
 @section('title', 'Венец небес, земли корона')
+@push('styles')
+    <style>
+        .container {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+            url('{{ asset('backgrounds/texture_blue_green.webp') }}');
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .poetry {
+            line-height: 1.2;
+            font-size: 0.9rem;
+            color: #333;
+        }
+        .poetry p {
+            margin: 0.5rem 0;
+        }
+        .font-mantra {
+            letter-spacing: 0.05em;
+            font-weight: bold;
+        }
+        @media (min-width: 640px) {
+            .poetry {
+                font-size: 1rem;
+                line-height: 1.2;
+            }
+        }
+        @media (min-width: 1024px) {
+            .poetry {
+                font-size: 1.1rem;
+                line-height: 1.2;
+            }
+        }
+    </style>
+@endpush
 @section('content')
     <div class="container h-full mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-center my-8">
@@ -14,8 +48,6 @@
             СОЗЕРЦАНИЕ БЕЛОЙ СТУПЫ ВАДЖРАСАТТВЫ –<br>
             СТУПЫ УЧИТЕЛЯ
         </h1>
-
-
         <!-- Поэтические разделы -->
         <div class="space-y-10">
             <!-- Первое стихотворение -->
@@ -43,12 +75,10 @@
                 <p>Куда ни посмотрю, Ступа Учителя во мне,</p>
                 <p><em>Сваямбхой</em> выступает из макушки.</p>
             </div>
-
             <!-- Разделитель -->
             <div class="flex justify-center">
                 <div class="w-16 h-px bg-gray-500 my-2"></div>
             </div>
-
             <!-- Второе стихотворение -->
             <div class="poetry text-center space-y-4">
                 <p>Белая Ступа – это Тело Учителя, и я не отличим от Него.</p>
@@ -63,12 +93,10 @@
                 <p>Так пребываю.</p>
                 <p class="font-mantra text-lg text-amber-700 mt-4"><em>ОМ А ХУМ</em></p>
             </div>
-
             <!-- Разделитель -->
             <div class="flex justify-center">
                 <div class="w-16 h-px bg-gray-500 my-2"></div>
             </div>
-
             <!-- Третье стихотворение -->
             <div class="poetry text-center space-y-4">
                 <p>Не покидает моих глаз Белая Ступа Ваджрасаттвы –</p>
@@ -90,40 +118,7 @@
                 <p class="font-mantra text-lg text-amber-700 mt-4"><em>ХРИ БИДЬЯДАРА СТУПА ХУМ ПАД</em></p>
             </div>
         </div>
-
         <!-- Дата -->
         <p class="text-right italic text-gray-600 mt-10">Август 2004 г.</p>
     </div>
 @endsection
-<style>
-    .container {
-        background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
-        url('{{ asset('backgrounds/watercolor.jpg') }}');
-        background-attachment: fixed;
-        background-size: cover;
-    }
-    .poetry {
-        line-height: 1.2;
-        font-size: 0.9rem;
-        color: #333;
-    }
-    .poetry p {
-        margin: 0.5rem 0;
-    }
-    .font-mantra {
-        letter-spacing: 0.05em;
-        font-weight: bold;
-    }
-    @media (min-width: 640px) {
-        .poetry {
-            font-size: 1rem;
-            line-height: 1.2;
-        }
-    }
-    @media (min-width: 1024px) {
-        .poetry {
-            font-size: 1.1rem;
-            line-height: 1.2;
-        }
-    }
-</style>

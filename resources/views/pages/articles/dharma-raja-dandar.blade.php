@@ -1,7 +1,19 @@
 @extends('layouts.app')
-
 @section('title', 'Дхармараджа Бидия Дандарон')
-
+<style>
+    .container {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255,
+        255, 255, 0.8)),
+        url('{{ asset('backgrounds/watercolor.jpg') }}');
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    @media (min-width: 650px) {
+        #ref-1 {
+            padding-left: 50px;
+        }
+    }
+</style>
 @section('content')
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <!-- Основное изображение -->
@@ -709,9 +721,12 @@
                 В.М. Монтлевич, 1992
             </p>
         </div>
+        <!-- Разделительная черта -->
+        <hr class="my-8 border-t-4 border-gray-500">
 
-        <!-- Сноски -->
-        <div class="citations mt-8 border-t pt-4">
+        <div class="citations mt-4 text-lg">
+            <h4 class="text-center text-gray-800 font-bold text-xl sm:text-xl md:text-xl my-4">ПРИМЕЧАНИЯ</h4>
+            
             <p id="citation-1"><sup>1</sup> Махамудра – буквально “Великий
                 Знак”. На уровне Ануттарайогатантры – это включенность в
                 ситуацию при реализации недвойственной мудрости. <a href="#ref-1" class="text-blue-500 hover:underline">↩</a>
@@ -837,15 +852,3 @@
     </div>
 
 @endsection
-<style>
-    .container {
-        background-image: url('{{ asset('backgrounds/unsplash.jpg') }}');
-        background-attachment: fixed;
-        background-size: cover;
-    }
-    @media (min-width: 650px) {
-        #ref-1 {
-            padding-left: 50px;
-        }
-    }
-</style>

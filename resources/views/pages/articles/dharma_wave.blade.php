@@ -1,7 +1,14 @@
 @extends('layouts.app')
-
 @section('title', 'ВОЛНА ДХАРМЫ')
-
+@push('styles')
+    <style>
+        .container {
+            background-image: url('{{ asset('backgrounds/paper-146904.png') }}');
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+@endpush
 @section('content')
 
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -75,11 +82,3 @@
         </div>
     </div>
 @endsection
-
-<style>
-    .container {
-        background-image: url('{{ asset('backgrounds/paper-146904.png') }}');
-        background-attachment: fixed;
-        background-size: cover;
-    }
-</style>

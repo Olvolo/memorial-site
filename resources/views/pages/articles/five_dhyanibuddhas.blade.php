@@ -1,5 +1,15 @@
 @extends('layouts.app')
 @section('title', 'Пять Дхьянибудд и Этнический Хаос')
+@push('styles')
+    <style>
+        .container {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7)),
+            url({{ asset('backgrounds/pink_green.webp') }});
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+@endpush
 @section('content')
     <div class="container h-full mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-center mb-6">
@@ -134,10 +144,3 @@
         </div>
     </div>
 @endsection
-<style>
-    .container {
-        background-image: url('{{ asset('backgrounds/paper_texture.jpg') }}');
-        background-attachment: fixed;
-        background-size: cover;
-    }
-</style>

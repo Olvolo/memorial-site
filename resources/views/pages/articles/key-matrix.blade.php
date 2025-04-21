@@ -1,17 +1,37 @@
 @extends('layouts.wide-table')
 @section('title', 'Ключ-Матрица к методу Нетройственного Ваджрасаттвы')
+@push('styles')
+    <style>
+        {{--.custom-bg {--}}
+        {{--    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.95)),--}}
+        {{--    url('{{ asset("backgrounds/bluerish.webp") }}');--}}
+        {{--    background-attachment: fixed;--}}
+        {{--    background-size: cover;--}}
+        {{--    background-position: center;--}}
+        {{--    background-repeat: repeat;--}}
+        {{--}--}}
+        {{--.container {--}}
+        {{--    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.85)),--}}
+        {{--    url({{ asset('backgrounds/bluerish.webp') }});--}}
+        {{--    background-attachment: fixed;--}}
+        {{--    background-size: cover;--}}
+        {{--    height: 100vh;--}}
+        {{--    width: 100vw;--}}
+        {{--}--}}
+    </style>
+@endpush
 @section('table-content')
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Заголовок -->
-        <h2 class="text-base sm:text-xl md:text-2xl font-bold text-center mt-6 mb-4 text-red-600">
-            Ключ-Матрица к методу<br class="block sm:hidden">"Ваджрасаттва, или Безначальная<br class="block sm:hidden"> Ежемгновенная Катастрофа<br class="block sm:hidden"> Первоосознания Нетройственности"
+        <h2 class="text-base sm:text-xl md:text-2xl font-bold text-center mt-6 mb-4 text-indigo-800">
+            Ключ-Матрица к методу <br class="block sm:hidden">"Ваджрасаттва, или Безначальная<br class="block sm:hidden"> Ежемгновенная Катастрофа<br class="block sm:hidden"> Первоосознания Нетройственности"
         </h2>
-        <h3 class="text-lg sm:text-xl text-center mb-8 text-red-600">
+        <h3 class="text-lg sm:text-xl text-center mb-8 font-medium text-indigo-800">
             (Из текста "Комментарий к Нетройственности – Сокровищнице
             неиссякаемого источника Знания")
         </h3>
-        <div class="bg-gray-100 p-4 rounded-lg mb-6">
-            <p class="text-justify font-semibold">
+        <div class="bg-blue-100 p-4 rounded-lg mb-6">
+            <p class="text-justify font-semibold text-blue-900">
                 Каждый блок текста содержит скрытую жизнь; её
                 можно описать с помощью тринадцати понятий в виде таблицы.
                 Нахождение этих "тринадцати" в каждом из пяти блоков помогает понять содержание <em>мгновения</em>.
@@ -19,7 +39,7 @@
         </div>
         <!-- Контейнер для центрирования таблицы -->
         <div class="overflow-x-auto w-full px-2 sm:px-4 md:px-6">            <!-- Таблица -->
-            <table class="key-matrix-table border-collapse border border-gray-400 my-6 w-full min-w-[800px]">                <thead>
+            <table class="key-matrix-table border-collapse border border-gray-400 my-6 w-full min-w-[800px]"><thead>
                 <tr class="bg-amber-100">
                     <th class="border border-gray-400 p-2 text-center">
                         <img src="{{ asset('favicon/favicon-96x96.png') }}"
@@ -205,8 +225,8 @@
             </table>
         </div>
 
-        <div class="text-center my-8 bg-gray-100 p-4 rounded-lg">
-            <p class="font-semibold">
+        <div class="text-center my-8 bg-blue-200 p-4 rounded-lg">
+            <p class="font-semibold text-blue-950">
                 Продумав так, переходи к неиссякаемому источнику Установки сознания, или к <em>Видению</em>.
             </p>
         </div>

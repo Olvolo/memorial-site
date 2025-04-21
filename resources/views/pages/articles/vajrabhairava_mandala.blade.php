@@ -1,7 +1,15 @@
 @extends('layouts.app')
-
 @section('title', 'Описание мандалы Ваджрабхайравы')
-
+@push('styles')
+    <style>
+        .container {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7)),
+            url({{ asset('backgrounds/pink_green.webp') }});
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+@endpush
 @section('content')
     <div class="container mx-auto h-full">
         <img src="{{ asset('images/vajrabhairava_mandala.png') }}"
@@ -9,12 +17,14 @@
         <!-- Заголовок -->
         <h1 class="text-2xl font-bold text-center mt-6 mb-6">ОПИСАНИЕ МАНДАЛЫ
             ВАДЖРАБХАЙРАВЫ</h1>
+        <div class="text-justify indent-4 text-lg sm:text-xl leading-relaxed space-y-4 mx-auto">
+
         <p class="text-center mb-8">(Традиция Дандарона)</p>
 
-        <p class="text-justify">Мандалу Ваджрабхайравы в соответствии со садханой
+        <p>Мандалу Ваджрабхайравы в соответствии со садханой
             Цзонхавы,
             известной
-            под названием «Драгоценный ларец» (<i>тиб.</i>: dpal rdo-rje
+            под названием «Драгоценный ларец» (<em>тиб.</em>: dpal rdo-rje
             ’jigs-byed lha
             bcu-gsum-ma’i sgrub-pa’i thabs / rin-po-che’i za-ma-tog ces bya-ba
             bzhugs-so), поручил в 1970 году нарисовать Александру Железнову
@@ -25,15 +35,15 @@
             byed kyi zab lam rim pa gnyis pa rdzogs rim sku gsum them skas»,
             раздел «Кьерим».</p>
 
-        <p class="text-justify">А. И. Железнов рисовал мандалу не отрываясь на иные дела с утра до
+        <p>А. И. Железнов рисовал мандалу не отрываясь на иные дела с утра до
             вечера все дни подряд с середины мая по 19 октября 1974 г. в
             Ленинграде.</p>
 
-        <p class="text-justify">Сначала была нарисована мандала с зелёной землёй.</p>
-        <p class="text-justify">Затем была нарисована накладка из жёлтой земли и вторая накладка для
+        <p>Сначала была нарисована мандала с зелёной землёй.</p>
+        <p>Затем была нарисована накладка из жёлтой земли и вторая накладка для
             углов.</p>
-        <p class="text-justify">Центр мандалы оставался при этом неизменным.</p>
-        <p class="text-justify">Вариант с жёлтой накладкой и синими углами считался вариантом для
+        <p>Центр мандалы оставался при этом неизменным.</p>
+        <p>Вариант с жёлтой накладкой и синими углами считался вариантом для
             внутреннего пользования. Тем не менее именно он был опубликован в «Красной
             Книге»<a href="#citation-1" id="ref-1" class="citation-mark"><sup> 1</sup></a>.
         </p>
@@ -42,7 +52,7 @@
             варианта
             с зелёной землёй и с углами без накладки</h2>
 
-        <p><strong><i>Углы:</i></strong></p>
+        <p><strong><em>Углы:</em></strong></p>
         <ul class="list-disc list-inside pl-6 mb-4">
             <li>Верхний левый – Бидьядара в синей ковбойке, Ваджрасаттва (рис.
                 Ю. А. Алексеева) и 3 жертвенника.
@@ -58,7 +68,7 @@
             </li>
         </ul>
 
-        <p><strong><i>В отдалении по солнцу, начиная с северо-востока:</i></strong></p>
+        <p><strong><em>В отдалении по солнцу, начиная с северо-востока:</em></strong></p>
         <ul class="list-disc list-inside pl-6 mb-4">
             <li>Лалитаваджра</li>
             <li>Ро-лоцава</li>
@@ -70,7 +80,7 @@
             <li>Лубсан Сандан (молодой)</li>
         </ul>
 
-        <p><strong><i>У стен, начиная с северо-востока по солнцу:</i></strong></p>
+        <p><strong><em>У стен, начиная с северо-востока по солнцу:</em></strong></p>
         <ul class="list-disc list-inside pl-6 mb-4">
             <li>Лубсан Сандан (старый)</li>
             <li>Намнанэ-лама</li>
@@ -85,7 +95,7 @@
         <h2 class="text-2xl font-semibold mb-4">2. Описание «внутреннего»
             варианта с жёлтой землёй и с синими накладками на углах</h2>
 
-        <p><strong><i>Углы:</i></strong></p>
+        <p><strong><em>Углы:</em></strong></p>
         <ul class="list-disc list-inside pl-6 mb-4">
             <li>Верхний левый – Бидьядара в чёрном костюме и Ваджрасаттва (рис.
                 Ю. А. Алексеев), 3 жертвенника.
@@ -99,7 +109,7 @@
             </li>
         </ul>
 
-        <p><strong><i>У стен, начиная с северо-востока по солнцу:</i></strong></p>
+        <p><strong><em>У стен, начиная с северо-востока по солнцу:</em></strong></p>
         <ul class="list-disc list-inside pl-6 mb-4">
             <li>Лалитаваджра</li>
             <li>Падмаваджра</li>
@@ -111,7 +121,7 @@
             <li>Учитель в зэковской робе</li>
         </ul>
 
-        <p><strong><i>В отдалении против солнца, начиная с северо-востока:</i></strong>
+        <p><strong><em>В отдалении против солнца, начиная с северо-востока:</em></strong>
         </p>
         <ul class="list-disc list-inside pl-6 mb-4">
             <li>Учитель в монгольском халате с мудрой кулака</li>
@@ -127,7 +137,7 @@
         <h2 class="text-2xl font-semibold mb-4">3. Кладбищенский круг. Храмы,
             пирамиды, часовни, тотемы и кладбища</h2>
 
-        <p><strong><i>Восток:</i></strong></p>
+        <p><strong><em>Восток:</em></strong></p>
         <ul class="list-disc list-inside pl-6 mb-4">
             <li>Иудаизм. Храм Соломона. Иерусалим.</li>
             <li>Античность. Храм в Пафлагонии в Тамбар Кеше, Малая Азия, VIII в.
@@ -138,7 +148,7 @@
             </li>
         </ul>
 
-        <p><strong><i>Юго-восток:</i></strong></p>
+        <p><strong><em>Юго-восток:</em></strong></p>
         <ul class="list-disc list-inside pl-6 mb-4">
             <li>Ислам. Средняя Азия. Самарканд. Ансамбль Шахи-Зинды (Живого
                 Царя): медресе Улугбека (1417–1420), Мавзолей Казы-Заде Руми
@@ -152,7 +162,7 @@
             </li>
         </ul>
 
-        <p><strong><i>Юг:</i></strong></p>
+        <p><strong><em>Юг:</em></strong></p>
         <ul class="list-disc list-inside pl-6 mb-4">
             <li>Протестантизм. Кёльнский собор (XIII–XIV в.).</li>
             <li>Православие. Храм Покрова на Нерли (1165), деревянная часовня,
@@ -162,7 +172,7 @@
             </li>
         </ul>
 
-        <p><strong><i>Юго-запад:</i></strong></p>
+        <p><strong><em>Юго-запад:</em></strong></p>
         <ul class="list-disc list-inside pl-6 mb-4">
             <li>Индуизм. Храм Шивы (Джаганатх) (Пури, Индия, XI в.).</li>
             <li>Христианство и другие конфессии в США. Часовня Академии ВВС для
@@ -175,7 +185,7 @@
             </li>
         </ul>
 
-        <p><strong><i>Запад:</i></strong></p>
+        <p><strong><em>Запад:</em></strong></p>
         <ul class="list-disc list-inside pl-6 mb-4">
             <li>США. Пентагон, Арлингтонское кладбище.</li>
             <li>Африка. Деревянный идол.</li>
@@ -184,7 +194,7 @@
             </li>
         </ul>
 
-        <p><strong><i>Северо-запад:</i></strong></p>
+        <p><strong><em>Северо-запад:</em></strong></p>
         <ul class="list-disc list-inside pl-6 mb-4">
             <li>Язычество кочевников южнорусских степей. Баба каменная, I тыс.
                 до н. э.
@@ -193,7 +203,7 @@
             <li>Язычество Прибалтики и литовцев. Жемантийский крест.</li>
         </ul>
 
-        <p><strong><i>Север:</i></strong></p>
+        <p><strong><em>Север:</em></strong></p>
         <ul class="list-disc list-inside pl-6 mb-4">
             <li>Атеизм в СССР. Пискарёвское кладбище, статуя Родины-матери
                 (Ленинград). Могила неизвестного солдата и Мавзолей Ленина
@@ -204,7 +214,7 @@
             </li>
         </ul>
 
-        <p><strong><i>Северо-восток:</i></strong></p>
+        <p><strong><em>Северо-восток:</em></strong></p>
         <ul class="list-disc list-inside pl-6 mb-4">
             <li>Религии народов Центральной Азии. Тюркская каменная баба.
                 «Монгольские» каменные изваяния. Начало нашей эры и ранее.
@@ -219,12 +229,5 @@
                 Кенпо. Из-во «Евразия», СПб., 2006. <a href="#ref-1" class="text-blue-500 hover:underline">↩</a></p>
         </div>
     </div>
+    </div>
 @endsection
-<style>
-    .container {
-        background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
-        url('{{ asset('backgrounds/painting-2407262.jpg') }}');
-        background-attachment: fixed;
-        background-size: cover;
-    }
-</style>

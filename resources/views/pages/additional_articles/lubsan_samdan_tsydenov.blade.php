@@ -1,7 +1,5 @@
 @extends('layouts.app')
-
 @section('title', 'Буддийское учение как философская основа духовной деятельности Лубсан-Самдана Цыденова')
-
 @push('styles')
     <style>
         .container {

@@ -1,21 +1,17 @@
 @extends('layouts.app')
-
 @section('title', 'Трикая мантры')
-
 @push('styles')
     <style>
         .container {
             background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
-            url('{{ asset("backgrounds/watercolor.jpg") }}');
+            url('{{ asset("backgrounds/bluerish.webp") }}');
             background-attachment: fixed;
             background-size: cover;
         }
     </style>
 @endpush
-
 @section('content')
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-
         <!-- Заголовок -->
         <h1 class="text-center text-blue-900 font-bold text-3xl sm:text-3xl md:text-2xl my-6">
             ТРИКАЯ МАНТРЫ
