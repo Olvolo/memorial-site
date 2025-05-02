@@ -402,6 +402,25 @@ Route::get('/pupishev_articles/memories_of_bd_dandaron', function () {
     return view('pages.pupishev_articles.memories_of_bd_dandaron');
 })->name('pupishev_articles.memories_of_bd_dandaron');
 
+Route::get('/pupishev_articles/physical_analogues', function () {
+    return view('pages.pupishev_articles.physical_analogues');
+})->name('pupishev_articles.physical_analogues');
+
+Route::get('/pupishev_articles/mahamudra', function () {
+    return view('pages.pupishev_articles.mahamudra');
+})->name('pupishev_articles.mahamudra');
+
+Route::get('/pupishev_articles/source_of_sages_part{part}', function ($part) {
+    if ($part < 1 || $part > 7) {
+        abort(404);
+    }
+    return view("pages.pupishev_articles.source_of_sages_part{$part}");
+})->where('part', '[1-7]')->name('pupishev_articles.source_of_sages');
+
+Route::get('/pupishev_articles/ulan_ude_radio_interview', function () {
+    return view('pages.pupishev_articles.ulan_ude_radio_interview');
+})->name('pupishev_articles.ulan_ude_radio_interview');
+
 
 Route::get('/pupishev_articles/victor_nikolaevich_pupychev', function () {
     return view('pages.pupishev_articles.victor_nikolaevich_pupychev');

@@ -69,18 +69,17 @@ require_once __DIR__ . '/public/index.php';
 
    5. <!-- Карточка с фото -->
                   <div class="flex justify-center">
-                      <figure class="rounded-lg shadow-md max-w-[800px]
-                      text-center mb-4">
-                          <img src="{{ asset('images/***.jpg') }}"
-                               alt="***"
-                               class="rounded-lg w-full h-auto mx-auto object-contain transition-all duration-300 ease-in-out"
-                                 style="max-width: 800px;">
-                          <figcaption
-                              class="mt-2 mb-4 px-4 italic text-gray-600 text-sm">
-                              ***
-                          </figcaption>
-                      </figure>
-                  </div>
+                                  <figure class="rounded-lg shadow-md text-center mb-4 w-full max-w-4xl">
+                                      <img src="{{ asset('images/***') }}"
+                                           alt="***"
+                                           class="rounded-lg w-full h-auto mx-auto object-contain transition-all duration-300 ease-in-out">
+                                      <figcaption
+                                          class="mt-2 mb-4 px-4 italic text-gray-600 text-sm">
+                                          ***
+                                      </figcaption>
+                                  </figure>
+                              </div>
+
    6. <a href="{{ route('articles.адрес статьи') }}" class="text-blue-600 hover:underline">...</a>
 
    7. Для списка
@@ -165,8 +164,7 @@ require_once __DIR__ . '/public/index.php';
 
                        <p class="text-right italic text-gray-600 mt-4">Author</p>
        </div>
-     </div>
-   @endsection
+  </div>
 11. Для стилей:
 @push('styles')
     <style>

@@ -6,7 +6,7 @@
     <style>
         .container {
             background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
-            url('{{ asset("backgrounds/wall_stone.jpg") }}');
+            url('{{ asset("backgrounds/salad_blue.webp") }}');
             background-attachment: fixed;
             background-size: cover;
         }
