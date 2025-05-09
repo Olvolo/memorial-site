@@ -10,7 +10,7 @@
     @if (App::environment('local'))
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     @else
-        <link rel="stylesheet" href="{{ asset('build/assets/app-BuOAuPZ0.css') }}">
+        <link rel="stylesheet" href="{{ asset('build/assets/app-CZ4XZYm8.css') }}">
         <script src="{{ asset('build/assets/app-BnSuhvBk.js') }}"></script>
     @endif
     {{-- Favicon и другие мета-теги --}}
@@ -25,7 +25,7 @@
     @push('styles')
         <style>
             .custom-bg {
-                background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.95)),
+                background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
                 url('{{ asset("backgrounds/vajra-vishva.jpg") }}');
                 background-attachment: fixed;
                 background-size: cover;

@@ -10,12 +10,10 @@
             min-height: 100vh;
             padding-bottom: 2rem;
         }
-
         .author-block {
             border-radius: 0.5rem;
             margin-bottom: 1rem;
         }
-
         .author-header {
             padding: 1rem;
             cursor: pointer;
@@ -23,7 +21,6 @@
             justify-content: space-between;
             align-items: center;
         }
-
         .articles-list {
             list-style: none;
             padding-left: 1.25rem;
@@ -31,13 +28,11 @@
             padding-bottom: 1rem;
             margin-top: 0;
         }
-
         .articles-list li {
             position: relative;
             padding-left: 1.5rem;
             margin-bottom: 0.5rem;
         }
-
         .articles-list li:before {
             content: '';
             position: absolute;
@@ -50,7 +45,6 @@
             background-size: cover;
             border-radius: 50%;
         }
-
         .toggle-icon {
             font-size: 0.875rem;
             color: #114fa6;
@@ -59,7 +53,6 @@
             border-radius: 0.25rem;
             background-color: rgba(255, 255, 255, 0.5);
         }
-
         .sub-list-toggle {
             display: flex;
             align-items: center;
@@ -67,33 +60,27 @@
             margin-top: 0.5rem;
             font-weight: 500;
         }
-
         .sub-list {
             margin-left: 1rem;
             margin-top: 0.5rem;
         }
-
         .sub-list li:before {
             background-image: none;
         }
-
         .grid-list {
             display: grid;
             grid-template-columns: 1fr;
             gap: 0.5rem;
         }
-
         @media (min-width: 640px) {
             .grid-list {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
-
-        a {
+        .container a {
             color: #1a1a1a;
         }
-
-        a:hover {
+        .container a:hover {
             color: #114fa6;
         }
     </style>
@@ -234,7 +221,7 @@
                         <ul x-show="sourceOfSagesOpen" x-transition.duration.200ms class="sub-list">
                             <li>
                                 <a href="{{ route('pupishev_articles.source_of_sages', ['part' => 1]) }}">
-                                    Часть первая
+                                    Источник мудрецов, часть 1
                                 </a>
                             </li>
                             <li>
@@ -279,34 +266,38 @@
                 seminarsOpen: false
             }" class="author-block bg-blue-300">
                 <div class="author-header" @click="isOpen = !isOpen">
+
                     <h3 class="text-xl font-semibold">Пятигорский Александр Моисеевич</h3>
                     <span class="toggle-icon" x-text="isOpen ? 'Свернуть' : 'Статьи'"></span>
                 </div>
 
                 <ul x-show="isOpen" x-transition.duration.200ms class="articles-list">
                     <li>
-                        <a href="{{ route('pyatigorsky_articles.dandaron_departure') }}">
-                            Уход Дандарона
+                        <a href="{{ route('pyatigorsky_articles.dandaron_departure') }}">Уход Дандарона
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('pyatigorsky_articles.mainly_interesting') }}">
-                            Главное, чтобы было интересно
+                        <a href="{{ route('pyatigorsky_articles.mainly_interesting') }}">Главное, чтобы было интересно
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('pyatigorsky_articles.metatheory_conversation_1') }}">
-                            Три беседы о метатеории сознания. Беседа I
+                        <a href="{{ route('pyatigorsky_articles.descriptive_language_problem_in_buddhology') }}">О. О. Розенберг и проблема языка описания в буддологии
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('pyatigorsky_articles.metatheory_conversation_2') }}">
-                            Три беседы о метатеории сознания. Беседа II
+                        <a href="{{ route('pyatigorsky_articles.about_studying_buddhist_philosophy') }}">Об изучении буддийской философии
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('pyatigorsky_articles.metatheory_conversation_3') }}">
-                            Три беседы о метатеории сознания. Беседа III
+                        <a href="{{ route('pyatigorsky_articles.metatheory_conversation_1') }}">Три беседы о метатеории сознания. Беседа I
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('pyatigorsky_articles.metatheory_conversation_2') }}">Три беседы о метатеории сознания. Беседа II
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('pyatigorsky_articles.metatheory_conversation_3') }}">Три беседы о метатеории сознания. Беседа III
                         </a>
                     </li>
 
@@ -318,28 +309,23 @@
                         </div>
                         <ul x-show="lecturesOpen" x-transition.duration.200ms class="sub-list">
                             <li>
-                                <a href="{{ route('pyatigorsky_articles.buddhist_philosophia_lectures_1') }}">
-                                    Лекция первая
+                                <a href="{{ route('pyatigorsky_articles.buddhist_philosophia_lectures', ['part' => 1]) }}">Лекция первая
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('pyatigorsky_articles.buddhist_philosophia_lectures_2') }}">
-                                    Лекция вторая
+                                <a href="{{ route('pyatigorsky_articles.buddhist_philosophia_lectures', ['part' => 2]) }}">Лекция вторая
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('pyatigorsky_articles.buddhist_philosophia_lectures_3') }}">
-                                    Лекция третья
+                                <a href="{{ route('pyatigorsky_articles.buddhist_philosophia_lectures', ['part' => 3]) }}">Лекция третья
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('pyatigorsky_articles.buddhist_philosophia_lectures_4') }}">
-                                    Лекция четвёртая
+                                <a href="{{ route('pyatigorsky_articles.buddhist_philosophia_lectures', ['part' => 4]) }}">Лекция четвёртая
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('pyatigorsky_articles.buddhist_philosophia_lectures_5') }}">
-                                    Лекция пятая
+                                <a href="{{ route('pyatigorsky_articles.buddhist_philosophia_lectures', ['part' => 5]) }}">Лекция пятая
                                 </a>
                             </li>
                         </ul>
@@ -353,98 +339,79 @@
                         </div>
                         <ul x-show="seminarsOpen" x-transition.duration.200ms class="sub-list grid-list">
                             <li>
-                                <a href="{{ route('pyatigorsky_articles.introduction_to_buddhist_philosophy_study_01') }}">
-                                    Семинар первый
+                                <a href="{{ route('pyatigorsky_articles.introduction_to_buddhist_philosophy_study', ['part' => 1]) }}">Семинар первый
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('pyatigorsky_articles.introduction_to_buddhist_philosophy_study_02') }}">
-                                    Семинар второй
+                                <a href="{{ route('pyatigorsky_articles.introduction_to_buddhist_philosophy_study', ['part' => 2]) }}">Семинар второй
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('pyatigorsky_articles.introduction_to_buddhist_philosophy_study_03') }}">
-                                    Семинар третий
+                                <a href="{{ route('pyatigorsky_articles.introduction_to_buddhist_philosophy_study', ['part' => 3]) }}">Семинар третий
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('pyatigorsky_articles.introduction_to_buddhist_philosophy_study_04') }}">
-                                    Семинар четвёртый
+                                <a href="{{ route('pyatigorsky_articles.introduction_to_buddhist_philosophy_study', ['part' => 4]) }}">Семинар четвёртый
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('pyatigorsky_articles.introduction_to_buddhist_philosophy_study_05') }}">
-                                    Семинар пятый
+                                <a href="{{ route('pyatigorsky_articles.introduction_to_buddhist_philosophy_study', ['part' => 5]) }}">Семинар пятый
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('pyatigorsky_articles.introduction_to_buddhist_philosophy_study_06') }}">
-                                    Семинар шестой
+                                <a href="{{ route('pyatigorsky_articles.introduction_to_buddhist_philosophy_study', ['part' => 6]) }}">Семинар шестой
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('pyatigorsky_articles.introduction_to_buddhist_philosophy_study_07') }}">
-                                    Семинар седьмой
+                                <a href="{{ route('pyatigorsky_articles.introduction_to_buddhist_philosophy_study', ['part' => 7]) }}">Семинар седьмой
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('pyatigorsky_articles.introduction_to_buddhist_philosophy_study_08') }}">
-                                    Семинар восьмой
+                                <a href="{{ route('pyatigorsky_articles.introduction_to_buddhist_philosophy_study', ['part' => 8]) }}">Семинар восьмой
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('pyatigorsky_articles.introduction_to_buddhist_philosophy_study_09') }}">
-                                    Семинар девятый
+                                <a href="{{ route('pyatigorsky_articles.introduction_to_buddhist_philosophy_study', ['part' => 9]) }}">Семинар девятый
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('pyatigorsky_articles.introduction_to_buddhist_philosophy_study_10') }}">
-                                    Семинар десятый
+                                <a href="{{ route('pyatigorsky_articles.introduction_to_buddhist_philosophy_study', ['part' => 10]) }}">Семинар десятый
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('pyatigorsky_articles.introduction_to_buddhist_philosophy_study_11') }}">
-                                    Семинар одиннадцатый
+                                <a href="{{ route('pyatigorsky_articles.introduction_to_buddhist_philosophy_study', ['part' => 11]) }}">Семинар одиннадцатый
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('pyatigorsky_articles.introduction_to_buddhist_philosophy_study_12') }}">
-                                    Семинар двенадцатый
+                                <a href="{{ route('pyatigorsky_articles.introduction_to_buddhist_philosophy_study', ['part' => 12]) }}">Семинар двенадцатый
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('pyatigorsky_articles.introduction_to_buddhist_philosophy_study_13') }}">
-                                    Семинар тринадцатый
+                                <a href="{{ route('pyatigorsky_articles.introduction_to_buddhist_philosophy_study', ['part' => 13]) }}">Семинар тринадцатый
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('pyatigorsky_articles.introduction_to_buddhist_philosophy_study_14') }}">
-                                    Семинар четырнадцатый
+                                <a href="{{ route('pyatigorsky_articles.introduction_to_buddhist_philosophy_study', ['part' => 14]) }}">Семинар четырнадцатый
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('pyatigorsky_articles.introduction_to_buddhist_philosophy_study_15') }}">
-                                    Семинар пятнадцатый
+                                <a href="{{ route('pyatigorsky_articles.introduction_to_buddhist_philosophy_study', ['part' => 15]) }}">Семинар пятнадцатый
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('pyatigorsky_articles.introduction_to_buddhist_philosophy_study_16') }}">
-                                    Семинар шестнадцатый
+                                <a href="{{ route('pyatigorsky_articles.introduction_to_buddhist_philosophy_study', ['part' => 16]) }}">Семинар шестнадцатый
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('pyatigorsky_articles.introduction_to_buddhist_philosophy_study_17') }}">
-                                    Семинар семнадцатый
+                                <a href="{{ route('pyatigorsky_articles.introduction_to_buddhist_philosophy_study', ['part' => 17]) }}">Семинар семнадцатый
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('pyatigorsky_articles.introduction_to_buddhist_philosophy_study_18') }}">
-                                    Семинар восемнадцатый
+                                <a href="{{ route('pyatigorsky_articles.introduction_to_buddhist_philosophy_study', ['part' => 18]) }}">Семинар восемнадцатый
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('pyatigorsky_articles.introduction_to_buddhist_philosophy_study_19') }}">
-                                    Семинар девятнадцатый
+                                <a href="{{ route('pyatigorsky_articles.introduction_to_buddhist_philosophy_study', ['part' => 19]) }}">Семинар девятнадцатый
                                 </a>
                             </li>
                         </ul>
@@ -468,6 +435,72 @@
                     <li>
                         <a href="{{ route('danelus_articles.beyond_space_time') }}">
                             За пределами пространства и времени
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Блок автора 5 -Мялль-->
+            <div x-data="{ isOpen: false }" class="author-block bg-blue-300">
+                <div class="author-header" @click="isOpen = !isOpen">
+                    <h3 class="text-xl font-semibold">Мялль Линнарт</h3>
+                    <span class="toggle-icon" x-text="isOpen ? 'Свернуть' : 'Статьи'"></span>
+                </div>
+
+                <ul x-show="isOpen" x-transition.duration.200ms class="articles-list">
+                    <li>
+                        <a href="{{ route('myall_articles.tibet_cultural_history') }}">
+                            Культурная история Тибета
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('myall_articles.prajnaparamita_analysis') }}">
+                            К анализу Праджняпарамиты
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('myall_articles.buddhist_mythology') }}">
+                            Буддийская мифология
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('myall_articles.possible_way') }}">
+                            Об одном возможном подходе к пониманию śūnyavāda
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('myall_articles.shunyata_semiotic_model') }}">
+                            Шуньята в семиотической модели Дхармы
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('myall_articles.dharma_text') }}">
+                            Дхарма - текст и текстопорождающий механизм
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('myall_articles.dialog') }}">
+                            Диалог в «Бодхичарьяватаре»
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('myall_articles.to_buddhist_pessonology') }}">
+                            К буддийской персонологии
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Блок автора 6 - Волкова Октябрина Фёдоровна -->
+            <div x-data="{ isOpen: false }" class="author-block bg-blue-200">
+                <div class="author-header" @click="isOpen = !isOpen">
+                    <h3 class="text-xl font-semibold">Волкова Октябрина Фёдоровна</h3>
+                    <span class="toggle-icon" x-text="isOpen ? 'Свернуть' : 'Статьи'"></span>
+                </div>
+                <ul x-show="isOpen" x-transition.duration.200ms class="articles-list">
+                    <li>
+                        <a href="{{ route('volkova_articles.two_ideal_societies') }}">
+                            О двух идеальных социумах буддизма
                         </a>
                     </li>
                 </ul>

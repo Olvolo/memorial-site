@@ -20,21 +20,19 @@
             .custom-table th, .custom-table td {
                 @apply border border-gray-200 px-4 py-2;
             }
-
             .custom-table th {
                 @apply bg-gray-100 font-semibold text-gray-800;
             }
         }
-
         .perfect-table-wrapper {
-            width: 100%;
+            width: 95%;
             margin: 1.5rem 0;
             display: block;
             overflow-x: auto; /* Добавляем горизонтальную прокрутку при необходимости */
         }
 
         .perfect-table {
-            width: 100%;
+            width: 95%;
             border-collapse: collapse;
             margin: 0;
             font-size: 1rem;
@@ -390,7 +388,7 @@
                 2. Следы активности махабхут — это проявление следующих их свойств (мы имеем в виду
                 проявление свойств махабхут в живом организме):
             </p>
-            <ul class="list-none pl-5 space-y-1 ml-8">
+            <ul class="list-none pl-5 space-y-1 ml-4">
                 <li>а) для <em>земли:</em> тяжесть, устойчивость, тупость, мягкость, умащенность,
                     сухость, твердость, связанность, успокаивает ветер (не махабхуту <em>ветер</em>,
                     а <em>ветер</em> как одно из трех начал (тиб. nyes pa) организма, формируемых
@@ -516,7 +514,7 @@
                 Областями проявления махабхут называют также пять плотных и шесть полых органов, и
                 соотношение здесь следующее:
             </p>
-            <ul class="list-none pl-5 space-y-1 ml-8">
+            <ul class="list-none pl-5 space-y-1 ml-4">
                 <li>
                     1) <em>земля</em> — селезенка, желудок,
                 </li>
@@ -618,12 +616,12 @@
             </div>
 
             <div class="flex justify-center">
-                <figure class="rounded-lg shadow-md text-center mb-4 w-full max-w-4xl">
-                    <img src="{{ asset('images/diagram2.svg') }}"
+                <figure class="rounded-s shadow-md text-center mb-4 w-full max-w-4xl">
+                    <img src="{{ asset('images/world_picture.svg') }}"
                          alt="Рис. 2. Картина мира Ваджраяны и ее аналогия в физическом мире"
-                         class="rounded-lg w-full h-auto mx-auto object-contain transition-all duration-300 ease-in-out">
+                         class="rounded-s w-full h-auto mx-auto object-contain transition-all duration-300 ease-in-out">
                     <figcaption
-                        class="mt-2 mb-4 px-4 italic text-gray-600 text-sm">
+                        class="mt-2 mb-4 my-2 px-4 italic text-gray-600 text-sm">
                         Рис. 2. Картина мира Ваджраяны и ее аналогия в физическом мире<a
                             href="#citation-2" id="ref-2" class="citation-mark"><sup> 2</sup></a>
 
@@ -650,12 +648,11 @@
                     В. М. Монтлевича).<a href="#ref-1" class="text-blue-500 hover:underline">↩</a>
                 </p>
                 <p class="my-2" id="citation-2"><sup>2</sup> Тезисы комментариев к "Рис. 2. Картина
-                    мира Ваджраяны и ее аналогия в физическом мире"<a href="#ref-2"
-                                                                      class="text-blue-500 hover:underline">↩</a>
+                    мира Ваджраяны и ее аналогия в физическом мире"<a href="#ref-2" class="text-blue-500 hover:underline">↩</a>
                 </p>
-                <ul class="list-none list-outside ml-8 space-y-1 pl-5">
+                <ul class="list-none list-outside space-y-1 pl-2">
                     <li class="my-2">
-                        <ol class="list-none list-outside ml-8 space-y-1 pl-5">
+                        <ol class="list-none list-outside space-y-1">
                             <li class="my-4">
                                 <p>
                                     <strong><em>I. 1. Дхармакая</em></strong> (Дхарма - здесь
@@ -826,7 +823,7 @@
                             Страсть ведёт к желанию обладать не только своим, но и чужим, что бывает
                             подчас невозможно. Отсюда <strong><em>клеша зависть</em></strong>.
                         </p>
-                        <ul class="list-none pl-5 space-y-1 ml-8 my-4">
+                        <ul class="list-none pl-5 space-y-1 my-4">
                             <li class="no-arrow">
                                 органическое неведение ("Я" - "не Я")
                                 <ul>

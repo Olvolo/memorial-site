@@ -9,6 +9,7 @@
             url({{ asset('backgrounds/watercolor.jpg') }});
             background-attachment: fixed;
             background-size: cover;
+            min-height: 100vh;
         }
     </style>
 @endpush
@@ -19,7 +20,7 @@
         <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold my-4 text-blue-900">Посвящается нашему драгоценному Учителю - <br>Монтлевичу
                                                             Владимиру Михайловичу</h2>
             <img src="{{ asset('images/guru_muni_vajrasattva.jpg') }}" alt="Владимир Михайлович Монтлевич"
-                 class="article-image my-4 rounded-lg shadow-md">
+                 class="article-image rounded-lg shadow-md">
     </div>
     </div>
 @endsection

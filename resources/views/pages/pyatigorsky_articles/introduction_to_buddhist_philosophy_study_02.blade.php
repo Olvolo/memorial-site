@@ -16,6 +16,12 @@
 @endpush
 @section('content')
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        @include('layouts.article-navigation', [
+    'currentPart' => 2,
+    'totalParts' => 19,
+    'routeName' => 'pyatigorsky_articles.introduction_to_buddhist_philosophy_study',
+    'articleTitle' => 'семинаров'
+])
         <div class="text-justify text-gray-800 text-base sm:text-lg leading-relaxed space-y-6">
 
             <!-- Основной текст семинара -->
@@ -255,5 +261,11 @@
                     до встречи с пятью монахами.<a href="#ref-9" class="text-blue-500 hover:underline">↩</a></p>
             </div>
         </div>
+        @include('layouts.article-navigation', [
+    'currentPart' => 2,
+    'totalParts' => 19,
+    'routeName' => 'pyatigorsky_articles.introduction_to_buddhist_philosophy_study',
+    'articleTitle' => 'семинаров'
+])
     </div>
 @endsection

@@ -15,6 +15,12 @@
 @endpush
 @section('content')
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        @include('layouts.article-navigation', [
+    'currentPart' => 1,
+    'totalParts' => 19,
+    'routeName' => 'pyatigorsky_articles.introduction_to_buddhist_philosophy_study',
+    'articleTitle' => 'семинаров'
+])
         <h2 class="text-2xl font-bold text-center text-zinc-700 my-8">Введение в изучение буддийской философии</h2>
         <div class="text-justify text-gray-800 text-base sm:text-lg leading-relaxed space-y-6">
             <section>
@@ -604,5 +610,11 @@
                     последним рождением в феноменальной сфере волнений.<a href="#ref-43" class="text-blue-500 hover:underline">↩</a></p>
             </div>
         </div>
+        @include('layouts.article-navigation', [
+    'currentPart' => 1,
+    'totalParts' => 19,
+    'routeName' => 'pyatigorsky_articles.introduction_to_buddhist_philosophy_study',
+    'articleTitle' => 'семинаров'
+])
     </div>
 @endsection

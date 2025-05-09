@@ -15,6 +15,12 @@
 @endpush
 @section('content')
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        @include('layouts.article-navigation', [
+    'currentPart' => 13,
+    'totalParts' => 19,
+    'routeName' => 'pyatigorsky_articles.introduction_to_buddhist_philosophy_study',
+    'articleTitle' => 'семинаров'
+])
         <div class="text-justify text-gray-800 text-base sm:text-lg leading-relaxed space-y-6">
             <!-- Основной текст семинара -->
             <h2 class="text-2xl font-bold text-center text-zinc-700 mb-8">Семинар тринадцатый</h2>
@@ -80,5 +86,11 @@
                 <p class="mb-3" id="citation-19"><sup>19</sup> A Treasury of Mah&#228;y&#228;na S&#252;tras.  P.  224-227,  378-381.<a href="#ref-19" class="text-blue-500 hover:underline">↩</a></p>
             </div>
         </div>
+        @include('layouts.article-navigation', [
+    'currentPart' => 13,
+    'totalParts' => 19,
+    'routeName' => 'pyatigorsky_articles.introduction_to_buddhist_philosophy_study',
+    'articleTitle' => 'семинаров'
+])
     </div>
 @endsection

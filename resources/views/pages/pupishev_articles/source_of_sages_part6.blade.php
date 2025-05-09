@@ -13,8 +13,12 @@
 @section('content')
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <!-- Верхняя навигация -->
-        @include('layouts.article-navigation', ['currentPart' => 6, 'totalParts' => 7])
-        <h1 class="text-center text-blue-900 font-bold text-2xl sm:text-3xl md:text-3xl mt-6 mb-6">
+        @include('layouts.article-navigation', [
+            'currentPart' => 6,
+            'totalParts' => 7,
+            'routeName' => 'pupishev_articles.source_of_sages',
+            'articleTitle' => 'статьи'
+        ])        <h1 class="text-center text-blue-900 font-bold text-2xl sm:text-3xl md:text-3xl mt-6 mb-6">
             ИСТОЧНИК МУДРЕЦОВ
         </h1>
         <h3 class="text-center text-blue-800 font-semibold text-xl sm:text-2xl md:text-2xl mb-6">
@@ -324,6 +328,10 @@
                 <hr class="my-8 border-t-4 border-gray-500">
             </div>
             <!-- Нижняя навигация -->
-            @include('layouts.article-navigation', ['currentPart' => 6, 'totalParts' => 7])
-        </div>
+            @include('layouts.article-navigation', [
+                'currentPart' => 6,
+                'totalParts' => 7,
+                'routeName' => 'pupishev_articles.source_of_sages',
+                'articleTitle' => 'статьи'
+            ])        </div>
 @endsection

@@ -15,7 +15,12 @@
 @section('content')
 
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-
+        @include('layouts.article-navigation', [
+            'currentPart' => 4,
+            'totalParts' => 5,
+            'routeName' => 'pyatigorsky_articles.buddhist_philosophia_lectures',
+            'articleTitle' => 'лекций'
+        ])
         <!-- Заголовок -->
         <h1 class="text-center text-zinc-600 font-bold text-2xl sm:text-2xl md:text-2xl mt-6 mb-6">
             Лекция четвертая</h1>
@@ -361,5 +366,11 @@
             <p class="text-right italic text-gray-600 mt-4">А. М. Пятигорский</p>
             <p class="text-right italic text-gray-600 mt-4">Лекции по буддийской философии</p>
         </div>
+        @include('layouts.article-navigation', [
+    'currentPart' => 4,
+    'totalParts' => 5,
+    'routeName' => 'pyatigorsky_articles.buddhist_philosophia_lectures',
+    'articleTitle' => 'лекций'
+])
     </div>
 @endsection

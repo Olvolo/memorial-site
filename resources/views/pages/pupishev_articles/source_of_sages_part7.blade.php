@@ -8,13 +8,29 @@
             background-attachment: fixed;
             background-size: cover;
         }
+
+        svg {
+            display: block;
+            max-width: 95%;
+            height: auto;
+        }
+
+        img[src$=".svg"] {
+            display: block;
+            max-width: 95%;
+            height: auto;
+        }
     </style>
 @endpush
 @section('content')
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <!-- Верхняя навигация -->
-        @include('layouts.article-navigation', ['currentPart' => 7, 'totalParts' => 7])
-        <h1 class="text-center text-blue-900 font-bold text-2xl sm:text-3xl md:text-3xl mt-6 mb-6">
+        @include('layouts.article-navigation', [
+            'currentPart' => 7,
+            'totalParts' => 7,
+            'routeName' => 'pupishev_articles.source_of_sages',
+            'articleTitle' => 'статьи'
+        ])        <h1 class="text-center text-blue-900 font-bold text-2xl sm:text-3xl md:text-3xl mt-6 mb-6">
             ИСТОЧНИК МУДРЕЦОВ
         </h1>
         <h3 class="text-center text-blue-800 font-semibold text-xl sm:text-2xl md:text-2xl mb-6">
@@ -113,7 +129,8 @@
                     <li class="my-2">наполнить чинтамани (nor bu 'gengs pa),</li>
                     <li class="my-2">этап «джаландхара» (dza landha ra, jalandhara)<sup><a
                                 href="#citation-136" id="ref-136"
-                                class="citation-mark">136</a></sup>,</li>
+                                class="citation-mark">136</a></sup>,
+                    </li>
                     <li class="my-2">этап неохватной мысли (bsam mi khyab pa'i rim pa).</li>
                 </ol>
 
@@ -240,11 +257,13 @@
                 <h3 class="text-lg font-semibold mt-4 mb-2">Высшее достижение (mchog gi dngos
                     grub)</h3>
 
-                <p> - это достоинство Ваджрадары, обладающего семью соединениями беспрепятственного (mi
+                <p> - это достоинство Ваджрадары, обладающего семью соединениями беспрепятственного
+                    (mi
                     slob pa'i) вхождения в единство (mi slob pa'i zung
-                    'jug kha sbyor yan lag bdun ldan rdo rje 'chang gi go 'phang)<sup><a href="#citation-147" id="ref-147"
-                                                               class="citation-mark">147</a></sup>.
-                В ту примерную (rags) терминологию, которая здесь изложена, не вошли по большей
+                    'jug kha sbyor yan lag bdun ldan rdo rje 'chang gi go 'phang)<sup><a
+                            href="#citation-147" id="ref-147"
+                            class="citation-mark">147</a></sup>.
+                    В ту примерную (rags) терминологию, которая здесь изложена, не вошли по большей
                     части запретные (dgag bya) термины, касающиеся сокровенных вещей.</p>
 
                 <p>Здесь собрана терминология, вытекающая из трактатов колесницы Тайной Тантры.</p>
@@ -256,18 +275,29 @@
                     <h4 class="text-center text-gray-800 font-bold text-xl sm:text-xl md:text-xl my-4">
                         ПРИМЕЧАНИЯ</h4>
 
-                    <p class="my-2" id="citation-132"><sup>132</sup> Одна из двух основных традиций тантры Гухьясамаджи. Само
-                        слово арья ('dus 'phags, āryāḥ) значит «святые», «подвижники». Вторая традиция — традиция Джнянапады.<a href="#ref-132"
-                                                                               class="text-blue-500 hover:underline">↩</a>
+                    <p class="my-2" id="citation-132"><sup>132</sup> Одна из двух основных традиций
+                        тантры Гухьясамаджи. Само
+                        слово арья ('dus 'phags, āryāḥ) значит «святые», «подвижники». Вторая
+                        традиция — традиция Джнянапады.<a href="#ref-132"
+                                                          class="text-blue-500 hover:underline">↩</a>
                     </p>
-                    <p class="my-2" id="citation-133"><sup>133</sup> Эту традицию хорошо характеризует ее «печать» — «Печать Мудрости вхождения в [осуществление] Великого Цикла» ('khor lo chen por
-                        'jug pa'i phyag rgya). Махачакра — один из идамов ануттарайогатантры. Относится к материнским тантрам.<a
+                    <p class="my-2" id="citation-133"><sup>133</sup> Эту традицию хорошо
+                        характеризует ее «печать» — «Печать Мудрости вхождения в [осуществление]
+                        Великого Цикла» ('khor lo chen por
+                        'jug pa'i phyag rgya). Махачакра — один из идамов ануттарайогатантры.
+                        Относится к материнским тантрам.<a
                             href="#ref-133" class="text-blue-500 hover:underline">↩</a></p>
 
-                    <p class="my-2" id="citation-134"><sup>134</sup> Обычно имя этого йога по-тибетски пишут Lu yi pa.<a href="#ref-134" class="text-blue-500 hover:underline">↩</a></p>
-                    <p class="my-2" id="citation-135"><sup>135</sup> Sumatiratna [1: VII, 963 – 964] поясняет этот термин следующим
-                        образом: sems dmigs pa las mi gyeng bar gar bzhag tu lhun lhan sdod pa ni zhi
-                        gnas kyi ... lag rjes |<a href="#ref-135" class="text-blue-500 hover:underline">↩</a>
+                    <p class="my-2" id="citation-134"><sup>134</sup> Обычно имя этого йога
+                        по-тибетски пишут Lu yi pa.<a href="#ref-134"
+                                                      class="text-blue-500 hover:underline">↩</a>
+                    </p>
+                    <p class="my-2" id="citation-135"><sup>135</sup> Sumatiratna [1: VII, 963 – 964]
+                        поясняет этот термин следующим
+                        образом: sems dmigs pa las mi gyeng bar gar bzhag tu lhun lhan sdod pa ni
+                        zhi
+                        gnas kyi ... lag rjes |<a href="#ref-135"
+                                                  class="text-blue-500 hover:underline">↩</a>
                     </p>
                     <p>
                         <em>Перевод:</em> Пребывание внутри себя в совместности [разума и шуньи]
@@ -276,70 +306,105 @@
                     </p>
                     <p class="my-2" id="citation-136"><sup>136</sup> Технический термин из "языка
                         Даков", переводу не подлежит. В тибетском и монгольском текстах также
-                        оставлен без перевода.<a href="#ref-136" class="text-blue-500 hover:underline">↩</a></p>
+                        оставлен без перевода.<a href="#ref-136"
+                                                 class="text-blue-500 hover:underline">↩</a></p>
 
-                    <p class="my-2" id="citation-137"><sup>137</sup> Na ro или Na ro pa — Narottamapāda, один из 84-х великих йогов (махасиддхов) Индии. Его биография переведена на английский язык
-                        Г. В. Гюнтером [11].<a href="#ref-137" class="text-blue-500 hover:underline">↩</a>
+                    <p class="my-2" id="citation-137"><sup>137</sup> Na ro или Na ro pa —
+                        Narottamapāda, один из 84-х великих йогов (махасиддхов) Индии. Его биография
+                        переведена на английский язык
+                        Г. В. Гюнтером [11].<a href="#ref-137"
+                                               class="text-blue-500 hover:underline">↩</a>
                     </p>
-                    <p class="my-2" id="citation-138"><sup>138</sup> См. прим. 12.<a href="#ref-138" class="text-blue-500 hover:underline">↩</a>
+                    <p class="my-2" id="citation-138"><sup>138</sup> См. прим. 12.<a href="#ref-138"
+                                                                                     class="text-blue-500 hover:underline">↩</a>
                     </p>
 
                     <p class="my-2" id="citation-139"><sup>139</sup> Сияние знания реальности
                         вследствие постижения шуньи. Различают: а) первые проблески знания (dpei 'od
                         gsal) и б) истинное постижение шуньи через реализацию вместерожденного
-                        блаженства тождества разума и шуньи; это состояние носит название don gyi 'od gsal [1: VII, 801 – 802].<a href="#ref-139"
-                                                              class="text-blue-500 hover:underline">↩</a>
+                        блаженства тождества разума и шуньи; это состояние носит название don gyi
+                        'od gsal [1: VII, 801 – 802].<a href="#ref-139"
+                                                        class="text-blue-500 hover:underline">↩</a>
                     </p>
                     <p class="my-2" id="citation-140"><sup>140</sup> Не имеющее материального
                         эквивалента тело периода реализации пути Самбхогакаи.<a href="#ref-140"
                                                                                 class="text-blue-500 hover:underline">↩</a>
                     </p>
-                    <p class="my-2" id="citation-141"><sup>141</sup> Шесть наставлений Наропы здесь названы пятью не вследствие
+                    <p class="my-2" id="citation-141"><sup>141</sup> Шесть наставлений Наропы здесь
+                        названы пятью не вследствие
                         ошибки либо описки, но потому, что пятое и шестое составляют единый
                         неразрывный процесс — перемещение ('pho ba) перемещаемой <em>виджняны</em>
                         ('pho bya = rnam shes) в дом тела ('pho ba ... grong 'jug), что созерцается
-                        в период реализации пути нирманакаи. Согласно 1: VI, 346, термин «перемещение в дом тела» означает то же, что и «Шесть наставлений Наропы»,
-                        а также «Шесть наставлений йогини Нигумы» (Ni gu chos drug).<a href="#ref-141" class="text-blue-500 hover:underline">↩</a></p>
+                        в период реализации пути нирманакаи. Согласно 1: VI, 346, термин
+                        «перемещение в дом тела» означает то же, что и «Шесть наставлений Наропы»,
+                        а также «Шесть наставлений йогини Нигумы» (Ni gu chos drug).<a
+                            href="#ref-141" class="text-blue-500 hover:underline">↩</a></p>
 
                     <p class="my-2" id="citation-142"><sup>142</sup> Или "движение к конечной
                         реальности". См. прим. 63.<a href="#ref-142"
                                                      class="text-blue-500 hover:underline">↩</a></p>
-                    <p class="my-2" id="citation-143"><sup>143</sup> Saprapañca — с распространением [целенаправленности на деятельность]. Необходимый элемент в практике Кармамудры.<a href="#ref-143" class="text-blue-500 hover:underline">↩</a>
+                    <p class="my-2" id="citation-143"><sup>143</sup> Saprapañca — с распространением
+                        [целенаправленности на деятельность]. Необходимый элемент в практике
+                        Кармамудры.<a href="#ref-143" class="text-blue-500 hover:underline">↩</a>
                     </p>
-                    <p class="my-2" id="citation-144"><sup>144</sup> Viprapañca — без распространения [целенаправленности на деятельность]; глубокое медитативное погружение. Более подробно о значении
-                        этих терминов см. 1: VII, 78 – 79.<a href="#ref-144" class="text-blue-500 hover:underline">↩</a></p>
+                    <p class="my-2" id="citation-144"><sup>144</sup> Viprapañca — без
+                        распространения [целенаправленности на деятельность]; глубокое медитативное
+                        погружение. Более подробно о значении
+                        этих терминов см. 1: VII, 78 – 79.<a href="#ref-144"
+                                                             class="text-blue-500 hover:underline">↩</a>
+                    </p>
 
-                    <p class="my-2" id="citation-145"><sup>145</sup> Янтра — диаграмма для созерцания. Существует три вида янтр:
-                        янтры щита (go cha), янтры устрашающие ('jigs pa) и янтры железной стрелы (lcags mda'i 'khrul 'khor) [1: VII, 256].<a href="#ref-145" class="text-blue-500 hover:underline">↩</a>
+                    <p class="my-2" id="citation-145"><sup>145</sup> Янтра — диаграмма для
+                        созерцания. Существует три вида янтр:
+                        янтры щита (go cha), янтры устрашающие ('jigs pa) и янтры железной стрелы
+                        (lcags mda'i 'khrul 'khor) [1: VII, 256].<a href="#ref-145"
+                                                                    class="text-blue-500 hover:underline">↩</a>
                     </p>
                     <p class="my-2" id="citation-146"><sup>146</sup> Восемь обычных сиддх (dngos
                         grub; siddhi).<a href="#ref-146" class="text-blue-500 hover:underline">↩</a>
                     </p>
 
-                    <p class="my-2" id="citation-147"><sup>147</sup> Семь соединений — пять дхьянибудд, Ваджрасаттва и Ваджрадхара. Соединив шесть частей в одно и приняв это одно в качестве седьмой
-                        части соединения, получаем букву-знак: ХУМ.<a href="#ref-147" class="text-blue-500 hover:underline">↩</a></p>
+                    <p class="my-2" id="citation-147"><sup>147</sup> Семь соединений — пять
+                        дхьянибудд, Ваджрасаттва и Ваджрадхара. Соединив шесть частей в одно и
+                        приняв это одно в качестве седьмой
+                        части соединения, получаем букву-знак: ХУМ.<a href="#ref-147"
+                                                                      class="text-blue-500 hover:underline">↩</a>
+                    </p>
                     <div class="flex justify-center">
                         <figure class="rounded-lg shadow-md text-center mb-4 w-full max-w-4xl">
-                            <img src="{{ asset('images/HUM_with_titles.svg') }}"
+                            <img src="{{ asset('images/HUM_with_titles_opt.svg') }}"
                                  alt="Начертание буквы ХУМ с обозначением пяти Дхьянибудд и Ваджрадары"
-                                 class="rounded-lg w-full h-auto mx-auto object-contain transition-all duration-300 ease-in-out">
+                                 class="rounded-lg w-full h-auto mx-auto px-4 object-contain transition-all duration-300 ease-in-out">
+
                             <figcaption
-                                class="mt-4 mb-4 px-4 italic text-gray-800 text-lg">
+                                class="mt-4 mb-4 italic text-gray-800 text-lg">
                                 Начертание буквы ХУМ с обозначением пяти Дхьянибудд и Ваджрадары<br>
                                 (ниже перечислены в порядке «свертки»)
                             </figcaption>
                         </figure>
                     </div>
                     <ul class="list-none pl-5 space-y-1 ml-8">
-                        <li class="my-2">I. Амогхасиддхи (тиб. don yod grub pa — «безошибочно достигающая
-                            цели») — Мудрость, осуществляющая карму;</li>
-                        <li class="my-2">II. Амитабха (тиб. 'od dpag med — «безграничный свет») — Различающая
-                            Мудрость (Мудрость, различающая все вещи по отдельности);</li>
-                        <li class="my-2">III. Ратнасамбхава (тиб. rin chen 'byung nas — «рожденный из драгоценности») — Мудрость равного содержания;</li>
-                        <li class="my-2">IV. Акшобья (тиб. mi bskyod pa — «нерушимый, неколебимый») — Мудрость Дхармового пространства; </li>
-                        <li class="my-2">V. Вайрочана (тиб. rnam par snang mdzad — «полностью сияющий») —
-                            Зерцалоподобная Мудрость;</li>
-                        <li class="my-2">VI. Ваджрадара (тиб. rdo rje 'dzin pa, rdo rje chang — Держатель Ваджра) — Адибудда.</li>
+                        <li class="my-2">I. Амогхасиддхи (тиб. don yod grub pa — «безошибочно
+                            достигающая
+                            цели») — Мудрость, осуществляющая карму;
+                        </li>
+                        <li class="my-2">II. Амитабха (тиб. 'od dpag med — «безграничный свет») —
+                            Различающая
+                            Мудрость (Мудрость, различающая все вещи по отдельности);
+                        </li>
+                        <li class="my-2">III. Ратнасамбхава (тиб. rin chen 'byung nas — «рожденный
+                            из драгоценности») — Мудрость равного содержания;
+                        </li>
+                        <li class="my-2">IV. Акшобья (тиб. mi bskyod pa — «нерушимый, неколебимый»)
+                            — Мудрость Дхармового пространства;
+                        </li>
+                        <li class="my-2">V. Вайрочана (тиб. rnam par snang mdzad — «полностью
+                            сияющий») —
+                            Зерцалоподобная Мудрость;
+                        </li>
+                        <li class="my-2">VI. Ваджрадара (тиб. rdo rje 'dzin pa, rdo rje chang —
+                            Держатель Ваджра) — Адибудда.
+                        </li>
                     </ul>
                 </div>
 
@@ -354,109 +419,163 @@
                     источники представляется автору невозможным.</p>
 
                 <ol class="list-decimal list-outside ml-8 space-y-1 pl-5">
-                    <li class="my-2"><em>Sumatiratna</em>. (Лувсанринчен = Ринчен Номтоев, 1821 – 1907). Bod hor
+                    <li class="my-2"><em>Sumatiratna</em>. (Лувсанринчен = Ринчен Номтоев, 1821 –
+                        1907). Bod hor
                         gyi brda yig ming tshig don gsum gsal bar byed pa mun sel sgron me bzhugs
                         so. Corpus Scriptorum Mongolorum. Тomus VI – VII. Улаан-Баатар: Улсын
                         Хэвлэл, MCMLIX.
                     </li>
-                    <li class="my-2"><em>Рерих Ю. Н.</em> Тибетский язык. — М.: Изд-во вост. лит., 1961. — 154 с.
+                    <li class="my-2"><em>Рерих Ю. Н.</em> Тибетский язык. — М.: Изд-во вост. лит.,
+                        1961. — 154 с.
                     </li>
-                    <li class="my-2"><em>Tsepak Rigzin.</em> Tibetan-English Dictionary of Buddhist Terminology. —
+                    <li class="my-2"><em>Tsepak Rigzin.</em> Tibetan-English Dictionary of Buddhist
+                        Terminology. —
                         Dharamsala: Library of Tibetan Works and Archives, 1986. –– 479 с.
                     </li>
-                    <li class="my-2"><em>Дхармакирти.</em> Обоснование чужой одушевленности с толкованием
-                        Винитадэва / Пер. с тибетского Ф. И. Щербатского. — Петербург: Российская Академия Наук, 1922. — 79 с. (Репринтное издание: СПб.: Изд-во «Ясный Свет», 1992.)
+                    <li class="my-2"><em>Дхармакирти.</em> Обоснование чужой одушевленности с
+                        толкованием
+                        Винитадэва / Пер. с тибетского Ф. И. Щербатского. — Петербург: Российская
+                        Академия Наук, 1922. — 79 с. (Репринтное издание: СПб.: Изд-во «Ясный Свет»,
+                        1992.)
                     </li>
-                    <li class="my-2"><em>Govinda Anagarika.</em> Tantric Buddhism // 2500 Years of Buddhism /
-                        Ed. by P. V. Bapat. — Delhi: Publication Devision, Ministry of Information and
+                    <li class="my-2"><em>Govinda Anagarika.</em> Tantric Buddhism // 2500 Years of
+                        Buddhism /
+                        Ed. by P. V. Bapat. — Delhi: Publication Devision, Ministry of Information
+                        and
                         Broadcasting, Governmrnt of India, 1964. — P. 312 – 328.
                     </li>
-                    <li class="my-2"><em>Радхакришнан C.</em> Индийская философия. Т. I, II / Пер. с английского. — М.: Изд-во иностранной лит-ры, 1956 – 1957. — 624 с.
+                    <li class="my-2"><em>Радхакришнан C.</em> Индийская философия. Т. I, II / Пер. с
+                        английского. — М.: Изд-во иностранной лит-ры, 1956 – 1957. — 624 с.
                     </li>
-                    <li class="my-2"><em>Guenther H. V.</em> Mantrayāna and Sahajayāna // 2500 Years of Buddhism /
+                    <li class="my-2"><em>Guenther H. V.</em> Mantrayāna and Sahajayāna // 2500 Years
+                        of Buddhism /
                         Ed. by P. V. Bapat. Delhi: Publication Devision, Ministry of Information
                         and Broadcasting, Governmrnt of India, 1964. –– P. 328 – 332.
                     </li>
-                    <li class="my-2"><em>Tsong kha pa.</em> dPal rdo rje 'jigs byed lha bcu gsum ma'i sgrub pa'i thabs |
+                    <li class="my-2"><em>Tsong kha pa.</em> dPal rdo rje 'jigs byed lha bcu gsum
+                        ma'i sgrub pa'i thabs |
                         rin po che'i za ma tog zhes bya ba bzhugs so. Рукопись, 80 л.
                     </li>
-                    <li class="my-2"><em>sNa tshogs rang grol.</em> Snyan brgyud kyi rgyab chos chen mo zab don gnad
+                    <li class="my-2"><em>sNa tshogs rang grol.</em> Snyan brgyud kyi rgyab chos chen
+                        mo zab don gnad
                         kyi me long zhes bya ba bzhugs so. Ксилограф. Б.м., б.г
                     </li>
-                    <li class="my-2"><em>Blo bzang dpal ldan chos dpal.</em> Rgyud thams cad kyi rgyal po dpal gsang
-                        ba 'dus pa'i rtsa ba'i rgyud kyi sgron ma rab tu gsal bar byed pa'i rgya cher bshad
+                    <li class="my-2"><em>Blo bzang dpal ldan chos dpal.</em> Rgyud thams cad kyi
+                        rgyal po dpal gsang
+                        ba 'dus pa'i rtsa ba'i rgyud kyi sgron ma rab tu gsal bar byed pa'i rgya
+                        cher bshad
                         pas 'chad pa las le'u dang po rgya cher bshad pa zhugs so. Ксилограф, 106 л.
                     </li>
                     <li class="my-2">The Life and Teaching of Nāropa // Transl. and comm.
                         by H. V. Guenther. –– Oxford: Clarendon Press, 1963. –– xiii + 292 с.
                     </li>
-                    <li class="my-2"><em>Das Sarat Chandra.</em> A Tibetan-English Dictionary. –– Alipore: West
-                        Bengal Govt., 1960. –– 1354 c.</li>
-                    <li class="my-2"><em>Wayman A.</em> Yoga of the Guhyasamājatantra. — New York: Samuel
+                    <li class="my-2"><em>Das Sarat Chandra.</em> A Tibetan-English Dictionary. ––
+                        Alipore: West
+                        Bengal Govt., 1960. –– 1354 c.
+                    </li>
+                    <li class="my-2"><em>Wayman A.</em> Yoga of the Guhyasamājatantra. — New York:
+                        Samuel
                         Weiser, Inc., 1977. –– xii + 388 с.
                     </li>
-                    <li class="my-2">dPal gsang ba 'dus pa'i bdag bskyed ngag 'don bkra shis lhun po'i rgyud
+                    <li class="my-2">dPal gsang ba 'dus pa'i bdag bskyed ngag 'don bkra shis lhun
+                        po'i rgyud
                         pa grwa tshang gi 'don rgyun la rje thams cad mkhyen pas zhus ngag mdzad pa
-                        bzhugs so. Ксилограф издания монастыря Ташилхунпо, 32 л.</li>
+                        bzhugs so. Ксилограф издания монастыря Ташилхунпо, 32 л.
+                    </li>
                     <li class="my-2">Anagarika Govinda. Tantric Buddhism. В кн. 2500 Years of
                         Buddhism, Delhi, 1964, pp. 312-328.
                     </li>
-                    <li class="my-2">bsNyen pa'i kha bskong gi sbyin bsreg nyung du bsdus ming 'khyer bder
-                        bkod pa rin po che'i phreng ba zhes bya ba bzhugs so. Ксилограф малого формата, 3 л. Без имени автора.
+                    <li class="my-2">bsNyen pa'i kha bskong gi sbyin bsreg nyung du bsdus ming
+                        'khyer bder
+                        bkod pa rin po che'i phreng ba zhes bya ba bzhugs so. Ксилограф малого
+                        формата, 3 л. Без имени автора.
                     </li>
-                    <li class="my-2"><em>Дхармаваджра.</em> Skyabs 'gro'i nyams len rgyun 'khyer zhes bya ba
+                    <li class="my-2"><em>Дхармаваджра.</em> Skyabs 'gro'i nyams len rgyun 'khyer
+                        zhes bya ba
                         bzhugs so. Ксилограф, 2 л.
                     </li>
-                    <li class="my-2"><em>Дхармабхадра.</em> 'Jam dpal nag po'i bsgom bzlas bzhugs so. Ксилограф,
+                    <li class="my-2"><em>Дхармабхадра.</em> 'Jam dpal nag po'i bsgom bzlas bzhugs
+                        so. Ксилограф,
                         4 л.
                     </li>
                     <li class="my-2">Gsang 'dus byed pa. Рукопись. 4 л.</li>
-                    <li class="my-2">Труды по востоковедению. T. II1: Ученые записки Тартуского государственного университета = Acta et Commentationes Universitatis Tartuensis.
-                        Вып. 309. —Тарту, 1973. </li>
-                    <li class="my-2">dPal gsang ba 'dus pa'i rtsa rgyud bzhugs so. Ксилограф, 93 л. (гл. I –
-                        XII). То же на санскрите (гл. I – XVIII): Guhyasamājatantra or Tathāgataguhyaka / Ed. by B. Bhattacharya. Guhyasamājatantra or Tathāgataguhyaka. ––
-                        Baroda: Oriental Institute, 1931. (Gaekwards Oriental Series 53).</li>
-                    <li class="my-2"><em>Рерих Ю. Н.</em> Избранные труды. — М.: Изд-во «Наука». Главн. ред.
-                        вост. лит., 1967. — 574 с.</li>
-                    <li class="my-2">dPal 'dus kyi 'khor lo'i sa chog gi bum pa lhag gnas bya ba bum pa sgrub
-                        tshul gyi 'don sgrig gi rim pa bzhugs so. Рукопись, 14 л.</li>
-                    <li class="my-2"><p>Bla ma mchod pa'i cho ga bzhugs so. Ксилограф малого формата, 35 л.</p>
-                        <p class="my-2">(<em>Примечание: </em>тибетоязычная традиция называет автором этого
-                            сочинения первого Панчен-Ламу Лобсан-Чойжи-Чжалцана (1570-1663), который при
-                            составлении текста опирался на "призывы" (bskul ba) Дхармакирти и его учеников.
-                            В начале текста приводится его название на санскрите, что должно указывать на
-                            его индийское происхождение. Впоследствии этот ритуал неоднократно описывался
+                    <li class="my-2">Труды по востоковедению. T. II1: Ученые записки Тартуского
+                        государственного университета = Acta et Commentationes Universitatis
+                        Tartuensis.
+                        Вып. 309. —Тарту, 1973.
+                    </li>
+                    <li class="my-2">dPal gsang ba 'dus pa'i rtsa rgyud bzhugs so. Ксилограф, 93 л.
+                        (гл. I –
+                        XII). То же на санскрите (гл. I – XVIII): Guhyasamājatantra or
+                        Tathāgataguhyaka / Ed. by B. Bhattacharya. Guhyasamājatantra or
+                        Tathāgataguhyaka. ––
+                        Baroda: Oriental Institute, 1931. (Gaekwards Oriental Series 53).
+                    </li>
+                    <li class="my-2"><em>Рерих Ю. Н.</em> Избранные труды. — М.: Изд-во «Наука».
+                        Главн. ред.
+                        вост. лит., 1967. — 574 с.
+                    </li>
+                    <li class="my-2">dPal 'dus kyi 'khor lo'i sa chog gi bum pa lhag gnas bya ba bum
+                        pa sgrub
+                        tshul gyi 'don sgrig gi rim pa bzhugs so. Рукопись, 14 л.
+                    </li>
+                    <li class="my-2"><p>Bla ma mchod pa'i cho ga bzhugs so. Ксилограф малого
+                            формата, 35 л.</p>
+                        <p class="my-2">(<em>Примечание: </em>тибетоязычная традиция называет
+                            автором этого
+                            сочинения первого Панчен-Ламу Лобсан-Чойжи-Чжалцана (1570-1663), который
+                            при
+                            составлении текста опирался на "призывы" (bskul ba) Дхармакирти и его
+                            учеников.
+                            В начале текста приводится его название на санскрите, что должно
+                            указывать на
+                            его индийское происхождение. Впоследствии этот ритуал неоднократно
+                            описывался
                             учеными ламами различных школ, особенно красношапочной Сачжа (sa skya).
-                            Существуют также варианты Гендундуба и Хайдуба. Находящийся в моем распоряжении
-                            текст издан учеными монастыря Дашилхунпо, которые составили его, подвергнув
-                            сверке все имеющиеся варианты и исключив из них те места, которые были признаны
-                            неподлинными, так как они приравнивали это сочинение к наставлениям (mang ngag,
+                            Существуют также варианты Гендундуба и Хайдуба. Находящийся в моем
+                            распоряжении
+                            текст издан учеными монастыря Дашилхунпо, которые составили его,
+                            подвергнув
+                            сверке все имеющиеся варианты и исключив из них те места, которые были
+                            признаны
+                            неподлинными, так как они приравнивали это сочинение к наставлениям
+                            (mang ngag,
                             upadesa) по сутрам и тантрам.</p>
 
                         <p class="my-2">Начиная с 3-ей строки л. 28б, следует составленный учеником
-                            Цзонхавы Хайдубом текст ритуала bla ma mchod pa'i tshogs mchod. По преданию,
-                            основные элементы этого ритуала Хайдуб увидел во сне. В японском буддизме этому
+                            Цзонхавы Хайдубом текст ритуала bla ma mchod pa'i tshogs mchod. По
+                            преданию,
+                            основные элементы этого ритуала Хайдуб увидел во сне. В японском
+                            буддизме этому
                             ритуалу соответствует чайная церемония, сходные ритуалы имеются во всех
-                            индийских тантрийских системах, и его реминисценции сохранялись в современных
-                            "открытых" йогических традициях в виде gurudana, что говорит, по меньшей мере, о
+                            индийских тантрийских системах, и его реминисценции сохранялись в
+                            современных
+                            "открытых" йогических традициях в виде gurudana, что говорит, по меньшей
+                            мере, о
                             его индийских корнях.</p>
 
                         <p class="my-2">Оба текста представляют исключительный интерес для понимания
                             ритуальной стороны буддизма Махаяны.)</p>
                     </li>
-                    <li class="my-2"><em>Guenther H. V.</em> The Royal Song of Saraha: a Study in The History
-                        of Buddhist Thought. — Berkeley: Shambala, 1973. — 221 с.</li>
+                    <li class="my-2"><em>Guenther H. V.</em> The Royal Song of Saraha: a Study in
+                        The History
+                        of Buddhist Thought. — Berkeley: Shambala, 1973. — 221 с.
+                    </li>
                 </ol>
-
 
 
                 <!-- Разделительная черта -->
                 <hr class="my-8 border-t-4 border-gray-500">
-                <p class="text-right italic text-gray-600 mt-4">Пупышев Виктор Николаевич, 1978 г.</p>
+                <p class="text-right italic text-gray-600 mt-4">Пупышев Виктор Николаевич, 1978
+                    г.</p>
                 <!-- Разделительная черта -->
                 <hr class="my-8 border-t-4 border-gray-500">
             </div>
             <!-- Нижняя навигация -->
-            @include('layouts.article-navigation', ['currentPart' => 7, 'totalParts' => 7])
-        </div>
+            @include('layouts.article-navigation', [
+                'currentPart' => 7,
+                'totalParts' => 7,
+                'routeName' => 'pupishev_articles.source_of_sages',
+                'articleTitle' => 'статьи'
+            ])        </div>
 @endsection
