@@ -6,7 +6,7 @@
     <style>
         .container {
             background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
-            url('{{ asset('backgrounds/watercolor.jpg') }}');
+            url('{{ asset('backgrounds/watercolor.webp') }}');
             background-attachment: fixed;
             background-size: cover;
         }
@@ -292,11 +292,11 @@
             <p class="italic"><strong>P.S.</strong> В чисто формальном смысле можно говорить о трех
                 основных классах буддийских аскетов.</p>
             <ol class="list-decimal pl-6">
-                <li><strong>«Отшельники»</strong> (Р. paribbajaka, Skr. parivrajaka) - те, кто
+                <li><strong>«Отшельники»</strong> (Р. paribbajaka, санскр. parivrajaka) - те, кто
                     покинул дом, семью, деревню или город, оставив все свое имущество и прекратив
                     все личные и общественные отношения.
                 </li>
-                <li><strong>«Странствующие аскеты»</strong> (Р. samana, Skr. sramana) - те, кто не
+                <li><strong>«Странствующие аскеты»</strong> (Р. samana, санскр. sramana) - те, кто не
                     принадлежит ни к какому аскетическому сообществу, их главным занятием была йога.
                 </li>
                 <li><strong>Бхикшу</strong> (букв, «просящие подаяние») - посвященные буддийские
@@ -311,13 +311,13 @@
                     ПРИМЕЧАНИЯ</h4>
                 <p class="mb-3" id="citation-1"><sup>1</sup> При переводе этого текста я в основном
                     следовал английскому переводу: The Elders Verses, I, Theragatha / Trans, by К.
-                    R. Norman, L., 1969, P. 97-99. «Старейшина» (P. thera, Skr. sthavira) в
+                    R. Norman, L., 1969, P. 97-99. «Старейшина» (P. thera, санскр. sthavira) в
                     традиционной буддийской номенклатуре - старший (по годам ученичества) член
                     монашеской общины, основанной Буддой. В данном случае речь идет о личных
                     учениках Будды либо об учениках его первых учеников.<a href="#ref-1"
                                                                            class="text-blue-500 hover:underline">↩</a>
                 </p>
-                <p class="mb-3" id="citation-2"><sup>2</sup> Кашьяпа (Р. Kassapa, Skr. Kasyapa) -
+                <p class="mb-3" id="citation-2"><sup>2</sup> Кашьяпа (Р. Kassapa, санскр. Kasyapa) -
                     один из наиболее известных ранних учеников Будды. Происходил из древнего
                     брахманского рода.<a href="#ref-2" class="text-blue-500 hover:underline">↩</a>
                 </p>
@@ -334,7 +334,7 @@
                 </p>
                 <p class="mb-3" id="citation-6"><sup>6</sup> «То, что предстояло свершить, свершено»
                     - эти слова, произнесенные Кашьяпой, являются «знаком» или «признанием» (Р.
-                    anna, Skr. ajna) достижения монахом архатства, своего рода священной формулой, с
+                    anna, санскр. ajna) достижения монахом архатства, своего рода священной формулой, с
                     которой тот обращался к Учителю (и самому себе) в момент этого достижения.<a
                         href="#ref-6" class="text-blue-500 hover:underline">↩</a></p>
                 <p class="mb-3" id="citation-7"><sup>7</sup> «Упражнять ум» - здесь речь идет о
@@ -345,14 +345,14 @@
                                                                                       class="text-blue-500 hover:underline">↩</a>
                 </p>
                 <p class="mb-3" id="citation-9"><sup>9</sup> В буддийской традиции Шарипутра (Р.
-                    Sariputta, Skr. Sariputra) считался самым выдающимся из учеников Будды. Он
+                    Sariputta, санскр. Sariputra) считался самым выдающимся из учеников Будды. Он
                     фигурирует в текстах обеих Колесниц очень часто именно как участник бесед на
                     общие философские и религиозные темы.<a href="#ref-9"
                                                             class="text-blue-500 hover:underline">↩</a>
                 </p>
                 <p class="mb-3" id="citation-10"><sup>10</sup> «Божественный глаз» (Р. dibba-cakkhu,
-                    Skr. divya-caksu), или «божественное зрение», - первая из шести
-                    сверхъестественных способностей (Р. abhinna, Skr. abhijna). Вторая -
+                    санскр. divya-caksu), или «божественное зрение», - первая из шести
+                    сверхъестественных способностей (Р. abhinna, санскр. abhijna). Вторая -
                     способность чисто умственного создания всякого рода вещей, существ и событий;
                     третьей является способность всепроникающего знания; четвертой - способность
                     знать мысли других людей; пятой - божественный слух, и наконец, шестой -
@@ -369,7 +369,7 @@
                                                                   class="text-blue-500 hover:underline">↩</a>
                 </p>
                 <p class="mb-3" id="citation-13"><sup>13</sup> «Не-рациональное мышление» (Р.
-                    avitakka, Skr. avitarka) - одна из йогических трансформаций мышления,
+                    avitakka, санскр. avitarka) - одна из йогических трансформаций мышления,
                     характерная для второй стадии трансцендентального созерцания, то есть второй
                     дхьяны.<a href="#ref-13" class="text-blue-500 hover:underline">↩</a></p>
                 <p class="mb-3" id="citation-14"><sup>14</sup> «Не отсутствие смерти» - здесь
@@ -388,7 +388,7 @@
                 <p class="mb-3" id="citation-18"><sup>18</sup> «Кажется тупым» — что вполне
                     естественно, ибо он не показывает другим людям своих реакций на их слова и
                     поступки.<a href="#ref-18" class="text-blue-500 hover:underline">↩</a></p>
-                <p class="mb-3" id="citation-19"><sup>19</sup> Маудгальяяна (Р. Moggalana, Skr.
+                <p class="mb-3" id="citation-19"><sup>19</sup> Маудгальяяна (Р. Moggalana, санскр.
                     Maudgalyayana) — также один из известных учеников Будды.<a href="#ref-19"
                                                                                class="text-blue-500 hover:underline">↩</a>
                 </p>
@@ -406,7 +406,7 @@
                     уничтожению в себе чувственных влечений и привязанностей.<a href="#ref-22"
                                                                                 class="text-blue-500 hover:underline">↩</a>
                 </p>
-                <p class="mb-3" id="citation-23"><sup>23</sup> «Великий Герой» (Р. и Skr. mahavira)
+                <p class="mb-3" id="citation-23"><sup>23</sup> «Великий Герой» (Р. и санскр. mahavira)
                     — стандартный эпитет для аскета, доблестно сразившегося со своим главным врагом,
                     с самим собой.<a href="#ref-23" class="text-blue-500 hover:underline">↩</a></p>
                 <p class="mb-3" id="citation-24"><sup>24</sup> «Угас несравненный Шарипутра» — здесь

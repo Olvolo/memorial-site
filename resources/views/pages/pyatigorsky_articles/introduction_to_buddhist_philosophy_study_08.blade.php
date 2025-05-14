@@ -4,7 +4,7 @@
     <style>
         .container {
             background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
-            url('{{ asset('backgrounds/watercolor.jpg') }}');
+            url('{{ asset('backgrounds/watercolor.webp') }}');
             background-attachment: fixed;
             background-size: cover;
         }
@@ -114,17 +114,17 @@
                 <h4 class="text-center text-gray-800 font-bold text-xl sm:text-xl md:text-xl my-4">ПРИМЕЧАНИЯ</h4>
                 <p class="mb-3" id="citation-1"><sup>1</sup> The Dhammapada in Khuddaka-Nikaya of the Sutta-Pitaka of the Pali Canon / Ed. By S. Sumangala. L: Pali Texts Society, 1914, Verses 1,2. P. 33—42, 148—150. Согласно цейлонской комментаторской традиции, восходящей к первому веку нашей эры (и завершившейся знаменитым комментарием Дхаммапады, составленном из позднейших легенд, записанных на сингальском языке около V в. н.э.), каждый стих Дхаммапады объясняется на основе того или иного эпизода жизни Будды, который завершается объяснением самим Буддой этого эпизода. Первые стихи приводятся в переводе В.Н. Топорова. Я в этих семинарах перевожу тапо словом «ум».<a href="#ref-1" class="text-blue-500 hover:underline">↩</a></p>
                 <p class="mb-3" id="citation-2"><sup>2</sup> «Дхармы происходят из разума» — возможно, лучше было бы перевести как «исконно умственны». Эта строка — камень преткновения для многих переводчиков.<a href="#ref-2" class="text-blue-500 hover:underline">↩</a></p>
-                <p class="mb-3" id="citation-3"><sup>3</sup> «Сотворенный из разума» (Р. и Skr. manomaya) — крайне сложное выражение. Вариант — «произведенный разумом», что подчеркивает отличие произведенного разумом от, скажем, «природно (спонтанно) возникшего».<a href="#ref-3" class="text-blue-500 hover:underline">↩</a></p>
+                <p class="mb-3" id="citation-3"><sup>3</sup> «Сотворенный из разума» (Р. и санскр. manomaya) — крайне сложное выражение. Вариант — «произведенный разумом», что подчеркивает отличие произведенного разумом от, скажем, «природно (спонтанно) возникшего».<a href="#ref-3" class="text-blue-500 hover:underline">↩</a></p>
                 <p class="mb-3" id="citation-4"><sup>4</sup> Здесь Мара — это символ власти чувственных желаний. Заметим, что в целом, в буддийских текстах (как в палийских, так и в санскритских) Мары (во множественном числе) также фигурируют как разновидность вредоносных полубожеств.<a href="#ref-4" class="text-blue-500 hover:underline">↩</a></p>
-                <p class="mb-3" id="citation-5"><sup>5</sup> «Бестелесная» (Р. asarira, Skr. asarira) здесь не только как одна из дхарм без формы (см. VII, где то же об уме), но и как «не-физическая», «не-материальная».<a href="#ref-5" class="text-blue-500 hover:underline">↩</a></p>
-                <p class="mb-3" id="citation-6"><sup>6</sup> «Психика» (ближе всего к Р. ceto, Skr. cetas) здесь — понятие, охватывающее весь ментальный комплекс, но прежде всего волю, эмоции и сознание.<a href="#ref-6" class="text-blue-500 hover:underline">↩</a></p>
+                <p class="mb-3" id="citation-5"><sup>5</sup> «Бестелесная» (Р. asarira, санскр. asarira) здесь не только как одна из дхарм без формы (см. VII, где то же об уме), но и как «не-физическая», «не-материальная».<a href="#ref-5" class="text-blue-500 hover:underline">↩</a></p>
+                <p class="mb-3" id="citation-6"><sup>6</sup> «Психика» (ближе всего к Р. ceto, санскр. cetas) здесь — понятие, охватывающее весь ментальный комплекс, но прежде всего волю, эмоции и сознание.<a href="#ref-6" class="text-blue-500 hover:underline">↩</a></p>
                 <p class="mb-3" id="citation-7"><sup>7</sup> «Завоевано» отсылает нас к эпитету Будды — «Победитель».<a href="#ref-7" class="text-blue-500 hover:underline">↩</a></p>
                 <p class="mb-3" id="citation-8"><sup>8</sup> Здесь «сознание» употребляется, скорее, в смысле, близком к жизненной основе, жизненному принципу.<a href="#ref-8" class="text-blue-500 hover:underline">↩</a></p>
                 <p class="mb-3" id="citation-9"><sup>9</sup> «Разрушение всех санскар» т.е. полный распад всех связей дхарм во времени и пространстве, всех санскар.<a href="#ref-9" class="text-blue-500 hover:underline">↩</a></p>
-                <p class="mb-3" id="citation-10"><sup>10</sup> «Несотворенное» (Р. akata, Skr. akrta) здесь — синоним необусловленного.<a href="#ref-10" class="text-blue-500 hover:underline">↩</a></p>
+                <p class="mb-3" id="citation-10"><sup>10</sup> «Несотворенное» (Р. akata, санскр. akrta) здесь — синоним необусловленного.<a href="#ref-10" class="text-blue-500 hover:underline">↩</a></p>
                 <p class="mb-3" id="citation-11"><sup>11</sup> «Кто в своем поведении абсолютно ровен» — речь идет о поведении абсолютно одинаковом по отношению ко всему живому и неживому.<a href="#ref-11" class="text-blue-500 hover:underline">↩</a></p>
                 <p class="mb-3" id="citation-12"><sup>12</sup> Аскеты носили волосы на особый манер.<a href="#ref-12" class="text-blue-500 hover:underline">↩</a></p>
-                <p class="mb-3" id="citation-13"><sup>13</sup> Готра (Р. gotta, Skr. gotra) — клан, генеалогическая линия.<a href="#ref-13" class="text-blue-500 hover:underline">↩</a></p>
+                <p class="mb-3" id="citation-13"><sup>13</sup> Готра (Р. gotta, санскр. gotra) — клан, генеалогическая линия.<a href="#ref-13" class="text-blue-500 hover:underline">↩</a></p>
                 <p class="mb-3" id="citation-14"><sup>14</sup> «Того, чья судьба» буквально «ход» (Р. и S. gati), направление будущих событий.<a href="#ref-14" class="text-blue-500 hover:underline">↩</a></p>
             </div>
         </div>

@@ -441,6 +441,11 @@ Route::get('/additional_articles/khori_buryats', function () {
     return view('pages.additional_articles.khori_buryats');
 })->name('additional_articles.khori_buryats');
 
+Route::get('/additional_articles/agvan_dorzhiev_s_departure', function () {
+    return view('pages.additional_articles.agvan_dorzhiev_s_departure');
+})->name('additional_articles.agvan_dorzhiev_s_departure');
+
+
 // Статьи А. М. Пятигорского
 Route::get('/pyatigorsky_articles/mainly_interesting', function () {
     return view('pages.pyatigorsky_articles.mainly_interesting');
@@ -536,6 +541,48 @@ Route::get('/volkova_articles/two_ideal_societies', function () {
     return view('pages.volkova_articles.two_ideal_societies');
 })->name('volkova_articles.two_ideal_societies');
 
+Route::get('/volkova_articles/avikalpapraveshadharani', function () {
+    return view('pages.volkova_articles.avikalpapraveshadharani');
+})->name('volkova_articles.avikalpapraveshadharani');
 
+// Статьи Вязниковцева
+Route::get('/viyaznikovtsev_articles/philosophy_foundation', function () {
+    return view('pages.viyaznikovtsev_articles.philosophy_foundation');
+})->name('viyaznikovtsev_articles.philosophy_foundation');
 
+// Статьи Донца
+Route::get('/donets_articles/basic_faith', function () {
+    return view('pages.donets_articles.basic_faith');
+})->name('donets_articles.basic_faith');
 
+Route::get('/donets_articles/all_unitu_idea', function () {
+    return view('pages.donets_articles.all_unitu_idea');
+})->name('donets_articles.all_unitu_idea');
+
+Route::get('/donets_articles/world_eye', function () {
+    return view('pages.donets_articles.world_eye');
+})->name('donets_articles.world_eye');
+
+Route::get('/donets_articles/promise_system', function () {
+    return view('pages.donets_articles.promise_system');
+})->name('donets_articles.promise_system');
+
+Route::get('/donets_articles/secrecy_problem', function () {
+    return view('pages.donets_articles.secrecy_problem');
+})->name('donets_articles.secrecy_problem');
+
+Route::get('/donets_articles/pride_role', function () {
+    return view('pages.donets_articles.pride_role');
+})->name('donets_articles.pride_role');
+
+Route::get('/donets_articles/four_immeasurable', function () {
+    return view('pages.donets_articles.four_immeasurable');
+})->name('donets_articles.four_immeasurable');
+
+Route::get('/donets_articles/about_magzema', function () {
+    return view('pages.donets_articles.about_magzema');
+})->name('donets_articles.about_magzema');
+
+Route::get('/donets_articles/source_of_siddhis', function () {
+    return view('pages.donets_articles.source_of_siddhis');
+})->name('donets_articles.source_of_siddhis');

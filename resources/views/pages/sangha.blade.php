@@ -4,7 +4,7 @@
     <style>
         .container {
             background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
-            url({{ asset('backgrounds/watercolor.jpg') }});
+            url({{ asset('backgrounds/watercolor.webp') }});
             background-attachment: fixed;
             background-size: cover;
             min-height: 100vh;
@@ -503,8 +503,84 @@
                             О двух идеальных социумах буддизма
                         </a>
                     </li>
+                    <li>
+                        <a href="{{ route('volkova_articles.avikalpapraveshadharani') }}">
+                            Авикальпаправеша-дхарани
+                        </a>
+                    </li>
                 </ul>
             </div>
+
+            <!-- Блок автора7 - Вязниковцев Александр Иванович  -->
+            <div x-data="{ isOpen: false }" class="author-block bg-blue-300">
+                <div class="author-header" @click="isOpen = !isOpen">
+                    <h3 class="text-xl font-semibold">Вязниковцев Александр Иванович</h3>
+                    <span class="toggle-icon" x-text="isOpen ? 'Свернуть' : 'Статьи'"></span>
+                </div>
+                <ul x-show="isOpen" x-transition.duration.200ms class="articles-list">
+                    <li>
+                        <a href="{{ route('viyaznikovtsev_articles.philosophy_foundation') }}">
+                            Об основах философии сознания в традициях ваджраяны и дзогчена
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Блок автора8 - Донец Андрей Михайлович  -->
+            <div x-data="{ isOpen: false }" class="author-block bg-blue-200">
+                <div class="author-header" @click="isOpen = !isOpen">
+                    <h3 class="text-xl font-semibold">Донец Андрей Михайлович</h3>
+                    <span class="toggle-icon" x-text="isOpen ? 'Свернуть' : 'Статьи'"></span>
+                </div>
+                <ul x-show="isOpen" x-transition.duration.200ms class="articles-list">
+                    <li>
+                        <a href="{{ route('donets_articles.basic_faith') }}">
+                            Феномен базовой веры в центральноазиатском буддизме
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('donets_articles.all_unitu_idea') }}">
+                            Идея всеединства в буддизме
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('donets_articles.world_eye') }}">
+                            Глаз мира
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('donets_articles.promise_system') }}">
+                            О роли системы обетования в буддизме
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('donets_articles.secrecy_problem') }}">
+                            Проблема сокровенности Тантры
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('donets_articles.pride_role') }}">
+                            Роль гордости в духовной культуре махаяны
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('donets_articles.four_immeasurable') }}">
+                            Четыре безмерные в буддизме Бурятии
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('donets_articles.about_magzema') }}">
+                            О мигземе
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('donets_articles.source_of_siddhis') }}">
+                            Источник сиддх
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </div>
 @endsection

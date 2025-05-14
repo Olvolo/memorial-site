@@ -6,7 +6,7 @@
     <style>
         .container {
             background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
-            url({{ asset('backgrounds/watercolor.jpg') }});
+            url({{ asset('backgrounds/watercolor.webp') }});
             background-attachment: fixed;
             background-size: cover;
             height: 100vh;
@@ -38,6 +38,10 @@
                 <p class="mt-4">
                     <a href="{{ route('additional_articles.khori_buryats') }}"
                        class="text-blue-600 hover:text-blue-800 underline">О хоринских бурятах</a>
+                </p>
+                <p class="mt-4">
+                    <a href="{{ route('additional_articles.agvan_dorzhiev_s_departure') }}"
+                       class="text-blue-600 hover:text-blue-800 underline">Уход Агвана Доржиева</a>
                 </p>
             </div>
         </div>

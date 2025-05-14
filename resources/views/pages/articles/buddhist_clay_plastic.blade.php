@@ -6,7 +6,7 @@
     <style>
         .container {
             background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
-            url('{{ asset('backgrounds/combination-makeup-textures.webp') }}');
+            url('{{ asset('backgrounds/blue_ice.svg') }}');
             background-attachment: fixed;
             background-size: cover;
         }

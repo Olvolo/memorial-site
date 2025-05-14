@@ -4,7 +4,8 @@
 @push('styles')
     <style>
         .container {
-            background-image: url('{{ asset('backgrounds/paper-146904.png') }}');
+            background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+            url('{{ asset("backgrounds/blue_ice.svg") }}');
             background-attachment: fixed;
             background-size: cover;
         }

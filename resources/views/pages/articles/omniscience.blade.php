@@ -7,6 +7,7 @@
             url({{ asset('backgrounds/bluerish.webp') }});
             background-attachment: fixed;
             background-size: cover;
+            min-height: 100vh;
         }
     </style>
 @endpush

@@ -121,7 +121,7 @@ require_once __DIR__ . '/public/index.php';
        <style>
            .container {
                background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
-               url('{{ asset("backgrounds/wall_stone.jpg") }}');
+               url('{{ asset("backgrounds/blue_ice.svg") }}');
                background-attachment: fixed;
                background-size: cover;
            }
@@ -170,7 +170,7 @@ require_once __DIR__ . '/public/index.php';
     <style>
         .container {
             background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
-            url('{{ asset("backgrounds/wall_stone.jpg") }}');
+            url('{{ asset("backgrounds/blue_ice.svg") }}');
             background-attachment: fixed;
             background-size: cover;
         }
@@ -217,7 +217,7 @@ require_once __DIR__ . '/public/index.php';
          <style>
              .container {
                  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
-                 url('{{ asset('backgrounds/watercolor.jpg') }}');
+                 url('{{ asset('backgrounds/watercolor.webp') }}');
                  background-attachment: fixed;
                  background-size: cover;
              }

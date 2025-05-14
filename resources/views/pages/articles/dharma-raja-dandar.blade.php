@@ -4,7 +4,7 @@
     .container {
         background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255,
         255, 255, 0.8)),
-        url('{{ asset('backgrounds/watercolor.jpg') }}');
+        url('{{ asset('backgrounds/watercolor.webp') }}');
         background-attachment: fixed;
         background-size: cover;
     }
@@ -726,7 +726,7 @@
 
         <div class="citations mt-4 text-lg">
             <h4 class="text-center text-gray-800 font-bold text-xl sm:text-xl md:text-xl my-4">ПРИМЕЧАНИЯ</h4>
-            
+
             <p id="citation-1"><sup>1</sup> Махамудра – буквально “Великий
                 Знак”. На уровне Ануттарайогатантры – это включенность в
                 ситуацию при реализации недвойственной мудрости. <a href="#ref-1" class="text-blue-500 hover:underline">↩</a>
