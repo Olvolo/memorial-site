@@ -19,7 +19,7 @@
     <div class="text-center">
         <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold my-4 text-blue-900">Посвящается нашему драгоценному Учителю - <br>Монтлевичу
                                                             Владимиру Михайловичу</h2>
-            <img src="{{ asset('images/guru_muni_vajrasattva.jpg') }}" alt="Владимир Михайлович Монтлевич"
+            <img src="{{ asset('images/Guru_Kharkov_1991.jpg') }}" alt="Владимир Михайлович Монтлевич"
                  class="article-image rounded-lg shadow-md">
     </div>
     </div>

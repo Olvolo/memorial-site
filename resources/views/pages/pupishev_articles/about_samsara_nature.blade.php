@@ -442,7 +442,7 @@
                 <p class="my-2" id="citation-5"><sup>5 </sup>Неведение проявляется через
                     рупа-скандху (gzugs kyi phung po), страсть – через санджня-скандху (du shes kyi
                     phung po), гнев – через сознание (rnam shes kyi phung po), гордость – через
-                    ощущения (’tsor ba’i phung po), зависть – через санскары (’du byed kyi phung
+                    ощущения (’tsor ba’i phung po), зависть – через самскары (’du byed kyi phung
                     po).<a href="#ref-5" class="text-blue-500 hover:underline">↩</a></p>
 
             </div>

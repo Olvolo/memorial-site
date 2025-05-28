@@ -586,3 +586,21 @@ Route::get('/donets_articles/about_magzema', function () {
 Route::get('/donets_articles/source_of_siddhis', function () {
     return view('pages.donets_articles.source_of_siddhis');
 })->name('donets_articles.source_of_siddhis');
+
+Route::get('/donets_articles/six_period_yoga', function () {
+    return view('pages.donets_articles.six_period_yoga');
+})->name('donets_articles.six_period_yoga');
+
+Route::get('/donets_articles/tibetan_buddhism_ethics', function () {
+    return view('pages.donets_articles.tibetan_buddhism_ethics');
+})->name('donets_articles.tibetan_buddhism_ethics');
+
+
+
+// Статьи Аюшеевой
+Route::get('/ayusheeva_articles/ethical_principles_tibetan_buddhism/{part}', function ($part) {
+    if ($part < 1 || $part > 5) {
+        abort(404);
+    }
+    return view("pages.ayusheeva_articles.ethical_principles_tibetan_buddhism_$part");
+})->where('part', '[1-5]')->name('ayusheeva_articles.ethical_principles_tibetan_buddhism');

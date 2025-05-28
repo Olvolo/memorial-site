@@ -82,7 +82,7 @@
             </p>
             <ul class="text-left italic list-none my-4 pl-5 space-y-1 ml-8">
                 <li>раннее (bka' dang po) - Хинаяна;</li>
-                <li>промежуточное (bka' bar ba) - Мадхъямика и Праджня-парамита;
+                <li>промежуточное (bka' bar ba) - Мадхьямика и Праджня-парамита;
                 </li>
                 <li>позднейшее (bka' tham) - Йогачар.</li>
             </ul>

@@ -569,6 +569,11 @@
                         </a>
                     </li>
                     <li>
+                        <a href="{{ route('donets_articles.tibetan_buddhism_ethics') }}">
+                            Этика в тибетском буддизме
+                        </a>
+                    </li>
+                    <li>
                         <a href="{{ route('donets_articles.about_magzema') }}">
                             О мигземе
                         </a>
@@ -578,7 +583,37 @@
                             Источник сиддх
                         </a>
                     </li>
+                    <li>
+                        <a href="{{ route('donets_articles.six_period_yoga') }}">
+                            Йога шести периодов
+                        </a>
+                    </li>
                 </ul>
+            </div>
+
+            <!-- Блок автора9 - Аюшеева Дулма Владимировна  -->
+            <div x-data="{ isOpen: false }" class="author-block bg-blue-300">
+                <div class="author-header" @click="isOpen = !isOpen">
+                    <h3 class="text-xl font-semibold">Аюшеева Дулма Владимировна</h3>
+                    <span class="toggle-icon" x-text="isOpen ? 'Свернуть' : 'Статьи'"></span>
+                </div>
+                <ul x-show="isOpen" x-transition.duration.200ms class="articles-list">
+                    <li>
+                        <a href="{{ route('ayusheeva_articles.ethical_principles_tibetan_buddhism', ['part' => 1]) }}">Этические принципы в тибетском буддизме. Введение и социальный контекст</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('ayusheeva_articles.ethical_principles_tibetan_buddhism', ['part' => 2]) }}">Этические принципы в тибетском буддизме. Четыре Благородных Истины и карма</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('ayusheeva_articles.ethical_principles_tibetan_buddhism', ['part' => 3]) }}">Этические принципы в тибетском буддизме. Двенадцать звеньев и классификация деяний</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('ayusheeva_articles.ethical_principles_tibetan_buddhism', ['part' => 4]) }}">Этические принципы в тибетском буддизме. Обеты и монашество</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('ayusheeva_articles.ethical_principles_tibetan_buddhism', ['part' => 5]) }}">Этические принципы в тибетском буддизме. Тантрийские обеты, Кунлон и светская этика</a>
+                    </li>
+                                    </ul>
             </div>
 
         </div>
