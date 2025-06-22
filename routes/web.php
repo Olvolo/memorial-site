@@ -334,6 +334,11 @@ Route::get('/articles/trikaya_mantras', function () {
     return view('pages.articles.trikaya_mantras');
 })->name('articles.trikaya_mantras');
 
+Route::get('/articles/sultim_lodoy_thirty_secrets', function () {
+    return view('pages.articles.sultim_lodoy_thirty_secrets');
+})->name('articles.sultim_lodoy_thirty_secrets');
+
+
 
 // Статьи Железнова
 Route::get('/zheleznov_articles/about_tibetan_tradition_buryat_buddhism', function () {
@@ -444,6 +449,14 @@ Route::get('/additional_articles/khori_buryats', function () {
 Route::get('/additional_articles/agvan_dorzhiev_s_departure', function () {
     return view('pages.additional_articles.agvan_dorzhiev_s_departure');
 })->name('additional_articles.agvan_dorzhiev_s_departure');
+
+Route::get('/additional_articles/the_questions_and_answers_of_vajrasattva', function () {
+    return view('pages.additional_articles.the_questions_and_answers_of_vajrasattva');
+})->name('additional_articles.the_questions_and_answers_of_vajrasattva');
+
+Route::get('/additional_articles/ritual_and_philosophical_speculation', function () {
+    return view('pages.additional_articles.ritual_and_philosophical_speculation');
+})->name('additional_articles.ritual_and_philosophical_speculation');
 
 
 // Статьи А. М. Пятигорского
@@ -604,3 +617,17 @@ Route::get('/ayusheeva_articles/ethical_principles_tibetan_buddhism/{part}', fun
     }
     return view("pages.ayusheeva_articles.ethical_principles_tibetan_buddhism_$part");
 })->where('part', '[1-5]')->name('ayusheeva_articles.ethical_principles_tibetan_buddhism');
+
+
+// Стать Ушакова
+Route::get('/ushakov_articles/general_exposition_most_secret', function () {
+    return view('pages.ushakov_articles.general_exposition_most_secret');
+})->name('ushakov_articles.general_exposition_most_secret');
+
+Route::get('/ushakov_articles/answers_about_vajrasattva/{part}', function ($part) {
+    $paddedPart = $part < 10 ? '0' . $part : $part;
+    if ($part < 1 || $part > 5) {
+        abort(404);
+    }
+    return view("pages.ushakov_articles.answers_about_vajrasattva_$paddedPart");
+})->where('part', '[1-5]')->name('ushakov_articles.answers_about_vajrasattva');

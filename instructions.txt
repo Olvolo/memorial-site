@@ -260,3 +260,27 @@ require_once __DIR__ . '/public/index.php';
         </div>
         17.
         <span class="underline"></span>
+        18. Для стихов в примечании использовал:
+                    <ul class="list-none pl-5 space-y-1 ml-8 mb-4">
+                            <li class="my-2"></li>
+                            <li class="my-2"></li>
+                            <li class="my-2"></li>
+                            <li class="my-2"></li>
+                    </ul>
+                    <ul class="list-none pl-5 space-y-1 ml-8 mb-4">
+                            <li class="my-2"></li>
+                            <li class="my-2"></li>
+                            <li class="my-2"></li>
+                            <li class="my-2"></li>
+                    </ul>
+
+                    <li class="my-2">
+                            <ul class="list-none pl-2 space-y-1 mb-4">
+                                <li class="my-4"><strong></strong></li>
+                                <li class="my-2"></li>
+                                <li class="my-2"></li>
+                                <li class="my-2"></li>
+                                <li class="my-2"></li>
+                            </ul>
+                    </li>
+

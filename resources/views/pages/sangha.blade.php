@@ -616,10 +616,56 @@
                                     </ul>
             </div>
 
+            <!-- Блок автора10 - Ушаков Валерий Евгеньевич -->
+            <div x-data="{ isOpen: false, answersOpen: false }" class="author-block bg-blue-200">
+                <div class="author-header" @click="isOpen = !isOpen">
+                    <h3 class="text-xl font-semibold">Ушаков Валерий Евгеньевич</h3>
+                    <span class="toggle-icon" x-text="isOpen ? 'Свернуть' : 'Статьи'"></span>
+                </div>
+                <ul x-show="isOpen" x-transition.duration.200ms class="articles-list">
+                    <li>
+                        <a href="#" class="text-black hover:text-gray-700">
+                            Тридцать тайных наставлений
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-black hover:text-gray-700">
+                            Самоосвобождение через обнажающее внимание — Прямое Введение в ригпа
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-black hover:text-gray-700">
+                            Общее Изложение Самого Тайного
+                        </a>
+                    </li>
+                    <li>
+                        <div @click="answersOpen = !answersOpen" class="sub-list-toggle">
+                            <span>Ответы на вопросы о Ваджрасаттве, данные наставником Пэльяном</span>
+                            <span class="toggle-icon ml-2" x-text="answersOpen ? '▲' : '▼'"></span>
+                        </div>
+                        <ul x-show="answersOpen" x-transition.duration.200ms class="sub-list">
+                            <li>
+                                <a href="{{ route('ushakov_articles.answers_about_vajrasattva', ['part' => 1]) }}">Часть первая</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('ushakov_articles.answers_about_vajrasattva', ['part' => 2]) }}">Часть вторая</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('ushakov_articles.answers_about_vajrasattva', ['part' => 3]) }}">Часть третья</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('ushakov_articles.answers_about_vajrasattva', ['part' => 4]) }}">Часть четвёртая</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('ushakov_articles.answers_about_vajrasattva', ['part' => 5]) }}">Часть пятая</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 @endsection
 @push('scripts')
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.0/dist/cdn.min.js" defer></script>
 @endpush
-

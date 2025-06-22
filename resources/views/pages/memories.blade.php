@@ -43,6 +43,14 @@
                     <a href="{{ route('additional_articles.agvan_dorzhiev_s_departure') }}"
                        class="text-blue-600 hover:text-blue-800 underline">Уход Агвана Доржиева</a>
                 </p>
+                <p class="mt-4">
+                    <a href="{{ route('additional_articles.the_questions_and_answers_of_vajrasattva') }}"
+                       class="text-blue-600 hover:text-blue-800 underline">Вопросы и ответы о Ваджрасаттве. Якоб Далтон</a>
+                </p>
+                <p class="mt-4">
+                    <a href="{{ route('additional_articles.ritual_and_philosophical_speculation') }}"
+                       class="text-blue-600 hover:text-blue-800 underline">Ритуал и философские размышления в «Ответах Ваджрасаттвы»</a>
+                </p>
             </div>
         </div>
     </div>

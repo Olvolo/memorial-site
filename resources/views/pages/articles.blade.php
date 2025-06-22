@@ -176,9 +176,6 @@
                     <li><a href="{{ route('articles.dharma-bodhichitta') }}"
                            class="text-black hover:text-gray-700">Дхарма-бодхичитта, рупа, карма</a>
                     </li>
-                    <li><a href="{{ route('articles.five_dhyanibuddhas') }}"
-                           class="text-black hover:text-gray-700">Пять Дхьянибудд и Этнический
-                            Хаос</a></li>
                     <li><a href="{{ route('articles.prayer-for-peace') }}"
                            class="text-black hover:text-gray-700">Буддийское моление о мире на
                             Балканах</a></li>
@@ -186,7 +183,8 @@
                            class="text-black hover:text-gray-700">Сангха и Интернет</a></li>
                     <li><a href="{{ route('articles.swastika-in-temple') }}"
                            class="text-black hover:text-gray-700">Свастика в Храме</a></li>
-
+                    <li><a href="{{ route('articles.sultim_lodoy_thirty_secrets') }}"
+                           class="text-black hover:text-gray-700">Тридцать тайных наставлений</a></li>
                     <li><a href="{{ route('articles.chakra_of_rays') }}"
                            class="text-black hover:text-gray-700">Чакра лучей и радуг</a></li>
                     <li><a href="{{ route('articles.secret_the_same') }}"
