@@ -88,7 +88,7 @@
                     <h3 class="text-lg font-semibold">Каким образом следует смотреть на своё тело,
                         как на проявление Махамудры, своего самадхи – как мандала?<a
                             href="#citation-55" id="ref-55"
-                            class="citation-mark"><sup>55</sup></a>
+                            class="citation-mark"><sup> 55</sup></a>
                     </h3>
                     <div class="italic pl-4 border-l-2 border-gray-300 space-y-2">
                         <p>[Материальное] тело из великих элементов</p>

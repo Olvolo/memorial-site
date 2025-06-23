@@ -176,7 +176,7 @@
 
                 <!-- Вопрос 51 -->
                 <li class="space-y-3">
-                    <h3 class="text-lg font-semibold">Насколько велик грех ослушаться наставника?<a href="#citation-80" id="ref-80" class="citation-mark"><sup>80</sup></a></h3>
+                    <h3 class="text-lg font-semibold">Насколько велик грех ослушаться наставника?<a href="#citation-80" id="ref-80" class="citation-mark"><sup> 80</sup></a></h3>
                     <div class="italic pl-4 border-l-2 border-gray-300 space-y-2">
                         <p>Тяжесть греха [убийства всех живых существ в] трёх мирах,</p>
                         <p>Не сравнится и с толикой тяжести греха ослушания наставника.</p>
@@ -242,7 +242,7 @@
                 <p class="mb-3" id="citation-68"><sup>68</sup> Есть матрика 4-х уровней видьядхар – rig 'dzin bzhi:<a
                    href="#ref-68" class="text-blue-500 hover:underline">↩</a>
                 </p>
-                <ol class="list-decimal list-outside ml-8 space-y-1 pl-5">
+                <ol class="list-decimal list-outside ml-8 space-y-1 pl-5 mb-3">
                     <li class="my-2">rnam par smin pa'i rig 'dzin – полностью созревший,</li>
                     <li class="my-2">tshe la dbang ba'i rig 'dzin – владыка жизни,</li>
                     <li class="my-2">phyag rgya chen po'i rig 'dzin – видьядхара махамудры,</li>
