@@ -619,7 +619,7 @@ Route::get('/ayusheeva_articles/ethical_principles_tibetan_buddhism/{part}', fun
 })->where('part', '[1-5]')->name('ayusheeva_articles.ethical_principles_tibetan_buddhism');
 
 
-// Стать Ушакова
+// Статьи Ушакова
 Route::get('/ushakov_articles/general_exposition_most_secret', function () {
     return view('pages.ushakov_articles.general_exposition_most_secret');
 })->name('ushakov_articles.general_exposition_most_secret');

@@ -301,7 +301,18 @@
                     этому тексту. Удалось найти и перевести:<a href="#ref-1"
                                                                class="text-blue-500 hover:underline">↩</a>
                 </p>
-
+                <ul class="list-none pl-5 mt-2 space-y-1">
+                    <li>
+                        <a href="{{ route('additional_articles.ritual_and_philosophical_speculation') }}"
+                           class="text-blue-600 hover:text-blue-800 underline">Ритуал и философские размышления в <em>rdo rje sems dpa'i zhus lan</em></a>
+                    </li>
+                    <li>
+                        <a href="{{ route('additional_articles.the_questions_and_answers_of_vajrasattva') }}"
+                           class="text-blue-600 hover:text-blue-600 underline">
+                            Вопросы и ответы о Ваджрасаттве. Якоб Далтон
+                        </a>
+                    </li>
+                </ul>
                 <p class="mb-3" id="citation-2"><sup>2</sup> Для большей читаемости текста тибетские
                     стихи в транскрипции вынесены в примечания. Тибетский текст первого вопроса:<a
                         href="#ref-2"

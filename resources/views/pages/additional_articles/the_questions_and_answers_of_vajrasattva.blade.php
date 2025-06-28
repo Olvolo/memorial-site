@@ -1284,6 +1284,25 @@
 
             <p class="text-right italic text-gray-800 mt-4">Перевод с английского и тибетского О. Л.
                 Волошановский</p>
+            <p class="mt-6">
+                <strong>Дополнительные материалы по этой теме:</strong>
+            </p>
+
+            <ul class="list-disc pl-5 mt-2 space-y-1">
+                <li>
+                    <a href="{{ route('ushakov_articles.answers_about_vajrasattva', ['part' => 1]) }}"
+                       class="text-blue-600 hover:text-blue-800 underline">
+                        Ответы на вопросы о Ваджрасаттве, данные наставником Пэльяном (Часть 1)
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('additional_articles.ritual_and_philosophical_speculation') }}"
+                       class="text-blue-600 hover:text-blue-800 underline">
+                        Ритуал и философские размышления в <em>rdo rje sems dpa'i zhus lan</em>
+                    </a>
+                </li>
+
+            </ul>
             <!-- Разделительная черта -->
             <hr class="my-8 border-t-4 border-gray-500">
             <!-- Блок примечаний -->

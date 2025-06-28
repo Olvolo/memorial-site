@@ -385,9 +385,18 @@
                     вопроса.
                     <a href="#ref-31" class="text-blue-500 hover:underline">↩</a></p>
 
+                <p class="my-3" id="citation-32"><sup>32</sup> Самадхи таковости – одно из трёх
+                    самадхи Махайоги (<em>ting nge 'dzin rnam pa gsum</em>):<a href="#ref-32"
+                                                                               class="text-blue-500 hover:underline">↩</a>
+                </p>
+                <ol class="list-decimal list-outside ml-8 space-y-1 pl-5">
+                    <li class="my-2">de bzhin nyid kyi ting nge 'dzin;</li>
+                    <li class="my-2">kun tu snang gi ting nge 'dzin;</li>
+                    <li class="my-2">rgyu'i ting nge 'dzin.</li>
+                </ol>
 
-                <p class="mb-3" id="citation-32"><sup>32</sup> Тибетский текст восемнадцатого
-                    вопроса:<a href="#ref-32"
+                <p class="my-3" id="citation-33"><sup>33</sup> Тибетский текст восемнадцатого
+                    вопроса:<a href="#ref-33"
                                class="text-blue-500 hover:underline">↩</a></p>
                 <ul class="list-none pl-5 space-y-1 ml-8 mb-4">
                     <li class="my-2">/ de bzhin nyid kyi ting 'dzin ji ltar bsgom /</li>
@@ -399,17 +408,9 @@
                     <li class="my-2">/ chos nyid bsgom par bya ba med /</li>
                 </ul>
 
-                <p class="mb-3" id="citation-33"><sup>33</sup> Самадхи таковости – одно из трёх
-                    самадхи Махайоги (<em>ting nge 'dzin rnam pa gsum</em>):<a href="#ref-33"
-                                                                               class="text-blue-500 hover:underline">↩</a>
-                </p>
-                <ol class="list-decimal list-outside ml-8 space-y-1 pl-5">
-                    <li class="my-2">de bzhin nyid kyi ting nge 'dzin;</li>
-                    <li class="my-2">kun tu snang gi ting nge 'dzin;</li>
-                    <li class="my-2">rgyu'i ting nge 'dzin.</li>
-                </ol>
 
-                <p class="mb-3" id="citation-34"><sup>34</sup> Перевод «неулучшаемое» был выбран,
+
+                <p class="my-3" id="citation-34"><sup>34</sup> Перевод «неулучшаемое» был выбран,
                     чтобы сохранить связь с термином «неулучшение», «неулучшающий» (ma bcos), речь о
                     котором пойдет ниже. Намхай Норбу в своем комментарии на «Свод тайного»
                     Буддагупты (Namkhai Norbu. The small colection of hidden precepts. A study of an
